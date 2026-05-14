@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="{{ html_lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ site_name }}｜{{ site_subtitle }}</title>
+<meta name="description" content="{{ t.site_intro }}">
+<meta name="author" content="Kenji Shih">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site_name }}">
+<meta property="og:title" content="{{ site_name }}｜{{ site_subtitle }}">
+<meta property="og:description" content="{{ t.site_intro }}">
+<meta property="og:locale" content="{{ og_locale }}">
+{% for alt in hreflang_alts %}
+<link rel="alternate" hreflang="{{ alt.code }}" href="{{ alt.href }}">
+{% endfor %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ site_name|tojson }},
+  "inLanguage": "{{ html_lang }}",
+  "alternateName": {{ site_subtitle|tojson }},
+  "author": { "@type": "Person", "name": "Kenji Shih" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {% for a in albums %}
+      {
+        "@type": "Restaurant",
+        "position": {{ loop.index }},
+        "name": {{ a.name|tojson }},
+        {% if a.address %}"address": {{ a.address|tojson }},{% endif %}
+        {% if a.cuisine %}"servesCuisine": {{ a.cuisine|tojson }},{% endif %}
+        "url": "album-{{ a.slug }}.html"
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Noto+Sans+TC:wght@300;400;500;600&family=Noto+Serif+JP:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { font-family: {% if lang == 'ja' %}'Noto Serif JP', 'Noto Serif TC'{% else %}'Noto Serif TC'{% endif %}, Georgia, serif; color:#2a2520; }
+  .font-sans { font-family: {% if lang == 'ja' %}'Noto Sans JP', 'Noto Sans TC'{% else %}'Noto Sans TC'{% endif %}, system-ui, sans-serif; }
+  .font-num { font-family: 'Inter', system-ui, sans-serif; }
+  .filter-btn.active, .sort-btn.active, .city-btn.active { background:#78350f; color:white; border-color:#78350f; }
+  .stars { letter-spacing: 0.08em; }
+</style>
+</head>
+<body class="bg-[#fdfbf7]">
+
+{% if lang_links %}
+<div class="max-w-3xl mx-auto px-5 pt-5 flex justify-end gap-3 font-sans text-sm">
+  {% for ll in lang_links %}
+  <a href="{{ ll.href }}" class="text-stone-500 hover:text-amber-800 transition">{{ ll.label }}</a>
+  {% endfor %}
+</div>
+{% endif %}
+
+<header class="max-w-3xl mx-auto px-5 pt-12 pb-10">
+  <p class="font-num text-xs tracking-[0.35em] uppercase text-amber-800">{{ site_subtitle }}</p>
+  <h1 class="text-5xl md:text-6xl font-bold tracking-tight mt-3 leading-[1.1]">{{ site_name }}</h1>
+  <p class="text-stone-600 mt-5 font-sans leading-relaxed">{{ t.site_intro }}</p>
+  <p class="text-xs text-stone-400 mt-3 font-num">
+    {{ t.n_restaurants.format(n=albums|length) }} · {{ t.n_photos.format(n=albums|sum(attribute='photo_count')) }}
+  </p>
+</header>
+
+<nav class="max-w-3xl mx-auto px-5 mb-12 font-sans space-y-3">
+  <div class="flex flex-wrap gap-2 items-center">
+    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">{{ t.sort_label }}</span>
+    <button data-sort="date" class="sort-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ t.sort_date }}</button>
+    <button data-sort="rating" class="sort-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ t.sort_rating }}</button>
+  </div>
+  <div class="flex flex-wrap gap-2 items-center">
+    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">{{ t.city_label }}</span>
+    <button data-city="all" class="city-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ t.all }}</button>
+    {% for c, n in cities %}
+    <button data-city="{{ c }}" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ c }} <span class="text-stone-400 ml-0.5">({{ n }})</span></button>
+    {% endfor %}
+  </div>
+  <div class="flex flex-wrap gap-2 items-center">
+    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">{{ t.cuisine_label }}</span>
+    <button data-filter="all" class="filter-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ t.all }}</button>
+    {% for c in all_cuisines %}
+    <button data-filter="{{ c }}" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ c }}</button>
+    {% endfor %}
+  </div>
+</nav>
+
+<main class="max-w-3xl mx-auto px-5 pb-20">
+  <ul id="cards" class="space-y-16">
+    {% for a in albums %}
+    <li class="card group"
+        data-cuisine="{{ a.cuisine|join(',') if a.cuisine else '' }}"
+        data-city="{{ a.city or '' }}"
+        data-rating="{{ a.rating or 0 }}"
+        data-date="{{ a.visited_at or '0000-00-00' }}">
+      <a href="album-{{ a.slug }}.html" class="block">
+        {% if a.cover_photo %}
+        <div class="aspect-[16/10] overflow-hidden rounded-lg bg-stone-200">
+          <img src="{{ photo_prefix }}{{ a.cover_photo.large }}" alt="{{ a.name }}"
+               loading="lazy"
+               class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+        </div>
+        {% endif %}
+        <div class="mt-6">
+          {% if a.name_alt %}
+          <p class="font-num text-xs tracking-[0.3em] uppercase text-amber-800">{{ a.name_alt }}</p>
+          {% endif %}
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-1 group-hover:text-amber-900 transition">{{ a.name }}</h2>
+
+          <div class="text-sm mt-3 font-sans flex flex-wrap items-baseline gap-x-4 gap-y-1 text-stone-600">
+            {% if a.rating %}
+            {% set full = a.rating|int %}
+            {% set half = (a.rating - full) >= 0.5 %}
+            <span class="stars text-amber-600">
+              {%- for i in range(full) -%}★{%- endfor -%}
+              {%- if half -%}<span class="opacity-60">★</span>{%- endif -%}
+              {%- for i in range(5 - full - (1 if half else 0)) -%}<span class="text-stone-300">★</span>{%- endfor -%}
+            </span>
+            <span class="font-num text-xs text-stone-500">{{ a.rating }}</span>
+            {% endif %}
+            {% if a.location %}<span>📍 {{ a.location }}</span>{% endif %}
+            {% if a.visited_at %}<span class="font-num text-stone-500">{{ a.visited_at[:4] }}</span>{% endif %}
+            {% if a.cuisine %}
+            <span class="text-stone-300">·</span>
+            <span class="text-stone-500">{{ a.cuisine|join('・') }}</span>
+            {% endif %}
+          </div>
+
+          {% if a.description %}
+          <p class="mt-4 text-stone-700 leading-loose line-clamp-3">
+            {{ a.description.split('\n')[0] }}
+          </p>
+          {% endif %}
+          <span class="inline-block mt-5 text-amber-800 text-sm font-sans group-hover:translate-x-1 transition">{{ t.continue_reading }}</span>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p id="empty" class="hidden text-center text-stone-400 py-12 font-sans">{{ t.empty }}</p>
+</main>
+
+<footer class="text-center text-xs text-stone-400 pb-12 font-sans">
+  {{ site_name }} · by Kenji Shih
+</footer>
+
+<script>
+(function() {
+  const container = document.getElementById('cards');
+  const cards = [...document.querySelectorAll('.card')];
+  const cuisineBtns = document.querySelectorAll('[data-filter]');
+  const cityBtns = document.querySelectorAll('[data-city]');
+  const sortBtns = document.querySelectorAll('[data-sort]');
+  const empty = document.getElementById('empty');
+
+  let state = { cuisine: 'all', city: 'all', sort: 'date' };
+
+  function apply() {
+    const sorted = [...cards].sort((a, b) => {
+      if (state.sort === 'rating') {
+        return (parseFloat(b.dataset.rating) || 0) - (parseFloat(a.dataset.rating) || 0);
+      }
+      return b.dataset.date.localeCompare(a.dataset.date);
+    });
+    sorted.forEach(c => container.appendChild(c));
+
+    let visible = 0;
+    cards.forEach(c => {
+      const cuisines = (c.dataset.cuisine || '').split(',').filter(Boolean);
+      const city = c.dataset.city || '';
+      const okC = state.cuisine === 'all' || cuisines.includes(state.cuisine);
+      const okCity = state.city === 'all' || city === state.city;
+      const show = okC && okCity;
+      c.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    empty.classList.toggle('hidden', visible > 0);
+  }
+
+  cuisineBtns.forEach(b => {
+    b.onclick = () => {
+      cuisineBtns.forEach(x => x.classList.toggle('active', x === b));
+      state.cuisine = b.dataset.filter;
+      apply();
+    };
+  });
+  cityBtns.forEach(b => {
+    b.onclick = () => {
+      cityBtns.forEach(x => x.classList.toggle('active', x === b));
+      state.city = b.dataset.city;
+      apply();
+    };
+  });
+  sortBtns.forEach(b => {
+    b.onclick = () => {
+      sortBtns.forEach(x => x.classList.toggle('active', x === b));
+      state.sort = b.dataset.sort;
+      apply();
+    };
+  });
+
+  apply();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# 中介產物（每次 scan/build 重生）
+data/
+
+# 原圖（HEIC/原 size JPG）→ 本機/iCloud 備份，不入 repo
+# 用前置 / 確保只 ignore root 下的 photos/，不影響 dist/photos/
+/photos/
+
+# .env 系列
+.env
+.env.local
+
+# Vercel 本機檔
+.vercel/
+
+# 注意：dist/ 整個入 repo（含 dist/photos/ 壓縮後副本），Vercel 從這部署

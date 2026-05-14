@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="{{ html_lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+{% set desc_short = (album.description or '').split('\n')[0]|truncate(140, true, '…') %}
+<title>{{ album.name }}（{{ album.location }}）｜{{ album.cuisine|join('・') if album.cuisine else '' }}｜{{ site_name }}</title>
+<meta name="description" content="{{ desc_short }}">
+<meta name="keywords" content="{{ album.name }}, {{ album.location }}, {{ album.cuisine|join(', ') if album.cuisine else '' }}">
+<meta name="author" content="Kenji Shih">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{ site_name }}">
+<meta property="og:title" content="{{ album.name }}｜{{ site_name }}">
+<meta property="og:description" content="{{ desc_short }}">
+<meta property="og:locale" content="{{ og_locale }}">
+{% if album.cover_photo %}<meta property="og:image" content="{{ photo_prefix }}{{ album.cover_photo.large }}">{% endif %}
+<link rel="canonical" href="album-{{ album.slug }}.html">
+{% for alt in hreflang_alts %}
+<link rel="alternate" hreflang="{{ alt.code }}" href="{{ alt.href }}album-{{ album.slug }}.html">
+{% endfor %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": {{ album.name|tojson }},
+  "inLanguage": "{{ html_lang }}",
+  {% if album.address %}"address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ album.address|tojson }},
+    "addressLocality": {{ album.location|tojson }},
+    "addressCountry": "TW"
+  },{% endif %}
+  {% if album.phone %}"telephone": {{ album.phone|tojson }},{% endif %}
+  {% if album.cuisine %}"servesCuisine": {{ album.cuisine|tojson }},{% endif %}
+  {% if album.price_range %}"priceRange": {{ album.price_range|tojson }},{% endif %}
+  {% if album.rating %}"aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ album.rating }}",
+    "bestRating": "5",
+    "ratingCount": "1"
+  },{% endif %}
+  "image": [{% for p in album.photos[:5] %}{{ (photo_prefix ~ p.large)|tojson }}{% if not loop.last %},{% endif %}{% endfor %}]
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+<style>
+  body { font-family: {% if lang == 'ja' %}'Noto Serif JP', 'Noto Serif TC'{% else %}'Noto Serif TC'{% endif %}, Georgia, serif; color:#2a2520; }
+  .font-sans { font-family: {% if lang == 'ja' %}'Noto Sans JP', 'Noto Sans TC'{% else %}'Noto Sans TC'{% endif %}, system-ui, sans-serif; }
+  .font-num { font-family: 'Inter', system-ui, sans-serif; }
+  .prose-body { font-size: 1.08rem; line-height: 2.05; letter-spacing: 0.025em; }
+  .stars { letter-spacing: 0.1em; }
+  table.info td { padding: 0.65rem 0; vertical-align: top; border-bottom: 1px solid #e7e0d6; }
+  table.info td:first-child { width: 7rem; color:#988672; font-size: 0.85rem; letter-spacing: 0.1em; }
+</style>
+</head>
+<body class="bg-[#fdfbf7]">
+
+{% if lang_links %}
+<div class="absolute top-5 right-5 z-10 flex gap-3 font-sans text-sm">
+  {% for ll in lang_links %}
+  <a href="{{ ll.href }}album-{{ album.slug }}.html" class="text-white/80 hover:text-white transition px-2 py-1 bg-black/30 rounded-full backdrop-blur-sm">{{ ll.label }}</a>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if album.cover_photo %}
+<div class="w-full h-[70vh] overflow-hidden bg-stone-200 relative">
+  <img src="{{ photo_prefix }}{{ album.cover_photo.large }}"
+       alt="{{ album.name }}"
+       class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+  <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 text-white">
+    <div class="max-w-2xl mx-auto">
+      {% if album.name_alt %}
+      <p class="font-num text-sm tracking-[0.3em] uppercase opacity-80">{{ album.name_alt }}</p>
+      {% endif %}
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight mt-2 tracking-tight">{{ album.name }}</h1>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<article class="max-w-2xl mx-auto px-5 py-12">
+  <a href="index.html" class="text-stone-500 hover:text-stone-900 text-sm font-sans">{{ t.back }}</a>
+
+  <div class="mt-8 flex flex-wrap items-baseline gap-x-5 gap-y-2 border-y border-stone-200 py-5 font-sans">
+    {% if album.rating %}
+    <div>
+      {% set full = album.rating|int %}
+      {% set half = (album.rating - full) >= 0.5 %}
+      <span class="stars text-amber-600 text-lg">
+        {%- for i in range(full) -%}★{%- endfor -%}
+        {%- if half -%}<span class="opacity-60">★</span>{%- endif -%}
+        {%- for i in range(5 - full - (1 if half else 0)) -%}<span class="text-stone-300">★</span>{%- endfor -%}
+      </span>
+      <span class="font-num text-sm text-stone-500 ml-1">{{ album.rating }}</span>
+    </div>
+    {% endif %}
+    {% if album.location %}<span class="text-sm text-stone-600">📍 {{ album.location }}</span>{% endif %}
+    {% if album.visited_at %}<span class="font-num text-sm text-stone-500">{{ album.visited_at[:4] }}</span>{% endif %}
+    {% if album.cuisine %}
+    <div class="flex gap-1.5 flex-wrap ml-auto">
+      {% for c in album.cuisine %}
+      <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">{{ c }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  {% if album.description %}
+  <div class="mt-10 prose-body text-stone-800 whitespace-pre-line">{{ album.description }}</div>
+  {% endif %}
+
+  {% if album.dining_record %}
+  <section class="mt-14">
+    <h2 class="text-2xl font-bold mb-6 tracking-tight">{{ t.dining_record }}</h2>
+
+    {% if album.dining_record.overall %}
+    <blockquote class="border-l-2 border-amber-300 pl-5 py-1 mb-10 italic text-stone-700 prose-body">
+      {{ album.dining_record.overall }}
+    </blockquote>
+    {% endif %}
+
+    <div class="space-y-7">
+      {% for d in album.dining_record.dishes %}
+      <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
+        <h3 class="text-xl font-bold tracking-tight">{{ loop.index }}. {{ d.name }}</h3>
+        {% if d.raw_name and d.raw_name != d.name %}
+        <p class="text-xs text-stone-400 font-sans mt-0.5">{{ d.raw_name }}</p>
+        {% endif %}
+        <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
+          {% for label, value in d.fields.items() %}
+          <div class="flex gap-3">
+            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">{{ label }}</dt>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">{{ value }}</dd>
+          </div>
+          {% endfor %}
+        </dl>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% if album.dining_record.extras %}
+    <div class="mt-10 pt-6 border-t border-stone-200 text-sm text-stone-600 font-sans whitespace-pre-line">
+      <p class="text-xs uppercase tracking-widest text-stone-400 mb-2">{{ t.dining_extras }}</p>
+      {{ album.dining_record.extras }}
+    </div>
+    {% endif %}
+  </section>
+  {% elif album.dishes %}
+  <div class="mt-10">
+    <h3 class="text-sm font-sans tracking-[0.2em] uppercase text-stone-500 mb-3">{{ t.today_dishes }}</h3>
+    <div class="flex flex-wrap gap-2 font-sans">
+      {% for d in album.dishes %}
+      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">{{ d }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <hr class="my-14 border-stone-300 border-dashed">
+
+  <h2 class="text-xl font-bold mb-6 tracking-tight">{{ t.main_dishes }}</h2>
+  <div class="grid grid-cols-2 gap-3" id="gallery">
+    {% for p in album.photos %}
+    <a href="{{ photo_prefix }}{{ p.large }}"
+       data-pswp-width="{{ p.width or 1600 }}"
+       data-pswp-height="{{ p.height or 1200 }}"
+       target="_blank" rel="noreferrer">
+      <img src="{{ photo_prefix }}{{ p.thumb }}"
+           alt="{{ album.name }} {{ loop.index }}"
+           loading="lazy"
+           class="w-full aspect-square object-cover rounded hover:opacity-90 transition">
+    </a>
+    {% endfor %}
+  </div>
+
+  {% if album.menu_photos %}
+  <hr class="my-14 border-stone-300 border-dashed">
+  <h2 class="text-xl font-bold mb-6 tracking-tight">{{ t.menu_section }}</h2>
+  <div class="grid grid-cols-2 gap-3" id="gallery-menu">
+    {% for p in album.menu_photos %}
+    <a href="{{ photo_prefix }}{{ p.large }}"
+       data-pswp-width="{{ p.width or 1600 }}"
+       data-pswp-height="{{ p.height or 1200 }}"
+       target="_blank" rel="noreferrer">
+      <img src="{{ photo_prefix }}{{ p.thumb }}"
+           alt="{{ album.name }} menu {{ loop.index }}"
+           loading="lazy"
+           class="w-full aspect-[3/4] object-cover rounded hover:opacity-90 transition">
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if album.docs %}
+  {% set docs_images = album.docs | selectattr("type", "equalto", "image") | list %}
+  {% set docs_pdfs = album.docs | selectattr("type", "equalto", "pdf") | list %}
+  <hr class="my-14 border-stone-300 border-dashed">
+  <h2 class="text-xl font-bold mb-6 tracking-tight">{{ t.storefront_section }}</h2>
+  {% if docs_images %}
+  <div class="grid grid-cols-2 gap-3 mb-6" id="gallery-docs">
+    {% for p in docs_images %}
+    <a href="{{ photo_prefix }}{{ p.large }}"
+       data-pswp-width="{{ p.width or 1600 }}"
+       data-pswp-height="{{ p.height or 1200 }}"
+       target="_blank" rel="noreferrer">
+      <img src="{{ photo_prefix }}{{ p.thumb }}"
+           alt="{{ album.name }} {{ p.title }}"
+           loading="lazy"
+           class="w-full aspect-video object-cover rounded hover:opacity-90 transition">
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if docs_pdfs %}
+  <ul class="font-sans space-y-2">
+    {% for d in docs_pdfs %}
+    <li>
+      <a href="{{ photo_prefix }}{{ d.url }}" target="_blank" rel="noreferrer"
+         class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-stone-300 rounded-lg text-sm hover:bg-stone-100 transition">
+        <span>📄</span><span>{{ d.filename }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endif %}
+
+  <hr class="my-14 border-stone-300 border-dashed">
+
+  <h2 class="text-xl font-bold mb-4 tracking-tight font-sans">{{ t.shop_info }}</h2>
+  <table class="info w-full font-sans text-[0.95rem]">
+    <tbody>
+      {% if album.address %}
+      <tr><td>{{ t.address }}</td><td>
+        {{ album.address }}
+        {% set query = album.address ~ ' ' ~ album.name %}
+        <a href="{{ album.maps_url or ('https://www.google.com/maps/search/?api=1&query=' ~ query|urlencode) }}"
+           target="_blank" rel="noreferrer"
+           class="ml-2 text-amber-800 hover:text-amber-900 text-sm whitespace-nowrap">{{ t.maps_open }}</a>
+      </td></tr>
+      {% endif %}
+      {% if album.phone %}<tr><td>{{ t.phone }}</td><td><a href="tel:{{ album.phone|replace(' ','')|replace('-','') }}" class="hover:text-amber-800">{{ album.phone }}</a></td></tr>{% endif %}
+      {% if album.hours %}<tr><td>{{ t.hours }}</td><td>{{ album.hours }}</td></tr>{% endif %}
+      {% if album.closed %}<tr><td>{{ t.closed }}</td><td>{{ album.closed }}</td></tr>{% endif %}
+      {% if album.reservation %}<tr><td>{{ t.reservation }}</td><td>{{ album.reservation }}</td></tr>{% endif %}
+      {% if album.service %}<tr><td>{{ t.service }}</td><td>{{ album.service }}</td></tr>{% endif %}
+      {% if album.transit %}<tr><td>{{ t.transit }}</td><td>{{ album.transit }}</td></tr>{% endif %}
+      {% if album.languages %}<tr><td>{{ t.languages }}</td><td>{{ album.languages|join('・') }}</td></tr>{% endif %}
+      {% if album.foreign_menu %}<tr><td>{{ t.foreign_menu }}</td><td>{{ album.foreign_menu|join('・') }}</td></tr>{% endif %}
+      {% if album.payment %}<tr><td>{{ t.payment }}</td><td>{{ album.payment|join('・') }}</td></tr>{% endif %}
+      {% if album.dietary %}<tr><td>{{ t.dietary }}</td><td>{{ album.dietary|join('・') }}</td></tr>{% endif %}
+      {% if album.price_range %}<tr><td>{{ t.price }}</td><td>{{ album.price_range }}</td></tr>{% endif %}
+      {% if album.cuisine %}<tr><td>{{ t.type }}</td><td>{{ album.cuisine|join('・') }}</td></tr>{% endif %}
+      {% if album.visited_at %}<tr><td>{{ t.visited }}</td><td class="font-num">{{ album.visited_at[:4] }}</td></tr>{% endif %}
+    </tbody>
+  </table>
+</article>
+
+<footer class="text-center text-xs text-stone-400 pb-12 font-sans">
+  {{ site_name }} · <a href="index.html" class="hover:text-stone-700">{{ t.back }}</a>
+</footer>
+
+<script type="module">
+import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js';
+const pswpModule = () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js');
+['#gallery', '#gallery-menu', '#gallery-docs'].forEach(sel => {
+  if (document.querySelector(sel)) {
+    new PhotoSwipeLightbox({ gallery: sel, children: 'a', pswpModule }).init();
+  }
+});
+</script>
+</body>
+</html>
