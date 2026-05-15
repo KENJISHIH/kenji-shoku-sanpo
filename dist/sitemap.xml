@@ -3,11 +3,11 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://kenji-shoku-sanpo.vercel.app/</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja"/>
   </url>
-  <url><loc>https://kenji-shoku-sanpo.vercel.app/ja/</loc>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/ja</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja"/>
   </url>
   <url><loc>https://kenji-shoku-sanpo.vercel.app/album-le-four.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-le-four.html"/>

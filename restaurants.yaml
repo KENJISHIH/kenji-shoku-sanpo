@@ -17,6 +17,7 @@
 #   price_range  預算區間(例:"NT$ 700-1,600 / 人")
 #   reservation  訂位方式(例:"完全預約制" / "接受訂位" / "現場候位")
 #   service      用餐型態+收費規則(例:"+10% 服務費" / "單點式,可外帶" / "白飯味噌湯無限續")
+#   good_for     適合場合陣列(選填,留空 build 會自動從 description 抓「適合 X、Y」)
 #   visited_at   YYYY-MM-DD(網頁只顯示年)
 #   rating       1-5
 #   cuisine      菜系標籤陣列(用來篩選)
@@ -60,10 +61,11 @@ restaurants:
     name_alt: "Le Four"
     location: "台中市南區"
     address: "台中市南區愛國街87號"
+    address_ja: "台中市南区愛国街87号"
     phone: "04-2227-1635"
     hours: "12:00-14:30 / 18:30-21:00"
     closed: "週二"
-    price_range: "NT$ 700-1,600 / 人"
+    price_range: "NT$ 1,000-1,900 / 人"
     reservation: "完全預約制"
     visited_at: "2026-05-12"
     rating: 4.5
@@ -74,7 +76,7 @@ restaurants:
       店名「萊法」則是為了紀念主廚摯愛的阿嬤「來發」。
 
       餐廳採完全預約制,一人廚房,午晚各一輪。半開放廚房可以看見主廚為每位客人
-      細心備餐,餐後 James 會親自走出廚房與客人合影。套餐定價 700-1,600 元,
+      細心備餐,餐後 James 會親自走出廚房與客人合影。套餐定價 1,000-1,900 元,
       包含麵包、開胃菜、沙拉、湯品、主餐、甜點與飲品。
 
       食材都是接到訂位後才採購,因此非常新鮮。招牌菜包括紙包魚、鴨胸、大白蝦,
@@ -102,6 +104,7 @@ restaurants:
     name_alt: "Tian Le Li"
     location: "新竹縣竹北市"
     address: "新竹縣竹北市光明六路233號"
+    address_ja: "新竹県竹北市光明六路233号"
     phone: "03-657-2661"
     hours: "週三-週日 11:30-14:00 / 17:00-21:00；週一 17:00-21:00"
     closed: "週二"
@@ -133,6 +136,7 @@ restaurants:
     name_alt: "Second Floor Cafe · 台中秀泰文心店"
     location: "台中市南屯區"
     address: "台中市南屯區文心南路289號 秀泰生活台中文心店 1樓"
+    address_ja: "台中市南屯区文心南路289号 秀泰生活（ショウタイム）台中文心店 1階"
     phone: "04-2471-4333"
     hours: "平日 11:00-22:00／假日 10:30-22:00"
     closed: "無公休"
@@ -165,6 +169,7 @@ restaurants:
     name_alt: "KAIFUN Together"
     location: "台中市南屯區"
     address: "台中市南屯區文心南路289號 秀泰生活台中文心店 6樓"
+    address_ja: "台中市南屯区文心南路289号 秀泰生活（ショウタイム）台中文心店 6階"
     phone: "04-2472-5878"
     hours: "平日 11:30-15:00 / 17:30-21:30；假日 11:00-16:00 / 17:00-起"
     closed: "無公休"
@@ -175,6 +180,11 @@ restaurants:
     rating: 4.5
     cuisine: ["川菜", "中式", "合菜"]
     cover: "20260418-iPhone 17 Pro194445.jpg"  # 蝦仁滑蛋,可改
+    signature_dishes:
+      - "口水雞"
+      - "招牌鹽焗雞"
+      - "翻滾吧!火辣三寶"
+      - "催淚蛋"
     description: |
       開飯川食堂(KAIFUN Together)承襲老牌「福利川菜」的正統川味,以「川麻加辣」
       為招牌特色,菜色強調鮮、香、麻、辣四字訣。文心店位於秀泰生活台中文心店 6 樓,
@@ -204,6 +214,7 @@ restaurants:
     name_alt: "Mita Taiga Bokujo · Hamburger"
     location: "台北市南港區"
     address: "台北市南港區忠孝東路七段369號 環球購物中心南港車站店 C棟 B1 美食街"
+    address_ja: "台北市南港区忠孝東路七段369号 南港グローバルモール（環球購物中心）南港駅店 C棟B1 フードコート"
     phone: "02-2653-2238"
     hours: "平日 11:00-22:00／假日 10:00-22:00"
     closed: "無公休"

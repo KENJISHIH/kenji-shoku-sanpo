@@ -14,7 +14,7 @@
 <meta property="og:description" content="{{ t.site_intro }}">
 <meta property="og:locale" content="{{ og_locale }}">
 {% for alt in hreflang_alts %}
-<link rel="alternate" hreflang="{{ alt.code }}" href="{{ alt.href }}">
+<link rel="alternate" hreflang="{{ alt.code }}" href="{{ alt.href.rstrip('/') or '/' }}">
 {% endfor %}
 
 <script type="application/ld+json">
@@ -53,6 +53,8 @@
   .font-num { font-family: 'Inter', system-ui, sans-serif; }
   .filter-btn.active, .sort-btn.active, .city-btn.active { background:#78350f; color:white; border-color:#78350f; }
   .stars { letter-spacing: 0.08em; }
+  .star-half { display:inline-block; position:relative; color:#d6d3d1; }
+  .star-half::before { content:'★'; position:absolute; top:0; left:0; color:#d97706; width:50%; overflow:hidden; }
 </style>
 </head>
 <body class="bg-[#fdfbf7]">
@@ -60,7 +62,7 @@
 {% if lang_links %}
 <div class="max-w-3xl mx-auto px-5 pt-5 flex justify-end gap-3 font-sans text-sm">
   {% for ll in lang_links %}
-  <a href="{{ ll.href }}" class="text-stone-500 hover:text-amber-800 transition">{{ ll.label }}</a>
+  <a href="{{ ll.href.rstrip('/') or '/' }}" class="text-stone-500 hover:text-amber-800 transition">{{ ll.label }}</a>
   {% endfor %}
 </div>
 {% endif %}
@@ -100,7 +102,7 @@
   <ul id="cards" class="space-y-16">
     {% for a in albums %}
     <li class="card group"
-        data-cuisine="{{ a.cuisine|join(',') if a.cuisine else '' }}"
+        data-cuisine="{{ (a.card_cuisines or a.cuisine)|join(',') if (a.card_cuisines or a.cuisine) else '' }}"
         data-city="{{ a.city or '' }}"
         data-rating="{{ a.rating or 0 }}"
         data-date="{{ a.visited_at or '0000-00-00' }}">
@@ -124,13 +126,13 @@
             {% set half = (a.rating - full) >= 0.5 %}
             <span class="stars text-amber-600">
               {%- for i in range(full) -%}★{%- endfor -%}
-              {%- if half -%}<span class="opacity-60">★</span>{%- endif -%}
+              {%- if half -%}<span class="star-half">★</span>{%- endif -%}
               {%- for i in range(5 - full - (1 if half else 0)) -%}<span class="text-stone-300">★</span>{%- endfor -%}
             </span>
             <span class="font-num text-xs text-stone-500">{{ a.rating }}</span>
             {% endif %}
             {% if a.location %}<span>📍 {{ a.location }}</span>{% endif %}
-            {% if a.visited_at %}<span class="font-num text-stone-500">{{ a.visited_at[:4] }}</span>{% endif %}
+            {% if a.visited_at %}<span class="font-num text-stone-500">📅 {{ a.visited_at[:4] }}</span>{% endif %}
             {% if a.cuisine %}
             <span class="text-stone-300">·</span>
             <span class="text-stone-500">{{ a.cuisine|join('・') }}</span>

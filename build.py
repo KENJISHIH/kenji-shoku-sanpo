@@ -49,7 +49,9 @@ I18N = {
         "cuisine_label": "類型",
         "back": "← 回餐廳列表",
         "photos_count": "張照片",
-        "today_dishes": "當天點的菜",
+        "today_dishes": "我這次點的",
+        "signature_dishes": "店家招牌",
+        "good_for": "適合",
         "main_dishes": "本日菜色",
         "menu_section": "菜單",
         "storefront_section": "店舖外觀／相關資料",
@@ -90,7 +92,9 @@ I18N = {
         "cuisine_label": "ジャンル",
         "back": "← 一覧へ戻る",
         "photos_count": "枚",
-        "today_dishes": "注文した料理",
+        "today_dishes": "今回注文した料理",
+        "signature_dishes": "店の看板メニュー",
+        "good_for": "おすすめシーン",
         "main_dishes": "本日のメニュー",
         "menu_section": "メニュー",
         "storefront_section": "店舗外観・関連資料",
@@ -127,6 +131,120 @@ SECTION_ALIASES = {
     "dishes": {"菜色清單", "料理一覧"},
     "extras": {"其他補充", "補足"},
 }
+
+
+# Top-level cuisine groups → child cuisine tags. The index filter shows groups
+# instead of every child tag (avoid the "17 tags one-row" visual overload).
+# Children appear under more than one group on purpose (e.g. 定食 is both
+# 和食 and 洋食 friendly) so users find what they expect.
+CUISINE_GROUPS = {
+    "zh": {
+        "中式料理": ["川菜", "中式", "合菜"],
+        "西式料理": ["法式", "義式", "美式", "套餐", "預約制"],
+        "日式料理": ["日式", "漢堡排", "定食"],
+        "港式料理": ["港式", "茶餐廳", "冰室", "粉麵飯"],
+        "輕食/咖啡": ["早午餐", "咖啡"],
+    },
+    "ja": {
+        "中華": ["四川料理", "中華料理"],
+        "洋食": ["フレンチ", "イタリアン", "アメリカ料理", "洋食", "ハンバーグ", "コース", "完全予約制", "定食"],
+        "和食": ["和食", "定食"],
+        "香港": ["香港料理", "茶餐廳", "氷室", "麺類・ご飯もの"],
+        "ブランチ/カフェ": ["ブランチ", "カフェ"],
+    },
+}
+
+
+# Per-language glossary for fields that don't go through Gemini translation
+# (hours / closed / reservation / service / phone). Order matters — longer
+# phrases first so they're matched before their substrings get rewritten.
+GLOSSARIES = {
+    "ja": [
+        # good_for values (whole-string matches — longest first within this group)
+        ("家庭聚餐", "ファミリー"),
+        ("朋友聚餐", "友人との食事"),
+        ("帶長輩", "ご年配の方と"),
+        ("帶小孩", "お子様連れ"),
+        ("一人吃", "一人ご飯"),
+        ("商務", "ビジネス"),
+        ("慶生", "誕生日祝い"),
+        ("約會", "デート"),
+        # service / closed / reservation phrases
+        ("白飯、味噌湯無限續，無服務費", "ご飯・味噌汁おかわり自由、サービス料なし"),
+        ("白飯、味噌湯無限續", "ご飯・味噌汁おかわり自由"),
+        ("最長提前一個月", "最大1ヶ月前から"),
+        ("最低消 NT$", "最低利用金額 NT$"),
+        ("完全預約制", "完全予約制"),
+        ("現場候位", "予約不可（先着順）"),
+        ("單點式", "アラカルト"),
+        ("可外帶", "テイクアウト可"),
+        ("接受訂位", "予約可"),
+        ("無服務費", "サービス料なし"),
+        ("無公休", "定休日なし"),
+        ("+10% 服務費", "サービス料 +10%"),
+        ("週一", "月曜"),
+        ("週二", "火曜"),
+        ("週三", "水曜"),
+        ("週四", "木曜"),
+        ("週五", "金曜"),
+        ("週日", "日曜"),
+        ("假日", "土日祝"),
+        ("(", "（"),
+        (")", "）"),
+        ("，", "、"),
+    ],
+}
+
+
+def apply_glossary(text, lang: str):
+    """Translate inline phrases using language glossary. No-op for zh/non-str."""
+    if lang == "zh" or not isinstance(text, str):
+        return text
+    for zh, ja in GLOSSARIES.get(lang, []):
+        text = text.replace(zh, ja)
+    return text
+
+
+# Match "適合 X、Y、Z 等..." or "X、Y、Zにおすすめ..." within a description.
+# Stops at sentence end (。/！/？/newline) so unrelated text after isn't pulled in.
+GOOD_FOR_PATTERNS = {
+    "zh": re.compile(r"適合([^。！？\n]+)"),
+    "ja": re.compile(r"([^。！？\n]+?)に(?:も|は)?(?:ぴったり|最適|おすすめ)"),
+}
+
+# Phrases that look like good_for items but are actually food / side dishes /
+# verb tails picked up when "...が付き、X、Yにもぴったり" sentences get parsed.
+GOOD_FOR_DENY = [
+    re.compile(r"[がをへ][付含入]"),  # …が付き / …が含ま / …が入って
+    re.compile(r"^(?:サラダ|フライドポテト|ドリンク|ご飯|味噌汁|スープ|コーヒー|ライス|パン|デザート)$"),
+]
+
+
+def extract_good_for(description: str, lang: str) -> list[str]:
+    """Pull occasion tags from the localized description. Returns [] if nothing
+    sensible found — caller skips the tag row in that case."""
+    pattern = GOOD_FOR_PATTERNS.get(lang)
+    if not pattern or not description:
+        return []
+    m = pattern.search(description)
+    if not m:
+        return []
+    chunk = m.group(1).strip()
+    # Split on common conjunctions across zh/ja.
+    items = re.split(r"[、，,]|や|や/|及び|以及|或者|或|和(?!菜)|與|また", chunk)
+    cleaned = []
+    for it in items:
+        it = it.strip()
+        # Trim trailing "等..." (zh) or "など..." (ja) modifiers.
+        it = re.sub(r"(等|など).*$", "", it).strip()
+        # Skip impractically long or empty entries — they're usually noise.
+        if not (2 <= len(it) <= 8):
+            continue
+        # Skip food / verb-tail artifacts that aren't real occasions.
+        if any(p.search(it) for p in GOOD_FOR_DENY):
+            continue
+        cleaned.append(it)
+    return cleaned
 
 
 def parse_dining_record(md_text: str) -> dict | None:
@@ -220,26 +338,49 @@ def extract_city(loc: str) -> str:
 
 
 def localize_album(album: dict, lang: str, translations: dict) -> dict:
-    """Override album fields with translated versions for non-zh language."""
-    if lang == "zh":
-        return album
+    """Override album fields with translated versions for non-zh language,
+    then derive auto-extracted fields (good_for) from the localized description."""
     a = dict(album)
-    t = translations.get(album["slug"], {}).get(lang, {})
-    for field in ["name", "name_alt", "location", "description"]:
+    if lang != "zh":
+        t = translations.get(album["slug"], {}).get(lang, {})
+        for field in ["name", "name_alt", "location", "description"]:
+            if t.get(field):
+                a[field] = t[field]
+        if t.get("cuisine"):
+            a["cuisine"] = t["cuisine"]
+    else:
+        t = {}
+    # Per-language address override (e.g. address_ja in restaurants.yaml).
+    addr_key = f"address_{lang}"
+    if a.get(addr_key):
+        a["address"] = a[addr_key]
+    # Per-language list-field overrides (case-by-case translations).
+    for field in ["dishes", "signature_dishes", "good_for"]:
         if t.get(field):
             a[field] = t[field]
-    if t.get("cuisine"):
-        a["cuisine"] = t["cuisine"]
     # Per-language price range override
     price_key = f"price_range_{ {'ja': 'jpy', 'ko': 'krw', 'en': 'usd'}.get(lang, '') }"
     if a.get(price_key):
         a["price_range"] = a[price_key]
-    # Dining record: each language has its own parsed MD
-    if t.get("dining_record_md"):
-        a["dining_record"] = parse_dining_record(t["dining_record_md"])
-    else:
-        # No translation available — keep dining_record only on zh
-        a["dining_record"] = None
+    # Glossary pass for store-info fields that don't have their own LLM translation.
+    for field in ["hours", "closed", "reservation", "service"]:
+        if a.get(field):
+            a[field] = apply_glossary(a[field], lang)
+    # Auto-extract good_for from description if not manually set. Keeps Kenji's
+    # natural writing ("適合 X、Y、Z") working as a structured tag without him
+    # filling a separate field per restaurant.
+    if not a.get("good_for") and a.get("description"):
+        a["good_for"] = extract_good_for(a["description"], lang)
+    # Apply glossary to good_for list items for non-zh.
+    if a.get("good_for"):
+        a["good_for"] = [apply_glossary(item, lang) for item in a["good_for"]]
+    # Dining record: zh uses the one already loaded from notes.md; non-zh
+    # parses from translations.yaml or drops it (no MT for the structured record).
+    if lang != "zh":
+        if t.get("dining_record_md"):
+            a["dining_record"] = parse_dining_record(t["dining_record_md"])
+        else:
+            a["dining_record"] = None
     return a
 
 
@@ -264,8 +405,24 @@ def render_site(lang: str, albums_raw: list[dict], translations: dict, env: Envi
         a["city"] = extract_city(a.get("location", ""))
         a["cover_photo"] = resolve_cover(a)
 
-    cuisine_counter = Counter(c for a in albums for c in (a.get("cuisine") or []))
-    all_cuisines = [c for c, _ in cuisine_counter.most_common()]
+    # Compute cuisine groups for the index filter UI. Each card's data-cuisine
+    # carries both its original tags AND matched group names, so filter logic
+    # in the index template stays a simple string match.
+    groups_for_lang = CUISINE_GROUPS.get(lang, {})
+    for a in albums:
+        raw = a.get("cuisine") or []
+        matched_groups = [
+            g for g, children in groups_for_lang.items()
+            if any(c in children for c in raw)
+        ]
+        a["card_cuisines"] = list(raw) + matched_groups
+
+    group_counter = Counter(
+        g for a in albums for g in (a.get("card_cuisines") or [])
+        if g in groups_for_lang
+    )
+    all_cuisines = [g for g, _ in group_counter.most_common()] if groups_for_lang else \
+        [c for c, _ in Counter(c for a in albums for c in (a.get("cuisine") or [])).most_common()]
     city_counter = Counter(a["city"] for a in albums if a["city"])
     cities = city_counter.most_common()
 
@@ -353,8 +510,13 @@ def write_sitemap(albums_raw, translations):
         return lang == "zh" or bool(translations.get(slug, {}).get(lang, {}).get("name"))
 
     def url_for(lang, path=""):
-        prefix = "" if lang == "zh" else f"{lang}/"
-        return f"{SITE_URL}/{prefix}{path}"
+        # Vercel has trailingSlash:false — non-zh root must be /ja (no slash),
+        # otherwise GSC sees the sitemap loc as a 308 redirect.
+        if lang == "zh":
+            return f"{SITE_URL}/{path}"
+        if path:
+            return f"{SITE_URL}/{lang}/{path}"
+        return f"{SITE_URL}/{lang}"
 
     # (slug=None means index page); pages added in canonical order
     pages = [(None, "")]

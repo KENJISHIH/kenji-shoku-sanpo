@@ -24,7 +24,7 @@
   "inLanguage": "ja",
 "address": {
     "@type": "PostalAddress",
-    "streetAddress": "\u65b0\u7af9\u7e23\u7af9\u5317\u5e02\u5149\u660e\u516d\u8def233\u865f",
+    "streetAddress": "\u65b0\u7af9\u770c\u7af9\u5317\u5e02\u5149\u660e\u516d\u8def233\u53f7",
     "addressLocality": "\u65b0\u7af9\u770c\u7af9\u5317\u5e02",
     "addressCountry": "TW"
   },"telephone": "03-657-2661","servesCuisine": ["\u9999\u6e2f\u6599\u7406", "\u8336\u9910\u5ef3", "\u6c37\u5ba4", "\u9eba\u985e\u30fb\u3054\u98ef\u3082\u306e"],"priceRange": "NT$ 200-300 / \u4eba","aggregateRating": {
@@ -47,6 +47,8 @@
   .font-num { font-family: 'Inter', system-ui, sans-serif; }
   .prose-body { font-size: 1.08rem; line-height: 2.05; letter-spacing: 0.025em; }
   .stars { letter-spacing: 0.1em; }
+  .star-half { display:inline-block; position:relative; color:#d6d3d1; }
+  .star-half::before { content:'★'; position:absolute; top:0; left:0; color:#d97706; width:50%; overflow:hidden; }
   table.info td { padding: 0.65rem 0; vertical-align: top; border-bottom: 1px solid #e7e0d6; }
   table.info td:first-child { width: 7rem; color:#988672; font-size: 0.85rem; letter-spacing: 0.1em; }
 </style>
@@ -78,7 +80,7 @@
       <span class="stars text-amber-600 text-lg">★★★★<span class="text-stone-300">★</span></span>
       <span class="font-num text-sm text-stone-500 ml-1">4</span>
     </div>
-<span class="text-sm text-stone-600">📍 新竹県竹北市</span><span class="font-num text-sm text-stone-500">2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
+<span class="text-sm text-stone-600">📍 新竹県竹北市</span><span class="font-num text-sm text-stone-500">📅 2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">香港料理</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">茶餐廳</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">氷室</span>
@@ -96,15 +98,16 @@
 その他の人気メニューには、練乳とバターのサクサクパン、香港式ミルクティー、アイスレモンティー、香港式フレンチトーストがあります。当店は
 アラカルト形式で、サービス料は不要、テイクアウトも提供しています。</div>
 
-  <div class="mt-10">
-    <h3 class="text-sm font-sans tracking-[0.2em] uppercase text-stone-500 mb-3">注文した料理</h3>
-    <div class="flex flex-wrap gap-2 font-sans">
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">默然銷魂飯</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">干炒牛河</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">鮮牛肉蛋出前一丁</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">凍檸檬茶</span>
+
+    <div class="mt-6">
+      <h3 class="text-sm font-sans tracking-[0.2em] uppercase text-stone-500 mb-3">今回注文した料理</h3>
+      <div class="flex flex-wrap gap-2 font-sans">
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">黙然銷魂飯（映画『食神』のあの一品）</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">干炒牛河（牛肉とライスヌードルの醤油炒め）</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">フレッシュ牛肉と卵の「出前一丁」</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">香港式アイスレモンティー</span>
+      </div>
     </div>
-  </div>
 
   <hr class="my-14 border-stone-300 border-dashed">
 
@@ -169,12 +172,12 @@
   <table class="info w-full font-sans text-[0.95rem]">
     <tbody>
       <tr><td>住所</td><td>
-        新竹縣竹北市光明六路233號
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%96%B0%E7%AB%B9%E7%B8%A3%E7%AB%B9%E5%8C%97%E5%B8%82%E5%85%89%E6%98%8E%E5%85%AD%E8%B7%AF233%E8%99%9F%20%E5%A4%A9%E6%A5%BD%E9%87%8C%E6%B0%B7%E5%AE%A4%EF%BC%88%E3%81%A6%E3%82%93%E3%82%89%E3%81%8F%E3%82%8A%E3%81%B2%E3%82%87%E3%81%86%E3%81%97%E3%81%A4%EF%BC%89"
+        新竹県竹北市光明六路233号
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%96%B0%E7%AB%B9%E7%9C%8C%E7%AB%B9%E5%8C%97%E5%B8%82%E5%85%89%E6%98%8E%E5%85%AD%E8%B7%AF233%E5%8F%B7%20%E5%A4%A9%E6%A5%BD%E9%87%8C%E6%B0%B7%E5%AE%A4%EF%BC%88%E3%81%A6%E3%82%93%E3%82%89%E3%81%8F%E3%82%8A%E3%81%B2%E3%82%87%E3%81%86%E3%81%97%E3%81%A4%EF%BC%89"
            target="_blank" rel="noreferrer"
            class="ml-2 text-amber-800 hover:text-amber-900 text-sm whitespace-nowrap">Google マップで開く →</a>
       </td></tr>
-<tr><td>電話</td><td><a href="tel:036572661" class="hover:text-amber-800">03-657-2661</a></td></tr><tr><td>営業時間</td><td>週三-週日 11:30-14:00 / 17:00-21:00；週一 17:00-21:00</td></tr><tr><td>定休日</td><td>週二</td></tr><tr><td>予約</td><td>現場候位</td></tr><tr><td>サービス</td><td>單點式，無服務費，可外帶</td></tr><tr><td>予算</td><td>NT$ 200-300 / 人</td></tr><tr><td>ジャンル</td><td>香港料理・茶餐廳・氷室・麺類・ご飯もの</td></tr><tr><td>訪問日</td><td class="font-num">2026</td></tr>    </tbody>
+<tr><td>電話</td><td><a href="tel:036572661" class="hover:text-amber-800">03-657-2661</a></td></tr><tr><td>営業時間</td><td>水曜-日曜 11:30-14:00 / 17:00-21:00；月曜 17:00-21:00</td></tr><tr><td>定休日</td><td>火曜</td></tr><tr><td>予約</td><td>予約不可（先着順）</td></tr><tr><td>サービス</td><td>アラカルト、サービス料なし、テイクアウト可</td></tr><tr><td>予算</td><td>NT$ 200-300 / 人</td></tr><tr><td>ジャンル</td><td>香港料理・茶餐廳・氷室・麺類・ご飯もの</td></tr><tr><td>訪問日</td><td class="font-num">2026</td></tr>    </tbody>
   </table>
 </article>
 

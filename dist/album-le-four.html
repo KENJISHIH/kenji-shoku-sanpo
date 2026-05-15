@@ -27,7 +27,7 @@
     "streetAddress": "\u53f0\u4e2d\u5e02\u5357\u5340\u611b\u570b\u885787\u865f",
     "addressLocality": "\u53f0\u4e2d\u5e02\u5357\u5340",
     "addressCountry": "TW"
-  },"telephone": "04-2227-1635","servesCuisine": ["\u6cd5\u5f0f", "\u5957\u9910", "\u9810\u7d04\u5236"],"priceRange": "NT$ 700-1,600 / \u4eba","aggregateRating": {
+  },"telephone": "04-2227-1635","servesCuisine": ["\u6cd5\u5f0f", "\u5957\u9910", "\u9810\u7d04\u5236"],"priceRange": "NT$ 1,000-1,900 / \u4eba","aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.5",
     "bestRating": "5",
@@ -47,6 +47,8 @@
   .font-num { font-family: 'Inter', system-ui, sans-serif; }
   .prose-body { font-size: 1.08rem; line-height: 2.05; letter-spacing: 0.025em; }
   .stars { letter-spacing: 0.1em; }
+  .star-half { display:inline-block; position:relative; color:#d6d3d1; }
+  .star-half::before { content:'★'; position:absolute; top:0; left:0; color:#d97706; width:50%; overflow:hidden; }
   table.info td { padding: 0.65rem 0; vertical-align: top; border-bottom: 1px solid #e7e0d6; }
   table.info td:first-child { width: 7rem; color:#988672; font-size: 0.85rem; letter-spacing: 0.1em; }
 </style>
@@ -75,10 +77,10 @@
 
   <div class="mt-8 flex flex-wrap items-baseline gap-x-5 gap-y-2 border-y border-stone-200 py-5 font-sans">
     <div>
-      <span class="stars text-amber-600 text-lg">★★★★<span class="opacity-60">★</span></span>
+      <span class="stars text-amber-600 text-lg">★★★★<span class="star-half">★</span></span>
       <span class="font-num text-sm text-stone-500 ml-1">4.5</span>
     </div>
-<span class="text-sm text-stone-600">📍 台中市南區</span><span class="font-num text-sm text-stone-500">2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
+<span class="text-sm text-stone-600">📍 台中市南區</span><span class="font-num text-sm text-stone-500">📅 2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">法式</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">套餐</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">預約制</span>
@@ -89,32 +91,38 @@
 店名「萊法」則是為了紀念主廚摯愛的阿嬤「來發」。
 
 餐廳採完全預約制,一人廚房,午晚各一輪。半開放廚房可以看見主廚為每位客人
-細心備餐,餐後 James 會親自走出廚房與客人合影。套餐定價 700-1,600 元,
+細心備餐,餐後 James 會親自走出廚房與客人合影。套餐定價 1,000-1,900 元,
 包含麵包、開胃菜、沙拉、湯品、主餐、甜點與飲品。
 
 食材都是接到訂位後才採購,因此非常新鮮。招牌菜包括紙包魚、鴨胸、大白蝦,
 其餘菜色則隨季節輪替。適合慶生、約會、家庭聚餐等溫馨場合。
 </div>
 
+  <div class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 font-sans text-sm">
+    <span class="text-xs text-stone-400 uppercase tracking-widest">適合</span>
+    <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 rounded-full text-xs">慶生</span>
+    <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 rounded-full text-xs">約會</span>
+    <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 rounded-full text-xs">家庭聚餐</span>
+  </div>
+
   <section class="mt-14">
     <h2 class="text-2xl font-bold mb-6 tracking-tight">用餐紀錄</h2>
 
     <blockquote class="border-l-2 border-amber-300 pl-5 py-1 mb-10 italic text-stone-700 prose-body">
-      餐廳菜色呈現歐式與創意融合風格，強調手作感（如手工肉丸、手工甜點、自製果乾）與食材原味（強調不添加額外添加物）。選材上結合了台灣在地海鮮（澎湖軟絲）與進口食材（荷蘭起司、松露），醬汁與風味搭配細膩。
+      標準法式 6 道套餐結構：麵包前菜、沙拉、湯品、中段料理、主餐、甜點。餐廳強調手作感（自製甜點、自製果乾）與食材原味（不添加額外添加物），選材結合台灣在地海鮮（澎湖野生軟絲）與進口食材，醬汁細膩；牛肋眼搭配長時間熬煮的紅酒牛骨醬汁是當日主餐亮點。
     </blockquote>
 
     <div class="space-y-7">
       <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">1. 番茄麵包餅</h3>
-        <p class="text-xs text-stone-400 font-sans mt-0.5">番茄麵包餅 [菜名待確認]</p>
+        <h3 class="text-xl font-bold tracking-tight">1. 香料雞肉法式麵包片</h3>
         <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">番茄、麵包餅</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">烤過的聖女小番茄、香料雞肉、法式麵包片</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">做法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">清爽調味，麵包餅帶有刺刺的觸感</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">清爽調味，法式麵包片帶有海鹽、黑胡椒與橄欖油的香氣</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">建議吃法</dt>
@@ -123,54 +131,15 @@
         </dl>
       </article>
       <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">2. 南瓜鴨胸佐芝麻葉佛卡夏</h3>
+        <h3 class="text-xl font-bold tracking-tight">2. 澎湖野生軟絲有機綜合水果沙拉佐有機蘋果蜂蜜油醋醬</h3>
         <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">佛卡夏麵包、南瓜、鴨胸、芝麻葉</dd>
-          </div>
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">老闆說的點</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">最上方的芝麻葉非常特別，咀嚼時會散發出如燉蛋般的芝麻香氣</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">3. 手工豬雞小肉球</h3>
-        <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">豬肉與雞肉混合</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">澎湖野生軟絲、川耳（一種體積比一般黑木耳小的黑木耳）、香料核桃、有機綜合水果</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">做法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">手工製作的球狀肉丸，搭配類似番茄風味的醬汁</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">4. 荷蘭煙燻起司餅</h3>
-        <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">荷蘭煙燻起司</dd>
-          </div>
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">老闆說的點</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">起司經過煙燻處理，風味較重且香氣濃郁</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">5. 澎湖軟絲佐酸耳</h3>
-        <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">澎湖軟絲、酸耳（一種體積比一般黑木耳小的黑木耳）、核桃</dd>
-          </div>
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">做法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">加入小炒核桃增加脆口層次</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">加入烤過的香料核桃增加脆口層次，搭配有機蘋果蜂蜜油醋醬</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">老闆說的點</dt>
@@ -183,49 +152,45 @@
         </dl>
       </article>
       <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">6. 蔬菜甜湯佐牛奶泡</h3>
+        <h3 class="text-xl font-bold tracking-tight">3. 南瓜蔬菜濃湯</h3>
         <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">大量蔬菜、牛奶、珍珠</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">南瓜、大量蔬菜、牛奶、珍珠</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">做法</dt>
             <dd class="text-stone-700 whitespace-pre-line flex-1">不添加基本添加物，完全利用大量蔬菜調和出甜味；上方覆蓋一層用牛奶打成的奶泡，湯內含有增加口感的珍珠</dd>
           </div>
+        </dl>
+      </article>
+      <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
+        <h3 class="text-xl font-bold tracking-tight">4. 蔬菜可麗餅</h3>
+        <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
+          <div class="flex gap-3">
+            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">莫札瑞拉起司、蔬菜、可麗餅皮</dd>
+          </div>
+          <div class="flex gap-3">
+            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">做法</dt>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">可麗餅內包入莫札瑞拉起司，烘烤至熱透</dd>
+          </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">建議吃法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">飲用前請稍微攪拌</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">加熱後內部較燙，切開食用時需小心</dd>
           </div>
         </dl>
       </article>
       <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">7. 松露馬鈴薯蔬菜可麗餅</h3>
+        <h3 class="text-xl font-bold tracking-tight">5. 香煎 10oz 牛肋眼佐紅酒牛骨醬汁</h3>
         <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">松露、馬鈴薯、豬肉、茵陳蒿（香草的一種）</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">10oz 牛肋眼、紅酒牛骨醬汁</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">做法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">主體為方塊狀的松露馬鈴薯蔬菜可麗餅，搭配茵陳蒿奶油醬汁。醬汁風味清爽，用以平衡豬肉風味</dd>
-          </div>
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">建議吃法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">豬肉加熱後內部較燙，切開時需小心</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">8. 煎牛肉佐牛骨醬汁</h3>
-        <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">牛肉、牛骨</dd>
-          </div>
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">做法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">牛肉煎製而成，淋上使用牛骨長時間熬煮的醬汁</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">牛肋眼煎製而成，淋上以牛骨長時間熬煮的紅酒醬汁</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">老闆說的點</dt>
@@ -234,7 +199,7 @@
         </dl>
       </article>
       <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">9. 手工蜂蜜水蜜桃慕斯蛋糕</h3>
+        <h3 class="text-xl font-bold tracking-tight">6. 愛心甜點（馬斯卡彭慕斯佐蜂蜜蛋糕與香水水蜜桃）</h3>
         <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
@@ -242,7 +207,7 @@
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">做法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">愛心形狀的甜點。外層為馬斯卡彭慕斯，內餡為蜂蜜蛋糕與香水水蜜桃。配餐包括白色的薄荷果凍、自製的乾燥火龍果乾（口感像糖果片），以及加入香草莢製作的香草冰淇淋</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">愛心形狀的甜點。外層為馬斯卡彭慕斯，內餡為蜂蜜蛋糕與香水水蜜桃。配餐包括透明的薄荷果凍、自製的乾燥火龍果乾（口感像糖果片），以及加入香草莢製作的香草冰淇淋</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">老闆說的點</dt>
@@ -521,7 +486,7 @@
            target="_blank" rel="noreferrer"
            class="ml-2 text-amber-800 hover:text-amber-900 text-sm whitespace-nowrap">在 Google Maps 開啟 →</a>
       </td></tr>
-<tr><td>電話</td><td><a href="tel:0422271635" class="hover:text-amber-800">04-2227-1635</a></td></tr><tr><td>營業時間</td><td>12:00-14:30 / 18:30-21:00</td></tr><tr><td>公休</td><td>週二</td></tr><tr><td>訂位</td><td>完全預約制</td></tr><tr><td>價位</td><td>NT$ 700-1,600 / 人</td></tr><tr><td>類型</td><td>法式・套餐・預約制</td></tr><tr><td>造訪</td><td class="font-num">2026</td></tr>    </tbody>
+<tr><td>電話</td><td><a href="tel:0422271635" class="hover:text-amber-800">04-2227-1635</a></td></tr><tr><td>營業時間</td><td>12:00-14:30 / 18:30-21:00</td></tr><tr><td>公休</td><td>週二</td></tr><tr><td>訂位</td><td>完全預約制</td></tr><tr><td>價位</td><td>NT$ 1,000-1,900 / 人</td></tr><tr><td>類型</td><td>法式・套餐・預約制</td></tr><tr><td>造訪</td><td class="font-num">2026</td></tr>    </tbody>
   </table>
 </article>
 

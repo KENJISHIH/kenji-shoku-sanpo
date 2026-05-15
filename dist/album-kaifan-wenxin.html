@@ -47,6 +47,8 @@
   .font-num { font-family: 'Inter', system-ui, sans-serif; }
   .prose-body { font-size: 1.08rem; line-height: 2.05; letter-spacing: 0.025em; }
   .stars { letter-spacing: 0.1em; }
+  .star-half { display:inline-block; position:relative; color:#d6d3d1; }
+  .star-half::before { content:'★'; position:absolute; top:0; left:0; color:#d97706; width:50%; overflow:hidden; }
   table.info td { padding: 0.65rem 0; vertical-align: top; border-bottom: 1px solid #e7e0d6; }
   table.info td:first-child { width: 7rem; color:#988672; font-size: 0.85rem; letter-spacing: 0.1em; }
 </style>
@@ -75,10 +77,10 @@
 
   <div class="mt-8 flex flex-wrap items-baseline gap-x-5 gap-y-2 border-y border-stone-200 py-5 font-sans">
     <div>
-      <span class="stars text-amber-600 text-lg">★★★★<span class="opacity-60">★</span></span>
+      <span class="stars text-amber-600 text-lg">★★★★<span class="star-half">★</span></span>
       <span class="font-num text-sm text-stone-500 ml-1">4.5</span>
     </div>
-<span class="text-sm text-stone-600">📍 台中市南屯區</span><span class="font-num text-sm text-stone-500">2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
+<span class="text-sm text-stone-600">📍 台中市南屯區</span><span class="font-num text-sm text-stone-500">📅 2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">川菜</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">中式</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">合菜</span>
@@ -96,23 +98,39 @@
 適合家庭聚餐、朋友合菜、商務聚會。
 </div>
 
-  <div class="mt-10">
-    <h3 class="text-sm font-sans tracking-[0.2em] uppercase text-stone-500 mb-3">當天點的菜</h3>
-    <div class="flex flex-wrap gap-2 font-sans">
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">蝦仁滑蛋</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">豆豉蒸排骨</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">蔥爆牛肉</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">糖醋雞球</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">蒜泥白肉</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">麻婆豆腐</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">客家小炒</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">酸辣湯</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">蛤蜊湯</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">炒空心菜</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">炒高麗菜</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">三色小菜</span>
-    </div>
+  <div class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 font-sans text-sm">
+    <span class="text-xs text-stone-400 uppercase tracking-widest">適合</span>
+    <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 rounded-full text-xs">家庭聚餐</span>
+    <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 rounded-full text-xs">朋友合菜</span>
+    <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 rounded-full text-xs">商務聚會</span>
   </div>
+
+    <div class="mt-10">
+      <h3 class="text-sm font-sans tracking-[0.2em] uppercase text-stone-500 mb-3">店家招牌</h3>
+      <div class="flex flex-wrap gap-2 font-sans">
+        <span class="px-3 py-1.5 bg-amber-100 text-amber-900 rounded-full text-sm border border-amber-200">口水雞</span>
+        <span class="px-3 py-1.5 bg-amber-100 text-amber-900 rounded-full text-sm border border-amber-200">招牌鹽焗雞</span>
+        <span class="px-3 py-1.5 bg-amber-100 text-amber-900 rounded-full text-sm border border-amber-200">翻滾吧!火辣三寶</span>
+        <span class="px-3 py-1.5 bg-amber-100 text-amber-900 rounded-full text-sm border border-amber-200">催淚蛋</span>
+      </div>
+    </div>
+    <div class="mt-6">
+      <h3 class="text-sm font-sans tracking-[0.2em] uppercase text-stone-500 mb-3">我這次點的</h3>
+      <div class="flex flex-wrap gap-2 font-sans">
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">蝦仁滑蛋</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">豆豉蒸排骨</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">蔥爆牛肉</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">糖醋雞球</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">蒜泥白肉</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">麻婆豆腐</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">客家小炒</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">酸辣湯</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">蛤蜊湯</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">炒空心菜</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">炒高麗菜</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">三色小菜</span>
+      </div>
+    </div>
 
   <hr class="my-14 border-stone-300 border-dashed">
 

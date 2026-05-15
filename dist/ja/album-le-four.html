@@ -24,10 +24,10 @@
   "inLanguage": "ja",
 "address": {
     "@type": "PostalAddress",
-    "streetAddress": "\u53f0\u4e2d\u5e02\u5357\u5340\u611b\u570b\u885787\u865f",
+    "streetAddress": "\u53f0\u4e2d\u5e02\u5357\u533a\u611b\u56fd\u885787\u53f7",
     "addressLocality": "\u53f0\u4e2d\u5e02\u5357\u533a",
     "addressCountry": "TW"
-  },"telephone": "04-2227-1635","servesCuisine": ["\u30d5\u30ec\u30f3\u30c1", "\u30b3\u30fc\u30b9", "\u5b8c\u5168\u4e88\u7d04\u5236"],"priceRange": "NT$ 700-1,600 / \u4eba","aggregateRating": {
+  },"telephone": "04-2227-1635","servesCuisine": ["\u30d5\u30ec\u30f3\u30c1", "\u30b3\u30fc\u30b9", "\u5b8c\u5168\u4e88\u7d04\u5236"],"priceRange": "NT$ 1,000-1,900 / \u4eba","aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.5",
     "bestRating": "5",
@@ -47,6 +47,8 @@
   .font-num { font-family: 'Inter', system-ui, sans-serif; }
   .prose-body { font-size: 1.08rem; line-height: 2.05; letter-spacing: 0.025em; }
   .stars { letter-spacing: 0.1em; }
+  .star-half { display:inline-block; position:relative; color:#d6d3d1; }
+  .star-half::before { content:'★'; position:absolute; top:0; left:0; color:#d97706; width:50%; overflow:hidden; }
   table.info td { padding: 0.65rem 0; vertical-align: top; border-bottom: 1px solid #e7e0d6; }
   table.info td:first-child { width: 7rem; color:#988672; font-size: 0.85rem; letter-spacing: 0.1em; }
 </style>
@@ -75,10 +77,10 @@
 
   <div class="mt-8 flex flex-wrap items-baseline gap-x-5 gap-y-2 border-y border-stone-200 py-5 font-sans">
     <div>
-      <span class="stars text-amber-600 text-lg">★★★★<span class="opacity-60">★</span></span>
+      <span class="stars text-amber-600 text-lg">★★★★<span class="star-half">★</span></span>
       <span class="font-num text-sm text-stone-500 ml-1">4.5</span>
     </div>
-<span class="text-sm text-stone-600">📍 台中市南区</span><span class="font-num text-sm text-stone-500">2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
+<span class="text-sm text-stone-600">📍 台中市南区</span><span class="font-num text-sm text-stone-500">📅 2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">フレンチ</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">コース</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">完全予約制</span>
@@ -89,31 +91,37 @@
 中国語の店名「萊法」は、シェフが深く愛した祖母「来発」さんを記念して名付けられました。
 
 レストランは完全予約制で、シェフ一人が切り盛りし、昼夜各1回転のみ。半オープンキッチンからは、シェフがゲスト一人ひとりのために
-丁寧に食事を準備する姿を眺めることができ、食後にはJames氏自らがキッチンから出てきてお客様と記念撮影をしてくれます。コースは700〜1,600元で、
+丁寧に食事を準備する姿を眺めることができ、食後にはJames氏自らがキッチンから出てきてお客様と記念撮影をしてくれます。コースは1,000〜1,900元で、
 パン、前菜、サラダ、スープ、メインディッシュ、デザート、ドリンクが含まれています。
 
 食材は予約を受けてから買い付けを行うため、非常に新鮮です。看板メニューは魚の紙包み焼き、鴨胸肉、大エビで、
 その他の料理は季節ごとにローテーションします。誕生日のお祝いやデート、家族での食事など、温かくアットホームなシーンにぴったりです。</div>
 
+  <div class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 font-sans text-sm">
+    <span class="text-xs text-stone-400 uppercase tracking-widest">おすすめシーン</span>
+    <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 rounded-full text-xs">誕生日のお祝い</span>
+    <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 rounded-full text-xs">デート</span>
+    <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 rounded-full text-xs">家族での食事</span>
+  </div>
+
   <section class="mt-14">
     <h2 class="text-2xl font-bold mb-6 tracking-tight">お食事の記録</h2>
 
     <blockquote class="border-l-2 border-amber-300 pl-5 py-1 mb-10 italic text-stone-700 prose-body">
-      欧州料理と創作料理が融合したスタイルで、手作り感（自家製ミートボールやデザート、ドライフルーツなど）と素材本来の味（無添加へのこだわり）を大切にされているレストランです。澎湖産のアオリイカといった台湾の新鮮な海鮮と、オランダ産のチーズやトリュフなどの輸入食材を巧みに組み合わせており、ソースの仕上がりや風味の調和に繊細さが感じられます。
+      パン前菜、サラダ、スープ、中盤の一品、メイン、デザートという王道のフレンチ6コース構成。手作り感（自家製デザート、自家製ドライフルーツ）と素材本来の味（添加物を加えない調理）を大切にされており、澎湖産の天然アオリイカといった台湾の新鮮な海鮮と輸入食材を巧みに組み合わせています。ソースの仕上がりは繊細で、特に長時間煮込んだ赤ワインと牛骨のソースを合わせたリブアイステーキは当日のハイライトでした。
     </blockquote>
 
     <div class="space-y-7">
       <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">1. トマトのパンケーキ</h3>
-        <p class="text-xs text-stone-400 font-sans mt-0.5">トマトのパンケーキ [料理名要確認]</p>
+        <h3 class="text-xl font-bold tracking-tight">1. スパイスチキンのバゲット・タルティーヌ</h3>
         <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">トマト、パンケーキ（クラッカー風）</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">ローストミニトマト、スパイスチキン、フランスパン</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">調理法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">さっぱりとした味付け。パンケーキの表面には少しチクチクとした独特の触感があります。</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">さっぱりとした味付け。フランスパンには海塩、黒胡椒、オリーブオイルの香りがしっかりと感じられます。</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">おすすめの食べ方</dt>
@@ -122,54 +130,15 @@
         </dl>
       </article>
       <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">2. カボチャと鴨胸肉、セルバチコのフォカッチャ</h3>
+        <h3 class="text-xl font-bold tracking-tight">2. 澎湖産天然アオリイカと有機フルーツのサラダ 有機アップル＆ハニービネグレットソース</h3>
         <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">フォカッチャ、カボチャ、鴨胸肉、セルバチコ</dd>
-          </div>
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">シェフのコメント</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">一番上に乗っているセルバチコ（ルッコラの一種）が非常に特徴的で、噛むほどに茶碗蒸しを思わせるような胡麻の香りが広がります。</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">3. 豚肉と鶏肉の自家製ミートボール</h3>
-        <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">豚肉と鶏肉のミックス</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">澎湖産天然アオリイカ、川耳（一般的な黒キクラゲより小ぶりなキクラゲ）、スパイスクルミ、有機ミックスフルーツ</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">調理法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">手作りの丸い肉団子を、トマト風味のソースと合わせています。</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">4. オランダ産スモークチーズのクリスプ</h3>
-        <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">オランダ産スモークチーズ</dd>
-          </div>
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">シェフ의コメント</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">スモーク処理されたチーズは、風味が強く濃厚な香りが楽しめます。</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">5. 澎湖産アオリイカとキクラゲ（酸耳）の和え物</h3>
-        <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">澎湖産アオリイカ、酸耳（一般的な黒キクラゲより小ぶりなもの）、クルミ</dd>
-          </div>
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">調理法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">乾煎りしたクルミを加え、食感のアクセントと層を重ねています。</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">ローストしたスパイスクルミを加え、食感のアクセントを与えています。有機リンゴとハチミツのビネグレットソースを合わせて。</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">シェフのコメント</dt>
@@ -182,49 +151,45 @@
         </dl>
       </article>
       <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">6. 野菜のポタージュ ミルクフォームとタピオカを添えて</h3>
+        <h3 class="text-xl font-bold tracking-tight">3. カボチャと野菜のポタージュ</h3>
         <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">たっぷりの野菜、牛乳、タピオカ</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">カボチャ、たっぷりの野菜、牛乳、タピオカ</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">調理法</dt>
             <dd class="text-stone-700 whitespace-pre-line flex-1">添加物を一切使用せず、大量の野菜だけで自然な甘みを引き出しています。上にはふんわりとしたミルクの泡がのり、中には食感のアクセントとしてタピオカが入っています。</dd>
           </div>
+        </dl>
+      </article>
+      <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
+        <h3 class="text-xl font-bold tracking-tight">4. 野菜のクレープ包み（モッツァレラチーズ入り）</h3>
+        <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
+          <div class="flex gap-3">
+            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">モッツァレラチーズ、野菜、クレープ生地</dd>
+          </div>
+          <div class="flex gap-3">
+            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">調理法</dt>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">クレープ生地にモッツァレラチーズを包み込み、加熱して仕上げています。</dd>
+          </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">おすすめの食べ方</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">飲む前に軽く混ぜてください。</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">加熱されたチーズは中が大変熱くなっておりますので、切り分ける際はご注意ください。</dd>
           </div>
         </dl>
       </article>
       <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">7. トリュフとジャガイモ、豚肉の野菜クレープ包み</h3>
+        <h3 class="text-xl font-bold tracking-tight">5. 10オンス リブアイステーキの香り焼き 赤ワインと牛骨のソース</h3>
         <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">トリュフ、ジャガイモ、豚肉、エストラゴン（ハーブの一種）</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">10オンスのリブアイ、赤ワインと牛骨のソース</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">調理法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">四角く形を整えたトリュフ入りのジャガイモと野菜のクレープが主役。エストラゴンのクリームソースが添えられており、豚肉の脂をさっぱりと引き立ててくれます。</dd>
-          </div>
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">おすすめの食べ方</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">加熱された豚肉は中が大変熱くなっておりますので、切り分ける際はご注意ください。</dd>
-          </div>
-        </dl>
-      </article>
-      <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">8. 牛肉のソテー 牛骨のソース</h3>
-        <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">牛肉、牛骨</dd>
-          </div>
-          <div class="flex gap-3">
-            <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">調理法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">香ばしく焼き上げた牛肉に、牛骨を長時間じっくり煮込んで抽出したソースをかけています。</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">リブアイを香ばしく焼き上げ、牛骨を長時間じっくり煮込んで抽出した赤ワインソースをかけています。</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">シェフのコメント</dt>
@@ -233,7 +198,7 @@
         </dl>
       </article>
       <article class="border-l-2 border-stone-200 pl-5 hover:border-amber-400 transition">
-        <h3 class="text-xl font-bold tracking-tight">9. 自製ハチミツと桃のマスカルポーネムースケーキ</h3>
+        <h3 class="text-xl font-bold tracking-tight">6. ハート型のデザート（マスカルポーネムース・ハチミツケーキ・桃）</h3>
         <dl class="mt-3 space-y-1.5 font-sans text-[0.95rem]">
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">食材</dt>
@@ -241,7 +206,7 @@
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">調理法</dt>
-            <dd class="text-stone-700 whitespace-pre-line flex-1">ハート型の可愛らしいデザート。外側はマスカルポーネのムース、中にはハチミツケーキと桃が隠れています。白いミントのゼリー、自家製の乾燥ドラゴンフルーツ（キャンディのような食感）、バニラビーンズを使用したアイスクリームが添えられています。</dd>
+            <dd class="text-stone-700 whitespace-pre-line flex-1">ハート型の可愛らしいデザート。外側はマスカルポーネのムース、中にはハチミツケーキと桃が隠れています。透明なミントのゼリー、自家製の乾燥ドラゴンフルーツ（キャンディのような食感）、バニラビーンズを使用したアイスクリームが添えられています。</dd>
           </div>
           <div class="flex gap-3">
             <dt class="text-amber-800 whitespace-nowrap min-w-[6rem]">シェフのコメント</dt>
@@ -515,12 +480,12 @@
   <table class="info w-full font-sans text-[0.95rem]">
     <tbody>
       <tr><td>住所</td><td>
-        台中市南區愛國街87號
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E5%8D%97%E5%8D%80%E6%84%9B%E5%9C%8B%E8%A1%9787%E8%99%9F%20%E3%83%AB%E3%83%BB%E3%83%95%E3%83%BC%E3%83%AB%20%E8%90%8A%E6%B3%95%E5%B0%8F%E9%A4%A8%EF%BC%88%E3%82%89%E3%81%84%E3%81%BB%E3%81%86%E3%81%97%E3%82%87%E3%81%86%E3%81%8B%E3%82%93%EF%BC%89"
+        台中市南区愛国街87号
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E5%8D%97%E5%8C%BA%E6%84%9B%E5%9B%BD%E8%A1%9787%E5%8F%B7%20%E3%83%AB%E3%83%BB%E3%83%95%E3%83%BC%E3%83%AB%20%E8%90%8A%E6%B3%95%E5%B0%8F%E9%A4%A8%EF%BC%88%E3%82%89%E3%81%84%E3%81%BB%E3%81%86%E3%81%97%E3%82%87%E3%81%86%E3%81%8B%E3%82%93%EF%BC%89"
            target="_blank" rel="noreferrer"
            class="ml-2 text-amber-800 hover:text-amber-900 text-sm whitespace-nowrap">Google マップで開く →</a>
       </td></tr>
-<tr><td>電話</td><td><a href="tel:0422271635" class="hover:text-amber-800">04-2227-1635</a></td></tr><tr><td>営業時間</td><td>12:00-14:30 / 18:30-21:00</td></tr><tr><td>定休日</td><td>週二</td></tr><tr><td>予約</td><td>完全預約制</td></tr><tr><td>予算</td><td>NT$ 700-1,600 / 人</td></tr><tr><td>ジャンル</td><td>フレンチ・コース・完全予約制</td></tr><tr><td>訪問日</td><td class="font-num">2026</td></tr>    </tbody>
+<tr><td>電話</td><td><a href="tel:0422271635" class="hover:text-amber-800">04-2227-1635</a></td></tr><tr><td>営業時間</td><td>12:00-14:30 / 18:30-21:00</td></tr><tr><td>定休日</td><td>火曜</td></tr><tr><td>予約</td><td>完全予約制</td></tr><tr><td>予算</td><td>NT$ 1,000-1,900 / 人</td></tr><tr><td>ジャンル</td><td>フレンチ・コース・完全予約制</td></tr><tr><td>訪問日</td><td class="font-num">2026</td></tr>    </tbody>
   </table>
 </article>
 

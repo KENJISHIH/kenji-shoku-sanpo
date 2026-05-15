@@ -47,6 +47,8 @@
   .font-num { font-family: 'Inter', system-ui, sans-serif; }
   .prose-body { font-size: 1.08rem; line-height: 2.05; letter-spacing: 0.025em; }
   .stars { letter-spacing: 0.1em; }
+  .star-half { display:inline-block; position:relative; color:#d6d3d1; }
+  .star-half::before { content:'★'; position:absolute; top:0; left:0; color:#d97706; width:50%; overflow:hidden; }
   table.info td { padding: 0.65rem 0; vertical-align: top; border-bottom: 1px solid #e7e0d6; }
   table.info td:first-child { width: 7rem; color:#988672; font-size: 0.85rem; letter-spacing: 0.1em; }
 </style>
@@ -78,7 +80,7 @@
       <span class="stars text-amber-600 text-lg">★★★★<span class="text-stone-300">★</span></span>
       <span class="font-num text-sm text-stone-500 ml-1">4</span>
     </div>
-<span class="text-sm text-stone-600">📍 新竹縣竹北市</span><span class="font-num text-sm text-stone-500">2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
+<span class="text-sm text-stone-600">📍 新竹縣竹北市</span><span class="font-num text-sm text-stone-500">📅 2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">港式</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">茶餐廳</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">冰室</span>
@@ -97,15 +99,16 @@
 單點式,無服務費,提供外帶。
 </div>
 
-  <div class="mt-10">
-    <h3 class="text-sm font-sans tracking-[0.2em] uppercase text-stone-500 mb-3">當天點的菜</h3>
-    <div class="flex flex-wrap gap-2 font-sans">
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">默然銷魂飯</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">干炒牛河</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">鮮牛肉蛋出前一丁</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">凍檸檬茶</span>
+
+    <div class="mt-6">
+      <h3 class="text-sm font-sans tracking-[0.2em] uppercase text-stone-500 mb-3">我這次點的</h3>
+      <div class="flex flex-wrap gap-2 font-sans">
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">默然銷魂飯</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">干炒牛河</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">鮮牛肉蛋出前一丁</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">凍檸檬茶</span>
+      </div>
     </div>
-  </div>
 
   <hr class="my-14 border-stone-300 border-dashed">
 

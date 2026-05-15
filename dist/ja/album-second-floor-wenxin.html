@@ -24,7 +24,7 @@
   "inLanguage": "ja",
 "address": {
     "@type": "PostalAddress",
-    "streetAddress": "\u53f0\u4e2d\u5e02\u5357\u5c6f\u5340\u6587\u5fc3\u5357\u8def289\u865f \u79c0\u6cf0\u751f\u6d3b\u53f0\u4e2d\u6587\u5fc3\u5e97 1\u6a13",
+    "streetAddress": "\u53f0\u4e2d\u5e02\u5357\u5c6f\u533a\u6587\u5fc3\u5357\u8def289\u53f7 \u79c0\u6cf0\u751f\u6d3b\uff08\u30b7\u30e7\u30a6\u30bf\u30a4\u30e0\uff09\u53f0\u4e2d\u6587\u5fc3\u5e97 1\u968e",
     "addressLocality": "\u53f0\u4e2d\u5e02\u5357\u5c6f\u533a",
     "addressCountry": "TW"
   },"telephone": "04-2471-4333","servesCuisine": ["\u30d6\u30e9\u30f3\u30c1", "\u30a4\u30bf\u30ea\u30a2\u30f3", "\u30a2\u30e1\u30ea\u30ab\u6599\u7406", "\u30ab\u30d5\u30a7"],"priceRange": "NT$ 400-600 / \u4eba","aggregateRating": {
@@ -47,6 +47,8 @@
   .font-num { font-family: 'Inter', system-ui, sans-serif; }
   .prose-body { font-size: 1.08rem; line-height: 2.05; letter-spacing: 0.025em; }
   .stars { letter-spacing: 0.1em; }
+  .star-half { display:inline-block; position:relative; color:#d6d3d1; }
+  .star-half::before { content:'★'; position:absolute; top:0; left:0; color:#d97706; width:50%; overflow:hidden; }
   table.info td { padding: 0.65rem 0; vertical-align: top; border-bottom: 1px solid #e7e0d6; }
   table.info td:first-child { width: 7rem; color:#988672; font-size: 0.85rem; letter-spacing: 0.1em; }
 </style>
@@ -78,7 +80,7 @@
       <span class="stars text-amber-600 text-lg">★★★★<span class="text-stone-300">★</span></span>
       <span class="font-num text-sm text-stone-500 ml-1">4</span>
     </div>
-<span class="text-sm text-stone-600">📍 台中市南屯区</span><span class="font-num text-sm text-stone-500">2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
+<span class="text-sm text-stone-600">📍 台中市南屯区</span><span class="font-num text-sm text-stone-500">📅 2026</span>    <div class="flex gap-1.5 flex-wrap ml-auto">
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">ブランチ</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">イタリアン</span>
       <span class="px-2.5 py-0.5 bg-amber-50 text-amber-900 rounded-full text-xs">アメリカ料理</span>
@@ -92,16 +94,22 @@
 
 ブランチセットにはサラダ、フライドポテト、ドリンクが付き、家族団らんやビジネスランチ、映画を観た後のひとときを過ごすのにもぴったりです。お店は秀泰生活（SHOWTIME LIVE）文心店の1階にあり、文心森林公園のすぐ近くに位置しています。</div>
 
-  <div class="mt-10">
-    <h3 class="text-sm font-sans tracking-[0.2em] uppercase text-stone-500 mb-3">注文した料理</h3>
-    <div class="flex flex-wrap gap-2 font-sans">
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">燻鮭魚奶油炒菇班尼迪克蛋</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">牛排早午餐</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">馬鈴薯濃湯</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">美式咖啡</span>
-      <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">綜合莓果氣泡飲</span>
-    </div>
+  <div class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 font-sans text-sm">
+    <span class="text-xs text-stone-400 uppercase tracking-widest">おすすめシーン</span>
+    <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 rounded-full text-xs">家族団らん</span>
+    <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 rounded-full text-xs">ビジネスランチ</span>
   </div>
+
+    <div class="mt-6">
+      <h3 class="text-sm font-sans tracking-[0.2em] uppercase text-stone-500 mb-3">今回注文した料理</h3>
+      <div class="flex flex-wrap gap-2 font-sans">
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">スモークサーモンとキノコのクリームソテー・エッグベネディクト</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">ステーキブランチ</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">ポテトポタージュ</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">アメリカーノ</span>
+        <span class="px-3 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm border border-amber-100">ミックスベリーソーダ</span>
+      </div>
+    </div>
 
   <hr class="my-14 border-stone-300 border-dashed">
 
@@ -180,12 +188,12 @@
   <table class="info w-full font-sans text-[0.95rem]">
     <tbody>
       <tr><td>住所</td><td>
-        台中市南屯區文心南路289號 秀泰生活台中文心店 1樓
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E5%8D%97%E5%B1%AF%E5%8D%80%E6%96%87%E5%BF%83%E5%8D%97%E8%B7%AF289%E8%99%9F%20%E7%A7%80%E6%B3%B0%E7%94%9F%E6%B4%BB%E5%8F%B0%E4%B8%AD%E6%96%87%E5%BF%83%E5%BA%97%201%E6%A8%93%20%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%89%E3%83%95%E3%83%AD%E3%82%A2%EF%BC%88%E5%BC%90%E6%A5%BC%EF%BC%89"
+        台中市南屯区文心南路289号 秀泰生活（ショウタイム）台中文心店 1階
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E5%8D%97%E5%B1%AF%E5%8C%BA%E6%96%87%E5%BF%83%E5%8D%97%E8%B7%AF289%E5%8F%B7%20%E7%A7%80%E6%B3%B0%E7%94%9F%E6%B4%BB%EF%BC%88%E3%82%B7%E3%83%A7%E3%82%A6%E3%82%BF%E3%82%A4%E3%83%A0%EF%BC%89%E5%8F%B0%E4%B8%AD%E6%96%87%E5%BF%83%E5%BA%97%201%E9%9A%8E%20%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%89%E3%83%95%E3%83%AD%E3%82%A2%EF%BC%88%E5%BC%90%E6%A5%BC%EF%BC%89"
            target="_blank" rel="noreferrer"
            class="ml-2 text-amber-800 hover:text-amber-900 text-sm whitespace-nowrap">Google マップで開く →</a>
       </td></tr>
-<tr><td>電話</td><td><a href="tel:0424714333" class="hover:text-amber-800">04-2471-4333</a></td></tr><tr><td>営業時間</td><td>平日 11:00-22:00／假日 10:30-22:00</td></tr><tr><td>定休日</td><td>無公休</td></tr><tr><td>予約</td><td>接受訂位(最長提前一個月)</td></tr><tr><td>サービス</td><td>+10% 服務費，最低消 NT$ 100 / 人</td></tr><tr><td>予算</td><td>NT$ 400-600 / 人</td></tr><tr><td>ジャンル</td><td>ブランチ・イタリアン・アメリカ料理・カフェ</td></tr><tr><td>訪問日</td><td class="font-num">2026</td></tr>    </tbody>
+<tr><td>電話</td><td><a href="tel:0424714333" class="hover:text-amber-800">04-2471-4333</a></td></tr><tr><td>営業時間</td><td>平日 11:00-22:00／土日祝 10:30-22:00</td></tr><tr><td>定休日</td><td>定休日なし</td></tr><tr><td>予約</td><td>予約可（最大1ヶ月前から）</td></tr><tr><td>サービス</td><td>サービス料 +10%、最低利用金額 NT$ 100 / 人</td></tr><tr><td>予算</td><td>NT$ 400-600 / 人</td></tr><tr><td>ジャンル</td><td>ブランチ・イタリアン・アメリカ料理・カフェ</td></tr><tr><td>訪問日</td><td class="font-num">2026</td></tr>    </tbody>
   </table>
 </article>
 
