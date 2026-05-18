@@ -35,13 +35,13 @@ for q in "${QUERIES[@]}"; do
     echo ""
     echo "→ 查詢：$q"
     # Perplexity
-    open "https://www.perplexity.ai/search?q=$encoded"
+    open -a "Microsoft Edge" "https://www.perplexity.ai/search?q=$encoded"
     sleep 0.5
     # ChatGPT
-    open "https://chatgpt.com/?q=$encoded&hints=search"
+    open -a "Microsoft Edge" "https://chatgpt.com/?q=$encoded&hints=search"
     sleep 0.5
     # Claude.ai（沒有公開 search URL，開首頁讓你貼）
-    open "https://claude.ai/new?q=$encoded"
+    open -a "Microsoft Edge" "https://claude.ai/new?q=$encoded"
     sleep 1
 done
 

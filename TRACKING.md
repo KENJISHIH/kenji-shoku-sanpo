@@ -38,11 +38,51 @@
 
 用以下 6 個查詢分別到 **Perplexity / ChatGPT search / Claude.ai** 試一次，看 citations 有沒有列 kenji-shoku-sanpo.vercel.app。
 
-**一鍵打開 18 個分頁**（要先登入 ChatGPT / Claude.ai）：
+**一鍵打開 18 個分頁**（用 Edge 開，已登入 ChatGPT / Claude.ai）：
 
 ```bash
 bash ~/Documents/KJ-agent/food-album-site/scripts/open_baseline_queries.command
 ```
+
+#### 我要看什麼？
+
+每個分頁的核心是「**這個 AI 回答的時候，有沒有把 kenji-shoku-sanpo.vercel.app 列為來源？**」
+
+各家「來源」長的樣子不一樣：
+
+| 平台 | 來源在哪 | 看什麼 |
+|------|---------|--------|
+| **Perplexity** | 答案上方有「Sources」橫條（小卡片），每張卡片有 domain（如 `tripadvisor.com`、`google.com`）| 卡片裡有沒有 `kenji-shoku-sanpo.vercel.app` |
+| **ChatGPT search** | 答案中段一句話後面會有 🔗 角標，hover 顯示來源網址；底部「Sources」section | 列表中有沒有 `kenji-shoku-sanpo.vercel.app` |
+| **Claude.ai**（web search 開啟時）| 答案中段或最後會列「Sources」連結 | 同上 |
+
+⚠️ **沒登入會卡 login wall** — ChatGPT 和 Claude.ai 用 Edge 開時要確認上面顯示你的頭像/帳號
+
+#### 怎麼填表？
+
+只用 3 種符號，**不用寫長句**：
+
+- `✅ #N` = 有引用，排第 N 條 source（例：`✅ #3` 表示排第 3 條）
+- `❌` = 完全沒引用本站
+- `—` = AI 沒給 source（純自由發揮，沒網路搜尋）／或這查詢平台跳 login wall
+
+#### 範例（假資料，幫你看格式）
+
+| 查詢 | Perplexity | ChatGPT search | Claude.ai | 截圖檔名 |
+|------|------------|----------------|-----------|---------|
+| Kenji 食散步（品牌字） | ✅ #1 | ✅ #2 | ✅ #1 | `brand_2026-05-18.png` |
+| 台中 Le Four 法式料理 評價 | ❌ | ❌ | ❌ | — |
+| 新竹 天樂里冰室 | ✅ #5 | ❌ | — | `tianle_perplexity.png` |
+
+→ 解讀：品牌字 3 家都有引用（很好），餐廳關鍵字幾乎沒引用（**這就是 baseline，3 個月後重測比改善幅度**）
+
+#### 截圖（可選但強烈建議）
+
+任何一格出現 `✅` 都截圖存到 `reports/baseline_2026-05-18_screenshots/`：
+- Mac 截圖：`Cmd+Shift+4` 框選 → 桌面 → 拖到 screenshots 資料夾
+- 命名：`<查詢關鍵字>_<平台>.png`（例：`brand_perplexity.png`、`tianle_chatgpt.png`）
+
+3 個月後做對比時，這些截圖是「以前是這樣→現在變這樣」的鐵證。
 
 #### 2026-05-18 Baseline
 
