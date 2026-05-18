@@ -84,18 +84,35 @@ bash ~/Documents/KJ-agent/food-album-site/scripts/open_baseline_queries.command
 
 3 個月後做對比時，這些截圖是「以前是這樣→現在變這樣」的鐵證。
 
-#### 2026-05-18 Baseline
+#### 2026-05-18 Baseline（已測）
 
-填法：`✅ 第 N` 表示有引用且排第 N 條 source ／ `❌` 未引用 ／ `—` 平台沒回 sources
+填法：`✅ #N` 表示有引用且排第 N 條 source ／ `❌` 未引用 ／ `—` 平台沒回 sources
 
 | 查詢 | Perplexity | ChatGPT search | Claude.ai | 截圖檔名 |
 |------|------------|----------------|-----------|---------|
-| 台中 Le Four 法式料理 評價 | | | | |
-| 台中 大和牧場 南港店 | | | | |
-| 台中 開飯 文心 | | | | |
-| 台中 二樓 文心 | | | | |
-| 新竹 天樂里冰室 | | | | |
-| Kenji 食散步（品牌字） | | | | |
+| 台中 Le Four 法式料理 評價 | ❌ | — | ❌ | |
+| 台中 大和牧場 南港店 | ❌ | — | ❌ | |
+| 台中 開飯 文心 | ❌ | — | ❌ | |
+| 台中 二樓 文心 | ❌ | — | ❌ | |
+| 新竹 天樂里冰室 | ❌ | — | ❌ | |
+| Kenji 食散步（品牌字） | ✅（8 來源內，inline pill）| — | ❌ | `brand_perplexity_2026-05-18.png`（待補）|
+
+**Baseline 重點解讀**：
+- 唯一命中：Perplexity 搜「Kenji 食散步」品牌字 → 答案內 inline 顯示 `kenji-shoku-sanpo.vercel` pill，底部 8 個來源（精確排名未細看）
+- 5 個餐廳關鍵字在 Perplexity / Claude 全 ❌（**這正是 baseline 起點**）
+- ChatGPT search 全 `—`：`?q=` 參數沒觸發 web search，GPT 用內建知識回答（不準，下次手動點 Search icon 重測）
+
+**這份 baseline 的意義**：3 個月後（2026-08-18）重測，只要 6 個查詢中**任一個**從 ❌→✅，就證明 AI 友善 v1（llms.txt / robots / Restaurant schema 強化）有效。
+
+#### ChatGPT search 補測（可選，本週內）
+
+`?q=` 不會觸發網路搜尋。要正確 baseline 必須：
+1. 開 https://chatgpt.com/
+2. 在輸入框**先點地球 icon「Search the web」**
+3. 再貼查詢字串
+4. 看回答底部是否有 Sources 區
+
+如果這 6 個 ChatGPT search 都還是 ❌，跟其他平台一致就 OK。先這樣留 `—` 也不影響 8/18 比對（重測時走同樣方式即可）。
 
 截圖存放：`reports/baseline_2026-05-18_screenshots/`（建好了，雙擊執行檔會自動 mkdir）
 
