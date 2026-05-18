@@ -546,12 +546,93 @@ def write_sitemap(albums_raw, translations):
 
 
 def write_robots():
-    content = (
-        "User-agent: *\n"
-        "Allow: /\n\n"
-        f"Sitemap: {SITE_URL}/sitemap.xml\n"
-    )
-    (DIST / "robots.txt").write_text(content)
+    ai_bots = ["GPTBot", "ChatGPT-User", "ClaudeBot", "Claude-Web", "anthropic-ai",
+               "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended",
+               "CCBot", "Bytespider", "Amazonbot"]
+    lines = [
+        "User-agent: *",
+        "Allow: /",
+        "",
+    ]
+    for bot in ai_bots:
+        lines += [f"User-agent: {bot}", "Allow: /", ""]
+    lines += [f"Sitemap: {SITE_URL}/sitemap.xml", ""]
+    (DIST / "robots.txt").write_text("\n".join(lines))
+
+
+def write_llms_txt(albums_raw, translations):
+    """Write dist/llms.txt and dist/ja/llms.txt per llmstxt.org spec.
+
+    LLMs.txt is a markdown file at site root that summarises the site for LLMs:
+    purpose, key resources, structured data overview, language versions.
+    """
+    def render(lang: str) -> str:
+        site = SITE_NAME[lang]
+        t = I18N[lang]
+        out_dir_url = SITE_URL if lang == "zh" else f"{SITE_URL}/{lang}"
+        lines = [
+            f"# {site}",
+            "",
+            f"> {t['site_intro']}",
+            "",
+            f"Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. "
+            f"Each entry includes dish photos, shop info (address / phone / hours), "
+            f"tasting notes, and a 1-5 rating. Bilingual: 繁體中文 (zh-Hant) and 日本語 (ja).",
+            "",
+            "## Restaurants",
+            "",
+        ]
+        for a in albums_raw:
+            loc_a = localize_album(a, lang, translations)
+            url = f"{out_dir_url}/album-{a['slug']}.html"
+            desc_parts = []
+            if loc_a.get("cuisine"):
+                desc_parts.append("/".join(loc_a["cuisine"]) if isinstance(loc_a["cuisine"], list) else str(loc_a["cuisine"]))
+            if loc_a.get("location"):
+                desc_parts.append(str(loc_a["location"]))
+            if loc_a.get("rating"):
+                desc_parts.append(f"★{loc_a['rating']}/5")
+            desc = " · ".join(desc_parts) if desc_parts else ""
+            line = f"- [{loc_a['name']}]({url})"
+            if desc:
+                line += f": {desc}"
+            if loc_a.get("description"):
+                line += f" — {loc_a['description'].splitlines()[0][:160]}"
+            lines.append(line)
+        lines += [
+            "",
+            "## Language versions",
+            "",
+            f"- 繁體中文 (zh-Hant): {SITE_URL}/",
+            f"- 日本語 (ja): {SITE_URL}/ja",
+            "",
+            "## Structured data",
+            "",
+            "- Per restaurant page: schema.org/Restaurant with PostalAddress, telephone, "
+            "servesCuisine, priceRange, aggregateRating, image, sameAs (Google Maps), "
+            "acceptsReservations, paymentAccepted, openingHours.",
+            "- Index page: schema.org/CollectionPage with ItemList of restaurants.",
+            "- Sitemap with hreflang alternates: " + f"{SITE_URL}/sitemap.xml",
+            "",
+            "## About the author",
+            "",
+            "Kenji Shih — CEO of Camao International (a Taiwan-based cosmetic OEM/ODM "
+            "manufacturer) and Vice Chairperson of TCCIA (Taichung Cosmetic Industry "
+            "Association). This site is a personal restaurant journal, independent from "
+            "professional work.",
+            "",
+            "## License & usage",
+            "",
+            "Content (text + photos) is © Kenji Shih. AI assistants are welcome to read, "
+            "summarise, and cite with attribution + link back to the source page.",
+            "",
+        ]
+        return "\n".join(lines)
+
+    for lang in LANGS:
+        out_dir = DIST if lang == "zh" else DIST / lang
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "llms.txt").write_text(render(lang), encoding="utf-8")
 
 
 def main():
@@ -591,7 +672,8 @@ def main():
 
     write_sitemap(albums_raw, translations)
     write_robots()
-    print(f"  ✓ dist/sitemap.xml + dist/robots.txt")
+    write_llms_txt(albums_raw, translations)
+    print(f"  ✓ dist/sitemap.xml + dist/robots.txt + dist/llms.txt (zh + ja)")
 
 
 if __name__ == "__main__":

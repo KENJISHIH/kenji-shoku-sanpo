@@ -26,6 +26,7 @@
   "@type": "Restaurant",
   "name": {{ album.name|tojson }},
   "inLanguage": "{{ html_lang }}",
+  {% if album.description %}"description": {{ desc_short|tojson }},{% endif %}
   {% if album.address %}"address": {
     "@type": "PostalAddress",
     "streetAddress": {{ album.address|tojson }},
@@ -35,6 +36,10 @@
   {% if album.phone %}"telephone": {{ album.phone|tojson }},{% endif %}
   {% if album.cuisine %}"servesCuisine": {{ album.cuisine|tojson }},{% endif %}
   {% if album.price_range %}"priceRange": {{ album.price_range|tojson }},{% endif %}
+  {% if album.hours %}"openingHours": {{ album.hours|tojson }},{% endif %}
+  {% if album.reservation %}"acceptsReservations": "{{ 'True' if ('預約' in album.reservation or '訂位' in album.reservation or '予約' in album.reservation) else 'False' }}",{% endif %}
+  {% if album.payment %}"paymentAccepted": {{ album.payment|join(', ')|tojson }},{% endif %}
+  {% if album.maps_url %}"sameAs": [{{ album.maps_url|tojson }}],{% endif %}
   {% if album.rating %}"aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "{{ album.rating }}",
