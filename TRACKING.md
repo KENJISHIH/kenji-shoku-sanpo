@@ -36,18 +36,34 @@
 
 ### 🔵 立刻（本週內）：建立 AI 引用 baseline
 
-用以下 6 個查詢分別到 **Perplexity / ChatGPT search / Claude.ai** 試一次，看 citations 有沒有列 kenji-shoku-sanpo.vercel.app。記到下表當基準：
+用以下 6 個查詢分別到 **Perplexity / ChatGPT search / Claude.ai** 試一次，看 citations 有沒有列 kenji-shoku-sanpo.vercel.app。
 
-| 查詢 | Perplexity | ChatGPT search | Claude.ai | 日期 |
-|------|------------|----------------|-----------|------|
-| 台中 Le Four 法式料理 評價 | ?/已查 | ?/已查 | ?/已查 | |
+**一鍵打開 18 個分頁**（要先登入 ChatGPT / Claude.ai）：
+
+```bash
+bash ~/Documents/KJ-agent/food-album-site/scripts/open_baseline_queries.command
+```
+
+#### 2026-05-18 Baseline
+
+填法：`✅ 第 N` 表示有引用且排第 N 條 source ／ `❌` 未引用 ／ `—` 平台沒回 sources
+
+| 查詢 | Perplexity | ChatGPT search | Claude.ai | 截圖檔名 |
+|------|------------|----------------|-----------|---------|
+| 台中 Le Four 法式料理 評價 | | | | |
 | 台中 大和牧場 南港店 | | | | |
 | 台中 開飯 文心 | | | | |
 | 台中 二樓 文心 | | | | |
 | 新竹 天樂里冰室 | | | | |
 | Kenji 食散步（品牌字） | | | | |
 
-> 填法：`引用/未引用` + 引用到第幾條 source
+截圖存放：`reports/baseline_2026-05-18_screenshots/`（建好了，雙擊執行檔會自動 mkdir）
+
+#### 代理指標：Google 索引基準（同時記）
+
+- [ ] 用 `site:kenji-shoku-sanpo.vercel.app` 在 Google 查目前索引筆數（理想 ≥ 6 頁：1 index + 5 album + 雙語版 = 12）
+- [ ] 用 GSC（Search Console）抓「最近 28 天熱門查詢」前 10 名
+- [ ] 兩筆都填到下方
 
 ### 🟡 2026-08-18（3 個月後）：重測比對
 
