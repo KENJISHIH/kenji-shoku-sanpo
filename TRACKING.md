@@ -30,6 +30,43 @@
 - https://kenji-shoku-sanpo.vercel.app/ja/llms.txt → 200 · 4124B
 - https://kenji-shoku-sanpo.vercel.app/robots.txt → 200 · 491B
 
+### 2026-05-22 — GSC baseline + sitemap 重提
+
+#### 索引狀態（產生索引 → 網頁）
+
+- **已索引：3 / 12（25%）**
+- 已收：`/` (5/15) · `/album-le-four.html` (5/16) · `/ja` (5/17)
+- 未收 9 頁：4 家餐廳中文版 + 4 家餐廳日文版 + `/ja/album-le-four.html`
+
+#### Sitemap 重提
+
+- 5/16 首次提交狀態「無法擷取」（提交時點可能還沒部署完整）
+- 5/22 重提 → **狀態：成功，系統探索到 12 頁** ✅
+- 驗證 Googlebot UA `curl` 抓 sitemap.xml = HTTP 200 / 4015 B / 0.2s（網路層無阻擋）
+
+#### 28 天搜尋成效 baseline（過去 3 個月 ≈ 站上線全期）
+
+| 指標 | 值 |
+|------|----|
+| 總點擊 | 1 |
+| 曝光總數 | 9 |
+| 平均 CTR | 11.1% |
+| 平均排名 | 9.7 |
+
+熱門查詢前 3：
+
+| 查詢 | 點擊 | 曝光 | 備註 |
+|------|------|------|------|
+| `le four 萊 法 小館` | 0 | 2 | 中英混搜 |
+| `萊法小館` | 0 | 1 | ⚠️ **中譯名訊號** — 站內 le-four 頁沒寫「萊法小館」，使用者搜得到卻看不到對應內容 → 點擊掛 0 |
+| `site:vercel.app` | 0 | 1 | 雜訊 |
+
+#### 觀察與下一步
+
+- **「萊法小館」中譯名訊號**：有人在 Google 搜中譯名找到本站，但 le-four 頁完全沒寫這 4 個字 → 考慮在 albums.yaml 補 alias 欄位或 H2 補一行（既不破壞品牌也讓搜尋對得上）
+- **9 頁未索引**：今日已用 GSC 網址審查逐個「要求建立索引」（中文 4 頁優先，日文 5 頁次日做）
+- 8/18 重測時，預期：索引 12/12、查詢覆蓋更多餐廳關鍵字、Perplexity / Claude 來源命中數 > 1
+
 ---
 
 ## 待追蹤（按時間排序）
@@ -118,9 +155,9 @@ bash ~/Documents/KJ-agent/food-album-site/scripts/open_baseline_queries.command
 
 #### 代理指標：Google 索引基準（同時記）
 
-- [ ] 用 `site:kenji-shoku-sanpo.vercel.app` 在 Google 查目前索引筆數（理想 ≥ 6 頁：1 index + 5 album + 雙語版 = 12）
-- [ ] 用 GSC（Search Console）抓「最近 28 天熱門查詢」前 10 名
-- [ ] 兩筆都填到下方
+- [x] 用 `site:kenji-shoku-sanpo.vercel.app` 在 Google 查目前索引筆數（理想 ≥ 6 頁：1 index + 5 album + 雙語版 = 12）→ **2026-05-22 GSC 實測：3/12（25%）**
+- [x] 用 GSC（Search Console）抓「最近 28 天熱門查詢」前 10 名 → **2026-05-22 baseline 見下方時間軸**
+- [x] 兩筆都填到下方 → 見「2026-05-22 — GSC baseline + sitemap 重提」
 
 ### 🟡 2026-08-18（3 個月後）：重測比對
 

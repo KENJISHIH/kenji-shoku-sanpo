@@ -11,6 +11,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [貳樓 Second Floor](https://kenji-shoku-sanpo.vercel.app/album-second-floor-wenxin.html): 早午餐/義式/美式/咖啡 · 台中市南屯區 · ★4/5 — 貳樓 Second Floor 創立於 2008 年,從台北仁愛路一棟老公寓二樓起家,以「全日早午餐」
 - [開飯川食堂 文心店](https://kenji-shoku-sanpo.vercel.app/album-kaifan-wenxin.html): 川菜/中式/合菜 · 台中市南屯區 · ★4.5/5 — 開飯川食堂(KAIFUN Together)承襲老牌「福利川菜」的正統川味,以「川麻加辣」
 - [大河牧場 漢堡排專売 南港環球店](https://kenji-shoku-sanpo.vercel.app/album-dahe-makiba-nangang.html): 日式/漢堡排/定食 · 台北市南港區 · ★3.5/5 — 大河牧場 漢堡排專売(Mita Taiga Bokujo)是日式漢堡排專門店,2023 年於南港環球
+- [厝秘 功夫菜·手路湯 大里店](https://kenji-shoku-sanpo.vercel.app/album-cuomi-dali.html): 功夫菜/台菜/合菜/手路湯 · 台中市大里區 · ★4.5/5 — 厝秘（Choicemeal）主打「功夫菜·手路湯」,以總舖師傳承手藝為核心,將傳統
 
 ## Language versions
 
