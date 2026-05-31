@@ -12,6 +12,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [開飯川食堂 文心店](https://kenji-shoku-sanpo.vercel.app/album-kaifan-wenxin.html): 川菜/中式/合菜 · 台中市南屯區 · ★4.5/5 — 開飯川食堂(KAIFUN Together)承襲老牌「福利川菜」的正統川味,以「川麻加辣」
 - [大河牧場 漢堡排專売 南港環球店](https://kenji-shoku-sanpo.vercel.app/album-dahe-makiba-nangang.html): 日式/漢堡排/定食 · 台北市南港區 · ★3.5/5 — 大河牧場 漢堡排專売(Mita Taiga Bokujo)是日式漢堡排專門店,2023 年於南港環球
 - [厝秘 功夫菜·手路湯 大里店](https://kenji-shoku-sanpo.vercel.app/album-cuomi-dali.html): 功夫菜/台菜/合菜/手路湯 · 台中市大里區 · ★4.5/5 — 厝秘（Choicemeal）主打「功夫菜·手路湯」,以總舖師傳承手藝為核心,將傳統
+- [濟州金先生 Mr.KIM 韓食專賣](https://kenji-shoku-sanpo.vercel.app/album-jeju-kim.html): 韓式/炸雞/韓食/拉麵 · 台中市大里區 · ★4/5 — 濟州金先生 Mr.KIM(濟州Mr.KIM韓式炸雞)是台中大里的韓式料理專門店,自 2014 年
 
 ## Language versions
 
