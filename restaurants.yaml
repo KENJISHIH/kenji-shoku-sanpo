@@ -24,6 +24,8 @@
 #   description  公開簡介(≠ 私人心得,給陌生人讀的)
 #   cover        封面照片檔名(對應 photos/{slug}/ 內的檔,留空則用 EXIF 第一張)
 #   maps_url     Google Maps 連結,留空會自動產生
+#   same_as      店家官方社群連結陣列(IG/FB/官網),會併入 JSON-LD sameAs(接在 maps_url 之後)
+#                例:["https://www.instagram.com/le_four_restaurant/"]
 #
 # === 後補欄位（選填，任何時間補都不破壞既有資料） ===
 #   dishes           菜色清單(陣列,純文字),例:["紙包魚", "鴨胸"]
@@ -71,6 +73,8 @@ restaurants:
     rating: 4.5
     cuisine: ["法式", "套餐", "預約制"]
     cover: "20260512-iPhone 17 Pro134448.jpg"
+    same_as:
+      - "https://www.instagram.com/le_four_restaurant/"
     description: |
       Le Four 在法文中意為「烤箱」,主廚 James 曾旅居加拿大,以烤箱料理為招牌。
       店名「萊法」則是為了紀念主廚摯愛的阿嬤「來發」。

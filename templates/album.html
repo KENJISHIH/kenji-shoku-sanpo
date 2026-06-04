@@ -39,7 +39,10 @@
   {% if album.hours %}"openingHours": {{ album.hours|tojson }},{% endif %}
   {% if album.reservation %}"acceptsReservations": "{{ 'True' if ('預約' in album.reservation or '訂位' in album.reservation or '予約' in album.reservation) else 'False' }}",{% endif %}
   {% if album.payment %}"paymentAccepted": {{ album.payment|join(', ')|tojson }},{% endif %}
-  {% if album.maps_url %}"sameAs": [{{ album.maps_url|tojson }}],{% endif %}
+  {% set same_as_list = [] %}
+  {% if album.maps_url %}{% set _ = same_as_list.append(album.maps_url) %}{% endif %}
+  {% if album.same_as %}{% set _ = same_as_list.extend(album.same_as) %}{% endif %}
+  {% if same_as_list %}"sameAs": {{ same_as_list|tojson }},{% endif %}
   {% if album.rating %}"aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "{{ album.rating }}",

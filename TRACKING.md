@@ -67,6 +67,18 @@
 - **9 頁未索引**：今日已用 GSC 網址審查逐個「要求建立索引」（中文 4 頁優先，日文 5 頁次日做）
 - 8/18 重測時，預期：索引 12/12、查詢覆蓋更多餐廳關鍵字、Perplexity / Claude 來源命中數 > 1
 
+### 2026-06-03 — 🎉 餐廳主人主動回傳貼到自家 IG（首個外部有機提及）
+
+- **事件**：Le Four 萊法小館（@le_four_restaurant）店家主動把食散步的 `/album-le-four.html` 文章貼到自家 **IG / FB / Threads**，IG 貼文 https://www.instagram.com/p/DZFTRcHCSQ6/（已編輯，發布 6/2 晚間）
+- 貼文 caption 含 **明文連結 https://kenji-shoku-sanpo.vercel.app**（「Kenji 食散步 部落格」字樣 + 🔗）→ 站外有機提及 +1
+- 互動脈絡：店家「太完美了 😍」並主動問可否分享；同為父母聊小孩教育話匣子打開，店家允諾下次帶寶寶來用餐
+- **對追蹤的意義**：
+  - 內容品質好到**被報導對象本人**願意主動擴散，驗證 portfolio 沙盒策略（先在食散步試、成果正向再套 biocamao / tccia）
+  - IG 連結雖 nofollow，但屬社群發現訊號 + 潛在 AI 爬取來源；8/18 重測 AI 引用時可留意是否因此被帶到
+- **可做的具體強化（待 Kenji 決定）**：
+  - le-four 頁 Restaurant schema `sameAs` 目前只放 Google Maps → 可補店家 IG profile `https://www.instagram.com/le_four_restaurant/`，讓 AI 把「文章 ↔ 店家官方帳號」綁在同一實體（外科式小改，需 rebuild + redeploy）
+  - 呼應 5/22「萊法小館中譯名訊號」：店家既然認這篇，le-four 頁補一行中譯名「萊法小館」alias 更站得住腳
+
 ---
 
 ## 待追蹤（按時間排序）
