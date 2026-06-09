@@ -6,6 +6,9 @@ __pycache__/
 # 中介產物（每次 scan/build 重生）
 data/
 
+# 本機預覽/驗證截圖（QA 用，不入 repo）
+_renders/
+
 # 原圖（HEIC/原 size JPG）→ 本機/iCloud 備份，不入 repo
 # 用前置 / 確保只 ignore root 下的 photos/，不影響 dist/photos/
 /photos/
