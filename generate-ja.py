@@ -55,6 +55,36 @@ PROMPTS = {
 原文:
 {value}''',
     },
+    "en": {
+        "name": '請將以下台灣餐廳名稱翻譯為英文(用歐美食記/Google Maps 常見的寫法;若店名本身已含官方英文名,以官方英文名為主,可在括號附中文拼音):「{value}」。只回答譯名,不要解釋。',
+        "name_alt": '請將以下餐廳副標題翻譯為自然英文:「{value}」。只回答譯名,不要解釋。',
+        "location": '請將台灣地名「{value}」翻譯為英文常用寫法,格式「District, City」(例如「台中市南屯區」→「Nantun District, Taichung」)。只回答譯名。',
+        "cuisine": '請將以下料理類型翻譯為英文標籤(用歐美食記常見詞,每個標籤 1-2 個單字,首字母大寫):「{value}」。多個用「、」分隔,直接列出譯名,不要解釋。',
+        "description": '''請將以下台灣餐廳簡介翻譯為自然流暢的英文,語氣像歐美旅遊美食部落格,寫給來台灣旅遊的外國讀者。
+重要:
+- 保留段落結構與換行
+- 自然口語化(conversational),避免「The restaurant is located at...」這類機械句式
+- 台灣特有詞彙第一次出現時可附簡短說明
+- 若原文最後有「適合 X、Y、Z」的句子,翻成以「Perfect for」開頭的句子(例如 "Perfect for cat lovers, laptop work, and casual get-togethers.")
+- 直接輸出譯文,不要加標題、引言或解說
+
+原文:
+{value}''',
+        "dining_record_md": '''請將以下台灣餐廳的用餐紀錄翻譯為自然流暢的英文,語氣像歐美美食部落格。
+
+嚴格保留以下 markdown 結構不變:
+- 「## 整體印象」翻成「## Overall Impressions」
+- 「## 菜色清單」翻成「## Dishes」
+- 「## 其他補充」翻成「## Extra Notes」
+- 每道菜的「### 菜名」結構保留;菜名翻成英文(必要時附原文)
+- 「- **食材**：」「- **做法**：」「- **老闆說的點**：」「- **建議吃法**：」這類欄位
+  分別翻成「- **Ingredients**:」「- **Preparation**:」「- **Chef's notes**:」「- **How to enjoy**:」
+- 「[菜名待確認]」「[聽不清]」等標註翻成「[dish name TBC]」「[inaudible]」
+- 直接輸出譯後 markdown,不要加引言或解說
+
+原文:
+{value}''',
+    },
 }
 
 LANG_LABEL = {"ja": "日本語", "ko": "한국어", "en": "English"}
@@ -92,22 +122,26 @@ def translate_field(value, prompt_template: str, field: str):
 def parse_args():
     lang = "ja"
     force = False
+    only_slug = None
     i = 1
     while i < len(sys.argv):
         arg = sys.argv[i]
         if arg == "--lang" and i + 1 < len(sys.argv):
             lang = sys.argv[i + 1]
             i += 2
+        elif arg == "--slug" and i + 1 < len(sys.argv):
+            only_slug = sys.argv[i + 1]
+            i += 2
         elif arg == "--force":
             force = True
             i += 1
         else:
             sys.exit(f"unknown arg: {arg}")
-    return lang, force
+    return lang, force, only_slug
 
 
 def main():
-    lang, force = parse_args()
+    lang, force, only_slug = parse_args()
     if lang not in PROMPTS:
         sys.exit(f"unsupported lang: {lang}. Supported: {list(PROMPTS)}")
 
@@ -121,6 +155,8 @@ def main():
 
     for r in cfg["restaurants"]:
         slug = r["slug"]
+        if only_slug and slug != only_slug:
+            continue
         entry = translations.setdefault(slug, {}).setdefault(lang, {})
         print(f"\n[{slug}] → {LANG_LABEL[lang]}")
 

@@ -2,7 +2,7 @@
 
 > 訪れた台湾レストランの食レポ。料理写真、店舗情報（住所・電話・営業時間）、感想と評価を記録。ジャンルや評価で絞り込めます。
 
-Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Each entry includes dish photos, shop info (address / phone / hours), tasting notes, and a 1-5 rating. Bilingual: 繁體中文 (zh-Hant) and 日本語 (ja).
+Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Each entry includes dish photos, shop info (address / phone / hours), tasting notes, and a 1-5 rating. Languages: 繁體中文 (zh-Hant), 日本語 (ja), English (en).
 
 ## Restaurants
 
@@ -20,6 +20,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 
 - 繁體中文 (zh-Hant): https://kenji-shoku-sanpo.vercel.app/
 - 日本語 (ja): https://kenji-shoku-sanpo.vercel.app/ja
+- English (en): https://kenji-shoku-sanpo.vercel.app/en
 
 ## Structured data
 

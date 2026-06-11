@@ -1,0 +1,29 @@
+# Kenji Shoku-Sanpo
+
+> Tasting notes from restaurants across Taiwan — mostly Taichung. Each entry has dish photos, shop info (address, phone, hours), tasting notes, and a rating. Filter by cuisine or rating.
+
+Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Each entry includes dish photos, shop info (address / phone / hours), tasting notes, and a 1-5 rating. Languages: 繁體中文 (zh-Hant), 日本語 (ja), English (en).
+
+## Restaurants
+
+- [Cat Boss Cafe (貓老闆咖啡)](https://kenji-shoku-sanpo.vercel.app/en/album-cat-boss.html): Italian/Casual Dining/Cafe/Pet-friendly · Dali District, Taichung · ★4/5 — If you’re hanging out in Taichung’s Dali District, make sure to swing by Cat Boss (貓老闆咖啡). It’s a super chill, cat-themed, pet-friendly cafe right on Dali Road,
+
+## Language versions
+
+- 繁體中文 (zh-Hant): https://kenji-shoku-sanpo.vercel.app/
+- 日本語 (ja): https://kenji-shoku-sanpo.vercel.app/ja
+- English (en): https://kenji-shoku-sanpo.vercel.app/en
+
+## Structured data
+
+- Per restaurant page: schema.org/Restaurant with PostalAddress, telephone, servesCuisine, priceRange, aggregateRating, image, sameAs (Google Maps), acceptsReservations, paymentAccepted, openingHours.
+- Index page: schema.org/CollectionPage with ItemList of restaurants.
+- Sitemap with hreflang alternates: https://kenji-shoku-sanpo.vercel.app/sitemap.xml
+
+## About the author
+
+Kenji Shih — CEO of Camao International (a Taiwan-based cosmetic OEM/ODM manufacturer) and Vice Chairperson of TCCIA (Taichung Cosmetic Industry Association). This site is a personal restaurant journal, independent from professional work.
+
+## License & usage
+
+Content (text + photos) is © Kenji Shih. AI assistants are welcome to read, summarise, and cite with attribution + link back to the source page.

@@ -27,12 +27,12 @@ TRANSLATIONS_FILE = ROOT / "translations.yaml"
 SITE_URL = "https://kenji-shoku-sanpo.vercel.app"
 
 # Languages to build. zh is default (root), others go in subdirs.
-LANGS = ["zh", "ja"]
+LANGS = ["zh", "ja", "en"]
 
-SITE_NAME = {"zh": "Kenji 食散步", "ja": "Kenji 食散歩"}
-LANG_LABEL = {"zh": "中文", "ja": "日本語"}
-HTML_LANG = {"zh": "zh-Hant", "ja": "ja"}
-OG_LOCALE = {"zh": "zh_TW", "ja": "ja_JP"}
+SITE_NAME = {"zh": "Kenji 食散步", "ja": "Kenji 食散歩", "en": "Kenji Shoku-Sanpo"}
+LANG_LABEL = {"zh": "中文", "ja": "日本語", "en": "English"}
+HTML_LANG = {"zh": "zh-Hant", "ja": "ja", "en": "en"}
+OG_LOCALE = {"zh": "zh_TW", "ja": "ja_JP", "en": "en_US"}
 
 # UI strings per language. Add 'ko' / 'en' here in future.
 I18N = {
@@ -78,6 +78,10 @@ I18N = {
         "continue_reading": "繼續閱讀 →",
         "no_photo": "無照片",
         "rating_suffix": " / 5",
+        "sep": "｜",
+        "paren_open": "（",
+        "paren_close": "）",
+        "dot": "・",
     },
     "ja": {
         "site_subtitle": "A Restaurant Notebook by Kenji Shih",
@@ -121,15 +125,66 @@ I18N = {
         "continue_reading": "続きを読む →",
         "no_photo": "写真なし",
         "rating_suffix": " / 5",
+        "sep": "｜",
+        "paren_open": "（",
+        "paren_close": "）",
+        "dot": "・",
+    },
+    "en": {
+        "site_subtitle": "A Restaurant Notebook by Kenji Shih",
+        "site_intro": "Tasting notes from restaurants across Taiwan — mostly Taichung. Each entry has dish photos, shop info (address, phone, hours), tasting notes, and a rating. Filter by cuisine or rating.",
+        "n_restaurants": "{n} restaurants",
+        "n_photos": "{n} photos",
+        "sort_label": "Sort",
+        "sort_date": "Latest visit",
+        "sort_rating": "★ Top rated",
+        "city_label": "City",
+        "all": "All",
+        "cuisine_label": "Cuisine",
+        "back": "← Back to all restaurants",
+        "photos_count": "photos",
+        "today_dishes": "What I ordered",
+        "signature_dishes": "House specialties",
+        "good_for": "Good for",
+        "main_dishes": "Dishes",
+        "menu_section": "Menu",
+        "storefront_section": "Storefront & more",
+        "shop_info": "Restaurant info",
+        "address": "Address",
+        "maps_open": "Open in Google Maps →",
+        "phone": "Phone",
+        "hours": "Hours",
+        "closed": "Closed",
+        "reservation": "Reservations",
+        "service": "Service",
+        "price": "Price",
+        "type": "Cuisine",
+        "visited": "Visited",
+        "dining_record": "Dining notes",
+        "dining_overall": "Overall",
+        "dining_extras": "Extra notes",
+        "transit": "Getting there",
+        "languages": "Languages spoken",
+        "foreign_menu": "Menu languages",
+        "payment": "Payment",
+        "dietary": "Dietary",
+        "empty": "No restaurants match these filters",
+        "continue_reading": "Continue reading →",
+        "no_photo": "No photo",
+        "rating_suffix": " / 5",
+        "sep": " | ",
+        "paren_open": " (",
+        "paren_close": ")",
+        "dot": " · ",
     },
 }
 
 
-# Section header aliases per language. Add ko / en variants when supported.
+# Section header aliases per language. Add ko variants when supported.
 SECTION_ALIASES = {
-    "overall": {"整體印象", "全体の印象"},
-    "dishes": {"菜色清單", "料理一覧"},
-    "extras": {"其他補充", "補足"},
+    "overall": {"整體印象", "全体の印象", "Overall Impressions", "Overall"},
+    "dishes": {"菜色清單", "料理一覧", "Dishes"},
+    "extras": {"其他補充", "補足", "Extra Notes", "Additional Notes"},
 }
 
 
@@ -153,6 +208,14 @@ CUISINE_GROUPS = {
         "香港": ["香港料理", "茶餐廳", "氷室", "麺類・ご飯もの"],
         "韓国料理": ["韓国料理", "韓食", "フライドチキン", "ラーメン"],
         "ブランチ/カフェ": ["ブランチ", "カフェ"],
+    },
+    "en": {
+        "Chinese": ["Sichuan", "Chinese", "Family-style"],
+        "Western": ["French", "Italian", "American", "Course menu", "Reservation only", "Diner"],
+        "Japanese": ["Japanese", "Hamburg steak", "Teishoku", "Set meal"],
+        "Hong Kong": ["Hong Kong", "Cha chaan teng", "Bing sutt", "Noodles & rice"],
+        "Korean": ["Korean", "Fried chicken", "Ramyeon", "Rice bowl"],
+        "Cafe / Light bites": ["Brunch", "Cafe", "Coffee"],
     },
 }
 
@@ -195,6 +258,50 @@ GLOSSARIES = {
         (")", "）"),
         ("，", "、"),
     ],
+    "en": [
+        # good_for values
+        ("家庭聚餐", "family gatherings"),
+        ("朋友聚餐", "meals with friends"),
+        ("帶長輩", "dining with elders"),
+        ("帶小孩", "kid-friendly"),
+        ("一人吃", "solo dining"),
+        ("商務", "business meals"),
+        ("慶生", "birthdays"),
+        ("約會", "dates"),
+        # service / closed / reservation phrases (longest first)
+        ("白飯、味噌湯無限續，無服務費", "free rice & miso soup refills, no service charge"),
+        ("白飯、味噌湯無限續", "free rice & miso soup refills"),
+        ("假日建議先訂", "booking recommended on weekends"),
+        ("最長提前一個月", "up to one month ahead"),
+        ("最低消 NT$", "minimum charge NT$"),
+        ("低消一份飲料", "one-drink minimum"),
+        ("平日不限時", "no time limit on weekdays"),
+        ("完全預約制", "reservation only"),
+        ("現場候位", "walk-in only"),
+        ("接受訂位", "reservations accepted"),
+        ("可訂位", "reservations accepted"),
+        ("有插座", "power outlets available"),
+        ("單點式", "à la carte"),
+        ("可外帶", "takeout available"),
+        ("無服務費", "no service charge"),
+        ("無公休", "open daily"),
+        ("+10% 服務費", "+10% service charge"),
+        ("週一", "Mondays"),
+        ("週二", "Tuesdays"),
+        ("週三", "Wednesdays"),
+        ("週四", "Thursdays"),
+        ("週五", "Fridays"),
+        ("週六", "Saturdays"),
+        ("週日", "Sundays"),
+        ("假日", "weekends & holidays"),
+        ("平日", "weekdays"),
+        ("（", " ("),
+        ("）", ")"),
+        ("，", ", "),
+        ("；", "; "),
+        ("、", ", "),
+        ("／", " / "),
+    ],
 }
 
 
@@ -204,6 +311,8 @@ def apply_glossary(text, lang: str):
         return text
     for zh, ja in GLOSSARIES.get(lang, []):
         text = text.replace(zh, ja)
+    if lang == "en" and text:
+        text = text[0].upper() + text[1:]
     return text
 
 
@@ -212,6 +321,7 @@ def apply_glossary(text, lang: str):
 GOOD_FOR_PATTERNS = {
     "zh": re.compile(r"適合([^。！？\n]+)"),
     "ja": re.compile(r"([^。！？\n]+?)に(?:も|は)?(?:ぴったり|最適|おすすめ)"),
+    "en": re.compile(r"(?:perfect|ideal|great|good)\s+for\s+([^.!?\n(]+)", re.IGNORECASE),
 }
 
 # Phrases that look like good_for items but are actually food / side dishes /
@@ -232,15 +342,17 @@ def extract_good_for(description: str, lang: str) -> list[str]:
     if not m:
         return []
     chunk = m.group(1).strip()
-    # Split on common conjunctions across zh/ja.
-    items = re.split(r"[、，,]|や|や/|及び|以及|或者|或|和(?!菜)|與|また", chunk)
+    # Split on common conjunctions across zh/ja/en.
+    items = re.split(r"[、，,]|\s+and\s+|\s*&\s*|や|や/|及び|以及|或者|或|和(?!菜)|與|また", chunk)
     cleaned = []
+    # English items run longer than CJK ("cat lovers" vs 「愛貓人士」).
+    max_len = 32 if lang == "en" else 8
     for it in items:
         it = it.strip()
         # Trim trailing "等..." (zh) or "など..." (ja) modifiers.
         it = re.sub(r"(等|など).*$", "", it).strip()
         # Skip impractically long or empty entries — they're usually noise.
-        if not (2 <= len(it) <= 8):
+        if not (2 <= len(it) <= max_len):
             continue
         # Skip food / verb-tail artifacts that aren't real occasions.
         if any(p.search(it) for p in GOOD_FOR_DENY):
@@ -334,7 +446,10 @@ def resolve_cover(album: dict) -> dict | None:
     return album["photos"][0]
 
 
-def extract_city(loc: str) -> str:
+def extract_city(loc: str, lang: str = "zh") -> str:
+    # English locations read "Dali District, Taichung" — city is the last part.
+    if lang == "en":
+        return loc.split(",")[-1].strip() if loc else "Other"
     m = re.match(r"^(.*?[市縣区県])", loc or "")
     return m.group(1) if m else (loc or "其他")
 
@@ -404,7 +519,7 @@ def render_site(lang: str, albums_raw: list[dict], translations: dict, env: Envi
         return
 
     for a in albums:
-        a["city"] = extract_city(a.get("location", ""))
+        a["city"] = extract_city(a.get("location", ""), lang)
         a["cover_photo"] = resolve_cover(a)
 
     # Compute cuisine groups for the index filter UI. Each card's data-cuisine
@@ -458,7 +573,8 @@ def render_site(lang: str, albums_raw: list[dict], translations: dict, env: Envi
             href = f"../{other}/"
         lang_links.append({"code": other, "label": LANG_LABEL[other], "href": href})
 
-    # hreflang alternates for <head>
+    # hreflang alternates for <head>. "lang" key kept so album pages can filter
+    # out languages that particular restaurant isn't translated into yet.
     hreflang_alts = []
     for other in LANGS:
         if other == lang:
@@ -469,7 +585,7 @@ def render_site(lang: str, albums_raw: list[dict], translations: dict, env: Envi
             base = f"{other}/"
         else:
             base = f"../{other}/"
-        hreflang_alts.append({"code": HTML_LANG[other], "href": base})
+        hreflang_alts.append({"code": HTML_LANG[other], "href": base, "lang": other})
 
     t = I18N[lang]
     site_name = SITE_NAME[lang]
@@ -498,8 +614,16 @@ def render_site(lang: str, albums_raw: list[dict], translations: dict, env: Envi
         )
     )
     for a in albums:
+        # Album pages only link to languages this restaurant actually has —
+        # otherwise partially-translated languages produce 404 switcher links.
+        a_langs = {l for l in LANGS if l == "zh" or has_translation(a["slug"], l, translations)}
+        ctx_album = dict(
+            ctx_common,
+            lang_links=[ll for ll in lang_links if ll["code"] in a_langs],
+            hreflang_alts=[alt for alt in hreflang_alts if alt["lang"] in a_langs],
+        )
         (out_dir / f"album-{a['slug']}.html").write_text(
-            album_tpl.render(album=a, **ctx_common)
+            album_tpl.render(album=a, **ctx_album)
         )
 
     rel = "dist/" if lang == "zh" else f"dist/{lang}/"
@@ -568,10 +692,13 @@ def write_llms_txt(albums_raw, translations):
     LLMs.txt is a markdown file at site root that summarises the site for LLMs:
     purpose, key resources, structured data overview, language versions.
     """
+    lang_names = {"zh": "繁體中文 (zh-Hant)", "ja": "日本語 (ja)", "en": "English (en)"}
+
     def render(lang: str) -> str:
         site = SITE_NAME[lang]
         t = I18N[lang]
         out_dir_url = SITE_URL if lang == "zh" else f"{SITE_URL}/{lang}"
+        lang_list = ", ".join(lang_names[l] for l in LANGS)
         lines = [
             f"# {site}",
             "",
@@ -579,12 +706,14 @@ def write_llms_txt(albums_raw, translations):
             "",
             f"Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. "
             f"Each entry includes dish photos, shop info (address / phone / hours), "
-            f"tasting notes, and a 1-5 rating. Bilingual: 繁體中文 (zh-Hant) and 日本語 (ja).",
+            f"tasting notes, and a 1-5 rating. Languages: {lang_list}.",
             "",
             "## Restaurants",
             "",
         ]
         for a in albums_raw:
+            if lang != "zh" and not has_translation(a["slug"], lang, translations):
+                continue
             loc_a = localize_album(a, lang, translations)
             url = f"{out_dir_url}/album-{a['slug']}.html"
             desc_parts = []
@@ -605,8 +734,12 @@ def write_llms_txt(albums_raw, translations):
             "",
             "## Language versions",
             "",
-            f"- 繁體中文 (zh-Hant): {SITE_URL}/",
-            f"- 日本語 (ja): {SITE_URL}/ja",
+        ]
+        lines += [
+            f"- {lang_names[l]}: {SITE_URL}/" if l == "zh" else f"- {lang_names[l]}: {SITE_URL}/{l}"
+            for l in LANGS
+        ]
+        lines += [
             "",
             "## Structured data",
             "",
@@ -675,7 +808,7 @@ def main():
     write_sitemap(albums_raw, translations)
     write_robots()
     write_llms_txt(albums_raw, translations)
-    print(f"  ✓ dist/sitemap.xml + dist/robots.txt + dist/llms.txt (zh + ja)")
+    print(f"  ✓ dist/sitemap.xml + dist/robots.txt + dist/llms.txt ({' + '.join(LANGS)})")
 
 
 if __name__ == "__main__":

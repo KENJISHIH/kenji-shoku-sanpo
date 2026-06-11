@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kenji Shoku-Sanpo | A Restaurant Notebook by Kenji Shih</title>
+<meta name="description" content="Tasting notes from restaurants across Taiwan — mostly Taichung. Each entry has dish photos, shop info (address, phone, hours), tasting notes, and a rating. Filter by cuisine or rating.">
+<meta name="author" content="Kenji Shih">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="j9jKrFmtv5uEHMAE106iRMSofl-7dPEtInrk72fDsIE" />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kenji Shoku-Sanpo">
+<meta property="og:title" content="Kenji Shoku-Sanpo | A Restaurant Notebook by Kenji Shih">
+<meta property="og:description" content="Tasting notes from restaurants across Taiwan — mostly Taichung. Each entry has dish photos, shop info (address, phone, hours), tasting notes, and a rating. Filter by cuisine or rating.">
+<meta property="og:locale" content="en_US">
+<link rel="alternate" hreflang="zh-Hant" href="..">
+<link rel="alternate" hreflang="ja" href="../ja">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Kenji Shoku-Sanpo",
+  "inLanguage": "en",
+  "alternateName": "A Restaurant Notebook by Kenji Shih",
+  "author": { "@type": "Person", "name": "Kenji Shih" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Restaurant",
+        "position": 1,
+        "name": "Cat Boss Cafe (\u8c93\u8001\u95c6\u5496\u5561)",
+"address": "\u53f0\u4e2d\u5e02\u5927\u91cc\u5340\u5927\u91cc\u8def109\u865f","servesCuisine": ["Italian", "Casual Dining", "Cafe", "Pet-friendly"],        "url": "album-cat-boss.html"
+      }    ]
+  }
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Noto+Sans+TC:wght@300;400;500;600&family=Noto+Serif+JP:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Noto Serif TC', Georgia, serif; color:#2a2520; }
+  .font-sans { font-family: 'Noto Sans TC', system-ui, sans-serif; }
+  .font-num { font-family: 'Inter', system-ui, sans-serif; }
+  .filter-btn.active, .sort-btn.active, .city-btn.active { background:#78350f; color:white; border-color:#78350f; }
+  .stars { letter-spacing: 0.08em; }
+  .star-half { display:inline-block; position:relative; color:#d6d3d1; }
+  .star-half::before { content:'★'; position:absolute; top:0; left:0; color:#d97706; width:50%; overflow:hidden; }
+</style>
+</head>
+<body class="bg-[#fdfbf7]">
+
+<div class="max-w-3xl mx-auto px-5 pt-5 flex justify-end gap-3 font-sans text-sm">
+  <a href=".." class="text-stone-500 hover:text-amber-800 transition">中文</a>
+  <a href="../ja" class="text-stone-500 hover:text-amber-800 transition">日本語</a>
+</div>
+
+<header class="max-w-3xl mx-auto px-5 pt-12 pb-10">
+  <p class="font-num text-xs tracking-[0.35em] uppercase text-amber-800">A Restaurant Notebook by Kenji Shih</p>
+  <h1 class="text-5xl md:text-6xl font-bold tracking-tight mt-3 leading-[1.1]">Kenji Shoku-Sanpo</h1>
+  <p class="text-stone-600 mt-5 font-sans leading-relaxed">Tasting notes from restaurants across Taiwan — mostly Taichung. Each entry has dish photos, shop info (address, phone, hours), tasting notes, and a rating. Filter by cuisine or rating.</p>
+  <p class="text-xs text-stone-400 mt-3 font-num">
+    1 restaurants · 9 photos
+  </p>
+</header>
+
+<nav class="max-w-3xl mx-auto px-5 mb-12 font-sans space-y-3">
+  <div class="flex flex-wrap gap-2 items-center">
+    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">Sort</span>
+    <button data-sort="date" class="sort-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Latest visit</button>
+    <button data-sort="rating" class="sort-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">★ Top rated</button>
+  </div>
+  <div class="flex flex-wrap gap-2 items-center">
+    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">City</span>
+    <button data-city="all" class="city-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">All</button>
+    <button data-city="Taichung" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Taichung <span class="text-stone-400 ml-0.5">(1)</span></button>
+  </div>
+  <div class="flex flex-wrap gap-2 items-center">
+    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">Cuisine</span>
+    <button data-filter="all" class="filter-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">All</button>
+    <button data-filter="Western" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Western</button>
+    <button data-filter="Cafe / Light bites" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Cafe / Light bites</button>
+  </div>
+</nav>
+
+<main class="max-w-3xl mx-auto px-5 pb-20">
+  <ul id="cards" class="space-y-16">
+    <li class="card group"
+        data-cuisine="Italian,Casual Dining,Cafe,Pet-friendly,Western,Cafe / Light bites"
+        data-city="Taichung"
+        data-rating="4"
+        data-date="2026-06-10">
+      <a href="album-cat-boss.html" class="block">
+        <div class="aspect-[16/10] overflow-hidden rounded-lg bg-stone-200">
+          <img src="../photos/cat-boss/20260610-iPhone 17 Pro181141.jpg" alt="Cat Boss Cafe (貓老闆咖啡)"
+               loading="lazy"
+               class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+        </div>
+        <div class="mt-6">
+          <p class="font-num text-xs tracking-[0.3em] uppercase text-amber-800">Cat Boss · Cat-Themed &amp; Pet-Friendly Restaurant</p>
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-1 group-hover:text-amber-900 transition">Cat Boss Cafe (貓老闆咖啡)</h2>
+
+          <div class="text-sm mt-3 font-sans flex flex-wrap items-baseline gap-x-4 gap-y-1 text-stone-600">
+            <span class="stars text-amber-600">★★★★<span class="text-stone-300">★</span></span>
+            <span class="font-num text-xs text-stone-500">4</span>
+<span>📍 Dali District, Taichung</span><span class="font-num text-stone-500">📅 2026</span>            <span class="text-stone-300">·</span>
+            <span class="text-stone-500">Italian・Casual Dining・Cafe・Pet-friendly</span>
+          </div>
+
+          <p class="mt-4 text-stone-700 leading-loose line-clamp-3">
+            If you’re hanging out in Taichung’s Dali District, make sure to swing by Cat Boss (貓老闆咖啡). It’s a super chill, cat-themed, pet-friendly cafe right on Dali Road, just a short walk from Dali Sports Park. The stars of the show are the many friendly rescue cats roaming around, always ready for some attention while you enjoy your meal. You can even pick up some cat treats in-store to win them over! While you can bring your own pets, the vibe here is definitely all about the cats.
+          </p>
+          <span class="inline-block mt-5 text-amber-800 text-sm font-sans group-hover:translate-x-1 transition">Continue reading →</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <p id="empty" class="hidden text-center text-stone-400 py-12 font-sans">No restaurants match these filters</p>
+</main>
+
+<footer class="text-center text-xs text-stone-400 pb-12 font-sans">
+  Kenji Shoku-Sanpo · by Kenji Shih
+</footer>
+
+<script>
+(function() {
+  const container = document.getElementById('cards');
+  const cards = [...document.querySelectorAll('.card')];
+  const cuisineBtns = document.querySelectorAll('[data-filter]');
+  const cityBtns = document.querySelectorAll('[data-city]');
+  const sortBtns = document.querySelectorAll('[data-sort]');
+  const empty = document.getElementById('empty');
+
+  let state = { cuisine: 'all', city: 'all', sort: 'date' };
+
+  function apply() {
+    const sorted = [...cards].sort((a, b) => {
+      if (state.sort === 'rating') {
+        return (parseFloat(b.dataset.rating) || 0) - (parseFloat(a.dataset.rating) || 0);
+      }
+      return b.dataset.date.localeCompare(a.dataset.date);
+    });
+    sorted.forEach(c => container.appendChild(c));
+
+    let visible = 0;
+    cards.forEach(c => {
+      const cuisines = (c.dataset.cuisine || '').split(',').filter(Boolean);
+      const city = c.dataset.city || '';
+      const okC = state.cuisine === 'all' || cuisines.includes(state.cuisine);
+      const okCity = state.city === 'all' || city === state.city;
+      const show = okC && okCity;
+      c.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    empty.classList.toggle('hidden', visible > 0);
+  }
+
+  cuisineBtns.forEach(b => {
+    b.onclick = () => {
+      cuisineBtns.forEach(x => x.classList.toggle('active', x === b));
+      state.cuisine = b.dataset.filter;
+      apply();
+    };
+  });
+  cityBtns.forEach(b => {
+    b.onclick = () => {
+      cityBtns.forEach(x => x.classList.toggle('active', x === b));
+      state.city = b.dataset.city;
+      apply();
+    };
+  });
+  sortBtns.forEach(b => {
+    b.onclick = () => {
+      sortBtns.forEach(x => x.classList.toggle('active', x === b));
+      state.sort = b.dataset.sort;
+      apply();
+    };
+  });
+
+  apply();
+})();
+</script>
+</body>
+</html>
