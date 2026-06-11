@@ -366,6 +366,9 @@ restaurants:
     closed: "週一"
     reservation: "可訂位（假日建議先訂）"
     service: "低消一份飲料，平日不限時，有插座，可外帶"
+    price_range: "NT$ 200-400 / 人"
+    price_range_usd: "US$7-13 / person"
+    dietary: ["Vegan 純素選項"]
     visited_at: "2026-06-10"
     rating: 4  # TODO: Kenji 自評,我先放 4 預設
     cuisine: ["義式", "簡餐", "咖啡", "寵物友善"]
@@ -385,6 +388,5 @@ restaurants:
 
       適合愛貓人士、帶筆電工作、朋友小聚、親子同遊(與貓咪互動需遵守店內規則)。
     dishes:
-      - "白醬鮮蔬義大利麵"
-      - "嫩雞簡餐套餐（附飯、湯、小菜）"
-      - "玉米炒蛋"
+      - "奶香菠菜蔬食麵（Vegan・$210）"
+      - "南洋椰香雞肉飯（平日限定簡餐・$260）"

@@ -274,6 +274,9 @@ cat-boss:
     - 洋食
     - カフェ
     - ペット可
+    dishes:
+    - クリーミーほうれん草のヴィーガンパスタ（Vegan・NT$210）
+    - ココナッツチキンライス（平日限定の定食・NT$260）
     description: '「猫老闆珈琲（Cat Boss）」は、台中市大里区にある猫がテーマのペットフレンドリーなカフェレストランです。大里路沿いに位置し、大里運動公園からもほど近い場所にあります。店内には人懐っこい看板猫たちがたくさん迎えてくれ、食事の合間に猫たちと触れ合うことができます。猫用のおやつも販売されており、ペット（主に猫）を連れての入店も可能です。
 
 
@@ -290,6 +293,9 @@ cat-boss:
     - Casual Dining
     - Cafe
     - Pet-friendly
+    dishes:
+    - Creamy Spinach Vegan Pasta (NT$210)
+    - Coconut Chicken Rice (weekday-only set meal, NT$260)
     description: 'If you’re hanging out in Taichung’s Dali District, make sure to
       swing by Cat Boss (貓老闆咖啡). It’s a super chill, cat-themed, pet-friendly cafe
       right on Dali Road, just a short walk from Dali Sports Park. The stars of the
