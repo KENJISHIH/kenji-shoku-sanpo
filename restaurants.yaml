@@ -360,6 +360,7 @@ restaurants:
     location: "台中市大里區"
     address: "台中市大里區大里路109號"
     address_ja: "台中市大里区大里路109号"
+    address_en: "No. 109, Dali Rd., Dali Dist., Taichung City 412, Taiwan"
     phone: "04-2485-1983"
     hours: "11:30-19:30"
     closed: "週一"
