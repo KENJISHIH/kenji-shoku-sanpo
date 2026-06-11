@@ -14,6 +14,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [厝秘（ツォーミー） 功夫菜・手路湯 大里店](https://kenji-shoku-sanpo.vercel.app/ja/album-cuomi-dali.html): 本格料理/台湾料理/コース料理/こだわりのスープ · 台中市大里区 · ★4.5/5 — 「厝秘（Choicemeal）」は「手間暇かけた一品料理と特製スープ」を看板に掲げ、宴会料理長の職人技を核とし、伝統的な
 - [済州（チェジュ）金（キム）先生 Mr.KIM 韓国料理専門店](https://kenji-shoku-sanpo.vercel.app/ja/album-jeju-kim.html): 韓国料理/フライドチキン/韓食/ラーメン · 台中市大里区 · ★4/5 — 「済州金先生 Mr.KIM（済州Mr.KIM韓国チキン）」は、台中・大里にある韓国料理専門店です。2014年の創業以来、韓国・済州島出身の金店主が、お母様から受け継いだ本場の味を守り続けています。看板メニューの韓国式フライドチキンをはじめ、豆腐チゲ、トッポギ、豚肉丼などを提供。新鮮な食材にこだわり、化学調味料を一切使用
 - [キングライスボウル 韓式丼（かんしきどん）](https://kenji-shoku-sanpo.vercel.app/ja/album-king-rice-bowl.html): 韓国料理/ビビンバ/ジャジャン麺/韓国料理 · 台北市中山区 · ★4/5 — King Rice Bowl（キン・トッパプ／킹덮밥 한식당）は、台北・中山区の長安東路二段の路地裏にひっそりと佇む韓国料理店です。
+- [猫老闆（マオラオバン）珈琲](https://kenji-shoku-sanpo.vercel.app/ja/album-cat-boss.html): イタリアン/洋食/カフェ/ペット可 · 台中市大里区 · ★4/5 — 「猫老闆珈琲（Cat Boss）」は、台中市大里区にある猫がテーマのペットフレンドリーなカフェレストランです。大里路沿いに位置し、大里運動公園からもほど近い場所にあります。店内には人懐っこい看板猫たちがたくさん迎えてくれ、食事の合間に猫たちと触れ合うことができます。猫用のおやつも販売されており、ペット（主に猫）を連れて
 
 ## Language versions
 

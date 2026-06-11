@@ -14,6 +14,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [厝秘 功夫菜·手路湯 大里店](https://kenji-shoku-sanpo.vercel.app/album-cuomi-dali.html): 功夫菜/台菜/合菜/手路湯 · 台中市大里區 · ★4.5/5 — 厝秘（Choicemeal）主打「功夫菜·手路湯」,以總舖師傳承手藝為核心,將傳統
 - [濟州金先生 Mr.KIM 韓食專賣](https://kenji-shoku-sanpo.vercel.app/album-jeju-kim.html): 韓式/炸雞/韓食/拉麵 · 台中市大里區 · ★4/5 — 濟州金先生 Mr.KIM(濟州Mr.KIM韓式炸雞)是台中大里的韓式料理專門店,自 2014 年
 - [King Rice Bowl 韓式丼飯](https://kenji-shoku-sanpo.vercel.app/album-king-rice-bowl.html): 韓式/韓式丼飯/炸醬麵/韓食 · 台北市中山區 · ★4/5 — King Rice Bowl(킹덮밥 한식당)是隱身台北中山區長安東路二段巷弄內的韓式小館,
+- [貓老闆咖啡](https://kenji-shoku-sanpo.vercel.app/album-cat-boss.html): 義式/簡餐/咖啡/寵物友善 · 台中市大里區 · ★4/5 — 貓老闆咖啡(Cat Boss)是台中大里的貓咪主題寵物友善簡餐店,位於大里路上、
 
 ## Language versions
 

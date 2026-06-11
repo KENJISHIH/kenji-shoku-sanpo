@@ -353,3 +353,37 @@ restaurants:
       - "韓式辣炒豬肉丼"
       - "照燒雞肉丼"
       - "綜合小菜（泡菜・辣炒魚板・醃蘿蔔）"
+
+  - slug: cat-boss
+    name: "貓老闆咖啡"
+    name_alt: "Cat Boss · 貓咪主題寵物友善餐廳"
+    location: "台中市大里區"
+    address: "台中市大里區大里路109號"
+    address_ja: "台中市大里区大里路109号"
+    phone: "04-2485-1983"
+    hours: "11:30-19:30"
+    closed: "週一"
+    reservation: "可訂位（假日建議先訂）"
+    service: "低消一份飲料，平日不限時，有插座，可外帶"
+    visited_at: "2026-06-10"
+    rating: 4  # TODO: Kenji 自評,我先放 4 預設
+    cuisine: ["義式", "簡餐", "咖啡", "寵物友善"]
+    cover: "20260610-iPhone 17 Pro181141.jpg"  # 簡餐套餐全景,可改
+    maps_url: "https://maps.app.goo.gl/youdPgiJeAn3idRe7"
+    same_as:
+      - "https://www.facebook.com/Cat.Boss.coffee/"
+      - "https://www.instagram.com/catboss0424851983/"
+    description: |
+      貓老闆咖啡(Cat Boss)是台中大里的貓咪主題寵物友善簡餐店,位於大里路上、
+      鄰近大里運動公園。店內收養多隻親人的店貓,用餐之餘可以與貓咪互動;店家
+      也販售貓咪零食,歡迎攜帶寵物入內(以貓為主)。
+
+      餐點以義大利麵、燉飯為主,搭配炸物、鬆餅、可朗芙等甜點與自家咖啡,
+      奶蓋飲品上還會印上貓咪圖案。簡餐套餐附白飯、湯品與多樣小菜,分量實在、
+      價位平實。平日不限時、座位附插座,低消為一份飲料。
+
+      適合愛貓人士、帶筆電工作、朋友小聚、親子同遊(與貓咪互動需遵守店內規則)。
+    dishes:
+      - "白醬鮮蔬義大利麵"
+      - "嫩雞簡餐套餐（附飯、湯、小菜）"
+      - "玉米炒蛋"
