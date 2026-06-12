@@ -397,6 +397,7 @@ restaurants:
     location: "台中市西區"
     address: "台中市西區貴和街42號"
     address_ja: "台中市西区貴和街42号"
+    address_en: "No. 42, Guihe St., West Dist., Taichung City 403, Taiwan"
     phone: "04-2371-7373"
     hours: "11:00-22:00"
     closed: "無公休"

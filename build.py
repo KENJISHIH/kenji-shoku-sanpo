@@ -239,6 +239,11 @@ GLOSSARIES = {
         ("白飯、味噌湯無限續", "ご飯・味噌汁おかわり自由"),
         ("最長提前一個月", "最大1ヶ月前から"),
         ("最低消 NT$", "最低利用金額 NT$"),
+        ("可線上 inline 訂位", "inlineでオンライン予約可"),
+        ("內用免服務費", "店内飲食はサービス料なし"),
+        ("限時 90 分鐘", "90分制"),
+        ("建議先訂", "予約推奨"),
+        ("/ 人", " / 名"),
         ("完全預約制", "完全予約制"),
         ("現場候位", "予約不可（先着順）"),
         ("單點式", "アラカルト"),
@@ -272,6 +277,11 @@ GLOSSARIES = {
         ("白飯、味噌湯無限續，無服務費", "free rice & miso soup refills, no service charge"),
         ("白飯、味噌湯無限續", "free rice & miso soup refills"),
         ("假日建議先訂", "booking recommended on weekends"),
+        ("可線上 inline 訂位", "online reservations via inline"),
+        ("內用免服務費", "no service charge for dine-in"),
+        ("限時 90 分鐘", "90-minute time limit"),
+        ("建議先訂", "booking recommended"),
+        ("/ 人", " / person"),
         ("最長提前一個月", "up to one month ahead"),
         ("最低消 NT$", "minimum charge NT$"),
         ("低消一份飲料", "one-drink minimum"),
@@ -480,7 +490,7 @@ def localize_album(album: dict, lang: str, translations: dict) -> dict:
     if a.get(price_key):
         a["price_range"] = a[price_key]
     # Glossary pass for store-info fields that don't have their own LLM translation.
-    for field in ["hours", "closed", "reservation", "service"]:
+    for field in ["hours", "closed", "reservation", "service", "price_range"]:
         if a.get(field):
             a[field] = apply_glossary(a[field], lang)
     # Auto-extract good_for from description if not manually set. Keeps Kenji's
