@@ -406,7 +406,7 @@ restaurants:
     visited_at: "2026-06-12"
     rating: 4  # TODO: Kenji 自評,我先放 4 預設
     cuisine: ["粥品", "台菜", "私房菜", "砂鍋粥", "茶飲"]
-    cover: "20260612-iPhone 17 Pro114641.jpg"  # 蟹黃海鮮豆腐煲全景,可改成土雞粥(115437)
+    cover: "20260612-iPhone 17 Pro115437.jpg"  # 桂丁無骨土雞粥全景(招牌粥品當門面)
     maps_url: "https://maps.app.goo.gl/v9fVAWt7qLBHxZUWA"
     same_as:
       - "https://www.facebook.com/12moon.tw"
