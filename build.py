@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import re
+import shutil
 from collections import Counter
 from pathlib import Path
 
@@ -19,6 +20,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).parent
 DIST = ROOT / "dist"
+STATIC = ROOT / "static"
 DATA = ROOT / "data" / "albums.json"
 CONFIG = ROOT / "restaurants.yaml"
 TRANSLATIONS_FILE = ROOT / "translations.yaml"
@@ -780,6 +782,38 @@ def write_llms_txt(albums_raw, translations):
         (out_dir / "llms.txt").write_text(render(lang), encoding="utf-8")
 
 
+def write_pwa_assets():
+    """Copy home-screen icons from static/ + write dist/manifest.json.
+
+    Lets iOS Safari "Add to Home Screen" install 食散步 as a standalone app
+    that opens the zh homepage. Icons live at dist root so /ja and /en pages
+    (referencing /icon-192.png etc.) resolve correctly. Regenerate icons with
+    scripts/gen_icons.py.
+    """
+    for name in ("favicon.ico", "icon-192.png", "icon-512.png", "apple-touch-icon.png"):
+        src = STATIC / name
+        if src.exists():
+            shutil.copy2(src, DIST / name)
+
+    manifest = {
+        "name": SITE_NAME["zh"],
+        "short_name": "食散步",
+        "start_url": "/",
+        "scope": "/",
+        "display": "standalone",
+        "background_color": "#fdfbf7",
+        "theme_color": "#d97706",
+        "icons": [
+            {"src": "/icon-192.png", "sizes": "192x192", "type": "image/png"},
+            {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png"},
+            {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
+        ],
+    }
+    (DIST / "manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+
 def main():
     if not DATA.exists():
         raise SystemExit("ERROR: data/albums.json not found — run `python scan.py` first")
@@ -818,7 +852,9 @@ def main():
     write_sitemap(albums_raw, translations)
     write_robots()
     write_llms_txt(albums_raw, translations)
+    write_pwa_assets()
     print(f"  ✓ dist/sitemap.xml + dist/robots.txt + dist/llms.txt ({' + '.join(LANGS)})")
+    print("  ✓ dist/manifest.json + icons (PWA / 加入主畫面)")
 
 
 if __name__ == "__main__":

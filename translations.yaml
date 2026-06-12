@@ -90,6 +90,132 @@ le-four:
       ## 補足
 
       - **サービス**：パンの追加が必要な場合は、いつでもスタッフにお申し付けください。'
+  en:
+    name: Le Four (Lai Fa Xiao Guan)
+    name_alt: The Oven
+    location: South District, Taichung
+    cuisine:
+    - French
+    - Set Menu
+    - Reservation Only
+    description: 'Le Four—French for "the oven"—is where Chef James works his magic.
+      Having spent years in Canada, he’s made oven-baked dishes his signature. Even
+      the Chinese name, *Lai Fa* (萊法), carries a deep personal meaning; it’s a heartfelt
+      tribute to his beloved grandmother, *Lai-Fa* (來發).
+
+
+      The restaurant is a strictly reservation-only, one-man operation with just one
+      seating for lunch and dinner. You get a front-row seat to the action in the
+      semi-open kitchen, where James meticulously preps every course. He even makes
+      a point to come out after service to chat and snap photos with guests. A full
+      set menu—including bread, appetizers, salad, soup, a main, dessert, and drinks—typically
+      ranges from NT$1,000 to NT$1,900.
+
+
+      Because James only shops for ingredients once a booking is confirmed, everything
+      on the plate is incredibly fresh. While the menu rotates with the seasons, you
+      can usually count on standouts like the paper-wrapped fish, succulent duck breast,
+      and king prawns.
+
+
+      Perfect for birthdays, date nights, and cozy family gatherings.'
+    dining_record_md: '## Overall Impressions
+
+      This experience follows a classic French six-course structure: an amuse-bouche,
+      salad, soup, mid-course, main, and dessert. The restaurant places a heavy emphasis
+      on an artisanal, "handmade" touch—from the house-crafted desserts to the sun-dried
+      fruits—while letting the natural, unadulterated flavors of the ingredients shine.
+      The menu masterfully pairs local Taiwanese treasures, like wild squid from Penghu,
+      with premium imported goods. The sauces are particularly refined; the 10oz ribeye,
+      served with a red wine beef bone reduction that tasted like it had been simmering
+      for days, was the undisputed star of the show.
+
+
+      ## Dishes
+
+
+      ### Herbed Chicken Baguette Slices (香料雞肉法式麵包片)
+
+      - **Ingredients**: Roasted cherry tomatoes, herbed chicken, French baguette
+      slices.
+
+      - **Preparation**: Lightly seasoned and refreshing, the baguette slices are
+      toasted with fragrant olive oil, sea salt, and a crack of black pepper.
+
+      - **How to enjoy**: Simply pick them up and enjoy them as finger food.
+
+
+      ### Wild Penghu Squid & Organic Mixed Fruit Salad with Apple Honey Vinaigrette
+      (澎湖野生軟絲有機綜合水果沙拉佐有機蘋果蜂蜜油醋醬)
+
+      - **Ingredients**: Wild Penghu squid, cloud ear fungus (a smaller, more delicate
+      variety of wood ear mushroom), spiced walnuts, and a selection of organic mixed
+      fruits.
+
+      - **Preparation**: Topped with toasted spiced walnuts for an extra layer of
+      crunch and dressed in a bright organic apple honey vinaigrette.
+
+      - **Chef''s notes**: The squid is sourced directly from Penghu and is exceptionally
+      fresh.
+
+      - **How to enjoy**: Give everything a good toss to ensure the vinaigrette is
+      evenly distributed before diving in.
+
+
+      ### Pumpkin & Vegetable Velouté (南瓜蔬菜濃湯)
+
+      - **Ingredients**: Pumpkin, a medley of vegetables, milk, and "pearls" (tapioca).
+
+      - **Preparation**: Completely free of artificial additives, the soup relies
+      on a high volume of slow-cooked vegetables to achieve its natural sweetness.
+      It’s finished with a delicate layer of frothed milk foam and contains pearls
+      to add a playful chewiness to each spoonful.
+
+
+      ### Savory Vegetable Crepe (蔬菜可麗餅)
+
+      - **Ingredients**: Mozzarella cheese, seasonal vegetables, crepe batter.
+
+      - **Preparation**: The crepe is folded around a generous helping of mozzarella
+      and vegetables, then baked until the cheese is gooey and molten.
+
+      - **How to enjoy**: The filling gets quite hot after baking, so take care when
+      cutting into it.
+
+
+      ### Pan-Seared 10oz Beef Ribeye with Red Wine Bone Marrow Sauce (香煎 10oz 牛肋眼佐紅酒牛骨醬汁)
+
+      - **Ingredients**: 10oz beef ribeye, red wine beef bone reduction.
+
+      - **Preparation**: The ribeye is perfectly seared and drizzled with a rich red
+      wine sauce made by slow-reducing beef bones over a long period.
+
+      - **Chef''s notes**: This particular bone marrow sauce is the ultimate companion
+      for the beef, elevating the richness of the cut.
+
+
+      ### Heart-Shaped Dessert: Mascarpone Mousse with Honey Cake and Perfume Peach
+      (愛心甜點：馬斯卡彭慕斯佐蜂蜜蛋糕與香水水蜜桃)
+
+      - **Ingredients**: Mascarpone mousse, honey cake, perfume peach, mint jelly,
+      dried dragon fruit, vanilla bean ice cream.
+
+      - **Preparation**: A stunning heart-shaped creation featuring a silky mascarpone
+      mousse exterior with a hidden center of honey cake and fragrant perfume peaches.
+      It’s served alongside translucent mint jelly, house-made dried dragon fruit
+      "chips" (which have a candy-like snap), and a scoop of vanilla ice cream flecked
+      with real vanilla bean.
+
+      - **Chef''s notes**: Every component of the dessert is handcrafted in-house.
+
+
+      ---
+
+
+      ## Extra Notes
+
+      - **Service**: If you’d like some extra bread to soak up the sauces, don’t hesitate
+      to let the staff know.'
 tianle-li:
   ja:
     name: 天楽里氷室（てんらくりひょうしつ）
@@ -120,6 +246,36 @@ tianle-li:
     - 干炒牛河（牛肉とライスヌードルの醤油炒め）
     - フレッシュ牛肉と卵の「出前一丁」
     - 香港式アイスレモンティー
+  en:
+    name: Tin Lok Lane Bing Sutt
+    name_alt: Heavenly Joy Lane
+    location: Zhubei City, Hsinchu County
+    cuisine:
+    - HK Style
+    - HK Cafe
+    - Bing Sutt
+    - Noodles & Rice
+    description: 'If you’re in Zhubei, Hsinchu and craving a legit taste of Hong Kong,
+      Tin Lok Lane is the spot to be. It’s a classic *Cha Chaan Teng*—a traditional
+      Hong Kong-style café—run by a Hong Kong native who named it after the iconic
+      Tin Lok Lane in Wan Chai. The vibe inside is pure nostalgia, making you feel
+      like you’ve been transported straight to old-school Hong Kong.
+
+
+      Their signature dish, the "Sorrowful Onion" Rice, is a total tribute to Stephen
+      Chow’s cult classic film *God of Cookery*. It’s a bowl of fragrant Thai jasmine
+      rice topped with the chef’s secret-recipe honey-glazed *Char Siu* (sweet BBQ
+      pork), homemade soy sauce, zesty ginger-scallion oil, and a gorgeous runny fried
+      egg. It’s limited supply every day, so get there early! You also shouldn''t
+      miss the Stir-Fried Beef *Ho Fun* (flat rice noodles). It’s got that essential
+      *Wok Hei*—the smoky "breath of the wok"—which is the true test of a master chef
+      in Hong Kong cuisine.
+
+
+      Other crowd-pleasers include the "Crispy Piggy" bun (toasted with butter and
+      condensed milk), classic Silk Stocking Milk Tea, Iced Lemon Tea, and their legendary
+      HK-style French Toast. Everything is à la carte, there’s no service charge,
+      and they’re happy to do takeout if you’re on the move.'
 second-floor-wenxin:
   ja:
     name: セカンドフロア（弐楼）
@@ -144,6 +300,35 @@ second-floor-wenxin:
     - ポテトポタージュ
     - アメリカーノ
     - ミックスベリーソーダ
+  en:
+    name: Second Floor (Er Lou)
+    name_alt: Second Floor Cafe · Taichung Showtime Wenxin
+    location: Nantun District, Taichung
+    cuisine:
+    - Brunch
+    - Italian
+    - American
+    - Coffee
+    description: 'Founded in 2008, Second Floor (貳樓, or *Er Lou*) originally started—as
+      the name suggests—on the second story of an old Taipei apartment. It’s since
+      become a local legend for its all-day brunch. Their Taichung Showtime Wenxin
+      branch is one of their newest spots (opened in 2024), and it’s a total stunner.
+      The "Future Urban Forest" theme is inspired by the nearby Central Park and Wenxin
+      Forest Park, using lush greenery, mirrors, and glass to create a space that
+      feels both modern and incredibly relaxing.
+
+
+      One of the coolest features is the lighting, which cycles every 30 minutes to
+      simulate a full 24-hour day—taking you from a sun-drenched forest vibe to a
+      sparkling cityscape. On the menu, you’ll find crowd-pleasers like their Smoked
+      Salmon and Creamy Mushroom Eggs Benedict, buttery croissant sandwiches, pastas,
+      and top-tier specialty coffee.
+
+
+      The brunch sets come fully loaded with salad, fries, and a drink. You’ll find
+      them on the 1st floor of the Showtime Live Wenxin mall, right next to Wenxin
+      Forest Park. Perfect for family gatherings, business lunches, and grabbing a
+      bite after a movie.'
 kaifan-wenxin:
   ja:
     name: 開飯川食堂 文心店（カイファンチュアンショクドウ ウェンシンテン）
@@ -177,6 +362,33 @@ kaifan-wenxin:
     - 空心菜炒め
     - キャベツ炒め
     - 三色前菜
+  en:
+    name: KAIFUN (Wenxin Branch)
+    name_alt: Let's Eat Together
+    location: Nantun District, Taichung
+    cuisine:
+    - Sichuan
+    - Chinese
+    - Family Style
+    description: 'If you’re craving that legit Sichuan kick, KAIFUN Together is a
+      must-visit. Carrying on the torch from the legendary "Fuli Sichuan Cuisine,"
+      they specialize in that signature numbing heat. Their menu hits all the right
+      notes: fresh, aromatic, "mā" (numbing), and "là" (spicy). The Wenxin branch
+      is tucked away on the 6th floor of Showtime Live Taichung Wenxin, so you can
+      head straight from the cinema to the table without even leaving the mall.
+
+
+      You can''t go wrong with their classics. The "Mouth-watering Chicken" comes
+      in a rich peanut and sesame sauce, while the Signature Salt-baked Chicken gets
+      a punchy lift from garlic sprouts and rattan pepper oil. For some real fire,
+      try the "Tumbling Spicy Trio"—a stir-fry of Matsusaka pork (tender pork jowl)
+      and squid—or the "Tear-jerking Eggs," which are crispy fried eggs tossed with
+      large green chilies. If you’re with a group, their set menus are the way to
+      go; the 4-person "Hé cài" (family-style sharing) set is NT$2,160 and covers
+      six dishes, soup, rice, and drinks.
+
+
+      Perfect for family dinners, sharing a big meal with friends, and business gatherings.'
 dahe-makiba-nangang:
   ja:
     name: 大河牧場 ハンバーグ専門店 南港環球店
@@ -200,6 +412,27 @@ dahe-makiba-nangang:
     - とんかつ定食
     - 生姜焼き定食
     - 照り焼きチキン定食
+  en:
+    name: Okawa Ranch (Dàhé Mùchǎng) Hambagu Specialty Store - Nangang Global Mall
+      Branch
+    name_alt: Mita Taiga Ranch · Hamburgers
+    location: Nangang District, Taipei
+    cuisine:
+    - Japanese
+    - Hamburg Steak
+    - Set Meal
+    description: "Mita Taiga Bokujo is a Japanese-style *hamburg* (Japanese hamburger\
+      \ steak) specialist that made its Taiwan debut in 2023 at Global Mall Nangang.\
+      \ They stick to traditional hand-patted techniques, using a specific ratio of\
+      \ coarse and fine premium beef to lock in all that juice. To top it off, the\
+      \ chef has crafted eight unique signature sauces to pair with your meal.\n\n\
+      Your set meal comes fully loaded with a main, rice, four seasonal side dishes,\
+      \ and miso soup. The best part? You get unlimited refills of rice and soup,\
+      \ and there’s no extra service charge. While you can choose between beef or\
+      \ pork patties, the house-favorite Signature Cheese and the classic Japanese\
+      \ Teriyaki are the real standouts.\n\nYou’ll find them in the B1 food court\
+      \ of Global Mall Nangang (Building C), right next to Nangang Station. \n\nPerfect\
+      \ for commuters, shoppers, and families looking for a quick and satisfying meal."
 cuomi-dali:
   ja:
     name: 厝秘（ツォーミー） 功夫菜・手路湯 大里店
@@ -226,6 +459,41 @@ cuomi-dali:
       逸品です。ご飯には地元の霧峰香米を使用しており、モチモチとした食感とタロイモの香りが楽しめます。スープや鍋料理、例えば白菜と地鶏の鍋や、
 
       鴨肉の黒ごま油煮込みなどは事前の予約が必要で、大人数でシェアするのに最適です。'
+  en:
+    name: Cho Mi (Cuo Mi) Kung Fu Cuisine · Signature Soup (Dali Branch)
+    name_alt: Choicemeal Dali
+    location: Dali District, Taichung
+    cuisine:
+    - Craft Cuisine
+    - Taiwanese Cuisine
+    - Family Style
+    - Signature Soup
+    description: 'Choicemeal (厝秘) is all about "Gongfu" dishes and signature soups—essentially
+      the high-skill, time-intensive heavy hitters of Taiwanese cuisine. At its heart,
+      the restaurant is a tribute to the legacy of the "Zong-pu-shi" (the master chefs
+      behind traditional outdoor banquets known as "Ban-zhuo"), taking those rustic
+      feast traditions and elevating them into a refined dining experience. Their
+      Dali branch on Guoguang Road is tucked right near the local flower market, housed
+      in a stunning standalone building. It features several VIP private rooms, each
+      with floor-to-ceiling windows looking out onto a zen Japanese garden with manicured
+      pines.
+
+      Perfect for family gatherings, formal banquets, and special celebrations.
+
+
+      You can’t go wrong with their signature Su-Hang Dongpo Pork, which surprisingly
+      comes with baguettes and sauerkraut, or the Shredded Pork in Sweet Bean Sauce
+      that you wrap up in thin pancakes with colorful sides. Other crowd-pleasers
+      include the Truffle Scrambled Eggs (served with six slices of baguette), the
+      rich Crab Roe Tofu Pot, and the refreshing Fruit Salad Shrimp—every one of them
+      a classic example of expert "Gongfu" cooking. Even the rice is a standout; they
+      use local Wufeng aromatic rice, which is perfectly chewy with a natural hint
+      of taro. Just a heads-up: the big-ticket items like the White Cabbage & Free-range
+      Chicken Pot or the Sesame Oil Braised Duck need to be pre-ordered, and they''re
+      best shared with a big group.
+
+      Perfect for foodies, family reunions, and those looking to experience elevated
+      traditional Taiwanese flavors.'
 jeju-kim:
   ja:
     name: 済州（チェジュ）金（キム）先生 Mr.KIM 韓国料理専門店
@@ -243,6 +511,43 @@ jeju-kim:
 
 
       付け合わせのおかずは、豆もやしのナムル、ワカメの和え物、きゅうりのピリ辛漬けの3種類で、韓国海苔やコチュジャン、塩胡椒などが添えられます。営業はランチとディナーの二部制で、お席は来店順のご案内となります。お一人様でサッと済ませたい時はもちろん、友人との食事や韓国料理好きのご家族連れにもおすすめの一軒です。'
+  en:
+    name: Mr.KIM Korean Cuisine (Jeju Jin Xian Sheng)
+    name_alt: Jeju Mr. KIM · Korean Fried Chicken
+    location: Dali District, Taichung
+    cuisine:
+    - Korean
+    - Fried Chicken
+    - Korean Cuisine
+    - Ramen
+    description: 'If you find yourself in Taichung’s Dali District and craving some
+      serious Korean soul food, Mr. KIM (濟州金先生) is the place to be. Running strong
+      since 2014, the owner—originally from Jeju Island—brought his mother’s traditional
+      recipes straight to Taiwan. They specialize in crispy Korean fried chicken,
+      comforting tofu stews, chewy rice cakes, and savory pork bowls. Everything is
+      made fresh with strictly no MSG, which is why it’s become such a beloved local
+      neighborhood favorite.
+
+
+      The menu focuses on classic Korean set meals, where every tray comes loaded
+      with various side dishes (known as *banchan*), nutritious purple rice, and a
+      side of soup (unless you''re ordering a stew). You can’t miss their signature
+      6-piece Fried Chicken Set—generous chunks of boneless chicken thigh that you
+      can order in original, special house sauce, savory soy, or the classic sweet-and-spicy
+      red sauce. For something cozy, they serve up Korean-style ramen—the ultimate
+      comfort food—including a cheesy version that''s a total crowd-pleaser. Other
+      must-tries include their fluffy cheese egg rolls, the cheese tteokbokki (spicy
+      rice cakes) ramen, and the spicy stir-fried pork rice sets.
+
+
+      Each meal is rounded out with three rotating sides like spicy bean sprouts,
+      seasoned seaweed, and spicy cucumbers, served alongside crispy Korean seaweed
+      and a variety of dipping sauces. They are open for lunch and dinner shifts and
+      operate on a walk-in basis.
+
+
+      Perfect for solo foodies on the go, casual hangouts with friends, and families
+      who love a good Korean feast.'
 king-rice-bowl:
   ja:
     name: キングライスボウル 韓式丼（かんしきどん）
@@ -264,6 +569,41 @@ king-rice-bowl:
 
 
       電話やネットでの予約は受け付けておらず、来店順の注文となりますが、テイクアウトも可能です。席数は限られていますが、お一人様でのクイックな食事から、友人との会食、韓国料理好きのご家族連れまで、気軽に本場の味を楽しめる一軒です。'
+  en:
+    name: King Rice Bowl Korean Rice Bowls (King Rice Bowl Hánshì Dòngfàn)
+    name_alt: King Rice Bowl Korean Restaurant
+    location: Zhongshan District, Taipei City
+    cuisine:
+    - Korean
+    - Korean Bowl
+    - Jajangmyeon
+    - Korean Cuisine
+    description: 'Tucked away in the narrow alleys of Taipei’s Zhongshan District,
+      King Rice Bowl (킹덮밥 한식당) is a total hidden gem on Chang’an East Road. Located
+      right near the bustling Zhongshan "2.0" food street, this cozy spot is run by
+      a mostly Korean staff serving up authentic, home-style comfort food. It’s the
+      kind of place that has built a massive local following strictly through word-of-mouth
+      thanks to its legit flavors and super fair prices.
+
+
+      The name "Deopbap" literally means Korean rice bowl, and their signatures like
+      the Garlic Soy Beef, Spicy Stir-fried Pork, and Teriyaki Chicken bowls are absolute
+      must-tries. If you’re looking to branch out, they’ve got a solid lineup including
+      Jajangmyeon (black bean noodles), refreshing cold noodles, Spicy Soft Tofu Stew,
+      and Kimchi Cheese Fried Rice. You also won''t want to miss the Mozzarella Potato
+      Pancake or the massive Jokbal (braised pig''s trotters) which is plenty for
+      a group of 3-4. Every meal comes with four types of "Banchan"—classic Korean
+      side dishes like kimchi, spicy fish cakes, and pickled radish—and the best part?
+      They’re unlimited!
+
+
+      Just a heads-up: they only take walk-ins, so no phone or online reservations,
+      though takeout is an option. Seating is a bit limited, making it a great spot
+      for a quick bite or a casual sit-down.
+
+
+      Perfect for solo diners, small groups of friends, and families who love Korean
+      food.'
 cat-boss:
   ja:
     name: 猫老闆（マオラオバン）珈琲
