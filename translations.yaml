@@ -251,10 +251,10 @@ tianle-li:
     name_alt: Heavenly Joy Lane
     location: Zhubei City, Hsinchu County
     cuisine:
-    - HK Style
-    - HK Cafe
-    - Bing Sutt
-    - Noodles & Rice
+    - Hong Kong
+    - Cha chaan teng
+    - Bing sutt
+    - Noodles & rice
     description: 'If you’re in Zhubei, Hsinchu and craving a legit taste of Hong Kong,
       Tin Lok Lane is the spot to be. It’s a classic *Cha Chaan Teng*—a traditional
       Hong Kong-style café—run by a Hong Kong native who named it after the iconic
@@ -464,10 +464,10 @@ cuomi-dali:
     name_alt: Choicemeal Dali
     location: Dali District, Taichung
     cuisine:
-    - Craft Cuisine
-    - Taiwanese Cuisine
-    - Family Style
-    - Signature Soup
+    - Craft cuisine
+    - Taiwanese
+    - Family-style
+    - Signature soup
     description: 'Choicemeal (厝秘) is all about "Gongfu" dishes and signature soups—essentially
       the high-skill, time-intensive heavy hitters of Taiwanese cuisine. At its heart,
       the restaurant is a tribute to the legacy of the "Zong-pu-shi" (the master chefs
