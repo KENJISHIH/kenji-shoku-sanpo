@@ -196,7 +196,7 @@ SECTION_ALIASES = {
 # 和食 and 洋食 friendly) so users find what they expect.
 CUISINE_GROUPS = {
     "zh": {
-        "中式料理": ["川菜", "中式", "合菜"],
+        "中式料理": ["川菜", "中式", "合菜", "台菜", "粥品", "私房菜", "砂鍋粥", "功夫菜"],
         "西式料理": ["法式", "義式", "美式", "套餐", "預約制"],
         "日式料理": ["日式", "漢堡排", "定食"],
         "港式料理": ["港式", "茶餐廳", "冰室", "粉麵飯"],
@@ -204,7 +204,7 @@ CUISINE_GROUPS = {
         "輕食/咖啡": ["早午餐", "咖啡"],
     },
     "ja": {
-        "中華": ["四川料理", "中華料理"],
+        "中華": ["四川料理", "中華料理", "台湾料理", "お粥", "中華粥", "創作料理", "家庭料理"],
         "洋食": ["フレンチ", "イタリアン", "アメリカ料理", "洋食", "ハンバーグ", "コース", "完全予約制", "定食"],
         "和食": ["和食", "定食"],
         "香港": ["香港料理", "茶餐廳", "氷室", "麺類・ご飯もの"],
@@ -212,7 +212,7 @@ CUISINE_GROUPS = {
         "ブランチ/カフェ": ["ブランチ", "カフェ"],
     },
     "en": {
-        "Chinese": ["Sichuan", "Chinese", "Family-style"],
+        "Chinese": ["Sichuan", "Chinese", "Family-style", "Taiwanese", "Congee", "Private Kitchen", "Claypot Congee", "Craft cuisine"],
         "Western": ["French", "Italian", "American", "Course menu", "Reservation only", "Diner"],
         "Japanese": ["Japanese", "Hamburg steak", "Teishoku", "Set meal"],
         "Hong Kong": ["Hong Kong", "Cha chaan teng", "Bing sutt", "Noodles & rice"],

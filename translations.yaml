@@ -276,6 +276,12 @@ tianle-li:
       condensed milk), classic Silk Stocking Milk Tea, Iced Lemon Tea, and their legendary
       HK-style French Toast. Everything is à la carte, there’s no service charge,
       and they’re happy to do takeout if you’re on the move.'
+    dishes:
+    - '"Sorrowful Soul" Char Siu Rice with Fried Egg (Mòrán Xiāohún Fàn)'
+    - Stir-fried Rice Noodles with Beef (Beef Chow Fun) [Gānchǎo Niúhé]
+    - Nissin Demae Itcho Instant Noodles with Fresh Beef and Egg (Xiānniúròu Dàn Chūqián
+      Yīdīng)
+    - Iced Lemon Tea (Dòng Níngméng Chá)
 second-floor-wenxin:
   ja:
     name: セカンドフロア（弐楼）
@@ -329,6 +335,12 @@ second-floor-wenxin:
       them on the 1st floor of the Showtime Live Wenxin mall, right next to Wenxin
       Forest Park. Perfect for family gatherings, business lunches, and grabbing a
       bite after a movie.'
+    dishes:
+    - Smoked Salmon & Creamy Sauteed Mushroom Eggs Benedict
+    - Steak Brunch
+    - Creamy Potato Soup
+    - Americano
+    - Mixed Berry Sparkling Drink
 kaifan-wenxin:
   ja:
     name: 開飯川食堂 文心店（カイファンチュアンショクドウ ウェンシンテン）
@@ -389,6 +401,25 @@ kaifan-wenxin:
 
 
       Perfect for family dinners, sharing a big meal with friends, and business gatherings.'
+    dishes:
+    - Shrimp with Silky Scrambled Eggs (Xiaren Huadan)
+    - Steamed Spare Ribs with Black Beans (Douchi Zheng Paigu)
+    - Sautéed Beef with Scallions (Congbao Niurou)
+    - Sweet and Sour Chicken Balls (Tangcu Jiqiu)
+    - Sliced Pork with Garlic Sauce (Pork Belly with Garlic Puree, Suanni Bairou)
+    - Mapo Tofu (Spicy Tofu with Minced Pork, Mapo Doufu)
+    - Hakka Stir-fry (Dried Tofu and Pork Stir-fry, Kejia Xiaochao)
+    - Hot and Sour Soup (Suanla Tang)
+    - Clam Soup (Ginger Clam Soup, Geli Tang)
+    - Stir-fried Water Spinach (Sautéed Morning Glory, Chao Kongxincai)
+    - Stir-fried Cabbage (Chao Gaolicai)
+    - Trio of Side Dishes (Assorted Three-Color Appetizers, Sanse Xiaocai)
+    signature_dishes:
+    - Mouth-Watering Chicken (Poached Chicken with Sichuan Chili Oil, Kou Shui Ji)
+    - Signature Salt-Baked Chicken (Yan Ju Ji)
+    - Sizzling Spicy Trio (Wok-Fried Meat and Seafood with Dried Chilies, Huo La San
+      Bao)
+    - Tear-Jerker Eggs (Fried Eggs Stir-Fried with Green Peppers, Cui Lei Dan)
 dahe-makiba-nangang:
   ja:
     name: 大河牧場 ハンバーグ専門店 南港環球店
@@ -433,6 +464,12 @@ dahe-makiba-nangang:
       \ Teriyaki are the real standouts.\n\nYou’ll find them in the B1 food court\
       \ of Global Mall Nangang (Building C), right next to Nangang Station. \n\nPerfect\
       \ for commuters, shoppers, and families looking for a quick and satisfying meal."
+    dishes:
+    - Classic Hamburg Steak Set (Yuanwei Hanbaopai Dingshi)
+    - Cheese Hamburg Steak Set (Qisi Hanbaopai Dingshi)
+    - Fried Pork Cutlet Set (Tonkatsu; Zhazhupai Dingshi)
+    - Ginger Pork Set (Jiangshao Zhurou Dingshi)
+    - Teriyaki Chicken Thigh Set (Zhaoshao Jitui Dingshi)
 cuomi-dali:
   ja:
     name: 厝秘（ツォーミー） 功夫菜・手路湯 大里店
@@ -459,6 +496,15 @@ cuomi-dali:
       逸品です。ご飯には地元の霧峰香米を使用しており、モチモチとした食感とタロイモの香りが楽しめます。スープや鍋料理、例えば白菜と地鶏の鍋や、
 
       鴨肉の黒ごま油煮込みなどは事前の予約が必要で、大人数でシェアするのに最適です。'
+    dishes:
+    - 蘇州風豚の角煮（トンポーロウ）
+    - 豚肉の細切り甘味噌炒め
+    - トリュフ入りふわふわ卵炒め
+    - 蟹みそ豆腐の土鍋煮込み
+    - エビとフルーツのマヨネーズサラダ
+    - 揚げ豆腐の塩卵ソース炒め
+    - 水蓮菜のあっさり炒め
+    - 千切り大根とアサリのスープ
   en:
     name: Cho Mi (Cuo Mi) Kung Fu Cuisine · Signature Soup (Dali Branch)
     name_alt: Choicemeal Dali
@@ -494,6 +540,15 @@ cuomi-dali:
 
       Perfect for foodies, family reunions, and those looking to experience elevated
       traditional Taiwanese flavors.'
+    dishes:
+    - Braised Pork Belly (Dongpo Pork; Su Hang Dong Po Rou)
+    - Shredded Pork with Sweet Bean Sauce (Jing Jiang Pa Rou Si)
+    - Scrambled Eggs with Black Truffle (Song Lu Hua Dan)
+    - Tofu and Crab Roe Clay Pot (Xie Huang Dou Fu Bao)
+    - Shrimp with Fruit Salad (Shui Guo Sha La Xia)
+    - Golden Salted Egg Yolk Crispy Tofu (Jin Sha Nen Dou Fu)
+    - Stir-fried White Water Snowflake (Qing Chao Shui Lian)
+    - Clam Soup with Shredded Radish (Luo Bo Si Ge Li Tang)
 jeju-kim:
   ja:
     name: 済州（チェジュ）金（キム）先生 Mr.KIM 韓国料理専門店
@@ -511,6 +566,13 @@ jeju-kim:
 
 
       付け合わせのおかずは、豆もやしのナムル、ワカメの和え物、きゅうりのピリ辛漬けの3種類で、韓国海苔やコチュジャン、塩胡椒などが添えられます。営業はランチとディナーの二部制で、お席は来店順のご案内となります。お一人様でサッと済ませたい時はもちろん、友人との食事や韓国料理好きのご家族連れにもおすすめの一軒です。'
+    dishes:
+    - 6ピースチキンセット
+    - 韓国ラーメン
+    - チーズラーメン
+    - チーズケランマリ
+    - チーズラッポギ
+    - 豚肉のピリ辛炒め丼セット
   en:
     name: Mr.KIM Korean Cuisine (Jeju Jin Xian Sheng)
     name_alt: Jeju Mr. KIM · Korean Fried Chicken
@@ -548,6 +610,13 @@ jeju-kim:
 
       Perfect for solo foodies on the go, casual hangouts with friends, and families
       who love a good Korean feast.'
+    dishes:
+    - 6-Piece Fried Chicken Combo
+    - Korean Ramyeon
+    - Cheese Ramyeon
+    - Cheese Rolled Omelet (Gyeran-mari)
+    - Cheese Rabokki (Stir-fried Rice Cakes and Ramen with Cheese)
+    - Spicy Stir-fried Pork Rice Bowl Combo (Jeyuk-deopbap)
 king-rice-bowl:
   ja:
     name: キングライスボウル 韓式丼（かんしきどん）
@@ -569,6 +638,13 @@ king-rice-bowl:
 
 
       電話やネットでの予約は受け付けておらず、来店順の注文となりますが、テイクアウトも可能です。席数は限られていますが、お一人様でのクイックな食事から、友人との会食、韓国料理好きのご家族連れまで、気軽に本場の味を楽しめる一軒です。'
+    dishes:
+    - チャジャンミョン
+    - チャジャンうどん
+    - ガーリック醤油牛丼
+    - 豚肉のピリ辛炒め丼
+    - 照り焼きチキン丼
+    - おかず盛り合わせ（キムチ・おでん炒め・たくあん）
   en:
     name: King Rice Bowl Korean Rice Bowls (King Rice Bowl Hánshì Dòngfàn)
     name_alt: King Rice Bowl Korean Restaurant
@@ -604,6 +680,13 @@ king-rice-bowl:
 
       Perfect for solo diners, small groups of friends, and families who love Korean
       food.'
+    dishes:
+    - Korean Black Bean Sauce Noodles (Jajangmyeon)
+    - Korean Black Bean Sauce Udon
+    - Garlic Soy Glazed Beef Donburi
+    - Korean Spicy Stir-fried Pork Donburi (Jeyuk-deopbap)
+    - Chicken Teriyaki Donburi
+    - Assorted Side Dishes (Kimchi, Spicy Stir-fried Fish Cakes, Pickled Radish)
 cat-boss:
   ja:
     name: 猫老闆（マオラオバン）珈琲
@@ -677,6 +760,12 @@ december-guihe:
 
 
       前庭には10台分ほどの駐車スペースがあります。サービス料は無料で、お席の利用時間は90分制。事前の予約をおすすめします。家族での会食や女子会、ビジネスでの気軽な一杯など、幅広いシーンでご利用いただけます。'
+    dishes:
+    - 桂丁地鶏の骨なし中華粥（ピーナッツバター・パクチー抜き可）
+    - 海鮮と豆腐の蟹みそ煮込み
+    - 手羽先の唐揚げ
+    - 蟹みそ焼売
+    - レモングリーンティー
   en:
     name: 12MOON - Congee, Tea & Special Dishes (Shi Er Yue - Guihe Branch)
     name_alt: 12MOON · Taichung Guihe Branch
@@ -712,3 +801,10 @@ december-guihe:
       fee! Keep in mind there’s a 90-minute dining limit, so it’s definitely worth
       booking a table ahead of time. Perfect for family gatherings, girls'' nights
       out, and casual business drinks.'
+    dishes:
+    - Gui Ding (Gui Ding) Boneless Free-Range Chicken Congee (available without peanut
+      butter or cilantro)
+    - Seafood and Tofu Casserole with Crab Roe
+    - Fried Chicken Wings
+    - Steamed Pork Dumplings with Crab Roe (Siu Mai)
+    - Lemon Green Tea

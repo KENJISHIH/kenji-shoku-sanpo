@@ -30,6 +30,8 @@ PROMPTS = {
         "name_alt": '請將以下餐廳副標題翻譯為自然日語:「{value}」。只回答譯名,不要解釋。',
         "location": '請將台灣地名「{value}」翻譯為日文常用寫法(例如「台中市南屯區」→「台中市南屯区」)。只回答譯名。',
         "cuisine": '請將以下料理類型翻譯為日文(用日本食記/食べログ常見詞):「{value}」。多個用「、」分隔,直接列出譯名,不要解釋。',
+        "dishes": '請將以下台灣餐廳的菜色名稱逐一翻譯為日文(用日本人習慣的料理名寫法,括號內的補充說明一併翻譯;保持項目數量與順序一致):「{value}」。多個用「、」分隔,直接列出譯名,不要加編號或解釋。',
+        "signature_dishes": '請將以下台灣餐廳的招牌菜名稱逐一翻譯為日文(用日本人習慣的料理名寫法,括號內補充一併翻譯;保持項目數量與順序一致):「{value}」。多個用「、」分隔,直接列出譯名,不要加編號或解釋。',
         "description": '''請將以下台灣餐廳簡介翻譯為自然流暢的日文,符合食べログ等日本食記網站的語氣。
 重要:
 - 保留段落結構與換行
@@ -60,6 +62,8 @@ PROMPTS = {
         "name_alt": '請將以下餐廳副標題翻譯為自然英文:「{value}」。只回答譯名,不要解釋。',
         "location": '請將台灣地名「{value}」翻譯為英文常用寫法,格式「District, City」(例如「台中市南屯區」→「Nantun District, Taichung」)。只回答譯名。',
         "cuisine": '請將以下料理類型翻譯為英文標籤(用歐美食記常見詞,每個標籤 1-2 個單字,首字母大寫):「{value}」。多個用「、」分隔,直接列出譯名,不要解釋。',
+        "dishes": '請將以下台灣餐廳的菜色名稱逐一翻譯為英文(用歐美菜單常見寫法,括號內補充一併翻譯,必要時於括號附原文拼音;保持項目數量與順序一致):「{value}」。多個用「、」分隔,直接列出譯名,不要加編號或解釋。',
+        "signature_dishes": '請將以下台灣餐廳的招牌菜名稱逐一翻譯為英文(用歐美菜單常見寫法,括號內補充一併翻譯,必要時附原文拼音;保持項目數量與順序一致):「{value}」。多個用「、」分隔,直接列出譯名,不要加編號或解釋。',
         "description": '''請將以下台灣餐廳簡介翻譯為自然流暢的英文,語氣像歐美旅遊美食部落格,寫給來台灣旅遊的外國讀者。
 重要:
 - 保留段落結構與換行
@@ -114,7 +118,7 @@ def translate_field(value, prompt_template: str, field: str):
     else:
         value_str = str(value)
     result = gemini(prompt_template.format(value=value_str))
-    if field == "cuisine" and isinstance(value, list):
+    if isinstance(value, list):
         return [c.strip() for c in result.split("、") if c.strip()]
     return result
 
