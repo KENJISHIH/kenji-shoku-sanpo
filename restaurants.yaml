@@ -437,3 +437,91 @@ restaurants:
       - "炸雞翅"
       - "蟹黃燒賣"
       - "檸檬綠茶"
+
+  - slug: hsi-chen-dali
+    name: "喜辰港式點心茶餐廳 台中大里店"
+    name_alt: "Hsi-Chen Dim Sum · 築間集團"
+    location: "台中市大里區"
+    address: "台中市大里區德芳南路472號"
+    address_ja: "台中市大里区徳芳南路472号"
+    address_en: "No. 472, Defang S. Rd., Dali Dist., Taichung City 412, Taiwan"
+    phone: "04-2481-0081"
+    hours: "平日 11:00-14:30 / 17:00-22:00；假日 11:00-22:00"
+    closed: "無公休"
+    price_range: "NT$ 300-500 / 人"
+    reservation: "接受訂位（線上 inline 訂位）"
+    service: "+10% 服務費"
+    visited_at: "2026-06-16"
+    rating: 4  # TODO: Kenji 自評,我先放 4 預設
+    cuisine: ["港式", "茶餐廳", "港式點心", "粥品"]
+    cover: "20260616-iPhone 17 Pro122512.jpg"  # 鮮竹和牛球,可改
+    same_as:
+      - "https://www.instagram.com/hsichen_dimsum/"
+      - "https://www.facebook.com/hsichendimsum/"
+    signature_dishes:
+      - "喜辰三味燒賣（干貝・松露・魚子）"
+      - "喜辰五寶飯"
+      - "柱侯牛雜麵"
+      - "天崩地裂落石西多士"
+      - "企鵝黑糖QQ包"
+    description: |
+      喜辰港式點心茶餐廳是築間餐飲集團跨足港式餐飲的品牌,邀請擁有超過三十年港點
+      經驗、人稱「點心界大仁哥」的黃義仁主廚坐鎮,主打手工港點現點現蒸,一籠一口
+      到味。台中大里店位於德芳南路上,空間寬敞明亮,適合家庭聚餐與多人合點。
+
+      港點現蒸講究火候與手感,招牌包括喜辰三味燒賣(干貝・松露・魚子一次滿足)、
+      喜辰五寶飯、柱侯牛雜麵,以及網美必點的「天崩地裂落石西多士」與企鵝造型的
+      黑糖QQ包。茶飲有絲襪凍奶茶、西瓜鐵觀音等港式經典。
+
+      適合家庭聚餐、朋友小聚與港點愛好者。與站前秀泰店為同集團姊妹店。
+    dishes:
+      - "鮮竹和牛球"
+      - "玫瑰油雞腿"
+      - "清燉牛腩湯"
+      - "滑蛋牛肉粥"
+      - "楊枝甘露"
+
+  - slug: hsi-chen-xiutai
+    name: "喜辰港式點心茶餐廳 台中站前秀泰店"
+    name_alt: "Hsi-Chen Dim Sum · 秀泰生活台中站前店"
+    location: "台中市東區"
+    address: "台中市東區南京路66號 秀泰生活台中站前店1樓"
+    address_ja: "台中市東区南京路66号 秀泰生活（ショウタイム）台中站前店1階"
+    address_en: "1F, Showtime Living Taichung Station, No. 66, Nanjing Rd., East Dist., Taichung City 401, Taiwan"
+    phone: "04-2211-9027"
+    hours: "平日 11:00-14:00 / 17:00-22:00；假日 11:00-22:00"
+    closed: "無公休"
+    price_range: "NT$ 300-500 / 人"
+    reservation: "接受訂位（線上 inline 訂位）"
+    service: "+10% 服務費，用餐限時 90 分鐘"
+    visited_at: "2026-03-05"
+    rating: 4  # TODO: Kenji 自評,我先放 4 預設
+    cuisine: ["港式", "茶餐廳", "港式點心", "粉麵飯"]
+    cover: "20260305-iPhone 17 Pro133542.jpg"  # 乾炒牛河,可改
+    same_as:
+      - "https://www.instagram.com/hsichen_dimsum/"
+      - "https://www.facebook.com/hsichendimsum/"
+    signature_dishes:
+      - "喜辰三味燒賣"
+      - "黯然叉燒飯"
+      - "韭黃鮮蝦腸粉"
+      - "鮮蝦雲吞麵"
+      - "葡式蛋塔"
+    description: |
+      喜辰港式點心茶餐廳台中站前秀泰店是築間餐飲集團的港式品牌,於 2024 年底進駐
+      秀泰生活台中站前店一樓,鄰近台中車站,逛街看電影後可順道用餐。由人稱「點心界
+      大仁哥」、擁有三十餘年港點資歷的黃義仁主廚領軍,主打星級主廚現做港點。
+
+      招牌包括一次嘗三種口味的喜辰三味燒賣、源自《食神》的黯然叉燒飯、韭黃鮮蝦
+      腸粉、鮮蝦雲吞麵與港式葡式蛋塔。茶餐廳粉麵飯一應俱全,乾炒牛河鑊氣足、餐蛋麵
+      與豉汁蒸排骨都是經典港味。
+
+      空間帶現代設計感、座位不多,用餐限時 90 分鐘,適合通勤族、看電影後續攤與
+      港點愛好者。與大里店為同集團姊妹店。
+    dishes:
+      - "乾炒牛河"
+      - "豉汁蒸排骨"
+      - "鮮竹牛肉球"
+      - "港式煎蘿蔔糕"
+      - "餐蛋麵"
+      - "原盅燉湯"

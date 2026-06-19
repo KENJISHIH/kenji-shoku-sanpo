@@ -16,6 +16,8 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [King Rice Bowl 韓式丼飯](https://kenji-shoku-sanpo.vercel.app/album-king-rice-bowl.html): 韓式/韓式丼飯/炸醬麵/韓食 · 台北市中山區 · ★4/5 — King Rice Bowl(킹덮밥 한식당)是隱身台北中山區長安東路二段巷弄內的韓式小館,
 - [貓老闆咖啡](https://kenji-shoku-sanpo.vercel.app/album-cat-boss.html): 義式/簡餐/咖啡/寵物友善 · 台中市大里區 · ★4/5 — 貓老闆咖啡(Cat Boss)是台中大里的貓咪主題寵物友善簡餐店,位於大里路上、
 - [十二月 粥品·茶飲·私房菜 貴和店](https://kenji-shoku-sanpo.vercel.app/album-december-guihe.html): 粥品/台菜/私房菜/砂鍋粥/茶飲 · 台中市西區 · ★4/5 — 十二月 粥品·茶飲·私房菜(12MOON)貴和店是品牌最美分店,坐落於台中西區貴和街
+- [喜辰港式點心茶餐廳 台中大里店](https://kenji-shoku-sanpo.vercel.app/album-hsi-chen-dali.html): 港式/茶餐廳/港式點心/粥品 · 台中市大里區 · ★4/5 — 喜辰港式點心茶餐廳是築間餐飲集團跨足港式餐飲的品牌,邀請擁有超過三十年港點
+- [喜辰港式點心茶餐廳 台中站前秀泰店](https://kenji-shoku-sanpo.vercel.app/album-hsi-chen-xiutai.html): 港式/茶餐廳/港式點心/粉麵飯 · 台中市東區 · ★4/5 — 喜辰港式點心茶餐廳台中站前秀泰店是築間餐飲集團的港式品牌,於 2024 年底進駐
 
 ## Language versions
 

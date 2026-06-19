@@ -808,3 +808,162 @@ december-guihe:
     - Fried Chicken Wings
     - Steamed Pork Dumplings with Crab Roe (Siu Mai)
     - Lemon Green Tea
+hsi-chen-dali:
+  ja:
+    name: 喜辰（きしん）港式点心茶餐廳 台中大里店
+    name_alt: 禧珍点心 · 築間グループ
+    location: 台中市大里区
+    cuisine:
+    - 香港料理
+    - 香港カフェ
+    - 飲茶・点心
+    - 中華粥
+    dishes:
+    - 和牛の湯葉巻き蒸し
+    - 鶏もも肉のローズ醤油煮込み
+    - 牛バラ肉のクリアスープ
+    - 牛肉と卵のふわとろ粥
+    - 楊枝甘露（マンゴーとグレープフルーツのデザート）
+    signature_dishes:
+    - 喜辰三味焼売（ホタテ・トリュフ・キャビア）
+    - 喜辰五宝飯
+    - 柱侯牛モツ麺
+    - 天崩地裂落石フレンチトースト
+    - ペンギン黒糖もちもちまん
+    description: '「喜辰（シー・チェン）香港飲茶」は、築間（ジュー・ジェン）飲食グループが手掛ける香港料理ブランドです。30年以上の経験を持ち、点心界の「大仁哥（ダーレン・グー）」として名高い黄義仁（ホァン・イーレン）シェフを招聘。注文を受けてから蒸し上げる手作りの点心にこだわり、一口ごとに本場の味を届けます。台中大里店は徳芳南路に位置し、広々とした明るい空間は、ご家族での会食や大人数での集まりに最適です。
+
+
+      絶妙な火加減と手仕事が光る蒸したての点心は、どれも本格派。ホタテ・トリュフ・魚卵を一度に楽しめる「喜辰三味焼売」や、ボリューム満点の「喜辰五宝飯」、「柱侯牛モツ麺」が看板メニューです。また、SNS映え間違いなしの「なだれフレンチトースト（西多士）」や、可愛らしいペンギン型の「黒糖もちもち肉まん（QQ包）」も見逃せません。ドリンクは、定番の「パンストミルクティー」から「スイカ鉄観音」まで、香港らしいメニューが揃っています。
+
+
+      ご家族での食事や友人とのひととき、飲茶ファンの方におすすめの一軒です。台中駅前秀泰店は、同グループの姉妹店となります。'
+  en:
+    name: Xi Chen Hong Kong Style Dim Sum & Tea Restaurant (Taichung Dali)
+    name_alt: 'I will search for the official English name of "築間集團" to ensure the
+      translation is accurate and professional.
+
+      Hsi-Chen Dim Sum by Jhujian Group'
+    location: Dali District, Taichung
+    cuisine:
+    - Hong Kong Style
+    - HK Cafe
+    - Dim Sum
+    - Congee
+    dishes:
+    - Steamed Wagyu Beef Balls with Bean Curd Skin (Xianzhu Wagyu Qiu)
+    - Rose Soy-Poached Chicken Drumstick (Meigui Youjitui)
+    - Clear Broth Beef Brisket Soup (Qingdun Niunan Tang)
+    - Beef and Egg Congee (Huadan Niurou Zhou)
+    - Mango Pomelo Sago (Yangzhi Ganlu)
+    signature_dishes:
+    - Xichen Triple-Flavor Shumai (Scallop, Truffle, Roe; Xichen Sanwei Shaomai)
+    - Xichen Five Treasures Rice (Xichen Wubao Fan)
+    - Chu Hou Braised Beef Offal Noodles (Zhuhou Niuza Mian)
+    - '"Earth-Shattering" Falling Rock Hong Kong Style French Toast (Tianbeng Dilie
+      Luoshi Xi-Duoshi)'
+    - Penguin Brown Sugar Chewy Buns (Penguin Brown Sugar QQ Bao)
+    description: 'Xichen Dim Sum Tea Restaurant is the latest venture from the Zhujian
+      Catering Group as they dive into the world of Hong Kong-style eats. They’ve
+      brought in Chef Huang Yi-ren—famously known as the "In-ge of Dim Sum" (a nod
+      to a popular, reliable TV character) for his 30+ years of expertise—to lead
+      the kitchen. Everything here is handmade and steamed to order, ensuring every
+      bite is spot on. The Dali branch in Taichung is right on Defang South Road,
+      featuring a bright, airy space that’s just right for big family dinners or sharing
+      a spread with friends.
+
+
+      Getting dim sum right is all about the timing and the "hand-feel" of the chef,
+      and they take that craft seriously here. You’ll want to try their signature
+      Three-Flavor Siu Mai (a killer combo of scallop, truffle, and caviar), the Five-Treasure
+      Rice, or the savory Chu Hou Beef Offal Noodles. For the Instagram crowd, the
+      "Avalanche" Hong Kong French Toast is a must-order, along with those adorable
+      penguin-shaped buns filled with brown sugar and chewy mochi (or "QQ" as we call
+      that bouncy texture in Taiwan). To wash it all down, they’ve got classics like
+      Silk Stocking Iced Milk Tea and a unique Watermelon Tieguanyin tea.
+
+
+      Perfect for family gatherings, catching up with friends, and hardcore dim sum
+      fans. It’s a sister location to the branch over at Showtime Live near the Taichung
+      train station.'
+hsi-chen-xiutai:
+  ja:
+    name: 喜辰（キシン）香港点心茶餐廳 台中駅前シュータイ店
+    name_alt: シージェン飲茶 · 秀泰生活 台中駅前店
+    location: 台中市東区
+    cuisine:
+    - 香港料理
+    - 香港カフェ
+    - 飲茶・点心
+    - 麺類・ご飯物
+    dishes:
+    - 牛肉の香港風炒め河粉
+    - スペアリブの豆豉蒸し
+    - 牛肉団子の湯葉巻き蒸し
+    - 香港風焼き大根餅
+    - ランチョンミートと目玉焼きのせ麺
+    - 特製とろ火蒸しスープ
+    signature_dishes:
+    - 喜辰三種シュウマイ（喜辰三味焼売）
+    - 黯然チャーシュー飯（黯然叉焼飯）
+    - 黄ニラと海老のチョンファン（韭黄鮮蝦腸粉）
+    - 海老ワンタン麺（鮮蝦雲吞麺）
+    - エッグタルト（葡式蛋塔）
+    description: '「喜辰港式点心茶餐廳 台中駅前秀泰店」は、築間（ジュー・ジエン）飲食グループが展開する香港料理ブランドです。2024年末に「秀泰生活台中駅前店」の1階へ出店しました。台中駅に隣接しており、ショッピングや映画鑑賞の帰りに立ち寄るのに大変便利な立地です。点心界の「大仁哥（ダーレングォ）」と称され、30年以上のキャリアを持つ黄義仁シェフが総指揮を執り、一流シェフによる作りたての本格点心を主役に据えています。
+
+
+      看板メニューは、3つの味を一度に堪能できる「喜辰三味焼売」や、映画『食神』でおなじみの「黯然（あんぜん）チャーシュー飯」、ニラ黄と海老の蒸し春巻き（チョンファン）、海老ワンタン麺、そして本場のポルトガル風エッグタルトなど。茶餐廳（香港式カフェ）ならではの麺・飯メニューも一通り揃っており、力強い火力が生む香ばしさが自慢の「乾炒牛河（牛河粉の炒めもの）」や、定番の「餐蛋麺（ランチョンミートと目玉焼きのせ麺）」、スペアリブの豆豉蒸しなど、クラシックな香港の味を楽しめます。
+
+
+      モダンなデザインが施された店内は、限られた座席数ながらも洗練された空間です。お食事の制限時間は90分となっており、通勤客や映画帰りのグループ、そして点心ファンの方々に最適です。なお、大里店とは同じグループの姉妹店です。'
+  en:
+    name: Xi Chen Dim Sum (Xi Chen Gang Shi Dian Xin Cha Can Ting - Showtime Live
+      Taichung Station)
+    name_alt: Hsi-Chen Dim Sum · Showtime Live Taichung Station Store
+    location: East District, Taichung
+    cuisine:
+    - Hong Kong
+    - HK Cafe
+    - Dim Sum
+    - Rice & Noodles
+    dishes:
+    - Beef Chow Fun (Stir-fried Rice Noodles with Beef, Gān Chǎo Niú Hé)
+    - Steamed Pork Ribs with Black Bean Sauce (Chǐ Zhī Zhēng Pái Gǔ)
+    - Steamed Beef Balls with Bean Curd Skin (Xiān Zhú Niú Ròu Qiú)
+    - Pan-fried Radish Cake (Hong Kong Style Turnip Cake, Jiān Luó Bo Gāo)
+    - Luncheon Meat and Egg Noodles (Spam and Egg Noodle Soup, Cān Dàn Miàn)
+    - Double-boiled Soup (Slow-simmered Soup in Individual Pots, Yuán Zhōng Dùn Tāng)
+    signature_dishes:
+    - Xi Chen Trio Shumai (Three-Flavor Steamed Pork and Shrimp Dumplings, Xi Chen
+      San Wei Shao Mai)
+    - '"Sorrowful" BBQ Pork Rice (Honey-Glazed Char Siu with Fried Egg, Anran Cha
+      Shao Fan)'
+    - Shrimp and Yellow Chive Rice Noodle Rolls (Jiu Huang Xian Xia Chang Fen)
+    - Shrimp Wonton Noodle Soup (Xian Xia Yun Tun Mian)
+    - Portuguese Egg Tart (Pu Shi Dan Ta)
+    description: 'Xi Chen Hong Kong Dim Sum (喜辰港式點心茶餐廳) is the latest venture from
+      the Chu Jian Dining Group, having landed right on the first floor of Showtime
+      Live Taichung Station in late 2024. Being just a stone''s throw from the Taichung
+      Train Station, it''s a super convenient spot to refuel after a shopping spree
+      or a movie. The kitchen is led by Chef Huang Yi-ren—famously nicknamed the "Da
+      Ren Ge" (a nod to a beloved, reliable character from a popular Taiwanese drama)
+      of the dim sum world—who brings over 30 years of expertise to craft star-quality,
+      handmade bites.
+
+
+      The menu is packed with hits, like the signature Xi Chen Three-Flavor Siu Mai
+      (steamed dumplings) that lets you sample three different flavors at once. Fans
+      of the classic film *The God of Cookery* will definitely want to try the "Sorrowful
+      Char Siu Rice," but you also can’t go wrong with their shrimp rice rolls with
+      yellow chives, shrimp wonton noodles, or flaky Portuguese-style egg tarts. They’ve
+      got all the *Cha Chaan Teng* (Hong Kong-style cafe) staples covered—the Beef
+      Chow Fun is loaded with *wok hei* (that signature smoky aroma from a scorching
+      hot wok), and the spam and egg noodles or steamed spare ribs with black bean
+      sauce are pure comfort food.
+
+
+      The vibe is sleek and modern, and while the space is cozy with limited seating,
+      the 90-minute dining limit ensures things stay lively. It''s a sister branch
+      to their Dali location and a great addition to the local food scene.
+
+
+      Perfect for commuters, post-movie hangouts, and dim sum lovers.'
