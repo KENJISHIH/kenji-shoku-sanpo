@@ -19,6 +19,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [喜辰港式點心茶餐廳 台中大里店](https://kenji-shoku-sanpo.vercel.app/album-hsi-chen-dali.html): 港式/茶餐廳/港式點心/粥品 · 台中市大里區 · ★4/5 — 喜辰港式點心茶餐廳是築間餐飲集團跨足港式餐飲的品牌,邀請擁有超過三十年港點
 - [喜辰港式點心茶餐廳 台中站前秀泰店](https://kenji-shoku-sanpo.vercel.app/album-hsi-chen-xiutai.html): 港式/茶餐廳/港式點心/粉麵飯 · 台中市東區 · ★4/5 — 喜辰港式點心茶餐廳台中站前秀泰店是築間餐飲集團的港式品牌,於 2024 年底進駐
 - [沁園春 LaLaport台中店](https://kenji-shoku-sanpo.vercel.app/album-qin-yuan-chun-lalaport.html): 江浙菜/上海菜/米其林必比登 · 台中市東區 · ★4.5/5 — 沁園春創立於 1949 年,是台中飄香七十餘年的老字號江浙菜餐廳,連年獲米其林
+- [近炭 爐端燒](https://kenji-shoku-sanpo.vercel.app/album-kin-tan.html): 日式/爐端燒/居酒屋/串燒/生食 · 台中市西屯區 · ★4.5/5 — 近炭 是 2026 年 6 月才在台中朝馬商圈開幕的爐端燒專門店。以一字排開的吧台
 
 ## Language versions
 
