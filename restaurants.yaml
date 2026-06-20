@@ -525,3 +525,47 @@ restaurants:
       - "港式煎蘿蔔糕"
       - "餐蛋麵"
       - "原盅燉湯"
+
+  - slug: qin-yuan-chun-lalaport
+    name: "沁園春 LaLaport台中店"
+    name_alt: "Qin Yuan Chun · LaLaport 台中"
+    location: "台中市東區"
+    address: "台中市東區進德路600號5樓 LaLaport台中北館"
+    address_ja: "台中市東区進徳路600号5階 ららぽーと台中 北館"
+    address_en: "5F (North Bldg.), LaLaport Taichung, No. 600, Jinde Rd., East Dist., Taichung City, Taiwan"
+    phone: "04-2211-2221"
+    hours: "週一至週五 11:00-14:30(L.O.13:50)／17:00-21:00(L.O.20:30)"
+    price_range: "NT$ 400-600 / 人"
+    reservation: "接受訂位（電話 / 線上訂位）"
+    service: "+10% 服務費"
+    visited_at: "2026-06-19"
+    rating: 4.5
+    cuisine: ["江浙菜", "上海菜", "米其林必比登"]
+    cover: "20260619-iPhone 17 Pro191548.jpg"  # 小籠包
+    same_as:
+      - "https://www.qin-yuan-chun1949.com/"
+    signature_dishes:
+      - "砂鍋醃篤鮮"
+      - "小籠包"
+      - "蟹粉豆腐"
+      - "四喜烤麩"
+      - "排骨蛋炒飯"
+    description: |
+      沁園春創立於 1949 年,是台中飄香七十餘年的老字號江浙菜餐廳,連年獲米其林
+      必比登推薦。LaLaport台中店位於東區進德路三井 LaLaport 北館 5 樓,把創始店的
+      經典上海味帶進百貨商場,環境寬敞、適合家庭聚餐。
+
+      招牌砂鍋醃篤鮮湯汁奶白鮮醇,蟹粉豆腐滑嫩入味,四喜烤麩冷前菜經典開胃,
+      現蒸小籠包皮薄多汁,排骨蛋炒飯粒粒分明、配上滷得透亮的排骨,蔥爆牛肉鑊氣足,
+      糖醋鮮魚片酸甜討喜,炒高麗菜清爽解膩,蔥開煨麵收尾暖胃。一桌豐盛、
+      吃得放鬆又滿足。
+    dishes:
+      - "砂鍋醃篤鮮"
+      - "蟹粉豆腐"
+      - "四喜烤麩"
+      - "小籠包"
+      - "排骨蛋炒飯"
+      - "蔥爆牛肉"
+      - "糖醋鮮魚片"
+      - "炒高麗菜"
+      - "蔥開煨麵"

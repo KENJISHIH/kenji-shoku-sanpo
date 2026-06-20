@@ -196,4 +196,19 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-hsi-chen-xiutai.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-hsi-chen-xiutai.html"/>
   </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/album-qin-yuan-chun-lalaport.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-qin-yuan-chun-lalaport.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-qin-yuan-chun-lalaport.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-qin-yuan-chun-lalaport.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/ja/album-qin-yuan-chun-lalaport.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-qin-yuan-chun-lalaport.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-qin-yuan-chun-lalaport.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-qin-yuan-chun-lalaport.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/en/album-qin-yuan-chun-lalaport.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-qin-yuan-chun-lalaport.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-qin-yuan-chun-lalaport.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-qin-yuan-chun-lalaport.html"/>
+  </url>
 </urlset>
