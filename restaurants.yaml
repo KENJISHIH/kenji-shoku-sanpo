@@ -575,6 +575,8 @@ restaurants:
     name_alt: "KIN-TAN Robatayaki"
     location: "台中市西屯區"
     address: "台中市西屯區朝馬路70號"
+    address_ja: "台中市西屯区朝馬路70号"
+    address_en: "No. 70, Chaoma Rd., Xitun Dist., Taichung City 407, Taiwan"
     hours: "18:30起（晚間時段）"
     price_range: "NT$ 1,000-1,800 / 人"
     reservation: "建議訂位（可包吧台）"
