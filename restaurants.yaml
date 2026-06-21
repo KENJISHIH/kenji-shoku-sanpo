@@ -575,11 +575,11 @@ restaurants:
     name_alt: "KIN-TAN Robatayaki"
     location: "台中市西屯區"
     address: "台中市西屯區朝馬路70號"
-    hours: "18:30 起（晚間時段）"
+    hours: "18:30起（晚間時段）"
     price_range: "NT$ 1,000-1,800 / 人"
     reservation: "建議訂位（可包吧台）"
     visited_at: "2026-06-20"
-    rating: 4.5
+    rating: 5.0
     cuisine: ["日式", "爐端燒", "居酒屋", "串燒", "生食"]
     cover: "20260620-215139.jpg"  # 爐端吧台環境照
     description: |
