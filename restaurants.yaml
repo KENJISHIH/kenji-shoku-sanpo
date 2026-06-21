@@ -577,9 +577,10 @@ restaurants:
     address: "台中市西屯區朝馬路70號"
     address_ja: "台中市西屯区朝馬路70号"
     address_en: "No. 70, Chaoma Rd., Xitun Dist., Taichung City 407, Taiwan"
-    hours: "18:30起（晚間時段）"
+    phone: "04-2258-0090"
+    hours: "每日 18:00-02:00"
     price_range: "NT$ 1,000-1,800 / 人"
-    reservation: "建議訂位（可包吧台）"
+    reservation: "可線上 inline 訂位（可包吧台）"
     visited_at: "2026-06-20"
     rating: 5.0
     cuisine: ["日式", "爐端燒", "居酒屋", "串燒", "生食"]
