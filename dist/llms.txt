@@ -20,6 +20,9 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [喜辰港式點心茶餐廳 台中站前秀泰店](https://kenji-shoku-sanpo.vercel.app/album-hsi-chen-xiutai.html): 港式/茶餐廳/港式點心/粉麵飯 · 台中市東區 · ★4/5 — 喜辰港式點心茶餐廳台中站前秀泰店是築間餐飲集團的港式品牌,於 2024 年底進駐
 - [沁園春 LaLaport台中店](https://kenji-shoku-sanpo.vercel.app/album-qin-yuan-chun-lalaport.html): 江浙菜/上海菜/米其林必比登 · 台中市東區 · ★4.5/5 — 沁園春創立於 1949 年,是台中飄香七十餘年的老字號江浙菜餐廳,連年獲米其林
 - [近炭 爐端燒](https://kenji-shoku-sanpo.vercel.app/album-kin-tan.html): 日式/爐端燒/居酒屋/串燒/生食 · 台中市西屯區 · ★5.0/5 — 近炭 是 2026 年 6 月才在台中朝馬商圈開幕的爐端燒專門店。以一字排開的吧台
+- [麵屋秋鳴](https://kenji-shoku-sanpo.vercel.app/album-menya-chiuming.html): 日式/拉麵/鴨湯/鴨白湯 · 台中市南區 · ★4.5/5 — 麵屋秋鳴 是台中老牌「狸匠拉麵」推出的新品牌,號稱台中第一家鴨白湯拉麵專賣店,
+- [飯穀 Fun Good](https://kenji-shoku-sanpo.vercel.app/album-fungood.html): 台式/家常菜/個人套餐/私房料理 · 台中市西區 · ★4.5/5 — 飯穀 Fun Good 是隱身台中西區精美街巷弄的家庭小料理,以「個人套餐」為主打,
+- [高林鐵板燒 健行店](https://kenji-shoku-sanpo.vercel.app/album-kaulin-jianxing.html): 鐵板燒/台式/牛排/平價 · 台中市西區 · ★4.5/5 — 高林鐵板燒 是台中在地老字號的平價鐵板燒,健行店位於西區健行路、金典綠園道
 
 ## Language versions
 

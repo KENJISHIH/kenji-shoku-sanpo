@@ -226,4 +226,49 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-kin-tan.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-kin-tan.html"/>
   </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/album-menya-chiuming.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-menya-chiuming.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-menya-chiuming.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-menya-chiuming.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/ja/album-menya-chiuming.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-menya-chiuming.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-menya-chiuming.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-menya-chiuming.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/en/album-menya-chiuming.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-menya-chiuming.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-menya-chiuming.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-menya-chiuming.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/album-fungood.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-fungood.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-fungood.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-fungood.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/ja/album-fungood.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-fungood.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-fungood.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-fungood.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/en/album-fungood.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-fungood.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-fungood.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-fungood.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/album-kaulin-jianxing.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-kaulin-jianxing.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-kaulin-jianxing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-kaulin-jianxing.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/ja/album-kaulin-jianxing.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-kaulin-jianxing.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-kaulin-jianxing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-kaulin-jianxing.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/en/album-kaulin-jianxing.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-kaulin-jianxing.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-kaulin-jianxing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-kaulin-jianxing.html"/>
+  </url>
 </urlset>

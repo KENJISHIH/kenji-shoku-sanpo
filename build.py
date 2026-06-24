@@ -261,6 +261,7 @@ GLOSSARIES = {
         ("現場候位", "予約不可（先着順）"),
         ("單點式", "アラカルト"),
         ("可外帶", "テイクアウト可"),
+        ("可刷卡", "クレジットカード"),
         ("接受訂位", "予約可"),
         ("無服務費", "サービス料なし"),
         ("無公休", "定休日なし"),
@@ -315,6 +316,7 @@ GLOSSARIES = {
         ("平日不限時", "no time limit on weekdays"),
         ("完全預約制", "reservation only"),
         ("現場候位", "walk-in only"),
+        ("可刷卡", "credit cards"),
         ("接受訂位", "reservations accepted"),
         ("可訂位", "reservations accepted"),
         ("有插座", "power outlets available"),
@@ -524,6 +526,9 @@ def localize_album(album: dict, lang: str, translations: dict) -> dict:
     for field in ["hours", "closed", "reservation", "service", "price_range"]:
         if a.get(field):
             a[field] = apply_glossary(a[field], lang)
+    # payment is a list; glossary each item.
+    if a.get("payment"):
+        a["payment"] = [apply_glossary(item, lang) for item in a["payment"]]
     # Auto-extract good_for from description if not manually set. Keeps Kenji's
     # natural writing ("適合 X、Y、Z") working as a structured tag without him
     # filling a separate field per restaurant.
