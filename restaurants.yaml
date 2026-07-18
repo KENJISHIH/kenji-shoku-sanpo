@@ -705,3 +705,90 @@ restaurants:
       - "炒高麗菜"
       - "玉米濃湯"
       - "煎香蕉"
+
+  - slug: sanraku-oakridge
+    name: "三樂 日本料理 Oakridge 店"
+    name_alt: "Sanraku Japanese Restaurant"
+    location: "美國加州 聖荷西"
+    address: "925 Blossom Hill Road, San Jose, CA 95123, USA"
+    address_ja: "925 Blossom Hill Road, San Jose, CA 95123, アメリカ"
+    address_en: "925 Blossom Hill Road, San Jose, CA 95123, USA"
+    phone: "+1 408-363-2110"
+    hours: "週一至週四 11:00-20:00 / 週五、週六 11:00-20:30 / 週日 11:00-19:30"
+    price_range: "US$ 20-60 / 人"
+    price_range_usd: "US$ 20-60 / person"
+    price_range_jpy: "¥3,000-9,000 / 人"
+    reservation: "接受訂位（可官網線上預約）"
+    transit: "Westfield Oakridge 購物中心內"
+    payment: ["信用卡", "現金"]
+    languages: ["英文", "日文"]
+    foreign_menu: ["英文菜單", "日文菜單"]
+    visited_at: "2026-07-17"
+    rating: 4.5
+    cuisine: ["日式", "壽司", "生食", "天婦羅", "居酒屋"]
+    cover: "20260717-iPhone 17 Pro181641.jpg"  # 板前壽司吧環境照
+    same_as:
+      - "https://www.sanraku.com/sanraku-at-westfield-oakridge"
+      - "https://www.instagram.com/sanrakusanjose/"
+    description: |
+      三樂（Sanraku）是舊金山灣區歷史悠久的日本料理品牌,這家分店位於聖荷西
+      Westfield Oakridge 購物中心內,以開放式板前壽司吧為核心,師傅現場捏製握壽司
+      與江戶前料理,主打新鮮生魚與正統日式餐點,是逛街用餐的道地選擇。
+
+      握壽司陣容華麗:鮪魚大腹(大トロ)油花細緻、炙燒鮭魚腹入口即化、間八與白鮪魚
+      清爽,甜蝦附炸蝦頭一物二吃,稻荷壽司甜香。單點方面,炭烤整尾魷魚醬香十足、
+      花枝腳唐揚酥脆佐美乃滋,生魚片沙拉配魚卵與白蘿蔔絲清爽開胃。丼飯有鮭魚親子丼、
+      鰻魚天婦羅丼;天婦羅烏龍麵以炸物籃架在熱烏龍上桌,蝦與時蔬酥脆,另有蝦天婦羅捲。
+      適合逛街小聚、想吃新鮮壽司與正統日式料理的午、晚餐。
+    dishes:
+      - "鮪魚大腹握壽司（大トロ）"
+      - "炙燒鮭魚腹握壽司"
+      - "鮭魚握壽司"
+      - "間八握壽司"
+      - "白鮪魚握壽司"
+      - "甜蝦握壽司（附炸蝦頭）"
+      - "稻荷壽司"
+      - "炭烤整尾魷魚"
+      - "花枝腳唐揚"
+      - "生魚片沙拉"
+      - "天婦羅烏龍麵"
+      - "蝦天婦羅捲"
+      - "鮭魚親子丼"
+      - "鰻魚天婦羅丼"
+
+  - slug: orange-square-santa-clara
+    name: "Orange Square 橘子堂"
+    name_alt: "Orange Square"
+    location: "美國加州 Santa Clara"
+    address: "2605 Homestead Rd, Santa Clara, CA 95051, USA"
+    address_ja: "アメリカ・カリフォルニア州サンタクララ 2605 Homestead Rd"
+    address_en: "2605 Homestead Rd, Santa Clara, CA 95051, USA"
+    phone: "(408) 216-0168"
+    hours: "週一至週四、週日 11:00-20:00 / 週五、週六 11:00-20:30"
+    price_range: "US$ 10-20 / 人"
+    price_range_usd: "US$ 10-20 / person"
+    reservation: "僅現場點餐"
+    visited_at: "2026-07-17"
+    rating: 4.3
+    cuisine: ["台菜", "便當", "丼飯", "台式小吃", "珍珠奶茶"]
+    cover: "20260717-iPhone 17 Pro123859.jpg"  # 椒麻雞便當全景,可改
+    description: |
+      Orange Square 橘子堂 是灣區的台式連鎖餐飲品牌,以台式便當、丼飯與手搖珍奶為主軸,
+      走櫃檯點餐、紙盒外帶的輕鬆路線。招牌是橘紅色的芝麻吐司方塊 logo,Santa Clara 分店
+      坐落於 Homestead Rd 街角商場,開放式廚房現點現做,把台灣街頭的家常滋味搬到美國西岸。
+
+      餐點以主菜丼飯與便當為核心。椒麻雞便當炸雞排酥脆,鋪滿蔥花、辣椒與香菜並附檸檬,
+      配白飯、炒高麗菜木耳、玉米、花椰菜與春捲;爌肉香腸雙拼丼油亮下飯,佐台式香腸與雙顆滷蛋;
+      照燒雞腿丼淋醬撒白芝麻,唐揚炸雞丼則是粒粒現炸。小點有爆漿金沙芋頭球(鹹蛋黃流心)、
+      地瓜薯條佐炸九層塔與滷味拼盤,飲料則是珍珠奶茶與芒果水果冰沙。
+      適合想在海外解台灣味的午餐、外帶與三五好友小聚。
+    dishes:
+      - "椒麻雞便當"
+      - "爌肉香腸雙拼丼"
+      - "照燒雞腿丼"
+      - "唐揚炸雞丼"
+      - "金沙芋頭球（爆漿鹹蛋黃）"
+      - "地瓜薯條佐炸九層塔"
+      - "滷味拼盤"
+      - "珍珠奶茶"
+      - "芒果水果冰沙"

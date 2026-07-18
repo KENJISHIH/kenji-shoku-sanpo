@@ -1155,8 +1155,8 @@ menya-chiuming:
     - Duck Paitan Ramen (Onna-yu "Lady" White Broth)
     - Stir-Fried Greens
     description: 'Menya Chiuming is a new brand from the long-running Taichung ramen
-      house Lijiang (Tanuki) Ramen, billed as the city''s first shop dedicated to duck
-      paitan—rich, milky duck-bone broth. Tucked along Wenxin S. Rd. in Taichung''s
+      house Lijiang (Tanuki) Ramen, billed as the city''s first shop dedicated to
+      duck paitan—rich, milky duck-bone broth. Tucked along Wenxin S. Rd. in Taichung''s
       South District, about a four-minute drive from Daqing Station, this Japanese-style
       spot regularly draws a queue. Everything centers on duck broth, split into two
       lines: a clear consommé and a creamy paitan.
@@ -1216,9 +1216,9 @@ fungood:
     description: 'Fun Good is a cozy home-style eatery tucked into a lane off Jingmei
       St. in Taichung''s West District, built around set meals for one. It''s known
       for wallet-friendly comfort food and earns strong online reviews. Each set comes
-      with a main dish, three classic Taiwanese small sides, seasonal vegetables, and
-      "Tiansheng" premium rice from Taiwan''s east coast—a generous, balanced spread
-      even for a solo diner.
+      with a main dish, three classic Taiwanese small sides, seasonal vegetables,
+      and "Tiansheng" premium rice from Taiwan''s east coast—a generous, balanced
+      spread even for a solo diner.
 
 
       House specialties include black-garlic beef stir-fried with crispy garlic chips
@@ -1252,7 +1252,8 @@ kaulin-jianxing:
     description: '高林鉄板焼きは、台中で長く愛される老舗のリーズナブルな鉄板焼き店です。健行店は西区の健行路沿い、金典緑園道の向かいにあり、国立自然科学博物館（科博館）にも近く、平日・週末を問わず行列ができる人気店です。看板は「ダブルメインのセット」で、ワンコイン感覚で主菜が二品選べ、コーンスープ・ライス・野菜炒め・もやし・食後のデザートが付きます。
 
 
-      鉄板の上で職人が焼き上げる料理は、外は香ばしく中はジューシーなサイコロステーキ、玉ねぎと黒胡椒の効いた鉄板牛肉、歯ごたえのよい鉄板イカなど。付け合わせのキャベツ炒めはあっさり、名物のコーンスープは濃厚です。食後のデザートは三種から選べ、練乳をかけた焼きバナナが定番。薬味には揚げニンニクチップと胡椒塩が添えられます。クレジットカード・Apple Pay 利用可。
+      鉄板の上で職人が焼き上げる料理は、外は香ばしく中はジューシーなサイコロステーキ、玉ねぎと黒胡椒の効いた鉄板牛肉、歯ごたえのよい鉄板イカなど。付け合わせのキャベツ炒めはあっさり、名物のコーンスープは濃厚です。食後のデザートは三種から選べ、練乳をかけた焼きバナナが定番。薬味には揚げニンニクチップと胡椒塩が添えられます。クレジットカード・Apple
+      Pay 利用可。
 
 
       リーズナブルでコスパの高い鉄板焼きを楽しみたい昼・夜の食事におすすめです。'
@@ -1274,10 +1275,10 @@ kaulin-jianxing:
     - Pan-Fried Banana
     description: 'Kaulin Teppanyaki is a long-running, budget-friendly local favorite
       in Taichung. The Jianxing branch sits on Jianxing Rd. across from the Splendor
-      Park boulevard, close to the Museum of Natural Science, and draws queues on weekdays
-      and weekends alike. The draw is its "double-main set"—two main dishes at a wallet-friendly
-      price, served with corn soup, rice, stir-fried vegetables, bean sprouts, and
-      a dessert.
+      Park boulevard, close to the Museum of Natural Science, and draws queues on
+      weekdays and weekends alike. The draw is its "double-main set"—two main dishes
+      at a wallet-friendly price, served with corn soup, rice, stir-fried vegetables,
+      bean sprouts, and a dessert.
 
 
       Cooked to order on the iron griddle, the diced steak is seared outside and juicy
@@ -1289,3 +1290,158 @@ kaulin-jianxing:
 
 
       A great pick for an affordable, high-value teppanyaki lunch or dinner.'
+sanraku-oakridge:
+  ja:
+    name: 三楽 日本料理 オークリッジ店（さんらく にほんりょうり オークリッジてん）
+    name_alt: 和食処 三楽
+    location: アメリカ合衆国カリフォルニア州サンノゼ
+    cuisine:
+    - 和食
+    - 寿司
+    - 魚介料理・海鮮料理
+    - 天ぷら
+    - 居酒屋
+    dishes:
+    - 大トロ握り（大トロ）
+    - 炙りサーモンハラス握り
+    - サーモン握り
+    - カンパチ握り
+    - ビントロ握り
+    - 甘エビ握り（エビの頭の唐揚げ付き）
+    - いなり寿司
+    - イカの姿焼き
+    - ゲソの唐揚げ
+    - お刺身サラダ
+    - 天ぷらうどん
+    - 海老天ロール
+    - サーモン親子丼
+    - 鰻天丼
+    description: 'サンフランシスコ・ベイエリアで歴史ある日本料理ブランド「三楽（Sanraku）」。サンノゼのショッピングセンター「ウェストフィールド・オークリッジ」内にあるこの店舗は、開放感あふれる板前スタイルの寿司カウンターが主役です。職人が目の前で握る寿司や江戸前料理が楽しめ、新鮮なネタと本格的な和食に定評があります。ショッピングの合間に立ち寄れる、本場の味を知る人にもおすすめの一軒です。
+
+
+      握り寿司のラインナップは実に華やか。きめ細やかな脂がのった大トロや、口の中でとろける炙りサーモンハラス、さっぱりとしたカンパチやホワイトツナが並びます。甘エビは揚げた頭が添えられ、二通りの味わいを楽しめるのも魅力。甘みが際立ついなり寿司も人気です。
+
+      一品料理では、香ばしいタレの香りが食欲をそそるイカの姿焼きや、マヨネーズとの相性が抜群なイカゲソの唐揚げ、とびこと大根のつまがアクセントの刺身サラダなど、お酒も進むメニューが揃います。丼ものは「鮭といくらの親子丼」や「鰻の天丼」がおすすめ。天ぷらとお出汁を分けたスタイルで提供される天ぷらうどんは、海老や季節の野菜がサクサクのまま楽しめます。ショッピング中のランチやディナーに、新鮮な寿司と本格的な日本料理を心ゆくまで堪能できるお店です。'
+  en:
+    name: Sanraku Japanese Cuisine (Oakridge)
+    name_alt: Sanraku Japanese Cuisine
+    location: San Jose, California
+    cuisine:
+    - Japanese
+    - Sushi
+    - Raw
+    - Tempura
+    - Izakaya
+    dishes:
+    - Fatty Tuna Nigiri (Otoro)
+    - Seared Salmon Belly Nigiri (Aburi Salmon Belly)
+    - Salmon Nigiri (Sake)
+    - Amberjack Nigiri (Kanpachi)
+    - White Tuna Nigiri (Shiro Maguro)
+    - Sweet Shrimp Nigiri (with Fried Shrimp Head; Amaebi)
+    - Inari Sushi (Fried Tofu Pouch)
+    - Charcoal-Grilled Whole Squid
+    - Crispy Fried Squid Tentacles (Karaage)
+    - Sashimi Salad (Sashimi Sarada)
+    - Tempura Udon
+    - Shrimp Tempura Roll (Ebi Tempura Roll)
+    - Salmon and Ikura Don (Salmon and Roe Bowl; Sake Oyako Don)
+    - Eel Tempura Don (Unagi Tempura Bowl)
+    description: 'Sanraku is a legendary name in the San Francisco Bay Area’s Japanese
+      food scene, and their San Jose branch tucked inside Westfield Oakridge is a
+      total gem. The whole experience centers around an open sushi bar where you can
+      watch the chefs expertly hand-press nigiri and craft Edomae-style dishes (a
+      traditional Tokyo-style preparation) right before your eyes. If you’re looking
+      for a legit spot for fresh sashimi and authentic Japanese flavors while out
+      shopping, this is your place.
+
+
+      The nigiri lineup is honestly stunning: the Otoro (fatty tuna) has that perfect,
+      delicate marbling, the seared salmon belly literally melts in your mouth, and
+      the amberjack and white tuna are incredibly clean and fresh. They even serve
+      the sweet shrimp with crispy fried shrimp heads so you get two textures in one
+      go, plus some lovely sweet-and-savory Inari (sushi rice tucked into fried tofu
+      skins). For small plates, the charcoal-grilled whole squid is packed with savory
+      sauce, and the crispy calamari legs karaage (Japanese-style deep fry) paired
+      with mayo is a crowd-pleaser. You can also grab a refreshing sashimi salad topped
+      with roe and shredded daikon. If you want something heartier, they’ve got Donburi
+      (rice bowls) like Salmon & Ikura or Eel Tempura, and the Tempura Udon is served
+      with a basket of crispy shrimp and veggies perched right over the steaming noodles.
+
+
+      Perfect for a mid-shopping break, casual catch-ups, and anyone craving fresh
+      sushi or authentic Japanese cuisine for lunch or dinner.'
+orange-square-santa-clara:
+  ja:
+    name: オレンジスクエア 橘子堂（オレンジスクエア きつしどう）
+    name_alt: オレンジスクエア
+    location: アメリカ合衆国カリフォルニア州サンタクララ
+    cuisine:
+    - 台湾料理
+    - 弁当
+    - 丼もの
+    - 台湾小吃
+    - タピオカ
+    dishes:
+    - 椒麻鶏（ジャオマージー）弁当
+    - 爌肉（コンロウ）と台湾ソーセージの二種盛り丼
+    - 照り焼きチキンステーキ丼
+    - 鶏の唐揚げ丼
+    - タロ芋の塩卵ソースボール（とろける塩卵ソース入り）
+    - さつまいもスティック 揚げバジル添え
+    - 台湾風煮込み（ルーウェイ）の盛り合わせ
+    - タピオカミルクティー
+    - マンゴーフルーツスムージー
+    description: 'Orange Square（オレンジ・スクエア） 橘子堂は、サンフランシスコ・ベイエリアで展開する台湾料理のチェーンブランドです。台湾式の弁当や丼もの、タピオカミルクティーをメインに、カウンターで注文し紙容器でテイクアウトするカジュアルなスタイルで親しまれています。オレンジ色のゴマトーストをモチーフにした四角いロゴが目印で、サンタクララ店はHomestead
+      Rd沿いのショッピングセンターの一角に位置しています。オープンキッチンでは注文を受けてから調理を行い、台湾の街角でお馴染みの家庭的な味わいをアメリカ西海岸に再現しています。
+
+
+      メニューは、メイン料理を選べる丼ものや弁当が中心です。看板メニューの「椒麻鶏（ジャオマージー）弁当」は、カリッと揚げられた鶏肉にネギ、唐辛子、パクチーがたっぷりと載せられ、レモンが添えられています。付け合わせには、白米のほか、キャベツとキクラゲの炒め物、トウモロコシ、ブロッコリー、春巻きなどが彩り豊かに並びます。「豚バラ角煮と台湾ソーセージの合い盛り丼」は、ツヤよく煮込まれたお肉がご飯によく合い、ソーセージと2個の煮卵が添えられた満足感のある一品です。ほかにも、タレと白ごまが香る照り焼きチキン丼や、揚げたての唐揚げ丼も人気です。サイドメニューには、中から塩卵ソースが溢れ出すタロイモボールや、揚げバジルを添えたサツマイモフライ、台湾風煮込み「滷味（ルーウェイ）」の盛り合わせなどが揃い、ドリンクはタピオカミルクティーやマンゴースムージーが楽しめます。
+
+
+      海外で台湾の味が恋しくなった時のランチやテイクアウト、友人との気軽な集まりにぴったりの一軒です。'
+  en:
+    name: Orange Square (Ju Zi Tang)
+    name_alt: Orange Square
+    location: Santa Clara, California
+    cuisine:
+    - Taiwanese
+    - Bento Box
+    - Rice Bowl
+    - Street Food
+    - Bubble Tea
+    dishes:
+    - Thai-Style Spicy & Numbing Fried Chicken Bento (Jiao Ma Ji)
+    - Braised Pork Belly & Taiwanese Sausage Combo Donburi (Kong Rou & Xiang Chang)
+    - Teriyaki Chicken Thigh Donburi
+    - Japanese Fried Chicken (Karaage) Donburi
+    - Golden Sand Taro Balls (with Molten Salted Egg Yolk Center)
+    - Sweet Potato Fries with Crispy Thai Basil
+    - Taiwanese Braised Platter (Lu Wei)
+    - Pearl Milk Tea (Boba Milk Tea)
+    - Mango Fruit Smoothie
+    description: 'Orange Square is a local Bay Area favorite for anyone craving Taiwanese
+      comfort food, specializing in bento boxes, rice bowls, and hand-shaken bubble
+      tea. It’s got a super relaxed vibe with quick counter service and convenient
+      takeout boxes—just look for their signature orange sesame toast logo! The Santa
+      Clara spot is tucked away in a shopping center on Homestead Rd, where an open
+      kitchen whips up everything fresh to order, bringing those authentic Taiwanese
+      street-food flavors right to the West Coast.
+
+
+      The menu centers on hearty rice bowls and bento (traditional multi-compartment
+      meal boxes). Their Jiao Ma Chicken bento is a standout, featuring a crispy fried
+      chicken cutlet loaded with scallions, chili, and cilantro, plus a lemon wedge
+      for a citrusy kick. It comes packed with white rice, sautéed cabbage with wood
+      ear mushrooms, corn, broccoli, and a spring roll. For something extra savory,
+      the Braised Pork Belly and Sausage combo is a must-try, served with Taiwanese
+      sausage and two Lu Dan (soy-braised eggs). They also serve up glazed Teriyaki
+      Chicken and fresh, crispy Karaage bowls. Don’t sleep on the snacks either—the
+      Golden Lava Taro Balls with their molten salted egg yolk center are incredible,
+      as are the sweet potato fries with crispy fried basil and the Lu Wei (soy-marinated
+      appetizer) platters. To drink, you can’t go wrong with their classic boba or
+      a refreshing mango smoothie.
+
+
+      Perfect for a quick Taiwanese comfort lunch, easy takeout, or a casual hang
+      with friends.'

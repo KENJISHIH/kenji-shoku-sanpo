@@ -271,4 +271,34 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-kaulin-jianxing.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-kaulin-jianxing.html"/>
   </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/album-sanraku-oakridge.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-sanraku-oakridge.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-sanraku-oakridge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-sanraku-oakridge.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/ja/album-sanraku-oakridge.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-sanraku-oakridge.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-sanraku-oakridge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-sanraku-oakridge.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/en/album-sanraku-oakridge.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-sanraku-oakridge.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-sanraku-oakridge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-sanraku-oakridge.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/album-orange-square-santa-clara.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-orange-square-santa-clara.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-orange-square-santa-clara.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-orange-square-santa-clara.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/ja/album-orange-square-santa-clara.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-orange-square-santa-clara.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-orange-square-santa-clara.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-orange-square-santa-clara.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/en/album-orange-square-santa-clara.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-orange-square-santa-clara.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-orange-square-santa-clara.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-orange-square-santa-clara.html"/>
+  </url>
 </urlset>

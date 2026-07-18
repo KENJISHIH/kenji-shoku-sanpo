@@ -23,6 +23,8 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [麵屋秋鳴](https://kenji-shoku-sanpo.vercel.app/album-menya-chiuming.html): 日式/拉麵/鴨湯/鴨白湯 · 台中市南區 · ★4.5/5 — 麵屋秋鳴 是台中老牌「狸匠拉麵」推出的新品牌,號稱台中第一家鴨白湯拉麵專賣店,
 - [飯穀 Fun Good](https://kenji-shoku-sanpo.vercel.app/album-fungood.html): 台式/家常菜/個人套餐/私房料理 · 台中市西區 · ★4.5/5 — 飯穀 Fun Good 是隱身台中西區精美街巷弄的家庭小料理,以「個人套餐」為主打,
 - [高林鐵板燒 健行店](https://kenji-shoku-sanpo.vercel.app/album-kaulin-jianxing.html): 鐵板燒/台式/牛排/平價 · 台中市西區 · ★4.5/5 — 高林鐵板燒 是台中在地老字號的平價鐵板燒,健行店位於西區健行路、金典綠園道
+- [三樂 日本料理 Oakridge 店](https://kenji-shoku-sanpo.vercel.app/album-sanraku-oakridge.html): 日式/壽司/生食/天婦羅/居酒屋 · 美國加州 聖荷西 · ★4.5/5 — 三樂（Sanraku）是舊金山灣區歷史悠久的日本料理品牌,這家分店位於聖荷西
+- [Orange Square 橘子堂](https://kenji-shoku-sanpo.vercel.app/album-orange-square-santa-clara.html): 台菜/便當/丼飯/台式小吃/珍珠奶茶 · 美國加州 Santa Clara · ★4.3/5 — Orange Square 橘子堂 是灣區的台式連鎖餐飲品牌,以台式便當、丼飯與手搖珍奶為主軸,
 
 ## Language versions
 

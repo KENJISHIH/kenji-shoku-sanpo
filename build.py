@@ -236,6 +236,14 @@ GLOSSARIES = {
         ("商務", "ビジネス"),
         ("慶生", "誕生日祝い"),
         ("約會", "デート"),
+        # 海外分店用語（2026-07 Sanraku SJ，第一家美國店。菜單版須在單字版之前）
+        ("可官網線上預約", "公式サイトでオンライン予約可"),
+        ("購物中心內", "ショッピングモール内"),
+        ("英文菜單", "英語メニュー"),
+        ("日文菜單", "日本語メニュー"),
+        ("信用卡", "クレジットカード"),
+        ("英文", "英語"),
+        ("日文", "日本語"),
         # service / closed / reservation phrases
         ("白飯、味噌湯無限續，無服務費", "ご飯・味噌汁おかわり自由、サービス料なし"),
         ("白飯、味噌湯無限續", "ご飯・味噌汁おかわり自由"),
@@ -271,6 +279,7 @@ GLOSSARIES = {
         ("週三", "水曜"),
         ("週四", "木曜"),
         ("週五", "金曜"),
+        ("週六", "土曜"),
         ("週日", "日曜"),
         ("假日", "土日祝"),
         ("線上訂位", "オンライン予約"),
@@ -290,6 +299,15 @@ GLOSSARIES = {
         ("商務", "business meals"),
         ("慶生", "birthdays"),
         ("約會", "dates"),
+        # overseas store terms (2026-07 Sanraku SJ, first US restaurant; menu variants before bare word)
+        ("可官網線上預約", "online booking on official website"),
+        ("購物中心內", "shopping mall"),
+        ("英文菜單", "English menu"),
+        ("日文菜單", "Japanese menu"),
+        ("信用卡", "credit card"),
+        ("現金", "cash"),
+        ("英文", "English"),
+        ("日文", "Japanese"),
         # service / closed / reservation phrases (longest first)
         ("白飯、味噌湯無限續，無服務費", "free rice & miso soup refills, no service charge"),
         ("白飯、味噌湯無限續", "free rice & miso soup refills"),
@@ -523,12 +541,13 @@ def localize_album(album: dict, lang: str, translations: dict) -> dict:
     if a.get(price_key):
         a["price_range"] = a[price_key]
     # Glossary pass for store-info fields that don't have their own LLM translation.
-    for field in ["hours", "closed", "reservation", "service", "price_range"]:
+    for field in ["hours", "closed", "reservation", "service", "price_range", "transit"]:
         if a.get(field):
             a[field] = apply_glossary(a[field], lang)
-    # payment is a list; glossary each item.
-    if a.get("payment"):
-        a["payment"] = [apply_glossary(item, lang) for item in a["payment"]]
+    # list-valued store-info fields; glossary each item.
+    for field in ["payment", "languages", "foreign_menu"]:
+        if a.get(field):
+            a[field] = [apply_glossary(item, lang) for item in a[field]]
     # Auto-extract good_for from description if not manually set. Keeps Kenji's
     # natural writing ("適合 X、Y、Z") working as a structured tag without him
     # filling a separate field per restaurant.
