@@ -1373,7 +1373,7 @@ sanraku-oakridge:
       sushi or authentic Japanese cuisine for lunch or dinner.'
 orange-square-santa-clara:
   ja:
-    name: オレンジスクエア 橘子堂（オレンジスクエア きつしどう）
+    name: オレンジスクエア 橘子堂
     name_alt: オレンジスクエア
     location: アメリカ合衆国カリフォルニア州サンタクララ
     cuisine:
@@ -1401,7 +1401,7 @@ orange-square-santa-clara:
 
       海外で台湾の味が恋しくなった時のランチやテイクアウト、友人との気軽な集まりにぴったりの一軒です。'
   en:
-    name: Orange Square (Ju Zi Tang)
+    name: Orange Square
     name_alt: Orange Square
     location: Santa Clara, California
     cuisine:
@@ -1411,7 +1411,7 @@ orange-square-santa-clara:
     - Street Food
     - Bubble Tea
     dishes:
-    - Thai-Style Spicy & Numbing Fried Chicken Bento (Jiao Ma Ji)
+    - Taiwanese-Style Peppercorn Fried Chicken Bento (Jiao Ma Ji)
     - Braised Pork Belly & Taiwanese Sausage Combo Donburi (Kong Rou & Xiang Chang)
     - Teriyaki Chicken Thigh Donburi
     - Japanese Fried Chicken (Karaage) Donburi

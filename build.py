@@ -239,9 +239,12 @@ GLOSSARIES = {
         # 海外分店用語（2026-07 Sanraku SJ，第一家美國店。菜單版須在單字版之前）
         ("可官網線上預約", "公式サイトでオンライン予約可"),
         ("購物中心內", "ショッピングモール内"),
+        ("免費停車場", "無料駐車場"),
+        ("街角商場", "ロードサイド商業施設"),
         ("英文菜單", "英語メニュー"),
         ("日文菜單", "日本語メニュー"),
         ("信用卡", "クレジットカード"),
+        ("中文", "中国語"),
         ("英文", "英語"),
         ("日文", "日本語"),
         # service / closed / reservation phrases
@@ -302,10 +305,13 @@ GLOSSARIES = {
         # overseas store terms (2026-07 Sanraku SJ, first US restaurant; menu variants before bare word)
         ("可官網線上預約", "online booking on official website"),
         ("購物中心內", "shopping mall"),
+        ("免費停車場", "free parking"),
+        ("街角商場", "roadside plaza"),
         ("英文菜單", "English menu"),
         ("日文菜單", "Japanese menu"),
         ("信用卡", "credit card"),
         ("現金", "cash"),
+        ("中文", "Mandarin"),
         ("英文", "English"),
         ("日文", "Japanese"),
         # service / closed / reservation phrases (longest first)

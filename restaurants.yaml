@@ -768,6 +768,10 @@ restaurants:
     price_range: "US$ 10-20 / 人"
     price_range_usd: "US$ 10-20 / person"
     reservation: "僅現場點餐"
+    transit: "Homestead Rd 街角商場・免費停車場"
+    payment: ["信用卡", "現金"]
+    languages: ["中文", "英文"]
+    foreign_menu: ["英文菜單"]
     visited_at: "2026-07-17"
     rating: 4.3
     cuisine: ["台菜", "便當", "丼飯", "台式小吃", "珍珠奶茶"]
