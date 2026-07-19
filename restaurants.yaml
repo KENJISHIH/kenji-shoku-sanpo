@@ -796,3 +796,42 @@ restaurants:
       - "滷味拼盤"
       - "珍珠奶茶"
       - "芒果水果冰沙"
+
+  - slug: pho-spot
+    name: "Pho Spot"
+    location: "美國加州 聖荷西"
+    address: "1769 Blossom Hill Rd, San Jose, CA 95124, USA"
+    address_ja: "1769 Blossom Hill Rd, San Jose, CA 95124, アメリカ"
+    address_en: "1769 Blossom Hill Rd, San Jose, CA 95124, USA"
+    phone: "+1 408-402-5799"
+    hours: "每日 10:00-20:00"
+    price_range: "US$ 20-30 / 人"
+    price_range_usd: "US$ 20-30 / person"
+    price_range_jpy: "¥3,000-4,500 / 人"
+    reservation: "接受訂位"
+    transit: "Blossom Hill Rd 街角商場・免費停車場"
+    payment: ["信用卡", "現金"]
+    languages: ["英文", "越南語"]
+    foreign_menu: ["英文菜單"]
+    visited_at: "2026-07-18"
+    rating: 4.4
+    cuisine: ["越式", "河粉", "米線", "越式法國麵包"]
+    cover: "20260718-iPhone 17 Pro181815.jpg"  # 店內環境照(挑擔農人夕陽壁畫)
+    same_as:
+      - "https://www.facebook.com/SanjoPho/"
+    description: |
+      Pho Spot 是聖荷西 Blossom Hill Rd 街角商場裡的越南河粉餐館,鄰近 Westfield Oakridge
+      購物中心,以清澈湯頭的河粉(Phở)為招牌。店內明亮乾淨,牆上一幅挑擔農人剪影的夕陽
+      壁畫點出越南風情,全天供應同一份菜單,是灣區在地人日常解河粉癮的好去處。
+
+      湯頭清而不寡:生牛肉河粉(Rare Steak Phở)薄切牛肉以熱湯燙至粉嫩,牛肉丸河粉
+      (Meatball Phở)整碗丸子彈牙紮實;配菜盤附豆芽、泰國羅勒、萊姆與墨西哥辣椒,
+      隨喜好加料調味。乾的選擇有烤雞烤蝦米線(Bún),炭烤雞排與鮮蝦配醃紅白蘿蔔絲、
+      花生碎與魚露醬汁;越式法國麵包(Bánh Mì)外皮酥脆,夾肉凍火腿與醃菜,附洋芋片。
+      前菜鮮蝦豬肉生春捲佐花生醬清爽開胃。適合家庭聚餐、想吃清爽湯麵的午、晚餐。
+    dishes:
+      - "鮮蝦豬肉生春捲(佐花生醬)"
+      - "生牛肉河粉(Rare Steak Phở)"
+      - "牛肉丸河粉(Meatball Phở)"
+      - "烤雞烤蝦米線(Bún)"
+      - "越式法國麵包特餐(Bánh Mì Special Combo)"

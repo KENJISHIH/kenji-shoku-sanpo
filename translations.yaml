@@ -1445,3 +1445,56 @@ orange-square-santa-clara:
 
       Perfect for a quick Taiwanese comfort lunch, easy takeout, or a casual hang
       with friends.'
+pho-spot:
+  ja:
+    name: Pho Spot (フォー・スポット)
+    location: アメリカ合衆国カリフォルニア州サンノゼ
+    cuisine:
+    - ベトナム料理
+    - フォー
+    - ブン
+    - バインミー
+    dishes:
+    - 海老と豚肉の生春巻き（ピーナッツソース添え）
+    - 牛肉のレアフォー（Rare Steak Phở）
+    - 牛肉団子のフォー（Meatball Phở）
+    - グリルチキンと海老のブン（Bún）
+    - ベトナム風バインミースペシャルコンボ（Bánh Mì Special Combo）
+    description: 'Pho Spotは、サンノゼのBlossom Hill Rdの角にあるモール内に位置し、ウェストフィールド・オークリッジ・ショッピングセンターにもほど近いベトナム料理店です。看板メニューは、透き通ったスープが自慢のフォー（Phở）。明るく清潔な店内には、天秤棒を担ぐ農民のシルエットが描かれた夕日の壁画があり、ベトナムの情緒を醸し出しています。終日同じメニューを提供しており、ベイエリアの地元の人々が日常的にフォーを楽しみに訪れる憩いの場です。
+
+
+      スープは澄んでいながらもコクがあり、深みのある味わい。生牛肉のフォー（Rare Steak Phở）は熱々のスープで薄切り肉が絶妙なピンク色に仕上がり、牛肉団子のフォー（Meatball
+      Phở）は弾力のある団子がたっぷり入って食べ応えがあります。付け合わせの皿には、もやし、タイバジル、ライム、ハラペーニョが添えられ、好みの加減でカスタマイズできるのも嬉しいポイント。汁なし麺のブン（Bún）は、香ばしい炭火焼きチキンや海老に、紅白なます、ピーナッツ、魚醤ベースのソースが絡みます。外皮がパリッと香ばしいバインミー（Bánh
+      Mì）は、パテやハム、野菜の酢漬けがサンドされ、ポテトチップスも付いてきます。前菜の海老と豚肉の生春巻きは、ピーナッツソースとの相性が抜群でさっぱりといただけます。家族での団らんや、ヘルシーに済ませたい日のランチ、ディナーにぴったりの一軒です。'
+  en:
+    name: Pho Spot
+    location: San Jose, California
+    cuisine:
+    - Vietnamese
+    - Pho
+    - Rice Noodle
+    - Banh Mi
+    dishes:
+    - Shrimp and Pork Fresh Spring Rolls (with Peanut Sauce) (Gỏi Cuốn)
+    - Rare Beef Rice Noodle Soup (Rare Steak Phở)
+    - Beef Ball Rice Noodle Soup (Meatball Phở)
+    - Grilled Chicken and Shrimp Rice Vermicelli (Bún)
+    - Vietnamese Baguette Special Combo (Bánh Mì Special Combo)
+    description: "Tucked away in a corner plaza on Blossom Hill Rd in San Jose, right\
+      \ near Westfield Oakridge Mall, Pho Spot is a local favorite known for its signature\
+      \ clear-broth Phở (traditional Vietnamese noodle soup). The space is bright\
+      \ and clean, featuring a sunset mural of a silhouetted farmer with a carrying\
+      \ pole that adds a nice Vietnamese touch. With the same menu served all day,\
+      \ it’s a reliable go-to for Bay Area locals looking to satisfy their noodle\
+      \ cravings.\n\nThe broth here is light yet delicate and full of flavor. The\
+      \ Rare Steak Phở features thinly sliced beef scalded to a perfect pink in the\
+      \ steaming soup, while the Meatball Phở comes loaded with bouncy, hearty meatballs.\
+      \ Every order is served with the classic side plate of bean sprouts, Thai basil,\
+      \ lime, and jalapeños so you can customize the heat and crunch to your liking.\
+      \ If you’re in the mood for something dry, try the Bún (rice vermicelli) topped\
+      \ with charcoal-grilled chicken and shrimp, served with pickled radish and carrots,\
+      \ crushed peanuts, and fish sauce. Their Bánh Mì (Vietnamese sandwich) is another\
+      \ winner—super crispy on the outside, stuffed with pâté, ham, and pickles, and\
+      \ served with a side of chips. For a refreshing start, the shrimp and pork spring\
+      \ rolls with peanut dipping sauce are a must. \n\nPerfect for family meals and\
+      \ anyone craving a clean, comforting bowl of noodles for lunch or dinner."

@@ -201,6 +201,7 @@ CUISINE_GROUPS = {
         "日式料理": ["日式", "漢堡排", "定食"],
         "港式料理": ["港式", "茶餐廳", "冰室", "粉麵飯"],
         "韓式料理": ["韓式", "韓食", "炸雞", "拉麵"],
+        "越式料理": ["越式", "河粉", "米線", "越式法國麵包"],
         "輕食/咖啡": ["早午餐", "咖啡"],
     },
     "ja": {
@@ -209,6 +210,7 @@ CUISINE_GROUPS = {
         "和食": ["和食", "定食"],
         "香港": ["香港料理", "茶餐廳", "氷室", "麺類・ご飯もの"],
         "韓国料理": ["韓国料理", "韓食", "フライドチキン", "ラーメン"],
+        "ベトナム料理": ["ベトナム料理", "フォー", "ブン", "バインミー"],
         "ブランチ/カフェ": ["ブランチ", "カフェ"],
     },
     "en": {
@@ -217,6 +219,7 @@ CUISINE_GROUPS = {
         "Japanese": ["Japanese", "Hamburg steak", "Teishoku", "Set meal"],
         "Hong Kong": ["Hong Kong", "Cha chaan teng", "Bing sutt", "Noodles & rice"],
         "Korean": ["Korean", "Fried chicken", "Ramyeon", "Rice bowl"],
+        "Vietnamese": ["Vietnamese", "Pho", "Bun", "Banh mi"],
         "Cafe / Light bites": ["Brunch", "Cafe", "Coffee"],
     },
 }
@@ -245,6 +248,7 @@ GLOSSARIES = {
         ("日文菜單", "日本語メニュー"),
         ("信用卡", "クレジットカード"),
         ("中文", "中国語"),
+        ("越南語", "ベトナム語"),
         ("英文", "英語"),
         ("日文", "日本語"),
         # service / closed / reservation phrases
@@ -312,6 +316,7 @@ GLOSSARIES = {
         ("信用卡", "credit card"),
         ("現金", "cash"),
         ("中文", "Mandarin"),
+        ("越南語", "Vietnamese"),
         ("英文", "English"),
         ("日文", "Japanese"),
         # service / closed / reservation phrases (longest first)
