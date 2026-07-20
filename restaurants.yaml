@@ -835,3 +835,46 @@ restaurants:
       - "牛肉丸河粉(Meatball Phở)"
       - "烤雞烤蝦米線(Bún)"
       - "越式法國麵包特餐(Bánh Mì Special Combo)"
+
+  - slug: los-gatos-cafe-uptown
+    name: "Los Gatos Cafe Uptown"
+    location: "美國加州 Los Gatos"
+    address: "15662 Los Gatos Blvd, Los Gatos, CA 95032, USA"
+    address_ja: "15662 Los Gatos Blvd, Los Gatos, CA 95032, アメリカ"
+    address_en: "15662 Los Gatos Blvd, Los Gatos, CA 95032, USA"
+    phone: "+1 408-356-0600"
+    hours: "每日 7:00-14:30"
+    price_range: "US$ 20-30 / 人"
+    price_range_usd: "US$ 20-30 / person"
+    price_range_jpy: "¥3,000-4,500 / 人"
+    reservation: "現場候位"
+    transit: "Los Gatos Blvd 街角商場・免費停車場"
+    payment: ["信用卡", "現金"]
+    languages: ["英文"]
+    foreign_menu: ["英文菜單"]
+    visited_at: "2026-07-19"
+    rating: 4.6
+    cuisine: ["美式", "早午餐", "歐姆蛋", "肉桂捲"]
+    cover: "20260719-iPhone 17 Pro095902.jpg"  # 加州班尼迪克蛋
+    same_as:
+      - "https://www.losgatoscafe.com/"
+      - "https://www.instagram.com/losgatoscafe/"
+    description: |
+      Los Gatos Cafe 是矽谷南緣小鎮 Los Gatos 的人氣美式早餐老店,Uptown 分店位於
+      Los Gatos Blvd 街角商場,每日 7:00-14:30 全天供應早餐與午餐,戶外棚架座位
+      鋪白桌巾、用黑色陶盤上菜,假日一位難求,是在地家庭週末早午餐的定番。
+
+      蛋料理是主軸:加州班尼迪克蛋(California Benedict)在英式瑪芬疊上火腿、
+      水波蛋與酪梨,淋荷蘭醬撒紅椒粉;歐姆蛋膨鬆飽滿,鮮蝦口味佐蘆筍、蟹肉口味
+      包酪梨蘑菇,都附現煎至焦香的家常薯餅。招牌巨大肉桂捲溫熱上桌,頂著融化的
+      肉桂奶油霜,一份足夠全桌分食;肉桂葡萄乾吐司烤得香酥。兒童餐有撒糖粉的
+      兔子造型鬆餅,也有單點漢堡排這類簡單選項。適合家庭聚餐、帶小孩的週末早午餐。
+    dishes:
+      - "加州班尼迪克蛋(California Benedict)"
+      - "鮮蝦歐姆蛋(Shrimp Omelette,佐蘆筍)"
+      - "蟹肉歐姆蛋(Crab Omelette,佐酪梨)"
+      - "火腿雙蛋早餐盤(Ham & 2 Eggs)"
+      - "招牌肉桂捲(Cinnamon Roll,附肉桂奶油霜)"
+      - "兔子造型鬆餅(Kids Bunny Pancake)"
+      - "肉桂葡萄乾吐司(Cinnamon Raisin Toast)"
+      - "漢堡排(Burger Patty)"

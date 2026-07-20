@@ -1498,3 +1498,64 @@ pho-spot:
       \ served with a side of chips. For a refreshing start, the shrimp and pork spring\
       \ rolls with peanut dipping sauce are a must. \n\nPerfect for family meals and\
       \ anyone craving a clean, comforting bowl of noodles for lunch or dinner."
+los-gatos-cafe-uptown:
+  ja:
+    name: Los Gatos Cafe Uptown（ロス・ガトス・カフェ・アップタウン）
+    location: アメリカ合衆国カリフォルニア州ロスガトス
+    cuisine:
+    - アメリカ料理
+    - ブランチ
+    - オムレツ
+    - シナモンロール
+    dishes:
+    - カリフォルニア・ベネディクト
+    - 海老のオムレツ（アスパラガス添え）
+    - 蟹のオムレツ（アボカド添え）
+    - ハム＆2エッグ・ブレックファスト
+    - 特製シナモンロール（シナモンフロスティング付き）
+    - キッズ・バニーパンケーキ
+    - シナモンレーズントースト
+    - ハンバーグパティ
+    description: 'シリコンバレー南端の町、ロスガトスで親しまれている老舗のアメリカン朝食専門店「Los Gatos Cafe」。アップタウン店はロスガトス・ブルバードの角にあるショッピングセンター内に位置しています。毎日7:00から14:30まで、終日ブレックファストとランチを提供。白いテーブルクロスが敷かれた屋外テラス席では、シックな黒い陶器のプレートで料理が運ばれてきます。休日は行列ができるほどの人気で、地元のファミリーにとって週末ブランチの定番となっています。
+
+
+      メニューの主役は卵料理です。「カリフォルニア・ベネディクト」は、イングリッシュマフィンの上にハム、ポーチドエッグ、そしてアボカドを重ね、オランデーズソースとパプリカパウダーをあしらった一品。オムレツはふっくらとボリューム満点で、アスパラガス入りのシュリンプや、アボカドとマッシュルームを包んだカニなど種類も豊富。すべてにカリッと香ばしく焼き上げられた自家製のホームフライが添えられています。名物の巨大なシナモンロールは、温かい状態で提供され、とろりと溶けたシナモンバタークリームがたっぷり。一皿でテーブル全員がシェアできるほどの大きさです。サクサクに焼かれたシナモンレーズントーストも絶品。キッズメニューには粉糖をまぶしたウサギ型のパンケーキや、単品のハンバーグといったシンプルな選択肢も用意されています。ご家族での会食や、お子様連れの週末ブランチに最適なお店です。'
+  en:
+    name: Los Gatos Cafe Uptown
+    location: Los Gatos, California
+    cuisine:
+    - American
+    - Brunch
+    - Omelette
+    - Cinnamon Roll
+    dishes:
+    - California Benedict
+    - Shrimp Omelette (with Asparagus)
+    - Crab Omelette (with Avocado)
+    - Ham & Two Eggs Breakfast Platter
+    - Signature Cinnamon Roll (with Cinnamon Frosting)
+    - Kids' Bunny Pancake
+    - Cinnamon Raisin Toast
+    - Burger Patty
+    description: 'Los Gatos Cafe is a local legend in the charming town of Los Gatos,
+      right on the southern edge of Silicon Valley. You’ll find their Uptown location
+      tucked into a corner plaza along Los Gatos Blvd, serving up breakfast and lunch
+      favorites all day from 7:00 AM to 2:30 PM. With white tablecloths on the patio
+      and food served on sleek black ceramic plates, it’s the ultimate go-to for local
+      families—so much so that snagging a table on the weekend is a real feat.
+
+
+      The egg dishes are definitely the stars of the show. The California Benedict
+      is a classic, with English muffins stacked high with ham, poached eggs, and
+      avocado, all finished with a rich hollandaise and a dusting of paprika. If you’re
+      into omelets, theirs are impressively fluffy; choose the shrimp and asparagus
+      or the crab packed with avocado and mushrooms. Every plate comes with a side
+      of their signature home fries (pan-fried diced potatoes), cooked until they’re
+      perfectly golden and crisp. You can’t miss the legendary giant cinnamon roll—it
+      comes out warm and dripping with melted cinnamon butter frosting, and it’s definitely
+      big enough for the whole table to share. The cinnamon raisin toast is also toasted
+      to a perfect crunch. For the kiddos, there are bunny-shaped pancakes dusted
+      with powdered sugar and simple options like a single burger patty.
+
+
+      Perfect for family gatherings and weekend brunches with the kids.'

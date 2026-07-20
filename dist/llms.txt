@@ -26,6 +26,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [三樂 日本料理 Oakridge 店](https://kenji-shoku-sanpo.vercel.app/album-sanraku-oakridge.html): 日式/壽司/生食/天婦羅/居酒屋 · 美國加州 聖荷西 · ★4.5/5 — 三樂（Sanraku）是舊金山灣區歷史悠久的日本料理品牌,這家分店位於聖荷西
 - [Orange Square 橘子堂](https://kenji-shoku-sanpo.vercel.app/album-orange-square-santa-clara.html): 台菜/便當/丼飯/台式小吃/珍珠奶茶 · 美國加州 Santa Clara · ★4.3/5 — Orange Square 橘子堂 是灣區的台式連鎖餐飲品牌,以台式便當、丼飯與手搖珍奶為主軸,
 - [Pho Spot](https://kenji-shoku-sanpo.vercel.app/album-pho-spot.html): 越式/河粉/米線/越式法國麵包 · 美國加州 聖荷西 · ★4.4/5 — Pho Spot 是聖荷西 Blossom Hill Rd 街角商場裡的越南河粉餐館,鄰近 Westfield Oakridge
+- [Los Gatos Cafe Uptown](https://kenji-shoku-sanpo.vercel.app/album-los-gatos-cafe-uptown.html): 美式/早午餐/歐姆蛋/肉桂捲 · 美國加州 Los Gatos · ★4.6/5 — Los Gatos Cafe 是矽谷南緣小鎮 Los Gatos 的人氣美式早餐老店,Uptown 分店位於
 
 ## Language versions
 
