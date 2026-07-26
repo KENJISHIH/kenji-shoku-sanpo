@@ -27,6 +27,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [オレンジスクエア 橘子堂](https://kenji-shoku-sanpo.vercel.app/ja/album-orange-square-santa-clara.html): 台湾料理/弁当/丼もの/台湾小吃/タピオカ · アメリカ合衆国カリフォルニア州サンタクララ · ★4.3/5 — Orange Square（オレンジ・スクエア） 橘子堂は、サンフランシスコ・ベイエリアで展開する台湾料理のチェーンブランドです。台湾式の弁当や丼もの、タピオカミルクティーをメインに、カウンターで注文し紙容器でテイクアウトするカジュアルなスタイルで親しまれています。オレンジ色のゴマトーストをモチーフにした四角いロゴが目
 - [Pho Spot (フォー・スポット)](https://kenji-shoku-sanpo.vercel.app/ja/album-pho-spot.html): ベトナム料理/フォー/ブン/バインミー · アメリカ合衆国カリフォルニア州サンノゼ · ★4.4/5 — Pho Spotは、サンノゼのBlossom Hill Rdの角にあるモール内に位置し、ウェストフィールド・オークリッジ・ショッピングセンターにもほど近いベトナム料理店です。看板メニューは、透き通ったスープが自慢のフォー（Phở）。明るく清潔な店内には、天秤棒を担ぐ農民のシルエットが描かれた夕日の壁画があり、ベトナムの
 - [Los Gatos Cafe Uptown（ロス・ガトス・カフェ・アップタウン）](https://kenji-shoku-sanpo.vercel.app/ja/album-los-gatos-cafe-uptown.html): アメリカ料理/ブランチ/オムレツ/シナモンロール · アメリカ合衆国カリフォルニア州ロスガトス · ★4.6/5 — シリコンバレー南端の町、ロスガトスで親しまれている老舗のアメリカン朝食専門店「Los Gatos Cafe」。アップタウン店はロスガトス・ブルバードの角にあるショッピングセンター内に位置しています。毎日7:00から14:30まで、終日ブレックファストとランチを提供。白いテーブルクロスが敷かれた屋外テラス席では、シックな
+- [Tsing Tao 青島（チンタオ）](https://kenji-shoku-sanpo.vercel.app/ja/album-tsing-tao.html): 中華料理/北京料理/麺類 · アメリカ合衆国カリフォルニア州ロスガトス · ★4.3/5 — Tsing Tao（青島餐廳）は、シリコンバレーの南端に位置する町、ロス・ガトスにある北方式の中華料理店です。もともとは隣町のキャンベルで営業していましたが、現在はロス・ガトス・ブルバード沿いの街角にあるモール（以前のBoulevard Bites and Brews跡地）に移転しています。看板には中国語と英語で「青島
 
 ## Language versions
 

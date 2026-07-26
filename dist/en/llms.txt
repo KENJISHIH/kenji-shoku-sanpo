@@ -27,6 +27,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [Orange Square](https://kenji-shoku-sanpo.vercel.app/en/album-orange-square-santa-clara.html): Taiwanese/Bento Box/Rice Bowl/Street Food/Bubble Tea · Santa Clara, California · ★4.3/5 — Orange Square is a local Bay Area favorite for anyone craving Taiwanese comfort food, specializing in bento boxes, rice bowls, and hand-shaken bubble tea. It’s 
 - [Pho Spot](https://kenji-shoku-sanpo.vercel.app/en/album-pho-spot.html): Vietnamese/Pho/Rice Noodle/Banh Mi · San Jose, California · ★4.4/5 — Tucked away in a corner plaza on Blossom Hill Rd in San Jose, right near Westfield Oakridge Mall, Pho Spot is a local favorite known for its signature clear-bro
 - [Los Gatos Cafe Uptown](https://kenji-shoku-sanpo.vercel.app/en/album-los-gatos-cafe-uptown.html): American/Brunch/Omelette/Cinnamon Roll · Los Gatos, California · ★4.6/5 — Los Gatos Cafe is a local legend in the charming town of Los Gatos, right on the southern edge of Silicon Valley. You’ll find their Uptown location tucked into 
+- [Tsing Tao](https://kenji-shoku-sanpo.vercel.app/en/album-tsing-tao.html): Chinese/Northern Chinese/Noodles · Los Gatos, California · ★4.3/5 — If you find yourself in the charming town of Los Gatos on the southern edge of Silicon Valley, you’ve got to check out Tsing Tao. This Northern-style Chinese sp
 
 ## Language versions
 

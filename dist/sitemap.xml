@@ -331,4 +331,19 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-los-gatos-cafe-uptown.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-los-gatos-cafe-uptown.html"/>
   </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/album-tsing-tao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-tsing-tao.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-tsing-tao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-tsing-tao.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/ja/album-tsing-tao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-tsing-tao.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-tsing-tao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-tsing-tao.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/en/album-tsing-tao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-tsing-tao.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-tsing-tao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-tsing-tao.html"/>
+  </url>
 </urlset>

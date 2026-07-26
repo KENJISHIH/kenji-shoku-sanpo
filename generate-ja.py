@@ -111,6 +111,32 @@ def gemini(prompt: str) -> str:
     return "\n".join(lines).strip()
 
 
+BRACKETS_OPEN = "（(【["
+BRACKETS_CLOSE = "）)】]"
+
+
+def split_items(result: str) -> list[str]:
+    """Split a 「、」-joined list, ignoring separators inside brackets.
+
+    Gemini often writes an explanatory 「、」 inside the （）of a dish name
+    (e.g.「豚肉と野菜の板皮炒め（細切り、緑豆シート添え）」), which a naive
+    split would tear into two bogus dishes.
+    """
+    items, buf, depth = [], [], 0
+    for ch in result:
+        if ch in BRACKETS_OPEN:
+            depth += 1
+        elif ch in BRACKETS_CLOSE:
+            depth = max(0, depth - 1)
+        if ch == "、" and depth == 0:
+            items.append("".join(buf))
+            buf = []
+        else:
+            buf.append(ch)
+    items.append("".join(buf))
+    return [i.strip() for i in items if i.strip()]
+
+
 def translate_field(value, prompt_template: str, field: str):
     """Translate a single field. Handles list-type fields (cuisine)."""
     if isinstance(value, list):
@@ -119,7 +145,7 @@ def translate_field(value, prompt_template: str, field: str):
         value_str = str(value)
     result = gemini(prompt_template.format(value=value_str))
     if isinstance(value, list):
-        return [c.strip() for c in result.split("、") if c.strip()]
+        return split_items(result)
     return result
 
 
