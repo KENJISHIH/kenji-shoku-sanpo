@@ -39,7 +39,7 @@
     "@type": "PostalAddress",
     "streetAddress": {{ album.address|tojson }},
     "addressLocality": {{ album.location|tojson }},
-    "addressCountry": "TW"
+    "addressCountry": "{{ album.country_code }}"
   },{% endif %}
   {% if album.phone %}"telephone": {{ album.phone|tojson }},{% endif %}
   {% if album.cuisine %}"servesCuisine": {{ album.cuisine|tojson }},{% endif %}

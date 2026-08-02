@@ -537,6 +537,20 @@ def extract_city(loc: str, lang: str = "zh") -> str:
     return m.group(1) if m else (loc or "其他")
 
 
+# ISO 3166-1 country code for the JSON-LD PostalAddress. Derived from the zh
+# address so no extra yaml field is needed: Taiwan addresses are written in
+# Chinese with no country suffix, overseas ones end with ", <country>".
+# Add a line here when the first restaurant in a new country shows up.
+ADDRESS_COUNTRY_SUFFIXES = {
+    "usa": "US",
+}
+
+
+def country_code(address: str) -> str:
+    tail = (address or "").rsplit(",", 1)[-1].strip().casefold()
+    return ADDRESS_COUNTRY_SUFFIXES.get(tail, "TW")
+
+
 def localize_album(album: dict, lang: str, translations: dict) -> dict:
     """Override album fields with translated versions for non-zh language,
     then derive auto-extracted fields (good_for) from the localized description."""
@@ -550,6 +564,9 @@ def localize_album(album: dict, lang: str, translations: dict) -> dict:
             a["cuisine"] = t["cuisine"]
     else:
         t = {}
+    # Derive from the zh address before the per-language override below, so the
+    # translated address ("…, アメリカ") doesn't break the lookup.
+    a["country_code"] = country_code(a.get("address"))
     # Per-language address override (e.g. address_ja in restaurants.yaml).
     addr_key = f"address_{lang}"
     if a.get(addr_key):
