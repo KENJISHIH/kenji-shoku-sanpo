@@ -303,7 +303,7 @@ restaurants:
     service: "套餐附小菜、飯、湯（湯鍋類無附湯）"
     visited_at: "2026-05-29"
     rating: 4  # TODO: Kenji 自評,我先放 4 預設
-    cuisine: ["韓式", "炸雞", "韓食", "拉麵"]
+    cuisine: ["韓式", "炸雞", "韓食", "韓式拉麵"]
     cover: "20260529-iPhone 17 Pro112813.jpg"  # 本日整套餐盤,可改
     description: |
       濟州金先生 Mr.KIM(濟州Mr.KIM韓式炸雞)是台中大里的韓式料理專門店,自 2014 年
@@ -929,3 +929,146 @@ restaurants:
       - "炒碼湯麵(Jam Pong Noodle)"
       - "青島炒麵(Tsing Tao Chow Mein)"
       - "餛飩湯(Won Ton Soup)"
+
+  - slug: ramen-champ
+    name: "Ramen Champ"
+    location: "美國加州 San Jose"
+    address: "6229 Santa Teresa Blvd, San Jose, CA 95119, USA"
+    address_ja: "6229 Santa Teresa Blvd, San Jose, CA 95119, アメリカ"
+    address_en: "6229 Santa Teresa Blvd, San Jose, CA 95119, USA"
+    phone: "+1 408-420-0920"
+    hours: "週一至週四 11:30-13:30 / 17:30-20:30；週五、週六 11:30-14:00 / 17:30-21:00；週日 11:30-14:00 / 17:30-20:00"
+    closed: "無公休"
+    price_range: "US$ 20-30 / 人"
+    price_range_usd: "US$ 20-30 / person"
+    price_range_jpy: "¥3,000-4,500 / 人"
+    reservation: "現場候位"
+    service: "單點式，可外帶"
+    transit: "Santa Teresa Blvd 街角商場・免費停車場"
+    payment: ["信用卡", "現金"]
+    languages: ["英文"]
+    foreign_menu: ["英文菜單"]
+    dietary: ["有素食選項"]
+    visited_at: "2026-07-31"
+    rating: 4.4
+    cuisine: ["日式", "拉麵", "咖哩飯", "丼飯"]
+    cover: "20260731-iPhone 17 Pro180844.jpg"  # 豚骨拉麵
+    same_as:
+      - "https://www.instagram.com/ramen_champ/"
+      - "https://www.facebook.com/p/Ramen-Champ-100076517585853/"
+    description: |
+      Ramen Champ 是聖荷西南端 Santa Teresa Blvd 街角商場裡的日式拉麵專門店,店面不大,
+      午晚各一輪、全年無休。特色是湯頭選擇多:豚骨、柚子鹽、醬油、味噌並行,辣度與配料
+      各有變化,另有沾麵、油拌麵、咖哩飯與各式丼飯,也可線上訂餐外帶。
+
+      豚骨拉麵湯頭乳白濃稠,細直麵條配上叉燒、木耳絲、豆芽與海苔,是店裡的招牌;柚子鹽
+      拉麵則反過來走清爽路線,清湯浮著柚子香,鋪上筍乾、海帶芽、叉燒與一大片海苔。豬排
+      咖哩飯的豬排現炸,麵包粉外衣酥脆、切開仍粉嫩,淋上濃稠咖哩醬、旁邊配紅薑,另附一
+      碗海帶芽味噌湯。
+
+      菜單上還有辣味豚骨、豚骨豬排拉麵、擔擔麵、沾麵與油拌麵等變化,前菜有唐揚炸雞、
+      煎餃、章魚燒與炸牡蠣,也備有一款素食柚子鹽拉麵;甜點是鯛魚燒與荔枝冰淇淋。
+      適合一人吃、家庭聚餐與想吃道地日式拉麵的午、晚餐。
+    dishes:
+      - "豚骨拉麵(Tonkotsu Ramen)"
+      - "柚子鹽拉麵(Yuzu Shio Ramen)"
+      - "豬排咖哩飯(Tonkatsu Curry Rice,附味噌湯)"
+
+  - slug: hinodeya-campbell-town
+    name: "HINODEYA Campbell Town"
+    name_alt: "和風楽麺 四代目 ひのでや"
+    location: "美國加州 Campbell"
+    address: "2210 S Bascom Ave, Campbell, CA 95008, USA"
+    address_ja: "2210 S Bascom Ave, Campbell, CA 95008, アメリカ"
+    address_en: "2210 S Bascom Ave, Campbell, CA 95008, USA"
+    phone: "+1 408-744-2155"
+    hours: "每日 11:00-23:00，週六 11:00-22:30"
+    closed: "無公休"
+    price_range: "US$ 20-30 / 人"
+    price_range_usd: "US$ 20-30 / person"
+    price_range_jpy: "¥3,000-4,500 / 人"
+    reservation: "現場候位，可線上候位"
+    service: "掃碼點餐，可外帶"
+    transit: "Bascom Ave 街角商場・免費停車場"
+    payment: ["信用卡", "現金"]
+    languages: ["英文", "日文"]
+    foreign_menu: ["英文菜單"]
+    dietary: ["有素食選項"]
+    good_for: ["家庭聚餐", "帶小孩", "一人吃"]  # 描述含「和風」會被自動抓取切壞,改手動指定
+    visited_at: "2026-08-01"
+    rating: 4.4
+    cuisine: ["日式", "拉麵", "居酒屋"]
+    cover: "20260801-iPhone 17 Pro124742.jpg"  # 招牌出汁拉麵
+    same_as:
+      - "https://hinodeyaramen.com/campbelltown"
+      - "https://www.instagram.com/hinodeya_campbell/"
+    description: |
+      HINODEYA Campbell Town 是日式拉麵品牌「和風楽麺 四代目 ひのでや」在灣區 Campbell 的
+      分店,木造外牆掛著印有店名的白色暖簾。招牌上的「四代目」與「SINCE 1885」不是裝飾:
+      本家「日の出家」1885 年開在埼玉蓮田車站前,傳了一百三十年,第四代在 2012 年以出汁
+      拉麵的形式重啟老招牌,2016 年跨海到舊金山開店,如今在美國已有九家分店。整個品牌的
+      核心是出汁——昆布、柴魚與干貝熬的和風高湯,湯頭走清爽路線,而不是濃厚豚骨。
+
+      招牌 Hinodeya Ramen 湯清見底卻厚實,干貝油與豬油提香,配叉燒、筍乾、溏心蛋、海苔與
+      綠葉菜,辣椒絲點在正中央。蛤蜊拉麵(Hamaguri Ramen)整碗鋪滿開口的小圓蛤,奶油風味的
+      柴魚昆布湯底透著蒜香,大量青蔥與白芝麻壓在中間。夏季限定的 Ocean Breeze 冷麵用同一
+      套蛤蜊湯底做成冰鎮版,鋪三片檸檬、磨上黑胡椒,酸香收得更俐落。日式炸雞(Chicken
+      Kara-age)外衣酥、內裡多汁,以黑胡椒調味,附一小罐抹茶鹽自己撒,茶粉的微苦把油炸味
+      帶開。菜單另有味噌、雞白湯、壽喜燒牛肉等湯頭,以及三款純素拉麵、丼飯、抹茶刨冰與
+      日本啤酒清酒。適合家庭聚餐、帶小孩、想吃清爽和風湯頭的午、晚餐。
+    dishes:
+      - "招牌出汁拉麵(Hinodeya Ramen)"
+      - "蛤蜊拉麵(Hamaguri Ramen)"
+      - "夏季限定蛤蜊冷麵(Ocean Breeze Cold Ramen)"
+      - "日式炸雞佐抹茶鹽(Chicken Kara-age)"
+
+  - slug: saigon-2-siam-bistro
+    name: "Saigon -2- Siam Bistro"
+    location: "美國加州 Gilroy"
+    address: "1280 1st St, Gilroy, CA 95020, USA"
+    address_ja: "1280 1st St, Gilroy, CA 95020, アメリカ"
+    address_en: "1280 1st St, Gilroy, CA 95020, USA"
+    phone: "+1 408-848-6000"
+    hours: "週一、週二、週四 11:00-15:00 / 17:00-21:00；週五、週六 11:00-15:00 / 17:00-21:30；週日 11:30-15:00 / 17:00-21:00"
+    closed: "週三"
+    price_range: "US$ 15-25 / 人"
+    price_range_usd: "US$ 15-25 / person"
+    price_range_jpy: "¥2,300-3,800 / 人"
+    reservation: "現場候位"
+    service: "單點式，可外帶"
+    transit: "1st St 街角商場・免費停車場"
+    payment: ["信用卡", "現金"]
+    languages: ["英文"]
+    foreign_menu: ["英文菜單"]
+    dietary: ["有素食選項"]
+    visited_at: "2026-07-30"
+    rating: 4.6
+    cuisine: ["泰式", "越式", "河粉", "泰式炒河粉"]
+    cover: "20260730-iPhone 17 Pro183338.jpg"  # 泰式炒河粉 Pad Thai
+    same_as:
+      - "https://www.facebook.com/saigon2siambistro/"
+      - "https://saigon2siam.weebly.com/"
+    description: |
+      Saigon -2- Siam Bistro 是加州 Gilroy 市區 1st St 街角商場裡的家庭式餐館,前身為
+      Saigon Bistro Express,泰國菜與越南菜並行。店名把「Saigon(西貢)」與「Siam(暹羅)」
+      串在一起,正好說明這本菜單的來歷——越式河粉、越式法國麵包,與泰式炒河粉、咖哩、
+      羅勒炒物各據一方。店內走美式小館風格,牆上掛著東南亞木雕與織品,靠窗設卡座,櫃檯
+      邊擺著自家菜單本與外帶紙盒。多數菜色可自選蛋白質(雞、豬、豆腐或全素),辣度分
+      Mild、Medium、Spicy、Thai Spicy 四級,點餐時直接指定。
+
+      越式這邊,河粉(Phở)以牛骨清湯打底,黑胡椒與洋蔥提味,生牛肉另用小盤盛上桌自己
+      涮熟;附的配菜盤有豆芽、九層塔、墨西哥辣椒與萊姆,加不加隨意,單點清湯河粉也可以。
+      泰式這邊,泰式炒河粉(Pad Thai)用羅望子醬炒細米粉,酸甜收尾,鋪滿花生碎與豆芽,
+      附萊姆與小黃瓜;羅勒炒牛肉(Pad Gra Pao)的薄切牛肉裹著蠔油醬汁,配紅蘿蔔、洋蔥
+      與大量九層塔。開胃菜的炸魚條與炸花枝圈都是厚衣現炸、撒蔥花配甜酸醬;泰式酸辣
+      鮮蝦沙拉則以大蝦拌紫洋蔥、番茄與香菜,魚露檸檬汁調味,清爽解膩。菜單另有咖哩、
+      炒飯、打拋、烤肉與越式法國麵包,以及泰式奶茶、越南咖啡與水果冰沙。適合家庭聚餐、
+      帶小孩、想一次吃到泰越兩種口味的午、晚餐。
+    dishes:
+      - "泰式炒河粉(#N1 Pad Thai)"
+      - "生牛肉河粉(#NS6a Pho Noodle Soup)"
+      - "清湯河粉"
+      - "羅勒炒牛肉(#E1 Pad Gra Pao)"
+      - "泰式酸辣鮮蝦沙拉"
+      - "炸魚條(#A8 Fish Sticks)"
+      - "炸花枝圈(#A14 Fried Calamari)"

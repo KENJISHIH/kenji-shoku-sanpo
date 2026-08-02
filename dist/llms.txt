@@ -12,7 +12,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [開飯川食堂 文心店](https://kenji-shoku-sanpo.vercel.app/album-kaifan-wenxin.html): 川菜/中式/合菜 · 台中市南屯區 · ★4.5/5 — 開飯川食堂(KAIFUN Together)承襲老牌「福利川菜」的正統川味,以「川麻加辣」
 - [大河牧場 漢堡排專売 南港環球店](https://kenji-shoku-sanpo.vercel.app/album-dahe-makiba-nangang.html): 日式/漢堡排/定食 · 台北市南港區 · ★3.5/5 — 大河牧場 漢堡排專売(Mita Taiga Bokujo)是日式漢堡排專門店,2023 年於南港環球
 - [厝秘 功夫菜·手路湯 大里店](https://kenji-shoku-sanpo.vercel.app/album-cuomi-dali.html): 功夫菜/台菜/合菜/手路湯 · 台中市大里區 · ★4.5/5 — 厝秘（Choicemeal）主打「功夫菜·手路湯」,以總舖師傳承手藝為核心,將傳統
-- [濟州金先生 Mr.KIM 韓食專賣](https://kenji-shoku-sanpo.vercel.app/album-jeju-kim.html): 韓式/炸雞/韓食/拉麵 · 台中市大里區 · ★4/5 — 濟州金先生 Mr.KIM(濟州Mr.KIM韓式炸雞)是台中大里的韓式料理專門店,自 2014 年
+- [濟州金先生 Mr.KIM 韓食專賣](https://kenji-shoku-sanpo.vercel.app/album-jeju-kim.html): 韓式/炸雞/韓食/韓式拉麵 · 台中市大里區 · ★4/5 — 濟州金先生 Mr.KIM(濟州Mr.KIM韓式炸雞)是台中大里的韓式料理專門店,自 2014 年
 - [King Rice Bowl 韓式丼飯](https://kenji-shoku-sanpo.vercel.app/album-king-rice-bowl.html): 韓式/韓式丼飯/炸醬麵/韓食 · 台北市中山區 · ★4/5 — King Rice Bowl(킹덮밥 한식당)是隱身台北中山區長安東路二段巷弄內的韓式小館,
 - [貓老闆咖啡](https://kenji-shoku-sanpo.vercel.app/album-cat-boss.html): 義式/簡餐/咖啡/寵物友善 · 台中市大里區 · ★4/5 — 貓老闆咖啡(Cat Boss)是台中大里的貓咪主題寵物友善簡餐店,位於大里路上、
 - [十二月 粥品·茶飲·私房菜 貴和店](https://kenji-shoku-sanpo.vercel.app/album-december-guihe.html): 粥品/台菜/私房菜/砂鍋粥/茶飲 · 台中市西區 · ★4/5 — 十二月 粥品·茶飲·私房菜(12MOON)貴和店是品牌最美分店,坐落於台中西區貴和街
@@ -28,6 +28,9 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [Pho Spot](https://kenji-shoku-sanpo.vercel.app/album-pho-spot.html): 越式/河粉/米線/越式法國麵包 · 美國加州 聖荷西 · ★4.4/5 — Pho Spot 是聖荷西 Blossom Hill Rd 街角商場裡的越南河粉餐館,鄰近 Westfield Oakridge
 - [Los Gatos Cafe Uptown](https://kenji-shoku-sanpo.vercel.app/album-los-gatos-cafe-uptown.html): 美式/早午餐/歐姆蛋/肉桂捲 · 美國加州 Los Gatos · ★4.6/5 — Los Gatos Cafe 是矽谷南緣小鎮 Los Gatos 的人氣美式早餐老店,Uptown 分店位於
 - [Tsing Tao 青島餐廳](https://kenji-shoku-sanpo.vercel.app/album-tsing-tao.html): 中式/北方菜/麵食 · 美國加州 Los Gatos · ★4.3/5 — Tsing Tao 青島餐廳 是矽谷南緣小鎮 Los Gatos 的北方中式餐館,原本開在鄰鎮 Campbell,
+- [Ramen Champ](https://kenji-shoku-sanpo.vercel.app/album-ramen-champ.html): 日式/拉麵/咖哩飯/丼飯 · 美國加州 San Jose · ★4.4/5 — Ramen Champ 是聖荷西南端 Santa Teresa Blvd 街角商場裡的日式拉麵專門店,店面不大,
+- [HINODEYA Campbell Town](https://kenji-shoku-sanpo.vercel.app/album-hinodeya-campbell-town.html): 日式/拉麵/居酒屋 · 美國加州 Campbell · ★4.4/5 — HINODEYA Campbell Town 是日式拉麵品牌「和風楽麺 四代目 ひのでや」在灣區 Campbell 的
+- [Saigon -2- Siam Bistro](https://kenji-shoku-sanpo.vercel.app/album-saigon-2-siam-bistro.html): 泰式/越式/河粉/泰式炒河粉 · 美國加州 Gilroy · ★4.6/5 — Saigon -2- Siam Bistro 是加州 Gilroy 市區 1st St 街角商場裡的家庭式餐館,前身為
 
 ## Language versions
 

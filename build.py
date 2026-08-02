@@ -198,28 +198,31 @@ CUISINE_GROUPS = {
     "zh": {
         "中式料理": ["川菜", "中式", "合菜", "台菜", "粥品", "私房菜", "砂鍋粥", "功夫菜"],
         "西式料理": ["法式", "義式", "美式", "套餐", "預約制"],
-        "日式料理": ["日式", "漢堡排", "定食"],
+        "日式料理": ["日式", "漢堡排", "定食", "拉麵"],
         "港式料理": ["港式", "茶餐廳", "冰室", "粉麵飯"],
-        "韓式料理": ["韓式", "韓食", "炸雞", "拉麵"],
+        "韓式料理": ["韓式", "韓食", "炸雞", "韓式拉麵"],
         "越式料理": ["越式", "河粉", "米線", "越式法國麵包"],
+        "泰式料理": ["泰式", "泰式炒河粉"],
         "輕食/咖啡": ["早午餐", "咖啡"],
     },
     "ja": {
         "中華": ["四川料理", "中華料理", "台湾料理", "お粥", "中華粥", "創作料理", "家庭料理"],
         "洋食": ["フレンチ", "イタリアン", "アメリカ料理", "洋食", "ハンバーグ", "コース", "完全予約制", "定食"],
-        "和食": ["和食", "定食"],
+        "和食": ["和食", "定食", "ラーメン", "居酒屋"],
         "香港": ["香港料理", "茶餐廳", "氷室", "麺類・ご飯もの"],
-        "韓国料理": ["韓国料理", "韓食", "フライドチキン", "ラーメン"],
+        "韓国料理": ["韓国料理", "韓食", "フライドチキン", "韓国ラーメン"],
         "ベトナム料理": ["ベトナム料理", "フォー", "ブン", "バインミー"],
+        "タイ料理": ["タイ料理", "パッタイ"],
         "ブランチ/カフェ": ["ブランチ", "カフェ"],
     },
     "en": {
         "Chinese": ["Sichuan", "Chinese", "Family-style", "Taiwanese", "Congee", "Private Kitchen", "Claypot Congee", "Craft cuisine"],
         "Western": ["French", "Italian", "American", "Course menu", "Reservation only", "Diner"],
-        "Japanese": ["Japanese", "Hamburg steak", "Teishoku", "Set meal"],
+        "Japanese": ["Japanese", "Hamburg steak", "Teishoku", "Set meal", "Ramen", "Izakaya"],
         "Hong Kong": ["Hong Kong", "Cha chaan teng", "Bing sutt", "Noodles & rice"],
         "Korean": ["Korean", "Fried chicken", "Ramyeon", "Rice bowl"],
         "Vietnamese": ["Vietnamese", "Pho", "Bun", "Banh mi"],
+        "Thai": ["Thai", "Pad Thai"],
         "Cafe / Light bites": ["Brunch", "Cafe", "Coffee"],
     },
 }
@@ -246,6 +249,9 @@ GLOSSARIES = {
         ("街角商場", "ロードサイド商業施設"),
         ("英文菜單", "英語メニュー"),
         ("日文菜單", "日本語メニュー"),
+        ("有素食選項", "ベジタリアン対応あり"),
+        ("可線上候位", "オンラインで順番待ち登録可"),
+        ("掃碼點餐", "QRコードでモバイルオーダー"),
         ("信用卡", "クレジットカード"),
         ("中文", "中国語"),
         ("越南語", "ベトナム語"),
@@ -314,6 +320,9 @@ GLOSSARIES = {
         ("街角商場", "roadside plaza"),
         ("英文菜單", "English menu"),
         ("日文菜單", "Japanese menu"),
+        ("有素食選項", "vegetarian options available"),
+        ("可線上候位", "online waitlist available"),
+        ("掃碼點餐", "QR-code ordering at the table"),
         ("信用卡", "credit card"),
         ("現金", "cash"),
         ("中文", "Mandarin"),
@@ -558,7 +567,7 @@ def localize_album(album: dict, lang: str, translations: dict) -> dict:
         if a.get(field):
             a[field] = apply_glossary(a[field], lang)
     # list-valued store-info fields; glossary each item.
-    for field in ["payment", "languages", "foreign_menu"]:
+    for field in ["payment", "languages", "foreign_menu", "dietary"]:
         if a.get(field):
             a[field] = [apply_glossary(item, lang) for item in a[field]]
     # Auto-extract good_for from description if not manually set. Keeps Kenji's

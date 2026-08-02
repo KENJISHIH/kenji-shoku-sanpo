@@ -558,7 +558,7 @@ jeju-kim:
     - 韓国料理
     - フライドチキン
     - 韓食
-    - ラーメン
+    - 韓国ラーメン
     description: '「済州金先生 Mr.KIM（済州Mr.KIM韓国チキン）」は、台中・大里にある韓国料理専門店です。2014年の創業以来、韓国・済州島出身の金店主が、お母様から受け継いだ本場の味を守り続けています。看板メニューの韓国式フライドチキンをはじめ、豆腐チゲ、トッポギ、豚肉丼などを提供。新鮮な食材にこだわり、化学調味料を一切使用しないヘルシーな料理は、地元でも評判の人気店となっています。
 
 
@@ -581,7 +581,7 @@ jeju-kim:
     - Korean
     - Fried Chicken
     - Korean Cuisine
-    - Ramen
+    - Ramyeon
     description: 'If you find yourself in Taichung’s Dali District and craving some
       serious Korean soul food, Mr. KIM (濟州金先生) is the place to be. Running strong
       since 2014, the owner—originally from Jeju Island—brought his mother’s traditional
@@ -1635,12 +1635,213 @@ tsing-tao:
       knife skills. Then there’s *Chao Ma*, which comes from the Shandong dialect—*Ma*
       basically translates to "toppings," so *Chao Ma* literally means "stir-fried
       assortment." This dish traveled from the Shandong region of China to the Korean
-      Peninsula, where its broth was originally white — Japanese residents during the
-      colonial era saw it and named it after *champon* (ちゃんぽん), the Fujianese-derived
-      noodle dish popular back in Japan, which is how the Korean name *jjamppong* came
-      about. From the 1960s on, cooks started cranking up the chili powder and oil,
-      giving us the fiery red bowl of noodles we know today.
+      Peninsula, where its broth was originally white — Japanese residents during
+      the colonial era saw it and named it after *champon* (ちゃんぽん), the Fujianese-derived
+      noodle dish popular back in Japan, which is how the Korean name *jjamppong*
+      came about. From the 1960s on, cooks started cranking up the chili powder and
+      oil, giving us the fiery red bowl of noodles we know today.
 
 
       Perfect for family gatherings, those craving Northern-style noodles, and anyone
       looking for a big, satisfying lunch or dinner spread.'
+ramen-champ:
+  ja:
+    name: Ramen Champ (ラーメンチャンプ)
+    location: アメリカ合衆国カリフォルニア州サンノゼ
+    cuisine:
+    - 和食
+    - ラーメン
+    - カレー
+    - 丼もの
+    dishes:
+    - 豚骨ラーメン（とんこつラーメン）
+    - 柚子塩ラーメン（ゆずしおラーメン）
+    - カツカレー（とんかつカレー、お味噌汁付き）
+    description: 'Ramen Champ は、サンノゼ南端の Santa Teresa Blvd 沿いにあるショッピングモールの一角に店を構える、日式ラーメンの専門店です。こじんまりとした店内ながら、昼と夜の二部制で年中無休で営業しています。こちらの特徴は、豚骨、柚子塩、醤油、味噌といった多彩なスープが楽しめること。辛さやトッピングのバリエーションも豊富です。さらに、つけ麺や油そば、カレーライスに各種丼ものまで揃っており、オンラインでのテイクアウト予約も可能です。
+
+
+      看板メニューの「豚骨ラーメン」は、濃厚でクリーミーな乳白色のスープが自慢。細ストレート麺にチャーシュー、きくらげ、もやし、海苔がのった納得の一杯です。一方の「柚子塩ラーメン」は、柚子の香りが爽やかに広がる清湯スープ。メンマ、ワカメ、チャーシュー、そして大判の海苔がトッピングされています。また、揚げたての「カツカレー」は、サクサクの衣の中にジューシーな肉の旨みが閉じ込められており、濃厚なルーと紅生姜の相性も抜群。ワカメの味噌汁も付いてきます。
+
+
+      メニューには、スパイシー豚骨、豚骨カツラーメン、担々麺、つけ麺、油そばといった変わり種も豊富です。サイドメニューも唐揚げや餃子、たこ焼き、カキフライと充実しており、ベジタリアン向けの柚子塩ラーメンも用意されています。食後には、鯛焼きやライチアイスなどのデザートも楽しめます。
+
+      お一人様からご家族連れまで、本格的な日本の味をランチやディナーで気軽に楽しめる一軒です。'
+  en:
+    name: Ramen Champ
+    location: San Jose, California
+    cuisine:
+    - Japanese
+    - Ramen
+    - Japanese Curry
+    - Rice Bowl
+    dishes:
+    - Pork Bone Ramen (Tonkotsu Ramen)
+    - Yuzu Salt Ramen (Yuzu Shio Ramen)
+    - Pork Cutlet Curry Rice (Tonkatsu Curry Rice, served with Miso Soup)
+    description: 'Tucked away in a corner plaza on Santa Teresa Blvd in South San
+      Jose, Ramen Champ is a cozy Japanese ramen spot that’s open every single day
+      for lunch and dinner. What really makes this place stand out is the incredible
+      variety of broths—you can choose from Tonkotsu (rich pork bone broth), Yuzu
+      Shio (citrusy salt broth), Shoyu (soy sauce), or Miso, all with customizable
+      spice levels and toppings. They also serve up Tsukemen (dipping noodles), Abura
+      Soba (soupless oil noodles), curry rice, and various Donburi (rice bowls), plus
+      they offer easy online ordering for those on the go.
+
+
+      The signature Tonkotsu Ramen comes with a creamy, milky broth and thin, straight
+      noodles, topped with Chashu (braised pork belly), wood ear mushrooms, bean sprouts,
+      and Nori. If you’re looking for something lighter, the Yuzu Shio Ramen is the
+      way to go—it’s a refreshing clear broth infused with a bright citrusy aroma,
+      finished with Menma (bamboo shoots), Wakame seaweed, Chashu, and a large sheet
+      of Nori. For a heartier fix, the Tonkatsu (fried pork cutlet) Curry Rice features
+      a freshly fried cutlet that’s super crunchy on the outside and tender on the
+      inside, smothered in a thick curry sauce with pickled red ginger and a side
+      of miso soup.
+
+
+      The menu keeps things interesting with Spicy Tonkotsu, Tantanmen (spicy sesame
+      noodles), and even a vegetarian-friendly Yuzu Shio option. You can kick off
+      your meal with appetizers like Karaage (Japanese fried chicken), Gyoza (pan-fried
+      dumplings), Takoyaki (octopus balls), or fried oysters, and definitely save
+      room for dessert—they’ve got Taiyaki (fish-shaped pastry with filling) and lychee
+      ice cream.
+
+
+      Perfect for solo diners, family gatherings, and anyone craving an authentic
+      Japanese ramen fix for lunch or dinner.'
+hinodeya-campbell-town:
+  ja:
+    name: HINODEYA キャンベルタウン
+    name_alt: 和風楽麺 四代目 ひのでや
+    location: アメリカ合衆国カリフォルニア州キャンベル
+    cuisine:
+    - 日本料理
+    - ラーメン
+    - 居酒屋
+    dishes:
+    - 名物出汁ラーメン（ひのでやラーメン）
+    - はまぐりラーメン（Hamaguri Ramen）
+    - 夏季限定はまぐり冷やしラーメン（Ocean Breeze Cold Ramen）
+    - 鶏の唐揚げ 抹茶塩添え（Chicken Kara-age）
+    description: 'HINODEYA Campbell Townは、和風楽麺「四代目 ひのでや」がベイエリアのキャンベルに構える分店です。木のぬくもりを感じる外壁には、店名が染め抜かれた白い暖簾が揺れています。看板に掲げられた「四代目」と「SINCE
+      1885」の文字は、決して飾りではありません。本家「日の出家」は1885年に埼玉県・蓮田駅前で創業し、130年以上にわたりその暖簾を守り続けてきました。2012年、四代目が「和風だし」のラーメンとしてブランドを再始動させ、2016年にはサンフランシスコへ進出。現在では全米で9店舗を展開するまでになりました。ブランドの核となるのは、昆布、鰹節、そして帆立から丁寧に取った「出汁」です。濃厚な豚骨とは一線を画す、清涼感あふれる和風スープが最大の特徴です。
+
+
+      看板メニューの「Hinodeya Ramen」は、透き通ったスープでありながら重厚なコクがあり、帆立オイルとラードの香りが食欲をそそります。具材はチャーシュー、メンマ、味付け卵、海苔、青菜、そして中央に添えられた糸唐辛子が彩りを添えます。「はまぐりラーメン（Hamaguri
+      Ramen）」は、器を埋め尽くすほどのはまぐりが圧巻。ガーリックが香るバター風味の鰹昆布出汁に、たっぷりの青ネギと白胡麻がアクセントになっています。夏季限定の冷やし麺「Ocean
+      Breeze」は、このはまぐり出汁をベースにした氷冷版で、レモンスライスと黒胡椒が効いたキレのある酸味が楽しめます。サイドメニューの「鶏の唐揚げ（Chicken
+      Kara-age）」は、衣はサクサク、中はジューシーな仕上がり。黒胡椒で味付けされており、添えられた抹茶塩のほろ苦さが、揚げ物の脂っぽさをすっきりとさせてくれます。メニューはこの他にも味噌、鶏白湯、すき焼き風牛ラーメン、さらには3種類のヴィーガンラーメンや丼もの、抹茶かき氷、日本のビールや日本酒まで幅広く揃っています。ご家族での団らんや、お子様連れ、そしてあっさりとした和風の味を求めている時のランチやディナーにぴったりな一軒です。'
+  en:
+    name: HINODEYA Campbell Town
+    name_alt: Wafu Rakumen Yondaime Hinodeya
+    location: Campbell, California
+    cuisine:
+    - Japanese
+    - Ramen
+    - Izakaya
+    dishes:
+    - Signature Dashi Ramen (Hinodeya Ramen)
+    - Clam Ramen (Hamaguri Ramen)
+    - Summer Limited Clam Cold Ramen (Ocean Breeze Cold Ramen)
+    - Japanese Fried Chicken with Matcha Salt (Chicken Kara-age)
+    description: 'HINODEYA Campbell Town is the Campbell outpost of the Japanese ramen
+      brand "Wafu Rakumen Yondaime Hinodeya." You’ll spot it by the wooden exterior
+      and the white *noren*—those traditional split curtains hanging over the door—sporting
+      the shop’s name. The "Fourth Generation" and "SINCE 1885" labels on the sign
+      are the real deal: the original Hinodeya opened right in front of Saitama’s
+      Hasuda Station back in 1885. After 130 years and four generations, the brand
+      was rebooted in 2012 with a focus on *dashi*-style ramen before crossing the
+      Pacific to San Francisco in 2016. They’ve now grown to nine locations across
+      the States. At the heart of everything they do is their *dashi*—a traditional
+      Japanese soup stock brewed from kelp, bonito flakes, and scallops. It’s all
+      about a clean, light, and refreshing broth rather than the heavy, creamy *tonkotsu*
+      (pork bone) style you might be used to.
+
+
+      Their signature Hinodeya Ramen looks crystal clear but packs a punch. Scallop
+      oil and a touch of lard bring out the aroma, and it''s topped with chashu pork,
+      bamboo shoots, a gooey soft-boiled egg, nori, and some greens, finished with
+      a pop of red chili threads right in the center. If you''re a seafood lover,
+      the Hamaguri Ramen is a must—the bowl is loaded with small, open clams in a
+      buttery bonito and kelp broth with a hint of garlic, piled high with scallions
+      and white sesame seeds. For those sweltering days, the summer-only Ocean Breeze
+      is a chilled version of that clam broth, served with three lemon slices and
+      a crack of black pepper for a sharp, zesty finish. Don''t skip the Chicken *Kara-age*
+      (Japanese-style fried chicken); it’s crispy on the outside, juicy on the inside,
+      and seasoned with black pepper. It comes with a little jar of matcha salt to
+      sprinkle on—the slight bitterness of the tea powder is a game-changer for cutting
+      through the richness. The menu also features miso, *tori paitan* (creamy chicken
+      broth), sukiyaki beef, and even three vegan ramen options, along with rice bowls,
+      matcha shaved ice, and plenty of Japanese beer and sake.
+
+
+      Perfect for family dinners, kids, and anyone craving a light, refreshing Japanese
+      broth for lunch or dinner.'
+saigon-2-siam-bistro:
+  ja:
+    name: Saigon -2- Siam Bistro (サイゴン -2- サイアム ビストロ)
+    location: 米国カリフォルニア州ギルロイ
+    cuisine:
+    - タイ料理
+    - ベトナム料理
+    - フォー
+    - パッタイ
+    dishes:
+    - パッタイ（#N1 Pad Thai）
+    - 生牛肉のフォー（#NS6a Pho Noodle Soup）
+    - クリアスープのフォー
+    - 牛肉のバジル炒め（#E1 Pad Gra Pao）
+    - タイ風海老のスパイシーサラダ
+    - フィッシュスティック（#A8 Fish Sticks）
+    - イカリングフライ（#A14 Fried Calamari）
+    description: 'Saigon -2- Siam Bistroは、カリフォルニア州ギルロイ市街の1st St角にあるショッピングモール内にお店を構える、アットホームなレストランです。前身の「Saigon
+      Bistro Express」から引き継ぎ、タイ料理とベトナム料理の両方を楽しめるのが特徴。店名にある「Saigon（サイゴン）」と「Siam（シャム）」の通り、ベトナムのフォーやバインミー、タイのパッタイ、カレー、バジル炒めなどがメニューの両脇を固めています。店内はアメリカンスタイルの小ぢんまりとした造りで、壁に飾られた東南アジアの木彫りや織物が異国情緒を漂わせます。窓際にはボックス席があり、カウンター横にはメニュー表やテイクアウト用のボックスが並んでいます。多くのメニューでメインの具材（鶏肉、豚肉、豆腐、またはヴィーガン）を選べるほか、辛さもマイルド、ミディアム、スパイシー、タイ・スパイシーの4段階から指定可能です。
+
+
+      ベトナム料理では、牛骨の清湯スープに黒胡椒と玉ねぎでアクセントを加えた「フォー（Phở）」が人気です。生の牛肉は別皿で運ばれてくるため、熱々のスープに自分でさっとくぐらせていただくスタイル。別添えのプレートには、もやし、バジル、ハラペーニョ、ライムが用意されており、お好みで味をカスタマイズできます。タイ料理の定番「パッタイ（Pad
+      Thai）」は、タマリンドソースで炒めた細米粉が甘酸っぱく後を引く美味しさで、たっぷりの砕いたピーナッツともやし、ライムとキュウリが添えられています。「牛肉のバジル炒め（Pad
+      Gra Pao）」は、薄切りの牛肉にオイスターソースを絡め、人参や玉ねぎ、そしてたっぷりのバジルと一緒に炒め上げた一品です。前菜のフィッシュフライやイカリングは、厚めの衣でカラッと揚げたてにネギを散らし、スイートチリソースを添えて。エビのタイ風スパイシーサラダは、大ぶりのエビを赤玉ねぎ、トマト、パクチーと合わせ、ナンプラーとレモン汁でさっぱりと仕上げられています。他にもカレー、チャーハン、グリル料理、バインミーから、タイティーやベトナムコーヒー、フルーツスムージーまで揃っており、ご家族での食事やお子様連れ、タイ・ベトナム両方の味を一度に楽しみたい時のランチやディナーにおすすめです。'
+  en:
+    name: Saigon -2- Siam Bistro
+    location: Gilroy, California
+    cuisine:
+    - Thai
+    - Vietnamese
+    - Pho
+    - Pad Thai
+    dishes:
+    - Pad Thai (#N1 Pad Thai)
+    - Rare Beef Pho (#NS6a Pho Noodle Soup)
+    - Clear Broth Pho
+    - Thai Basil Beef (#E1 Pad Gra Pao)
+    - Thai Spicy Shrimp Salad
+    - Fish Sticks (#A8 Fish Sticks)
+    - Fried Calamari (#A14 Fried Calamari)
+    description: 'Saigon -2- Siam Bistro is a cozy, family-run gem tucked into a corner
+      plaza on 1st St in downtown Gilroy. Formerly known as Saigon Bistro Express,
+      the name—bridging "Saigon" for Vietnam and "Siam" for Thailand—perfectly captures
+      the soul of the menu. It’s a place where you’ll find steaming bowls of Phở and
+      crispy Bánh mì (Vietnamese baguettes) sharing the spotlight with Pad Thai, fragrant
+      curries, and savory basil stir-fries. The vibe is classic American bistro with
+      a Southeast Asian twist, featuring intricate wood carvings and textiles on the
+      walls and comfortable booths by the windows. Most dishes let you pick your protein—chicken,
+      pork, tofu, or veggie—and you can dial in your heat level from Mild all the
+      way up to a punchy "Thai Spicy" right when you order.
+
+
+      On the Vietnamese side of things, the Phở features a clean, hearty beef bone
+      broth accented with black pepper and onions. They serve the thinly sliced raw
+      beef on a separate plate so you can swirl it into the hot soup to cook it yourself,
+      accompanied by a fresh garnish plate of bean sprouts, Thai basil, jalapeños,
+      and lime to customize your bowl. If you''re craving Thai, the Pad Thai hits
+      those perfect sweet-and-sour notes with its tamarind-based sauce, topped with
+      plenty of crushed peanuts and sprouts. For something savory and aromatic, the
+      Pad Gra Pao (basil stir-fry) brings together tender beef, carrots, and onions
+      in a glossy oyster sauce with heaps of fresh basil. Don''t miss the appetizers—the
+      fried fish sticks and calamari are battered and fried to order, while the Thai
+      Spicy Shrimp Salad is a bright, refreshing mix of red onions, tomatoes, and
+      cilantro tossed in a zesty fish sauce and lime dressing. With a menu that rounds
+      out with curries, fried rice, grilled meats, and drinks like Thai iced tea and
+      Vietnamese coffee, there’s something for everyone. Perfect for family dinners,
+      dining with kids, and anyone who wants to enjoy both Thai and Vietnamese flavors
+      in one stop.'

@@ -69,7 +69,7 @@
         "@type": "Restaurant",
         "position": 7,
         "name": "Mr.KIM Korean Cuisine (Jeju Jin Xian Sheng)",
-"address": "No. 103, Dali Rd., Dali Dist., Taichung City 412, Taiwan","servesCuisine": ["Korean", "Fried Chicken", "Korean Cuisine", "Ramen"],        "url": "album-jeju-kim.html"
+"address": "No. 103, Dali Rd., Dali Dist., Taichung City 412, Taiwan","servesCuisine": ["Korean", "Fried Chicken", "Korean Cuisine", "Ramyeon"],        "url": "album-jeju-kim.html"
       },      {
         "@type": "Restaurant",
         "position": 8,
@@ -145,6 +145,21 @@
         "position": 22,
         "name": "Tsing Tao",
 "address": "15525 Los Gatos Blvd Ste D, Los Gatos, CA 95032, USA","servesCuisine": ["Chinese", "Northern Chinese", "Noodles"],        "url": "album-tsing-tao.html"
+      },      {
+        "@type": "Restaurant",
+        "position": 23,
+        "name": "Ramen Champ",
+"address": "6229 Santa Teresa Blvd, San Jose, CA 95119, USA","servesCuisine": ["Japanese", "Ramen", "Japanese Curry", "Rice Bowl"],        "url": "album-ramen-champ.html"
+      },      {
+        "@type": "Restaurant",
+        "position": 24,
+        "name": "HINODEYA Campbell Town",
+"address": "2210 S Bascom Ave, Campbell, CA 95008, USA","servesCuisine": ["Japanese", "Ramen", "Izakaya"],        "url": "album-hinodeya-campbell-town.html"
+      },      {
+        "@type": "Restaurant",
+        "position": 25,
+        "name": "Saigon -2- Siam Bistro",
+"address": "1280 1st St, Gilroy, CA 95020, USA","servesCuisine": ["Thai", "Vietnamese", "Pho", "Pad Thai"],        "url": "album-saigon-2-siam-bistro.html"
       }    ]
   }
 }
@@ -176,7 +191,7 @@
   <h1 class="text-5xl md:text-6xl font-bold tracking-tight mt-3 leading-[1.1]">Kenji Shoku-Sanpo</h1>
   <p class="text-stone-600 mt-5 font-sans leading-relaxed">Tasting notes from restaurants across Taiwan — mostly Taichung. Each entry has dish photos, shop info (address, phone, hours), tasting notes, and a rating. Filter by cuisine or rating.</p>
   <p class="text-xs text-stone-400 mt-3 font-num">
-    22 restaurants · 272 photos
+    25 restaurants · 295 photos
   </p>
 </header>
 
@@ -190,7 +205,7 @@
     <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">City</span>
     <button data-city="all" class="city-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">All</button>
     <button data-city="Taichung" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Taichung <span class="text-stone-400 ml-0.5">(14)</span></button>
-    <button data-city="California" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">California <span class="text-stone-400 ml-0.5">(5)</span></button>
+    <button data-city="California" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">California <span class="text-stone-400 ml-0.5">(8)</span></button>
     <button data-city="Hsinchu County" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Hsinchu County <span class="text-stone-400 ml-0.5">(1)</span></button>
     <button data-city="Taipei" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Taipei <span class="text-stone-400 ml-0.5">(1)</span></button>
     <button data-city="Taipei City" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Taipei City <span class="text-stone-400 ml-0.5">(1)</span></button>
@@ -198,13 +213,14 @@
   <div class="flex flex-wrap gap-2 items-center">
     <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">Cuisine</span>
     <button data-filter="all" class="filter-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">All</button>
-    <button data-filter="Chinese" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Chinese</button>
     <button data-filter="Japanese" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Japanese</button>
+    <button data-filter="Chinese" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Chinese</button>
     <button data-filter="Western" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Western</button>
     <button data-filter="Hong Kong" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Hong Kong</button>
     <button data-filter="Korean" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Korean</button>
-    <button data-filter="Cafe / Light bites" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Cafe / Light bites</button>
     <button data-filter="Vietnamese" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Vietnamese</button>
+    <button data-filter="Cafe / Light bites" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Cafe / Light bites</button>
+    <button data-filter="Thai" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Thai</button>
   </div>
 </nav>
 
@@ -385,7 +401,7 @@
       </a>
     </li>
     <li class="card group"
-        data-cuisine="Korean,Fried Chicken,Korean Cuisine,Ramen,Korean"
+        data-cuisine="Korean,Fried Chicken,Korean Cuisine,Ramyeon,Korean"
         data-city="Taichung"
         data-rating="4"
         data-date="2026-05-29">
@@ -403,7 +419,7 @@
             <span class="stars text-amber-600">★★★★<span class="text-stone-300">★</span></span>
             <span class="font-num text-xs text-stone-500">4</span>
 <span>📍 Dali District, Taichung</span><span class="font-num text-stone-500">📅 2026</span>            <span class="text-stone-300">·</span>
-            <span class="text-stone-500">Korean・Fried Chicken・Korean Cuisine・Ramen</span>
+            <span class="text-stone-500">Korean・Fried Chicken・Korean Cuisine・Ramyeon</span>
           </div>
 
           <p class="mt-4 text-stone-700 leading-loose line-clamp-3">
@@ -842,6 +858,91 @@ Hsi-Chen Dim Sum by Jhujian Group</p>
 
           <p class="mt-4 text-stone-700 leading-loose line-clamp-3">
             If you find yourself in the charming town of Los Gatos on the southern edge of Silicon Valley, you’ve got to check out Tsing Tao. This Northern-style Chinese spot actually got its start in neighboring Campbell before moving to its current corner location on Los Gatos Blvd (taking over the space where Boulevard Bites and Brews used to be). The sign out front reads &#34;Tsing Tao Mandarin Cuisine&#34; in both English and Chinese, and they run both a lunch and dinner shift. They’re closed on Mondays, but they do a brisk business in phone-in takeout if you’re looking to grab a meal on the go.
+          </p>
+          <span class="inline-block mt-5 text-amber-800 text-sm font-sans group-hover:translate-x-1 transition">Continue reading →</span>
+        </div>
+      </a>
+    </li>
+    <li class="card group"
+        data-cuisine="Japanese,Ramen,Japanese Curry,Rice Bowl,Japanese"
+        data-city="California"
+        data-rating="4.4"
+        data-date="2026-07-31">
+      <a href="album-ramen-champ.html" class="block">
+        <div class="aspect-[16/10] overflow-hidden rounded-lg bg-stone-200">
+          <img src="../photos/ramen-champ/20260731-iPhone 17 Pro180844.jpg" alt="Ramen Champ"
+               loading="lazy"
+               class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+        </div>
+        <div class="mt-6">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-1 group-hover:text-amber-900 transition">Ramen Champ</h2>
+
+          <div class="text-sm mt-3 font-sans flex flex-wrap items-baseline gap-x-4 gap-y-1 text-stone-600">
+            <span class="stars text-amber-600">★★★★<span class="text-stone-300">★</span></span>
+            <span class="font-num text-xs text-stone-500">4.4</span>
+<span>📍 San Jose, California</span><span class="font-num text-stone-500">📅 2026</span>            <span class="text-stone-300">·</span>
+            <span class="text-stone-500">Japanese・Ramen・Japanese Curry・Rice Bowl</span>
+          </div>
+
+          <p class="mt-4 text-stone-700 leading-loose line-clamp-3">
+            Tucked away in a corner plaza on Santa Teresa Blvd in South San Jose, Ramen Champ is a cozy Japanese ramen spot that’s open every single day for lunch and dinner. What really makes this place stand out is the incredible variety of broths—you can choose from Tonkotsu (rich pork bone broth), Yuzu Shio (citrusy salt broth), Shoyu (soy sauce), or Miso, all with customizable spice levels and toppings. They also serve up Tsukemen (dipping noodles), Abura Soba (soupless oil noodles), curry rice, and various Donburi (rice bowls), plus they offer easy online ordering for those on the go.
+          </p>
+          <span class="inline-block mt-5 text-amber-800 text-sm font-sans group-hover:translate-x-1 transition">Continue reading →</span>
+        </div>
+      </a>
+    </li>
+    <li class="card group"
+        data-cuisine="Japanese,Ramen,Izakaya,Japanese"
+        data-city="California"
+        data-rating="4.4"
+        data-date="2026-08-01">
+      <a href="album-hinodeya-campbell-town.html" class="block">
+        <div class="aspect-[16/10] overflow-hidden rounded-lg bg-stone-200">
+          <img src="../photos/hinodeya-campbell-town/20260801-iPhone 17 Pro124742.jpg" alt="HINODEYA Campbell Town"
+               loading="lazy"
+               class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+        </div>
+        <div class="mt-6">
+          <p class="font-num text-xs tracking-[0.3em] uppercase text-amber-800">Wafu Rakumen Yondaime Hinodeya</p>
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-1 group-hover:text-amber-900 transition">HINODEYA Campbell Town</h2>
+
+          <div class="text-sm mt-3 font-sans flex flex-wrap items-baseline gap-x-4 gap-y-1 text-stone-600">
+            <span class="stars text-amber-600">★★★★<span class="text-stone-300">★</span></span>
+            <span class="font-num text-xs text-stone-500">4.4</span>
+<span>📍 Campbell, California</span><span class="font-num text-stone-500">📅 2026</span>            <span class="text-stone-300">·</span>
+            <span class="text-stone-500">Japanese・Ramen・Izakaya</span>
+          </div>
+
+          <p class="mt-4 text-stone-700 leading-loose line-clamp-3">
+            HINODEYA Campbell Town is the Campbell outpost of the Japanese ramen brand &#34;Wafu Rakumen Yondaime Hinodeya.&#34; You’ll spot it by the wooden exterior and the white *noren*—those traditional split curtains hanging over the door—sporting the shop’s name. The &#34;Fourth Generation&#34; and &#34;SINCE 1885&#34; labels on the sign are the real deal: the original Hinodeya opened right in front of Saitama’s Hasuda Station back in 1885. After 130 years and four generations, the brand was rebooted in 2012 with a focus on *dashi*-style ramen before crossing the Pacific to San Francisco in 2016. They’ve now grown to nine locations across the States. At the heart of everything they do is their *dashi*—a traditional Japanese soup stock brewed from kelp, bonito flakes, and scallops. It’s all about a clean, light, and refreshing broth rather than the heavy, creamy *tonkotsu* (pork bone) style you might be used to.
+          </p>
+          <span class="inline-block mt-5 text-amber-800 text-sm font-sans group-hover:translate-x-1 transition">Continue reading →</span>
+        </div>
+      </a>
+    </li>
+    <li class="card group"
+        data-cuisine="Thai,Vietnamese,Pho,Pad Thai,Vietnamese,Thai"
+        data-city="California"
+        data-rating="4.6"
+        data-date="2026-07-30">
+      <a href="album-saigon-2-siam-bistro.html" class="block">
+        <div class="aspect-[16/10] overflow-hidden rounded-lg bg-stone-200">
+          <img src="../photos/saigon-2-siam-bistro/20260730-iPhone 17 Pro183338.jpg" alt="Saigon -2- Siam Bistro"
+               loading="lazy"
+               class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700">
+        </div>
+        <div class="mt-6">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-1 group-hover:text-amber-900 transition">Saigon -2- Siam Bistro</h2>
+
+          <div class="text-sm mt-3 font-sans flex flex-wrap items-baseline gap-x-4 gap-y-1 text-stone-600">
+            <span class="stars text-amber-600">★★★★<span class="star-half">★</span></span>
+            <span class="font-num text-xs text-stone-500">4.6</span>
+<span>📍 Gilroy, California</span><span class="font-num text-stone-500">📅 2026</span>            <span class="text-stone-300">·</span>
+            <span class="text-stone-500">Thai・Vietnamese・Pho・Pad Thai</span>
+          </div>
+
+          <p class="mt-4 text-stone-700 leading-loose line-clamp-3">
+            Saigon -2- Siam Bistro is a cozy, family-run gem tucked into a corner plaza on 1st St in downtown Gilroy. Formerly known as Saigon Bistro Express, the name—bridging &#34;Saigon&#34; for Vietnam and &#34;Siam&#34; for Thailand—perfectly captures the soul of the menu. It’s a place where you’ll find steaming bowls of Phở and crispy Bánh mì (Vietnamese baguettes) sharing the spotlight with Pad Thai, fragrant curries, and savory basil stir-fries. The vibe is classic American bistro with a Southeast Asian twist, featuring intricate wood carvings and textiles on the walls and comfortable booths by the windows. Most dishes let you pick your protein—chicken, pork, tofu, or veggie—and you can dial in your heat level from Mild all the way up to a punchy &#34;Thai Spicy&#34; right when you order.
           </p>
           <span class="inline-block mt-5 text-amber-800 text-sm font-sans group-hover:translate-x-1 transition">Continue reading →</span>
         </div>
