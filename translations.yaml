@@ -2078,3 +2078,65 @@ pho-luc-lac:
       with variety, from Bún Bò Huế (spicy beef noodle soup) and Hủ Tiếu (tapioca
       noodles) to plenty of vegetarian options for both pho and fried rice. Perfect
       for family dinners, eating with kids, and solo lunch or dinner.'
+golden-house-restaurant:
+  ja:
+    name: Golden House Restaurant (ゴールデンハウス レストラン)
+    name_alt: 中華料理 金屋
+    location: アメリカ合衆国カリフォルニア州サンノゼ
+    cuisine:
+    - 中華料理
+    - 香港料理
+    - 焼きそば
+    - 焼きビーフン
+    dishes:
+    - 海鮮豆腐スープ（Seafood Bean Curd Soup）
+    - 牛肉ともやしの河粉炒め（Beef Chow Fun w/Bean Sprouts）
+    - 五目野菜焼きそば（Vegetable Chow Mein）
+    description: 'サンノゼの南端、サンタ・テレサ・ブルバード沿いに位置する「Golden House Restaurant」。Dollar TreeやGrocery
+      Outletと同じモール内にあるこの店は、まさにアメリカの中華料理店の老舗といった趣です。落ち着いた色合いの木壁に、プラスチックカバーのかかった白いテーブルクロス、そして青白磁の皿に赤い縁取りのスープボウル。ピンク色の細長いメニューには140もの番号が並び、前菜、スープ、ムシュー、海鮮、牛肉、鶏、豚、芙蓉、野菜、チャーハン、炒粉・米粉、香港焼きそば、焼きそばの計13カテゴリーに分かれています。また、2名から注文できる広東風・北京風のファミリーセットのほか、11:00から14:30まではランチスペシャルもあり、27種類から選べるメインに白飯、焼きそば、またはチャーシューチャーハンが付いてきます。月曜定休。
+
+
+      海鮮豆腐スープはとろみのあるベースに、ふわふわの卵白、角切りの絹ごし豆腐、海老、グリーンピース、人参が入り、大きな器から小分けにしてもなお熱々の湯気が立ちのぼります。牛肉炒河（牛肉の河粉炒め）は、幅広のライスヌードルを強火で一気に炒めており、タレの色がしっかり染み込みながらも麺は一本一本が際立ち、柔らかい牛肉とシャキシャキのもやしが絶妙なアクセントになっています。五目野菜焼きそばは太めの油麺に、チンゲン菜、ブロッコリー、サヤエンドウ、キャベツ、もやしを合わせた一品。味付けはあっさりとしていて、野菜本来の甘みがしっかりと感じられます。ボリュームは2〜3人でシェアするのにちょうど良いアメリカンサイズ。メニューには他にもモンゴリアンビーフ、星洲炒米粉（シンガポール風焼きビーフン）、舌平目の塩胡椒揚げ、クルミ海老、そして肉を使わない豆腐や野菜料理も豊富に揃っています。ご家族やご友人との集まり、お子様連れでのランチやディナーに最適です。'
+  en:
+    name: Golden House Restaurant
+    name_alt: Golden House Chinese Restaurant
+    location: San Jose, California
+    cuisine:
+    - Chinese
+    - Hong Kong
+    - Chow Mein
+    - Chow Fun
+    dishes:
+    - Seafood Bean Curd Soup
+    - Beef Chow Fun with Bean Sprouts
+    - Vegetable Chow Mein
+    description: 'You''ll find Golden House Restaurant tucked away on Santa Teresa
+      Blvd in South San Jose, sharing the same corner plaza as Dollar Tree and Grocery
+      Outlet. It’s one of those classic, long-standing American-Chinese spots that
+      feels wonderfully nostalgic: think dark wood-paneled walls, white tablecloths
+      protected by plastic covers, and those iconic blue-and-white porcelain plates
+      paired with red-rimmed soup bowls. Their massive pink menu features 140 numbered
+      dishes across thirteen sections—everything from appetizers and Mu Shu (savory
+      stir-fry served with thin pancakes) to seafood, Egg Fu Young (Chinese-style
+      omelets), and an endless variety of fried rice and noodles. They also offer
+      Cantonese and Peking-style family dinners for two or more, plus a great lunch
+      special from 11:00 AM to 2:30 PM where you can choose from 27 different entrees
+      served with a side of rice, chow mein, or BBQ pork fried rice. Just a heads-up:
+      they are closed on Mondays.
+
+
+      The Seafood Tofu Soup is a real comfort dish, featuring a velvety, thickened
+      broth swirled with egg white ribbons, silken tofu, shrimp, peas, and carrots—it
+      comes in a large tureen that’s perfect for ladling into smaller bowls while
+      it''s still steaming. For something with a bit of "wok hei" (that charred, smoky
+      flavor from a hot wok), the Beef Chow Fun is a winner; the wide, flat rice noodles
+      are stained a beautiful savory brown but stay perfectly distinct, tossed with
+      tender beef slices and crunchy bean sprouts. If you’re after something lighter,
+      the Vegetable Chow Mein uses thick wheat noodles tossed with bok choy, broccoli,
+      snow peas, cabbage, and bean sprouts in a delicate sauce that really lets the
+      natural sweetness of the veggies shine through. Portions are generous in that
+      classic American-Chinese way, easily enough for two or three people to share.
+      The menu also features favorites like Mongolian Beef, Singapore Rice Noodles,
+      Salt and Pepper Sole, Walnut Shrimp, and plenty of meat-free tofu and veggie
+      options. Perfect for family gatherings, hanging out with friends, and lunch
+      or dinner with the kids.'
