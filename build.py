@@ -246,6 +246,8 @@ GLOSSARIES = {
         # 含「信用卡」的整句必須排在單字「信用卡」之前，否則會被先換掉
         ("不收信用卡（店內有 ATM）", "クレジットカード不可（店内にATMあり）"),
         ("熟食櫃檯點餐", "デリカウンターで注文"),
+        ("櫃檯點餐", "カウンターで注文"),
+        ("售完為止", "売り切れ次第終了"),
         ("6 人以上加 18% 服務費", "6名以上は18%のサービス料"),
         ("另有兩人以上家庭套餐", "2名様以上のファミリーセットあり"),
         ("越南文菜單", "ベトナム語メニュー"),
@@ -341,6 +343,8 @@ GLOSSARIES = {
         # phrases containing 信用卡 must precede the bare 信用卡 entry below
         ("不收信用卡（店內有 ATM）", "no credit cards (ATM inside)"),
         ("熟食櫃檯點餐", "order at the deli counter"),
+        ("櫃檯點餐", "order at the counter"),
+        ("售完為止", "or until sold out"),
         ("6 人以上加 18% 服務費", "18% service charge for parties of 6 or more"),
         ("另有兩人以上家庭套餐", "family dinner sets for two or more"),
         ("越南文菜單", "Vietnamese menu"),

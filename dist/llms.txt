@@ -36,6 +36,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [Zoccoli's Delicatessen](https://kenji-shoku-sanpo.vercel.app/album-zoccolis-delicatessen.html): 義式/熟食店/三明治 · 美國加州 Santa Cruz · ★4.6/5 — Zoccoli's Delicatessen 是 Santa Cruz 市中心 Pacific Ave 上的義大利熟食店,1948 年 3 月由
 - [Pho Luc Lac](https://kenji-shoku-sanpo.vercel.app/album-pho-luc-lac.html): 越式/河粉/炒飯 · 美國加州 San Jose · ★4.5/5 — Pho Luc Lac 開在聖荷西 Cambrian 一帶 Branham Ln 的 Branham Center 商場,藍色霓虹店名
 - [Golden House Restaurant](https://kenji-shoku-sanpo.vercel.app/album-golden-house-restaurant.html): 中式/港式/炒麵/炒河 · 美國加州 San Jose · ★4.5/5 — Golden House Restaurant 在聖荷西南端 Santa Teresa Blvd 上,與 Dollar Tree、Grocery Outlet
+- [South Winchester BBQ](https://kenji-shoku-sanpo.vercel.app/album-south-winchester-bbq.html): 美式/燒烤/煙燻 BBQ · 美國加州 San Jose · ★4.3/5 — South Winchester BBQ 是聖荷西 S Winchester Blvd 上的獨棟燒烤店,灰磚外牆,店內紅牆
 
 ## Language versions
 

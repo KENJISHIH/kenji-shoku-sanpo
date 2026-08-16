@@ -36,6 +36,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [Zoccoli's Delicatessen](https://kenji-shoku-sanpo.vercel.app/en/album-zoccolis-delicatessen.html): Italian/Deli/Sandwich · Santa Cruz, California · ★4.6/5 — Sitting right on Pacific Ave in downtown Santa Cruz, Zoccoli’s Delicatessen is a true local staple. Its story began back in March 1948 when Robert Zoccoli Sr. a
 - [Pho Luc Lac](https://kenji-shoku-sanpo.vercel.app/en/album-pho-luc-lac.html): Vietnamese/Pho/Fried Rice · San Jose, California · ★4.5/5 — Tucked away in the Branham Center in San Jose’s Cambrian neighborhood, Pho Luc Lac catches your eye with its blue neon sign and a logo of a woman in a nón lá (a
 - [Golden House Restaurant](https://kenji-shoku-sanpo.vercel.app/en/album-golden-house-restaurant.html): Chinese/Hong Kong/Chow Mein/Chow Fun · San Jose, California · ★4.5/5 — You'll find Golden House Restaurant tucked away on Santa Teresa Blvd in South San Jose, sharing the same corner plaza as Dollar Tree and Grocery Outlet. It’s on
+- [South Winchester BBQ](https://kenji-shoku-sanpo.vercel.app/en/album-south-winchester-bbq.html): American/Grill/Smoked BBQ · San Jose, California · ★4.3/5 — South Winchester BBQ is this awesome standalone spot right on S Winchester Blvd in San Jose. With its grey brick exterior, the place has a real rustic charm. In
 
 ## Language versions
 

@@ -1302,3 +1302,51 @@ restaurants:
       - "海鮮豆腐湯(Seafood Bean Curd Soup)"
       - "牛肉炒河(Beef Chow Fun w/Bean Sprouts)"
       - "什菜炒麵(Vegetable Chow Mein)"
+
+  - slug: south-winchester-bbq
+    name: "South Winchester BBQ"
+    name_alt: "Real Smoked BBQ"
+    location: "美國加州 San Jose"
+    address: "1362 S Winchester Blvd, San Jose, CA 95128, USA"
+    address_ja: "1362 S Winchester Blvd, San Jose, CA 95128, アメリカ"
+    address_en: "1362 S Winchester Blvd, San Jose, CA 95128, USA"
+    phone: "+1 408-376-0485"
+    hours: "每日 7:00-21:00，售完為止"
+    closed: "無公休"
+    price_range: "US$ 20-30 / 人"
+    price_range_usd: "US$ 20-30 / person"
+    price_range_jpy: "¥3,000-4,500 / 人"
+    reservation: "僅現場點餐，可線上訂餐"
+    service: "櫃檯點餐，可外帶、可外送、提供外燴"
+    payment: ["信用卡", "現金", "行動支付"]
+    languages: ["英文"]
+    foreign_menu: ["英文菜單"]
+    good_for: ["家庭聚餐", "朋友聚餐", "帶小孩"]
+    visited_at: "2026-08-05"
+    rating: 4.3
+    cuisine: ["美式", "燒烤", "煙燻 BBQ"]
+    cover: "20260805-iPhone 17 Pro140905.jpg"  # 三肉拼盤
+    same_as:
+      - "https://swinchesterbbq.com/"
+      - "https://www.instagram.com/southwinchesterbbq/"
+      - "https://www.facebook.com/southwinchesterbbq/"
+    description: |
+      South Winchester BBQ 是聖荷西 S Winchester Blvd 上的獨棟燒烤店,灰磚外牆,店內紅牆
+      配浪板隔間、紅白格紋桌巾與鐵皮托盤,牆上一整排黑板菜單,冰櫃裡放著本地精釀啤酒。
+      招牌打的是「Real Smoked BBQ」——橡木明火低溫慢燻,風味取材從加州一路到卡羅萊納。
+      每天早上七點開到晚上九點,賣完就收,一年只休感恩節與聖誕節。
+
+      點餐在櫃檯,肉品有三種買法:夾成三明治、秤重單買(Just the Meat),或點成附兩樣配菜
+      與一片麵包的套餐;套餐再往上是兩肉、三肉、四肉的 Combo,肉自己挑。三肉拼盤點了
+      牛胸肉、手撕豬肉與豬肋排:牛胸肉切面看得到粉紅色煙燻圈,油花整層化開,黑胡椒外皮
+      扎實有嚼感;手撕豬肉帶焦邊,肉絲濕潤;豬肋排刷了醬,咬開是乾淨的粉紅色。配菜的
+      焗烤起司通心粉用貝殼麵拌濃白醬,起司味重;麵包可選蒜香或玉米,蒜香那片邊緣烤到
+      金黃酥脆。托盤角落一定附醃黃瓜、醃紫洋蔥與墨西哥辣椒,用來解膩。菜單另有 Tri-Tip、
+      辣香腸、烤雞、沙拉,以及從家庭餐盒到二十人份的派對大盒。適合家庭聚餐、朋友聚餐、
+      帶小孩的午、晚餐。
+    dishes:
+      - "三肉拼盤(3 Meat Meal・牛胸肉＋手撕豬肉＋豬肋排)"
+      - "牛胸肉套餐(Brisket Meal)"
+      - "焗烤起司通心粉(Mac & Cheese)"
+      - "蒜香麵包(Garlic Bread)"
+      - "玉米麵包(Cornbread)"

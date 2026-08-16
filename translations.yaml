@@ -2140,3 +2140,63 @@ golden-house-restaurant:
       Salt and Pepper Sole, Walnut Shrimp, and plenty of meat-free tofu and veggie
       options. Perfect for family gatherings, hanging out with friends, and lunch
       or dinner with the kids.'
+south-winchester-bbq:
+  ja:
+    name: South Winchester BBQ（サウス・ウィンチェスター BBQ）
+    name_alt: 本格スモークBBQ
+    location: アメリカ合衆国カリフォルニア州サンノゼ
+    cuisine:
+    - アメリカ料理
+    - バーベキュー
+    - 燻製
+    dishes:
+    - 3種肉の盛り合わせ（3 Meat Meal・ブリスケット＋プルドポーク＋ポークリブ）
+    - ブリスケットセット（Brisket Meal）
+    - マカロニチーズ（Mac & Cheese）
+    - ガーリックブレッド（Garlic Bread）
+    - コーンブレッド（Cornbread）
+    description: 'South Winchester BBQは、サンノゼのS Winchester Blvd沿いに佇む一軒家スタイルのバーベキュー専門店です。グレーのレンガの外壁が目を引き、店内は赤い壁に波板の仕切り、赤白チェックのテーブルクロスにブリキのトレイが並ぶアメリカンな雰囲気。壁一面の黒板メニューや、冷蔵庫に並ぶ地元のクラフトビールが気分を盛り上げてくれます。看板メニューは、オークの薪を使い低温でじっくりと燻製する「Real
+      Smoked BBQ」。カリフォルニアからカロライナスタイルまで、幅広い地域のフレーバーを取り入れています。営業時間は朝7時から夜9時までですが、売り切れ次第終了。休みは感謝祭とクリスマスのみという、こだわりの一軒です。
+
+
+      注文はカウンターで行うスタイルで、お肉の楽しみ方は3通りあります。サンドイッチ、量り売り（Just the Meat）、またはサイドメニュー2種とパン1枚が付くプレートから選べ、さらにお肉を2種、3種、4種と組み合わせられるコンボも用意されています。今回は牛ブリスケット、プルドポーク、ポークリブの「3種盛り合わせ」をいただきました。ブリスケットは断面に綺麗なピンク色の「スモークリング」が立ち、脂身がとろけるような口当たり。黒胡椒の効いた外皮の歯ごたえも絶妙です。プルドポークは香ばしい焦げ目がアクセントになりつつ、身はしっとり。ソースを塗ったポークリブは、骨離れがよく中は鮮やかなピンク色に仕上がっています。サイドの「マック＆チーズ」はシェルパスタに濃厚なホワイトソースが絡み、チーズのコクがしっかり。パンはガーリックかコーンを選べますが、ガーリックトーストは端が黄金色にカリッと焼き上げられています。トレイの隅にはピクルス、紫玉ねぎの甘酢漬け、ハラペーニョが添えられており、お口直しにぴったりです。メニューには他にもトライチップやホットリンク、ローストチキン、サラダがあり、ファミリーセットから20名用のパーティーボックスまで幅広く対応。家族連れや友人との集まり、お子様連れのランチやディナーにも最適なお店です。'
+  en:
+    name: South Winchester BBQ
+    name_alt: Real Smoked BBQ
+    location: San Jose, California
+    cuisine:
+    - American
+    - Grill
+    - Smoked BBQ
+    dishes:
+    - 'Three-Meat Platter (3 Meat Meal: Brisket, Pulled Pork, Pork Ribs)'
+    - Brisket Meal
+    - Mac & Cheese
+    - Garlic Bread
+    - Cornbread
+    description: 'South Winchester BBQ is this awesome standalone spot right on S
+      Winchester Blvd in San Jose. With its grey brick exterior, the place has a real
+      rustic charm. Inside, the vibe is pure Americana: red walls, corrugated metal
+      partitions, and classic red-and-white checkered tablecloths. Everything is served
+      on metal trays, and there’s a massive chalkboard menu to browse while you eye
+      the local craft beers in the cooler. They’re all about "Real Smoked BBQ" here—low
+      and slow over an oak fire, with flavors ranging from California style to Carolina
+      roots. They’re open daily from 7 AM to 9 PM, but keep in mind they close up
+      as soon as they sell out. They only take a break on Thanksgiving and Christmas.
+
+
+      You order at the counter, and there are three ways to get your meat fix: in
+      a sandwich, by weight ("Just the Meat"), or as a platter with two sides and
+      a slice of bread. If you can''t decide, they have 2, 3, and 4-meat combos where
+      you can mix and match. On the 3-meat platter, the brisket is a total standout—you
+      can see that beautiful pink smoke ring right through the cut, and the fat is
+      perfectly rendered under a thick, peppery crust. The pulled pork has nicely
+      charred edges and stays incredibly juicy, while the ribs come glazed with a
+      sauce that reveals a clean pink interior when you bite in. For sides, the Mac
+      & Cheese uses shell pasta in a rich, velvety white sauce that''s heavy on the
+      cheese, and you can''t go wrong with the garlic bread—it’s toasted to a perfect
+      golden-brown crisp. To help cut through all that richness, every tray comes
+      with a side of pickles, pickled red onions, and jalapeños. The menu also features
+      Tri-Tip, hot links, roasted chicken, and salads, with options ranging from family
+      meal boxes to massive party packs for 20. Perfect for family gatherings, hanging
+      out with friends, and casual lunch or dinner with the kids.'
