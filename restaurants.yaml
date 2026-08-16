@@ -1116,3 +1116,51 @@ restaurants:
       - "西湖牛肉餃(G13 Carrot Celery Beef Dumplings,10 只)"
       - "乾炒牛河(K11 Beef Chow Fun)"
       - "蒜子炒大豆苗(J2 Sautéed Pea Shoots with Garlic)"
+
+  - slug: lindas-seabreeze-cafe
+    name: "Linda's Seabreeze Café"
+    name_alt: "Seabreeze Cafe"
+    location: "美國加州 Santa Cruz"
+    address: "542 Seabright Ave, Santa Cruz, CA 95062, USA"
+    address_ja: "542 Seabright Ave, Santa Cruz, CA 95062, アメリカ"
+    address_en: "542 Seabright Ave, Santa Cruz, CA 95062, USA"
+    phone: "+1 831-427-9713"
+    hours: "週一至週二、週四至週六 8:00-14:00；週日 8:00-13:00"
+    closed: "週三"
+    price_range: "US$ 20-30 / 人"
+    price_range_usd: "US$ 20-30 / person"
+    price_range_jpy: "¥3,000-4,500 / 人"
+    reservation: "現場候位，自行入座"
+    service: "單點式，不收信用卡（店內有 ATM），6 人以上加 20% 服務費"
+    transit: "Seabright Ave 街角・路邊停車"
+    payment: ["現金", "支票"]
+    languages: ["英文"]
+    foreign_menu: ["英文菜單"]
+    dietary: ["有素食選項", "有無麩質選項"]
+    good_for: ["家庭聚餐", "帶小孩", "一人吃"]
+    visited_at: "2026-08-02"
+    rating: 4.7
+    cuisine: ["美式", "早午餐", "鬆餅", "法式吐司"]
+    cover: "20260802-iPhone 17 Pro090241.jpg"  # 法式吐司
+    same_as:
+      - "https://www.instagram.com/lindasseabreezecafe/"
+      - "https://www.facebook.com/p/Lindas-Seabreeze-Cafe-100063796380437/"
+    description: |
+      Linda's Seabreeze Café 是加州 Santa Cruz 的 Seabright 社區開了三十多年的早餐店,
+      奶油黃木造平房配深藍色遮陽棚,棚上手繪的店名是這條街的地標。店名裡的 Linda 是創店的
+      Linda Hopper,1998 年頂給 Tex 與 Claire Hintze 夫婦,2024 年 8 月再交棒給 Marcie 與
+      Mark Magdaleno,店名與菜單一路留著——菜單上那道 Tex's Turkey Deluxe 就是用前一任
+      老闆的名字命名的。門口立著「Please Seat Yourself」的牌子,自己找位子坐;店裡只收
+      現金與支票、不收信用卡,店內設有 ATM。早餐全天供應,午餐從 11:00 開始,週三公休。
+
+      份量是美式早餐店的規格。火腿排雙蛋一盤鋪兩大片煎到邊緣焦香的火腿排、炒蛋與帶皮
+      馬鈴薯塊,附餐的家常薯塊可加 2 美元換成鮮果杯——草莓、藍莓、哈密瓜、蜜瓜與葡萄
+      裝滿一小碗。鬆餅一片就蓋滿整個盤子,表面煎得均勻金黃,中央放一球奶油、旁邊附柳橙角。
+      法式吐司可選德州厚片或三種穀物麵包,煎過後撒滿糖粉,附鮮奶油與柳橙。菜單另有歐姆蛋、
+      Seabreeze Spuds 香煎馬鈴薯、格子鬆餅與燕麥粥,午餐時段有三明治、漢堡與沙拉,
+      甜點區則是自家做的肉桂捲與瑪芬。適合家庭聚餐、帶小孩、一人吃的早、午餐。
+    dishes:
+      - "火腿排雙蛋(Ham Steak & Eggs any Style)"
+      - "鬆餅(Pancakes)"
+      - "法式吐司(French Toast)"
+      - "鮮果杯(Fresh Cup Fruit)"
