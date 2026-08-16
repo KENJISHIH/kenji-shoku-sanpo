@@ -33,6 +33,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [Saigon -2- Siam Bistro](https://kenji-shoku-sanpo.vercel.app/en/album-saigon-2-siam-bistro.html): Thai/Vietnamese/Pho/Pad Thai · Gilroy, California · ★4.6/5 — Saigon -2- Siam Bistro is a cozy, family-run gem tucked into a corner plaza on 1st St in downtown Gilroy. Formerly known as Saigon Bistro Express, the name—brid
 - [Hon's Wun-Tun House (Washington St)](https://kenji-shoku-sanpo.vercel.app/en/album-hons-wun-tun-house-washington.html): Hong Kong/Cantonese/Wonton Noodles · San Francisco, California · ★4.2/5 — Hon’s Wun-Tun House is a legendary Cantonese noodle spot in San Francisco’s Chinatown. They first set up shop on Kearny Street back in 1972 before opening this 
 - [Linda's Seabreeze Café](https://kenji-shoku-sanpo.vercel.app/en/album-lindas-seabreeze-cafe.html): American/Brunch/Pancakes/French Toast · Santa Cruz, California · ★4.7/5 — Linda's Seabreeze Café has been a beloved breakfast staple in Santa Cruz’s Seabright neighborhood for over three decades. With its buttery-yellow wooden exterio
+- [Zoccoli's Delicatessen](https://kenji-shoku-sanpo.vercel.app/en/album-zoccolis-delicatessen.html): Italian/Deli/Sandwich · Santa Cruz, California · ★4.6/5 — Sitting right on Pacific Ave in downtown Santa Cruz, Zoccoli’s Delicatessen is a true local staple. Its story began back in March 1948 when Robert Zoccoli Sr. a
 
 ## Language versions
 

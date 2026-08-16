@@ -1164,3 +1164,49 @@ restaurants:
       - "鬆餅(Pancakes)"
       - "法式吐司(French Toast)"
       - "鮮果杯(Fresh Cup Fruit)"
+
+  - slug: zoccolis-delicatessen
+    name: "Zoccoli's Delicatessen"
+    name_alt: "The Italian Delicatessen・Since 1948"
+    location: "美國加州 Santa Cruz"
+    address: "1534 Pacific Ave, Santa Cruz, CA 95060, USA"
+    address_ja: "1534 Pacific Ave, Santa Cruz, CA 95060, アメリカ"
+    address_en: "1534 Pacific Ave, Santa Cruz, CA 95060, USA"
+    phone: "+1 831-423-1711"
+    hours: "週一至週六 8:00-18:00；週日 10:00-18:00"
+    closed: "無公休"
+    price_range: "US$ 10-20 / 人"
+    price_range_usd: "US$ 10-20 / person"
+    price_range_jpy: "¥1,500-3,000 / 人"
+    reservation: "僅現場點餐，可電話外帶訂餐"
+    service: "熟食櫃檯點餐，可外帶、有戶外座位、提供外燴"
+    transit: "市中心 Pacific Ave・鄰近市區停車場"
+    languages: ["英文"]
+    foreign_menu: ["英文菜單"]
+    dietary: ["有素食選項", "有無麩質選項"]
+    good_for: ["家庭聚餐", "帶小孩", "一人吃"]
+    visited_at: "2026-08-02"
+    rating: 4.6
+    cuisine: ["義式", "熟食店", "三明治"]
+    cover: "20260802-iPhone 17 Pro145441.jpg"  # 義式香腸三明治
+    same_as:
+      - "https://www.zoccolis.com/"
+      - "https://www.facebook.com/ZoccolisDeli/"
+    description: |
+      Zoccoli's Delicatessen 是 Santa Cruz 市中心 Pacific Ave 上的義大利熟食店,1948 年 3 月由
+      Robert Zoccoli Sr. 夫婦與女兒女婿買下這裡的雜貨店改成熟食舖,1962 年交給第二代 Bob 與
+      Ann,1989 年再由第三代的 Craig 與 Russell 兄弟接手,是 Santa Cruz 最老的家族企業之一。
+      1989 年洛馬普里塔地震震垮市中心,店裡開業以來第一次歇業,先靠臨時拖車撐著,重建
+      十八個月後回到 Pacific Ave 原址。醬料、湯品與提拉米蘇都在店內自製。
+
+      點餐在熟食櫃檯,牆上三大片看板列著冷三明治、熱三明治與自由搭配三區,麵包可挑
+      sourdough、sweet、wheat、onion、prairie 與 ciabatta 六種餐包,或是切片吐司與裸麥,另有
+      無麩質全穀切片可加價換。做好的三明治用鋁箔紙包起來、貼上店名貼紙,拿到門口的
+      露台鐵網桌就能吃。義式香腸三明治(Italian Sausage)把烤過的義式香腸切片與炒軟的
+      甜椒、洋蔥鋪滿一整條 sweet roll,淋義式醬汁,醬汁把麵包底部浸得濕潤。Tri-Tip 用醃過的
+      三角肉薄切,配美乃滋、烤紅椒、洋蔥與生菜,肉片軟嫩、麵包鬆軟吸汁。菜單另有
+      Meatball Italiano、French Dip、Reuben、Muffaleta 等經典款,素食標記 V 的品項就有七八種。
+      適合家庭聚餐、帶小孩、一人吃的午餐或外帶野餐。
+    dishes:
+      - "義式香腸三明治(Italian Sausage)"
+      - "Tri-Tip 三角肉三明治(Tri-Tip)"

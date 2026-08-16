@@ -33,6 +33,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [Saigon -2- Siam Bistro](https://kenji-shoku-sanpo.vercel.app/album-saigon-2-siam-bistro.html): 泰式/越式/河粉/泰式炒河粉 · 美國加州 Gilroy · ★4.6/5 — Saigon -2- Siam Bistro 是加州 Gilroy 市區 1st St 街角商場裡的家庭式餐館,前身為
 - [Hon's Wun-Tun House 洪記麵家(Washington St)](https://kenji-shoku-sanpo.vercel.app/album-hons-wun-tun-house-washington.html): 港式/粵菜/雲吞麵 · 美國加州 舊金山 · ★4.2/5 — Hon's Wun-Tun House 洪記麵家是舊金山華埠的粵式麵家,1972 年從 Kearny St 起家,後來在
 - [Linda's Seabreeze Café](https://kenji-shoku-sanpo.vercel.app/album-lindas-seabreeze-cafe.html): 美式/早午餐/鬆餅/法式吐司 · 美國加州 Santa Cruz · ★4.7/5 — Linda's Seabreeze Café 是加州 Santa Cruz 的 Seabright 社區開了三十多年的早餐店,
+- [Zoccoli's Delicatessen](https://kenji-shoku-sanpo.vercel.app/album-zoccolis-delicatessen.html): 義式/熟食店/三明治 · 美國加州 Santa Cruz · ★4.6/5 — Zoccoli's Delicatessen 是 Santa Cruz 市中心 Pacific Ave 上的義大利熟食店,1948 年 3 月由
 
 ## Language versions
 

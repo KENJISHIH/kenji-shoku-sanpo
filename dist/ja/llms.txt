@@ -33,6 +33,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [Saigon -2- Siam Bistro (サイゴン -2- サイアム ビストロ)](https://kenji-shoku-sanpo.vercel.app/ja/album-saigon-2-siam-bistro.html): タイ料理/ベトナム料理/フォー/パッタイ · 米国カリフォルニア州ギルロイ · ★4.6/5 — Saigon -2- Siam Bistroは、カリフォルニア州ギルロイ市街の1st St角にあるショッピングモール内にお店を構える、アットホームなレストランです。前身の「Saigon Bistro Express」から引き継ぎ、タイ料理とベトナム料理の両方を楽しめるのが特徴。店名にある「Saigon（サイゴン）」と「
 - [Hon's Wun-Tun House 洪記麵家（ワシントン・ストリート店）](https://kenji-shoku-sanpo.vercel.app/ja/album-hons-wun-tun-house-washington.html): 香港料理/広東料理/ワンタン麺 · アメリカ合衆国カリフォルニア州サンフランシスコ · ★4.2/5 — サンフランシスコのチャイナタウンにある広東風の麺専門店「Hon's Wun-Tun House（洪記麵家）」。1972年にカーニー通りで創業し、その後ワシントン通りにこの店舗をオープン。現在は市内に3店舗を展開しています。店内はいかにも老舗の麺屋といった趣で、木のテーブルに青白の縁取りの磁器の器が並び、職人がその場でワ
 - [Linda's Seabreeze Café（リンダズ・シーブリーズ・カフェ）](https://kenji-shoku-sanpo.vercel.app/ja/album-lindas-seabreeze-cafe.html): アメリカ料理/ブランチ/パンケーキ/フレンチトースト · 米国カリフォルニア州サンタクルーズ · ★4.7/5 — Linda's Seabreeze Café は、カリフォルニア州サンタクルーズのシーブライト地区で30年以上続く朝食専門店です。クリームイエローの木造コテージに濃紺のオーニング、手書きの店名が描かれた外観はこの通りのランドマークとなっています。店名の「リンダ」は創業者のリンダ・ホッパーさんに由来し、1998年にテック
+- [Zoccoli's Delicatessen（ゾッコリーズ・デリカテッセン）](https://kenji-shoku-sanpo.vercel.app/ja/album-zoccolis-delicatessen.html): イタリアン/デリカテッセン/サンドイッチ · アメリカ合衆国カリフォルニア州サンタクルーズ · ★4.6/5 — サンタクルーズ市内のパシフィック・アベニューに位置する、老舗のイタリアン・デリカテッセン「Zoccoli's Delicatessen」。1948年3月、ロバート・ゾッコリ・シニア夫妻が娘夫婦と共に食料品店を買い取り、デリとして開業したのが始まりです。1962年に2代目のボブとアン、1989年には3代目のクレイグとラッ
 
 ## Language versions
 
