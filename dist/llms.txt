@@ -37,6 +37,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [Pho Luc Lac](https://kenji-shoku-sanpo.vercel.app/album-pho-luc-lac.html): 越式/河粉/炒飯 · 美國加州 San Jose · ★4.5/5 — Pho Luc Lac 開在聖荷西 Cambrian 一帶 Branham Ln 的 Branham Center 商場,藍色霓虹店名
 - [Golden House Restaurant](https://kenji-shoku-sanpo.vercel.app/album-golden-house-restaurant.html): 中式/港式/炒麵/炒河 · 美國加州 San Jose · ★4.5/5 — Golden House Restaurant 在聖荷西南端 Santa Teresa Blvd 上,與 Dollar Tree、Grocery Outlet
 - [South Winchester BBQ](https://kenji-shoku-sanpo.vercel.app/album-south-winchester-bbq.html): 美式/燒烤/煙燻 BBQ · 美國加州 San Jose · ★4.3/5 — South Winchester BBQ 是聖荷西 S Winchester Blvd 上的獨棟燒烤店,灰磚外牆,店內紅牆
+- [Yin Ji Chang Fen 銀記腸粉店](https://kenji-shoku-sanpo.vercel.app/album-yin-ji-chang-fen-pleasanton.html): 粵菜/港式/腸粉/點心 · 美國加州 Pleasanton · ★4.2/5 — 銀記腸粉店(Yin Ji Chang Fen)的 Pleasanton 分店開在 Stoneridge Dr 的街角商場,店內挑高
 
 ## Language versions
 

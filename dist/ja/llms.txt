@@ -37,6 +37,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [Pho Luc Lac (フォー・ルック・ラック)](https://kenji-shoku-sanpo.vercel.app/ja/album-pho-luc-lac.html): ベトナム料理/フォー/チャーハン · アメリカ合衆国カリフォルニア州サンノゼ · ★4.5/5 — Pho Luc Lacは、サンノゼのカンブリアン地区、ブランハム・レーンのブランハム・センター内にあります。青いネオンの店名に、ノンラー（ベトナムの笠帽）を被ってフォーの丼を持つ女性のイラストが目印です。店名はベトナムの名物料理「Bò Lúc Lắc（サイコロステーキ）」に由来しており、看板メニューはその名を冠した「P
 - [Golden House Restaurant (ゴールデンハウス レストラン)](https://kenji-shoku-sanpo.vercel.app/ja/album-golden-house-restaurant.html): 中華料理/香港料理/焼きそば/焼きビーフン · アメリカ合衆国カリフォルニア州サンノゼ · ★4.5/5 — サンノゼの南端、サンタ・テレサ・ブルバード沿いに位置する「Golden House Restaurant」。Dollar TreeやGrocery Outletと同じモール内にあるこの店は、まさにアメリカの中華料理店の老舗といった趣です。落ち着いた色合いの木壁に、プラスチックカバーのかかった白いテーブルクロス、そして青
 - [South Winchester BBQ（サウス・ウィンチェスター BBQ）](https://kenji-shoku-sanpo.vercel.app/ja/album-south-winchester-bbq.html): アメリカ料理/バーベキュー/燻製 · アメリカ合衆国カリフォルニア州サンノゼ · ★4.3/5 — South Winchester BBQは、サンノゼのS Winchester Blvd沿いに佇む一軒家スタイルのバーベキュー専門店です。グレーのレンガの外壁が目を引き、店内は赤い壁に波板の仕切り、赤白チェックのテーブルクロスにブリキのトレイが並ぶアメリカンな雰囲気。壁一面の黒板メニューや、冷蔵庫に並ぶ地元のクラフトビ
+- [Yin Ji Chang Fen 銀記腸粉店](https://kenji-shoku-sanpo.vercel.app/ja/album-yin-ji-chang-fen-pleasanton.html): 広東料理/香港料理/腸粉/点心 · アメリカ合衆国カリフォルニア州プレザントン · ★4.2/5 — 銀記腸粉店（Yin Ji Chang Fen）のプレザントン店は、ストーリッジ・ドライブの角にあるショッピングモール内に位置しています。店内は高い天井と木の梁、コンクリートの床に明るい色の木製テーブルが配され、壁には「以腸為王（腸粉こそが王）」の書や古い写真が飾られています。カウンターの上には黒地に金文字の看板と赤い提
 
 ## Language versions
 
