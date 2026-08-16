@@ -1845,3 +1845,56 @@ saigon-2-siam-bistro:
       Vietnamese coffee, there’s something for everyone. Perfect for family dinners,
       dining with kids, and anyone who wants to enjoy both Thai and Vietnamese flavors
       in one stop.'
+hons-wun-tun-house-washington:
+  ja:
+    name: Hon's Wun-Tun House 洪記麵家（ワシントン・ストリート店）
+    name_alt: Since 1972・サンフランシスコ中華街の老舗ワンタン麺店
+    location: アメリカ合衆国カリフォルニア州サンフランシスコ
+    cuisine:
+    - 香港料理
+    - 広東料理
+    - ワンタン麺
+    dishes:
+    - 香港式海老ワンタン麺（F1 Wun Tun Noodle Soup）
+    - 西湖牛肉水餃子（G13 Carrot Celery Beef Dumplings・10個）
+    - 干炒牛河 牛肉と平打ち米麺の炒め（K11 Beef Chow Fun）
+    - 豆苗のニンニク炒め（J2 Sautéed Pea Shoots with Garlic）
+    description: 'サンフランシスコのチャイナタウンにある広東風の麺専門店「Hon''s Wun-Tun House（洪記麵家）」。1972年にカーニー通りで創業し、その後ワシントン通りにこの店舗をオープン。現在は市内に3店舗を展開しています。店内はいかにも老舗の麺屋といった趣で、木のテーブルに青白の縁取りの磁器の器が並び、職人がその場でワンタンや水餃子を包む姿が見られます。メニューは中国語と英語の併記で、各料理にはF、G、J、Kから始まる番号が振られており、注文時は番号を伝えるのが最もスムーズです。営業時間は朝8時半から夜8時まで。お粥や麺、チョンファン（米粉ロール）などは閉店まで注文可能で、ランチやディナータイムに限らず一日中利用できるのが魅力です。
+
+
+      看板メニューの「香港式海老ワンタン麺（F1）」は、澄んだスープに細い卵麺を合わせた一杯。ワンタンは中のピンク色の海老が透けて見えるほど皮が薄く、麺はスープをしっかり吸いながらも程よく芯が残っています。「西湖牛肉餃子（G13）」は1皿10個入り。牛肉に人参とセロリを合わせた餡を、やや厚めの皮で包んでおり、噛むと野菜のシャキシャキとした食感が楽しめます。「干炒牛河（K11）」は力強い火力が生む香ばしさが絶妙。平打ちの河粉は一本一本が際立ち、縁の焦げ目が食欲をそそります。柔らかな牛肉、そして水っぽさのないシャキッとしたもやしやネギも名脇役です。「豆苗のニンニク炒め（J2）」は、丸ごとのニンニクで香りを出し、豆苗の柔らかい先端のみを使用。すっきりとした甘みで、脂っぽさをリセットしてくれます。そのほか、お粥やチョンファン、ロースト肉のご飯、スープ麺や一品料理も豊富。家族や友人との会食、年配の方を連れての朝食から夕食まで、幅広いシーンに重宝するお店です。'
+  en:
+    name: Hon's Wun-Tun House (Washington St)
+    name_alt: San Francisco Chinatown’s Classic Wonton Noodle House Since 1972
+    location: San Francisco, California
+    cuisine:
+    - Hong Kong
+    - Cantonese
+    - Wonton Noodles
+    dishes:
+    - Hong Kong Style Shrimp Wonton Noodle Soup (F1)
+    - West Lake Beef Dumplings (G13, 10 pieces)
+    - Beef Chow Fun (K11)
+    - Sautéed Pea Shoots with Garlic (J2)
+    description: 'Hon’s Wun-Tun House is a legendary Cantonese noodle spot in San Francisco’s Chinatown.
+      They first set up shop on Kearny Street back in 1972 before opening this Washington Street location;
+      today, they have three spots across the city. The interior has that classic, old-school noodle house
+      charm: wooden tables, blue-and-white patterned porcelain bowls, and masters hand-wrapping wontons
+      and dumplings right in the shop. The menu is fully bilingual and every dish has a code (starting
+      with F, G, J, or K)—just calling out the number is the fastest way to get your order in. They’re
+      open from 8:30 AM to 8:00 PM, serving up everything from congee (savory rice porridge) to cheong
+      fun (silky steamed rice rolls) all day, so you aren''t limited to just lunch or dinner hours.
+
+
+      Their signature Hong Kong-style Shrimp Wonton Noodle Soup (F1) pairs thin egg noodles with a clear,
+      savory broth. The wonton skins are so thin you can see the pink shrimp meat inside, and the noodles
+      soak up the soup while still keeping a firm bite. The West Lake Beef Dumplings (G13) come ten to
+      an order, stuffed with a mix of beef, carrots, and celery; the skins are a bit thicker, giving you
+      a nice crunch from the veggies when you bite in. The Beef Chow Fun (K11) has incredible wok hei—that
+      smoky "breath of the wok" flavor from high-heat frying. The rice noodles are perfectly separated
+      with charred edges, the beef is velvety, and the bean sprouts and scallions stay crisp without getting
+      watery. The Sautéed Pea Shoots with Garlic (J2) uses whole cloves for a fragrant finish, featuring
+      only the tenderest tips of the greens for a sweet, refreshing palate cleanser. The menu also features
+      siu mei (Cantonese roasted meats) over rice, various noodle soups, and small side dishes. Perfect
+      for family gatherings, hanging out with friends, or taking the elders out for breakfast, lunch,
+      or dinner.'

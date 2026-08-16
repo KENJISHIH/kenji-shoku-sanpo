@@ -391,4 +391,19 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-saigon-2-siam-bistro.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-saigon-2-siam-bistro.html"/>
   </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/album-hons-wun-tun-house-washington.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-hons-wun-tun-house-washington.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-hons-wun-tun-house-washington.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-hons-wun-tun-house-washington.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/ja/album-hons-wun-tun-house-washington.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-hons-wun-tun-house-washington.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-hons-wun-tun-house-washington.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-hons-wun-tun-house-washington.html"/>
+  </url>
+  <url><loc>https://kenji-shoku-sanpo.vercel.app/en/album-hons-wun-tun-house-washington.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kenji-shoku-sanpo.vercel.app/album-hons-wun-tun-house-washington.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kenji-shoku-sanpo.vercel.app/ja/album-hons-wun-tun-house-washington.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kenji-shoku-sanpo.vercel.app/en/album-hons-wun-tun-house-washington.html"/>
+  </url>
 </urlset>

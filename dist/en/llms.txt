@@ -31,6 +31,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [Ramen Champ](https://kenji-shoku-sanpo.vercel.app/en/album-ramen-champ.html): Japanese/Ramen/Japanese Curry/Rice Bowl · San Jose, California · ★4.4/5 — Tucked away in a corner plaza on Santa Teresa Blvd in South San Jose, Ramen Champ is a cozy Japanese ramen spot that’s open every single day for lunch and dinne
 - [HINODEYA Campbell Town](https://kenji-shoku-sanpo.vercel.app/en/album-hinodeya-campbell-town.html): Japanese/Ramen/Izakaya · Campbell, California · ★4.4/5 — HINODEYA Campbell Town is the Campbell outpost of the Japanese ramen brand "Wafu Rakumen Yondaime Hinodeya." You’ll spot it by the wooden exterior and the white
 - [Saigon -2- Siam Bistro](https://kenji-shoku-sanpo.vercel.app/en/album-saigon-2-siam-bistro.html): Thai/Vietnamese/Pho/Pad Thai · Gilroy, California · ★4.6/5 — Saigon -2- Siam Bistro is a cozy, family-run gem tucked into a corner plaza on 1st St in downtown Gilroy. Formerly known as Saigon Bistro Express, the name—brid
+- [Hon's Wun-Tun House (Washington St)](https://kenji-shoku-sanpo.vercel.app/en/album-hons-wun-tun-house-washington.html): Hong Kong/Cantonese/Wonton Noodles · San Francisco, California · ★4.2/5 — Hon’s Wun-Tun House is a legendary Cantonese noodle spot in San Francisco’s Chinatown. They first set up shop on Kearny Street back in 1972 before opening this 
 
 ## Language versions
 

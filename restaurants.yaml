@@ -1072,3 +1072,47 @@ restaurants:
       - "泰式酸辣鮮蝦沙拉"
       - "炸魚條(#A8 Fish Sticks)"
       - "炸花枝圈(#A14 Fried Calamari)"
+
+  - slug: hons-wun-tun-house-washington
+    name: "Hon's Wun-Tun House 洪記麵家(Washington St)"
+    name_alt: "Since 1972・舊金山華埠雲吞麵老店"
+    location: "美國加州 舊金山"
+    address: "733 Washington St, San Francisco, CA 94108, USA"
+    address_ja: "733 Washington St, San Francisco, CA 94108, アメリカ"
+    address_en: "733 Washington St, San Francisco, CA 94108, USA"
+    phone: "+1 415-397-3232"
+    hours: "週一至週五 8:30-20:00；週六、週日 9:00-20:30"
+    closed: "無公休"
+    price_range: "US$ 15-25 / 人"
+    price_range_usd: "US$ 15-25 / person"
+    price_range_jpy: "¥2,300-3,800 / 人"
+    reservation: "現場候位"
+    service: "單點式，可外帶、可線上訂餐"
+    transit: "華埠 Washington St・鄰近花園角廣場"
+    payment: ["信用卡", "現金"]
+    languages: ["英文", "中文", "粵語"]
+    foreign_menu: ["英文菜單", "中文菜單"]
+    good_for: ["家庭聚餐", "朋友聚餐", "帶長輩"]
+    visited_at: "2026-07-28"
+    rating: 4.2
+    cuisine: ["港式", "粵菜", "雲吞麵"]
+    cover: "20260728-iPhone 17 Pro190841.jpg"  # 港式鮮蝦雲吞麵
+    same_as:
+      - "https://honswuntunhouse-sf.com/"
+      - "https://honswuntunhousewashington.fronteats.com/"
+    description: |
+      Hon's Wun-Tun House 洪記麵家是舊金山華埠的粵式麵家,1972 年從 Kearny St 起家,後來在
+      Washington St 開了這間店面,現在全市共三家。店裡是老麵家的樣子:木桌、藍白花邊的瓷碗、
+      師傅在店內現包雲吞與水餃。菜單中英對照、每道菜前都掛編號(F、G、J、K 開頭),點餐直接
+      報號碼最快。營業從早上八點半到晚上八點,粥麵、腸粉一路供到打烊,不是只有午晚餐時段才開。
+
+      招牌港式鮮蝦雲吞麵(F1)用細蛋麵配清湯,雲吞皮薄到透出裡頭的粉色蝦肉,麵條吸飽湯汁
+      仍留著麵芯。西湖牛肉餃(G13)一份十只,餡是牛肉拌紅蘿蔔與西芹,餃皮偏厚,咬開帶蔬菜的
+      清脆。乾炒牛河(K11)鑊氣足,河粉條條分明、邊緣帶焦香,牛肉片滑嫩,豆芽與青蔥爽脆不出水。
+      蒜子炒大豆苗(J2)整顆蒜瓣爆香,只取豆苗嫩尖,清甜解膩。菜單另有粥品、腸粉、燒味飯、
+      湯麵與小菜。適合家庭聚餐、朋友聚餐、帶長輩的早、午、晚餐。
+    dishes:
+      - "港式鮮蝦雲吞麵(F1 Wun Tun Noodle Soup)"
+      - "西湖牛肉餃(G13 Carrot Celery Beef Dumplings,10 只)"
+      - "乾炒牛河(K11 Beef Chow Fun)"
+      - "蒜子炒大豆苗(J2 Sautéed Pea Shoots with Garlic)"
