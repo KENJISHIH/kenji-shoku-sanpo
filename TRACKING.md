@@ -79,6 +79,21 @@
   - le-four 頁 Restaurant schema `sameAs` 目前只放 Google Maps → 可補店家 IG profile `https://www.instagram.com/le_four_restaurant/`，讓 AI 把「文章 ↔ 店家官方帳號」綁在同一實體（外科式小改，需 rebuild + redeploy）
   - 呼應 5/22「萊法小館中譯名訊號」：店家既然認這篇，le-four 頁補一行中譯名「萊法小館」alias 更站得住腳
 
+### 2026-08-16 — 8/18 重測前的站況盤點（收錄第 26 家）
+
+新增 `hons-wun-tun-house-washington`（Hon's Wun-Tun House 洪記麵家，舊金山華埠），順手記下**重測基準已經和 5 月完全不同**：
+
+| 指標 | 2026-05-18 baseline | 2026-08-16 現況 |
+|------|--------------------|----------------|
+| 收錄餐廳 | 5 家 | **26 家** |
+| 語言版本 | zh + ja | zh + ja + **en**（6/11 起） |
+| sitemap URL | 12 | **81** |
+| `llms.txt` | zh 2,695B / ja 4,124B | zh 8,527B / ja 17,982B / **en 10,734B** |
+
+→ 8/18 重測時要注意：baseline 的 6 個查詢仍照舊跑（才比得動），但**站的規模是 5 月的 5 倍以上**，若引用數沒動，要分開看「內容量不夠」vs「AI 友善設定沒效」兩種解釋。
+
+另記一條**資料正確性的教訓**（不只影響這家）：連鎖店在同一街區有多家分店時，Google 卡片給的地址／評分／線上菜單可能不是實際造訪的那家。這次靠**收據抬頭 + 打烊時間**才判出是 733 Washington St 店而非 648 Kearny St 店（兩家差 100 公尺、電話與營業時間都不同）。**海外連鎖店建檔前先拿收據對抬頭**，schema 的 `address` / `telephone` / `sameAs` 灌錯會直接餵錯資料給 AI。
+
 ---
 
 ## 待追蹤（按時間排序）
