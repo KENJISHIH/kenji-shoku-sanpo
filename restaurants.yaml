@@ -1399,3 +1399,53 @@ restaurants:
       - "牛腩蒸飯(Beef Brisket Rice Bowl)"
       - "白灼生菜佐醬油(Boiled Lettuce with Soy Sauce)"
       - "豬蝦燒賣(Pork & Shrimp Shumai,4 顆)"
+
+  - slug: the-happy-hound
+    name: "The Happy Hound"
+    name_alt: "Old Fashioned Hot Dogs & Hamburgers・Since 1971"
+    location: "美國加州 Los Gatos"
+    address: "15899 Los Gatos Blvd, Los Gatos, CA 95032, USA"
+    address_ja: "15899 Los Gatos Blvd, Los Gatos, CA 95032, アメリカ"
+    address_en: "15899 Los Gatos Blvd, Los Gatos, CA 95032, USA"
+    phone: "+1 408-762-2390"
+    hours: "週一至週四 10:30-21:00；週五至週六 10:30-21:30；週日 11:00-21:00"
+    closed: "無公休"
+    price_range: "US$ 10-20 / 人"
+    price_range_usd: "US$ 10-20 / person"
+    price_range_jpy: "¥1,500-3,000 / 人"
+    reservation: "僅現場點餐，可線上訂餐"
+    service: "櫃檯點餐，可外帶、有戶外座位"
+    transit: "Los Gatos Blvd 路邊獨棟・免費停車場"
+    payment: ["信用卡", "現金"]
+    languages: ["英文"]
+    foreign_menu: ["英文菜單"]
+    dietary: ["有素食選項"]
+    good_for: ["家庭聚餐", "帶小孩", "一人吃"]
+    visited_at: "2026-08-08"
+    rating: 4.6
+    cuisine: ["美式", "熱狗", "漢堡"]
+    cover: "20260808-iPhone 17 Pro123858.jpg"  # Happy Hound 經典熱狗
+    same_as:
+      - "https://www.happyhoundlg.com/"
+      - "https://www.instagram.com/happyhoundlg/"
+      - "https://www.facebook.com/happyhoundlg/"
+    description: |
+      The Happy Hound 是矽谷南緣小鎮 Los Gatos 的老字號熱狗店,1971 年開在 Los Gatos Blvd
+      路邊的獨棟店面,一路營業到現在,店徽是一隻戴著廚師帽的黃色獵犬。招牌打的是
+      「Old Fashioned Hot Dogs & Hamburgers」——古早味熱狗與現點現做的漢堡,櫃檯點完餐
+      可以坐進店旁的花園座位吃,也能線上訂餐外帶。
+
+      熱狗一律用全牛肉熱狗,想要再烤過可以跟櫃檯說,同一個麵包裡加點一條只要 3 美元。
+      經典款 Happy Hound 夾黃芥末、酸黃瓜醬、洋蔥與番茄,是店裡最基本的組合,酸黃瓜醬
+      的甜酸味把牛肉腸的鹹度拉開;Chili Cheese Hound 換成 Chili 肉醬、切達起司絲與洋蔥,
+      起司蓋滿整條、融進肉醬裡,是美式速食最有代表性的吃法;Polish Hound 則改用一整根
+      波蘭香腸,配法國麵包、黃芥末、洋蔥與番茄,香腸比一般熱狗粗,肉味也重得多。三條
+      外帶回家切開分食,麵包吸了醬汁仍然撐得住。菜單另有夾酸菜的 Kraut Hound、用麵粉餅
+      捲起來的 Mexi-Hound,以及堆滿培根、墨西哥辣椒與 Angry Sauce 辣醬的 Hell Hound,
+      還有玉米熱狗與素食玉米熱狗。漢堡區從單片肉排的 Happy Burger 到雙層、火雞肉、
+      素食漢堡都有,配菜是薯條、薯球、洋蔥圈與 Chili 起司杯,飲料櫃供應奶昔、麥芽奶昔
+      與冰淇淋汽水。適合家庭聚餐、帶小孩、一人吃的午、晚餐。
+    dishes:
+      - "Happy Hound 經典熱狗(黃芥末、酸黃瓜醬、洋蔥、番茄)"
+      - "Chili Cheese Hound(Chili 肉醬、切達起司、洋蔥)"
+      - "Polish Hound(波蘭香腸、法國麵包、黃芥末、洋蔥、番茄)"

@@ -38,6 +38,7 @@ Author: Kenji Shih. Personal restaurant notebook focused on Taichung, Taiwan. Ea
 - [Golden House Restaurant](https://kenji-shoku-sanpo.vercel.app/album-golden-house-restaurant.html): 中式/港式/炒麵/炒河 · 美國加州 San Jose · ★4.5/5 — Golden House Restaurant 在聖荷西南端 Santa Teresa Blvd 上,與 Dollar Tree、Grocery Outlet
 - [South Winchester BBQ](https://kenji-shoku-sanpo.vercel.app/album-south-winchester-bbq.html): 美式/燒烤/煙燻 BBQ · 美國加州 San Jose · ★4.3/5 — South Winchester BBQ 是聖荷西 S Winchester Blvd 上的獨棟燒烤店,灰磚外牆,店內紅牆
 - [Yin Ji Chang Fen 銀記腸粉店](https://kenji-shoku-sanpo.vercel.app/album-yin-ji-chang-fen-pleasanton.html): 粵菜/港式/腸粉/點心 · 美國加州 Pleasanton · ★4.2/5 — 銀記腸粉店(Yin Ji Chang Fen)的 Pleasanton 分店開在 Stoneridge Dr 的街角商場,店內挑高
+- [The Happy Hound](https://kenji-shoku-sanpo.vercel.app/album-the-happy-hound.html): 美式/熱狗/漢堡 · 美國加州 Los Gatos · ★4.6/5 — The Happy Hound 是矽谷南緣小鎮 Los Gatos 的老字號熱狗店,1971 年開在 Los Gatos Blvd
 
 ## Language versions
 
