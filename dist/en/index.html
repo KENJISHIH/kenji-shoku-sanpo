@@ -214,10 +214,22 @@
   .font-sans { font-family: 'Noto Sans TC', system-ui, sans-serif; }
   .font-num { font-family: 'Inter', system-ui, sans-serif; }
   .filter-btn.active, .sort-btn.active, .city-btn.active { background:#78350f; color:white; border-color:#78350f; }
+  .chip { position:relative; cursor:pointer; }
+  .chip-input { position:absolute; inset:0; width:100%; height:100%; margin:0; opacity:0; cursor:pointer; -webkit-appearance:none; appearance:none; }
+  .chip:has(.chip-input:focus-visible) { outline:2px solid #78350f; outline-offset:2px; }
   .stars { letter-spacing: 0.08em; }
   .star-half { display:inline-block; position:relative; color:#d6d3d1; }
   .star-half::before { content:'★'; position:absolute; top:0; left:0; color:#d97706; width:50%; overflow:hidden; }
 </style>
+
+<!-- WebMCP / AgentReady.js 0.1.2（專案自行託管）。正式站僅在 ?webmcp=1 顯示 inspector。 -->
+<script>
+  window.AgentReadyConfig = {
+    inspector: location.protocol === 'file:' || ['localhost', '127.0.0.1', '::1'].includes(location.hostname) || new URLSearchParams(location.search).has('webmcp'),
+    siteName: "Kenji Shoku-Sanpo"
+  };
+</script>
+<script src="../agentready.min.js" defer></script>
 </head>
 <body class="bg-[#fdfbf7]">
 
@@ -235,33 +247,39 @@
   </p>
 </header>
 
-<nav class="max-w-3xl mx-auto px-5 mb-12 font-sans space-y-3">
-  <div class="flex flex-wrap gap-2 items-center">
-    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">Sort</span>
-    <button data-sort="date" class="sort-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Latest visit</button>
-    <button data-sort="rating" class="sort-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">★ Top rated</button>
+<nav class="max-w-3xl mx-auto px-5 mb-12 font-sans">
+  <form id="filters" class="space-y-3"
+        aria-label="Filter restaurants"
+        data-agent-name="filter_restaurants"
+        data-agent-description="Filter and sort the restaurant list by sort order, city and cuisine."
+        data-agent-submit="never">
+  <div class="flex flex-wrap gap-2 items-center" role="radiogroup" aria-labelledby="lbl-sort">
+    <span id="lbl-sort" class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">Sort</span>
+    <label class="chip sort-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="sort" value="date" class="chip-input" checked>Latest visit</label>
+    <label class="chip sort-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="sort" value="rating" class="chip-input">★ Top rated</label>
   </div>
-  <div class="flex flex-wrap gap-2 items-center">
-    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">City</span>
-    <button data-city="all" class="city-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">All</button>
-    <button data-city="California" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">California <span class="text-stone-400 ml-0.5">(16)</span></button>
-    <button data-city="Taichung" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Taichung <span class="text-stone-400 ml-0.5">(14)</span></button>
-    <button data-city="Hsinchu County" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Hsinchu County <span class="text-stone-400 ml-0.5">(1)</span></button>
-    <button data-city="Taipei" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Taipei <span class="text-stone-400 ml-0.5">(1)</span></button>
-    <button data-city="Taipei City" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Taipei City <span class="text-stone-400 ml-0.5">(1)</span></button>
+  <div class="flex flex-wrap gap-2 items-center" role="radiogroup" aria-labelledby="lbl-city">
+    <span id="lbl-city" class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">City</span>
+    <label class="chip city-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="all" class="chip-input" checked>All</label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="California" class="chip-input">California <span class="text-stone-400 ml-0.5">(16)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="Taichung" class="chip-input">Taichung <span class="text-stone-400 ml-0.5">(14)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="Hsinchu County" class="chip-input">Hsinchu County <span class="text-stone-400 ml-0.5">(1)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="Taipei" class="chip-input">Taipei <span class="text-stone-400 ml-0.5">(1)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="Taipei City" class="chip-input">Taipei City <span class="text-stone-400 ml-0.5">(1)</span></label>
   </div>
-  <div class="flex flex-wrap gap-2 items-center">
-    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">Cuisine</span>
-    <button data-filter="all" class="filter-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">All</button>
-    <button data-filter="Chinese" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Chinese</button>
-    <button data-filter="Japanese" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Japanese</button>
-    <button data-filter="Hong Kong" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Hong Kong</button>
-    <button data-filter="Western" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Western</button>
-    <button data-filter="Vietnamese" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Vietnamese</button>
-    <button data-filter="Cafe / Light bites" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Cafe / Light bites</button>
-    <button data-filter="Korean" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Korean</button>
-    <button data-filter="Thai" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">Thai</button>
+  <div class="flex flex-wrap gap-2 items-center" role="radiogroup" aria-labelledby="lbl-cuisine">
+    <span id="lbl-cuisine" class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">Cuisine</span>
+    <label class="chip filter-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="all" class="chip-input" checked>All</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="Chinese" class="chip-input">Chinese</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="Japanese" class="chip-input">Japanese</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="Hong Kong" class="chip-input">Hong Kong</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="Western" class="chip-input">Western</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="Vietnamese" class="chip-input">Vietnamese</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="Cafe / Light bites" class="chip-input">Cafe / Light bites</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="Korean" class="chip-input">Korean</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="Thai" class="chip-input">Thai</label>
   </div>
+  </form>
 </nav>
 
 <main class="max-w-3xl mx-auto px-5 pb-20">
@@ -1232,9 +1250,7 @@ Hsi-Chen Dim Sum by Jhujian Group</p>
 (function() {
   const container = document.getElementById('cards');
   const cards = [...document.querySelectorAll('.card')];
-  const cuisineBtns = document.querySelectorAll('[data-filter]');
-  const cityBtns = document.querySelectorAll('[data-city]');
-  const sortBtns = document.querySelectorAll('[data-sort]');
+  const form = document.getElementById('filters');
   const empty = document.getElementById('empty');
 
   let state = { cuisine: 'all', city: 'all', sort: 'date' };
@@ -1261,28 +1277,21 @@ Hsi-Chen Dim Sum by Jhujian Group</p>
     empty.classList.toggle('hidden', visible > 0);
   }
 
-  cuisineBtns.forEach(b => {
-    b.onclick = () => {
-      cuisineBtns.forEach(x => x.classList.toggle('active', x === b));
-      state.cuisine = b.dataset.filter;
-      apply();
-    };
-  });
-  cityBtns.forEach(b => {
-    b.onclick = () => {
-      cityBtns.forEach(x => x.classList.toggle('active', x === b));
-      state.city = b.dataset.city;
-      apply();
-    };
-  });
-  sortBtns.forEach(b => {
-    b.onclick = () => {
-      sortBtns.forEach(x => x.classList.toggle('active', x === b));
-      state.sort = b.dataset.sort;
-      apply();
-    };
-  });
+  function readState() {
+    const fd = new FormData(form);
+    state.sort = fd.get('sort') || 'date';
+    state.city = fd.get('city') || 'all';
+    state.cuisine = fd.get('cuisine') || 'all';
+    form.querySelectorAll('.chip').forEach(chip => {
+      const input = chip.querySelector('.chip-input');
+      chip.classList.toggle('active', !!input && input.checked);
+    });
+  }
 
+  form.addEventListener('change', () => { readState(); apply(); });
+  form.addEventListener('submit', e => e.preventDefault());
+
+  readState();
   apply();
 })();
 </script>

@@ -214,10 +214,22 @@
   .font-sans { font-family: 'Noto Sans JP', 'Noto Sans TC', system-ui, sans-serif; }
   .font-num { font-family: 'Inter', system-ui, sans-serif; }
   .filter-btn.active, .sort-btn.active, .city-btn.active { background:#78350f; color:white; border-color:#78350f; }
+  .chip { position:relative; cursor:pointer; }
+  .chip-input { position:absolute; inset:0; width:100%; height:100%; margin:0; opacity:0; cursor:pointer; -webkit-appearance:none; appearance:none; }
+  .chip:has(.chip-input:focus-visible) { outline:2px solid #78350f; outline-offset:2px; }
   .stars { letter-spacing: 0.08em; }
   .star-half { display:inline-block; position:relative; color:#d6d3d1; }
   .star-half::before { content:'★'; position:absolute; top:0; left:0; color:#d97706; width:50%; overflow:hidden; }
 </style>
+
+<!-- WebMCP / AgentReady.js 0.1.2（專案自行託管）。正式站僅在 ?webmcp=1 顯示 inspector。 -->
+<script>
+  window.AgentReadyConfig = {
+    inspector: location.protocol === 'file:' || ['localhost', '127.0.0.1', '::1'].includes(location.hostname) || new URLSearchParams(location.search).has('webmcp'),
+    siteName: "Kenji \u98df\u6563\u6b69"
+  };
+</script>
+<script src="../agentready.min.js" defer></script>
 </head>
 <body class="bg-[#fdfbf7]">
 
@@ -235,40 +247,46 @@
   </p>
 </header>
 
-<nav class="max-w-3xl mx-auto px-5 mb-12 font-sans space-y-3">
-  <div class="flex flex-wrap gap-2 items-center">
-    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">並べ替え</span>
-    <button data-sort="date" class="sort-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">最新訪問</button>
-    <button data-sort="rating" class="sort-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">★ 評価順</button>
+<nav class="max-w-3xl mx-auto px-5 mb-12 font-sans">
+  <form id="filters" class="space-y-3"
+        aria-label="レストラン絞り込み"
+        data-agent-name="filter_restaurants"
+        data-agent-description="Filter and sort the restaurant list by sort order, city and cuisine."
+        data-agent-submit="never">
+  <div class="flex flex-wrap gap-2 items-center" role="radiogroup" aria-labelledby="lbl-sort">
+    <span id="lbl-sort" class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">並べ替え</span>
+    <label class="chip sort-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="sort" value="date" class="chip-input" checked>最新訪問</label>
+    <label class="chip sort-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="sort" value="rating" class="chip-input">★ 評価順</label>
   </div>
-  <div class="flex flex-wrap gap-2 items-center">
-    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">都市</span>
-    <button data-city="all" class="city-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">すべて</button>
-    <button data-city="台中市" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">台中市 <span class="text-stone-400 ml-0.5">(14)</span></button>
-    <button data-city="アメリカ合衆国カリフォルニア州サンノゼ" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">アメリカ合衆国カリフォルニア州サンノゼ <span class="text-stone-400 ml-0.5">(6)</span></button>
-    <button data-city="アメリカ合衆国カリフォルニア州ロスガトス" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">アメリカ合衆国カリフォルニア州ロスガトス <span class="text-stone-400 ml-0.5">(3)</span></button>
-    <button data-city="台北市" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">台北市 <span class="text-stone-400 ml-0.5">(2)</span></button>
-    <button data-city="新竹県" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">新竹県 <span class="text-stone-400 ml-0.5">(1)</span></button>
-    <button data-city="アメリカ合衆国カリフォルニア州サンタクララ" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">アメリカ合衆国カリフォルニア州サンタクララ <span class="text-stone-400 ml-0.5">(1)</span></button>
-    <button data-city="アメリカ合衆国カリフォルニア州キャンベル" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">アメリカ合衆国カリフォルニア州キャンベル <span class="text-stone-400 ml-0.5">(1)</span></button>
-    <button data-city="米国カリフォルニア州ギルロイ" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">米国カリフォルニア州ギルロイ <span class="text-stone-400 ml-0.5">(1)</span></button>
-    <button data-city="アメリカ合衆国カリフォルニア州サンフランシスコ" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">アメリカ合衆国カリフォルニア州サンフランシスコ <span class="text-stone-400 ml-0.5">(1)</span></button>
-    <button data-city="米国カリフォルニア州サンタクルーズ" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">米国カリフォルニア州サンタクルーズ <span class="text-stone-400 ml-0.5">(1)</span></button>
-    <button data-city="アメリカ合衆国カリフォルニア州サンタクルーズ" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">アメリカ合衆国カリフォルニア州サンタクルーズ <span class="text-stone-400 ml-0.5">(1)</span></button>
-    <button data-city="アメリカ合衆国カリフォルニア州プレザントン" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">アメリカ合衆国カリフォルニア州プレザントン <span class="text-stone-400 ml-0.5">(1)</span></button>
+  <div class="flex flex-wrap gap-2 items-center" role="radiogroup" aria-labelledby="lbl-city">
+    <span id="lbl-city" class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">都市</span>
+    <label class="chip city-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="all" class="chip-input" checked>すべて</label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="台中市" class="chip-input">台中市 <span class="text-stone-400 ml-0.5">(14)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="アメリカ合衆国カリフォルニア州サンノゼ" class="chip-input">アメリカ合衆国カリフォルニア州サンノゼ <span class="text-stone-400 ml-0.5">(6)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="アメリカ合衆国カリフォルニア州ロスガトス" class="chip-input">アメリカ合衆国カリフォルニア州ロスガトス <span class="text-stone-400 ml-0.5">(3)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="台北市" class="chip-input">台北市 <span class="text-stone-400 ml-0.5">(2)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="新竹県" class="chip-input">新竹県 <span class="text-stone-400 ml-0.5">(1)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="アメリカ合衆国カリフォルニア州サンタクララ" class="chip-input">アメリカ合衆国カリフォルニア州サンタクララ <span class="text-stone-400 ml-0.5">(1)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="アメリカ合衆国カリフォルニア州キャンベル" class="chip-input">アメリカ合衆国カリフォルニア州キャンベル <span class="text-stone-400 ml-0.5">(1)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="米国カリフォルニア州ギルロイ" class="chip-input">米国カリフォルニア州ギルロイ <span class="text-stone-400 ml-0.5">(1)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="アメリカ合衆国カリフォルニア州サンフランシスコ" class="chip-input">アメリカ合衆国カリフォルニア州サンフランシスコ <span class="text-stone-400 ml-0.5">(1)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="米国カリフォルニア州サンタクルーズ" class="chip-input">米国カリフォルニア州サンタクルーズ <span class="text-stone-400 ml-0.5">(1)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="アメリカ合衆国カリフォルニア州サンタクルーズ" class="chip-input">アメリカ合衆国カリフォルニア州サンタクルーズ <span class="text-stone-400 ml-0.5">(1)</span></label>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="アメリカ合衆国カリフォルニア州プレザントン" class="chip-input">アメリカ合衆国カリフォルニア州プレザントン <span class="text-stone-400 ml-0.5">(1)</span></label>
   </div>
-  <div class="flex flex-wrap gap-2 items-center">
-    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">ジャンル</span>
-    <button data-filter="all" class="filter-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">すべて</button>
-    <button data-filter="洋食" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">洋食</button>
-    <button data-filter="和食" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">和食</button>
-    <button data-filter="中華" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">中華</button>
-    <button data-filter="香港" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">香港</button>
-    <button data-filter="ベトナム料理" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">ベトナム料理</button>
-    <button data-filter="韓国料理" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">韓国料理</button>
-    <button data-filter="ブランチ/カフェ" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">ブランチ/カフェ</button>
-    <button data-filter="タイ料理" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">タイ料理</button>
+  <div class="flex flex-wrap gap-2 items-center" role="radiogroup" aria-labelledby="lbl-cuisine">
+    <span id="lbl-cuisine" class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">ジャンル</span>
+    <label class="chip filter-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="all" class="chip-input" checked>すべて</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="洋食" class="chip-input">洋食</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="和食" class="chip-input">和食</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="中華" class="chip-input">中華</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="香港" class="chip-input">香港</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="ベトナム料理" class="chip-input">ベトナム料理</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="韓国料理" class="chip-input">韓国料理</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="ブランチ/カフェ" class="chip-input">ブランチ/カフェ</label>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="タイ料理" class="chip-input">タイ料理</label>
   </div>
+  </form>
 </nav>
 
 <main class="max-w-3xl mx-auto px-5 pb-20">
@@ -1238,9 +1256,7 @@
 (function() {
   const container = document.getElementById('cards');
   const cards = [...document.querySelectorAll('.card')];
-  const cuisineBtns = document.querySelectorAll('[data-filter]');
-  const cityBtns = document.querySelectorAll('[data-city]');
-  const sortBtns = document.querySelectorAll('[data-sort]');
+  const form = document.getElementById('filters');
   const empty = document.getElementById('empty');
 
   let state = { cuisine: 'all', city: 'all', sort: 'date' };
@@ -1267,28 +1283,21 @@
     empty.classList.toggle('hidden', visible > 0);
   }
 
-  cuisineBtns.forEach(b => {
-    b.onclick = () => {
-      cuisineBtns.forEach(x => x.classList.toggle('active', x === b));
-      state.cuisine = b.dataset.filter;
-      apply();
-    };
-  });
-  cityBtns.forEach(b => {
-    b.onclick = () => {
-      cityBtns.forEach(x => x.classList.toggle('active', x === b));
-      state.city = b.dataset.city;
-      apply();
-    };
-  });
-  sortBtns.forEach(b => {
-    b.onclick = () => {
-      sortBtns.forEach(x => x.classList.toggle('active', x === b));
-      state.sort = b.dataset.sort;
-      apply();
-    };
-  });
+  function readState() {
+    const fd = new FormData(form);
+    state.sort = fd.get('sort') || 'date';
+    state.city = fd.get('city') || 'all';
+    state.cuisine = fd.get('cuisine') || 'all';
+    form.querySelectorAll('.chip').forEach(chip => {
+      const input = chip.querySelector('.chip-input');
+      chip.classList.toggle('active', !!input && input.checked);
+    });
+  }
 
+  form.addEventListener('change', () => { readState(); apply(); });
+  form.addEventListener('submit', e => e.preventDefault());
+
+  readState();
   apply();
 })();
 </script>

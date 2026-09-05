@@ -61,15 +61,24 @@
   table.info td { padding: 0.65rem 0; vertical-align: top; border-bottom: 1px solid #e7e0d6; }
   table.info td:first-child { width: 7rem; color:#988672; font-size: 0.85rem; letter-spacing: 0.1em; }
 </style>
+
+<!-- WebMCP / AgentReady.js 0.1.2（專案自行託管）。正式站僅在 ?webmcp=1 顯示 inspector。 -->
+<script>
+  window.AgentReadyConfig = {
+    inspector: location.protocol === 'file:' || ['localhost', '127.0.0.1', '::1'].includes(location.hostname) || new URLSearchParams(location.search).has('webmcp'),
+    siteName: "Kenji \u98df\u6563\u6b65"
+  };
+</script>
+<script src="agentready.min.js" defer></script>
 </head>
 <body class="bg-[#fdfbf7]">
 
-<div class="absolute top-5 right-5 z-10 flex gap-3 font-sans text-sm">
+<nav class="absolute top-5 right-5 z-10 flex gap-3 font-sans text-sm">
   <a href="ja/album-yin-ji-chang-fen-pleasanton.html" class="text-white/80 hover:text-white transition px-2 py-1 bg-black/30 rounded-full backdrop-blur-sm">日本語</a>
   <a href="en/album-yin-ji-chang-fen-pleasanton.html" class="text-white/80 hover:text-white transition px-2 py-1 bg-black/30 rounded-full backdrop-blur-sm">English</a>
-</div>
+</nav>
 
-<div class="w-full h-[70vh] overflow-hidden bg-stone-200 relative">
+<header class="w-full h-[70vh] overflow-hidden bg-stone-200 relative">
   <img src="photos/yin-ji-chang-fen-pleasanton/20260806-iPhone 17 Pro132228.jpg"
        alt="Yin Ji Chang Fen 銀記腸粉店"
        class="w-full h-full object-cover">
@@ -80,8 +89,9 @@
       <h1 class="text-4xl md:text-6xl font-bold leading-tight mt-2 tracking-tight">Yin Ji Chang Fen 銀記腸粉店</h1>
     </div>
   </div>
-</div>
+</header>
 
+<main>
 <article class="max-w-2xl mx-auto px-5 py-12">
   <a href="index.html" class="text-stone-500 hover:text-stone-900 text-sm font-sans">← 回餐廳列表</a>
 
@@ -260,6 +270,7 @@ Berkeley、Milpitas、Concord 與 San Lorenzo 五家分店。
 <tr><td>電話</td><td><a href="tel:+19254259067" class="hover:text-amber-800">+1 925-425-9067</a></td></tr><tr><td>營業時間</td><td>每日 10:30-20:30</td></tr><tr><td>公休</td><td>無公休</td></tr><tr><td>訂位</td><td>現場候位</td></tr><tr><td>用餐</td><td>單點式，可外帶、可外送、刷卡有低消</td></tr><tr><td>交通</td><td>Stoneridge Dr 街角商場・免費停車場</td></tr><tr><td>店員語言</td><td>英文・中文・粵語</td></tr><tr><td>外文菜單</td><td>英文菜單・中文菜單</td></tr><tr><td>付款方式</td><td>信用卡・現金</td></tr><tr><td>飲食標記</td><td>有素食選項</td></tr><tr><td>價位</td><td>US$ 10-20 / 人</td></tr><tr><td>類型</td><td>粵菜・港式・腸粉・點心</td></tr><tr><td>造訪</td><td class="font-num">2026</td></tr>    </tbody>
   </table>
 </article>
+</main>
 
 <footer class="text-center text-xs text-stone-400 pb-12 font-sans">
   Kenji 食散步 · <a href="index.html" class="hover:text-stone-700">← 回餐廳列表</a>

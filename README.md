@@ -113,6 +113,14 @@ food-album-site/
 
 `scan.py` 會比對源檔 mtime 跟 `dist/photos/` 的 mtime，沒改的跳過。所以加 1 張新照片只壓 1 張，不會把整本相簿重做。
 
+## 測試
+
+```bash
+.venv/bin/python -m unittest discover -s tests -v
+```
+
+測試會重跑 `build.py`，確認三語輸出、自行託管的 AgentReady 檔案、篩選表單與相簿頁語意地標。正式站預設隱藏 AgentReady inspector；本機或網址帶 `?webmcp=1` 時才顯示。
+
 ## 用餐紀錄（notes.md）整合
 
 在每家餐廳有錄音 → Whisper polished MD 的場景下，把 MD 複製到 `photos/{slug}/notes.md` 就會自動接到頁面：

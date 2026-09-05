@@ -61,15 +61,24 @@
   table.info td { padding: 0.65rem 0; vertical-align: top; border-bottom: 1px solid #e7e0d6; }
   table.info td:first-child { width: 7rem; color:#988672; font-size: 0.85rem; letter-spacing: 0.1em; }
 </style>
+
+<!-- WebMCP / AgentReady.js 0.1.2（專案自行託管）。正式站僅在 ?webmcp=1 顯示 inspector。 -->
+<script>
+  window.AgentReadyConfig = {
+    inspector: location.protocol === 'file:' || ['localhost', '127.0.0.1', '::1'].includes(location.hostname) || new URLSearchParams(location.search).has('webmcp'),
+    siteName: "Kenji Shoku-Sanpo"
+  };
+</script>
+<script src="../agentready.min.js" defer></script>
 </head>
 <body class="bg-[#fdfbf7]">
 
-<div class="absolute top-5 right-5 z-10 flex gap-3 font-sans text-sm">
+<nav class="absolute top-5 right-5 z-10 flex gap-3 font-sans text-sm">
   <a href="../album-golden-house-restaurant.html" class="text-white/80 hover:text-white transition px-2 py-1 bg-black/30 rounded-full backdrop-blur-sm">中文</a>
   <a href="../ja/album-golden-house-restaurant.html" class="text-white/80 hover:text-white transition px-2 py-1 bg-black/30 rounded-full backdrop-blur-sm">日本語</a>
-</div>
+</nav>
 
-<div class="w-full h-[70vh] overflow-hidden bg-stone-200 relative">
+<header class="w-full h-[70vh] overflow-hidden bg-stone-200 relative">
   <img src="../photos/golden-house-restaurant/20260804-iPhone 17 Pro192250.jpg"
        alt="Golden House Restaurant"
        class="w-full h-full object-cover">
@@ -80,8 +89,9 @@
       <h1 class="text-4xl md:text-6xl font-bold leading-tight mt-2 tracking-tight">Golden House Restaurant</h1>
     </div>
   </div>
-</div>
+</header>
 
+<main>
 <article class="max-w-2xl mx-auto px-5 py-12">
   <a href="index.html" class="text-stone-500 hover:text-stone-900 text-sm font-sans">← Back to all restaurants</a>
 
@@ -207,6 +217,7 @@ The Seafood Tofu Soup is a real comfort dish, featuring a velvety, thickened bro
 <tr><td>Phone</td><td><a href="tel:+14082258001" class="hover:text-amber-800">+1 408-225-8001</a></td></tr><tr><td>Hours</td><td>Tuesdays to Fridays 11:00-20:30; Saturdays, Sundays 12:00-20:30</td></tr><tr><td>Closed</td><td>Mondays</td></tr><tr><td>Reservations</td><td>Walk-in only</td></tr><tr><td>Service</td><td>À la carte, family dinner sets for two or more, takeout available, delivery available</td></tr><tr><td>Getting there</td><td>Santa Teresa Blvd roadside plaza・free parking</td></tr><tr><td>Languages spoken</td><td>English・Mandarin</td></tr><tr><td>Menu languages</td><td>English menu・Chinese menu</td></tr><tr><td>Dietary</td><td>Vegetarian options available</td></tr><tr><td>Price</td><td>US$ 10-20 / person</td></tr><tr><td>Cuisine</td><td>Chinese・Hong Kong・Chow Mein・Chow Fun</td></tr><tr><td>Visited</td><td class="font-num">2026</td></tr>    </tbody>
   </table>
 </article>
+</main>
 
 <footer class="text-center text-xs text-stone-400 pb-12 font-sans">
   Kenji Shoku-Sanpo · <a href="index.html" class="hover:text-stone-700">← Back to all restaurants</a>

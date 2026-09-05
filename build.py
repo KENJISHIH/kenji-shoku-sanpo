@@ -49,6 +49,7 @@ I18N = {
         "city_label": "縣市",
         "all": "全部",
         "cuisine_label": "類型",
+        "filter_form_label": "餐廳篩選",
         "back": "← 回餐廳列表",
         "photos_count": "張照片",
         "today_dishes": "我這次點的",
@@ -96,6 +97,7 @@ I18N = {
         "city_label": "都市",
         "all": "すべて",
         "cuisine_label": "ジャンル",
+        "filter_form_label": "レストラン絞り込み",
         "back": "← 一覧へ戻る",
         "photos_count": "枚",
         "today_dishes": "今回注文した料理",
@@ -143,6 +145,7 @@ I18N = {
         "city_label": "City",
         "all": "All",
         "cuisine_label": "Cuisine",
+        "filter_form_label": "Filter restaurants",
         "back": "← Back to all restaurants",
         "photos_count": "photos",
         "today_dishes": "What I ordered",
@@ -938,7 +941,14 @@ def write_pwa_assets():
     (referencing /icon-192.png etc.) resolve correctly. Regenerate icons with
     scripts/gen_icons.py.
     """
-    for name in ("favicon.ico", "icon-192.png", "icon-512.png", "apple-touch-icon.png"):
+    for name in (
+        "favicon.ico",
+        "icon-192.png",
+        "icon-512.png",
+        "apple-touch-icon.png",
+        "agentready.min.js",
+        "agentready.LICENSE.txt",
+    ):
         src = STATIC / name
         if src.exists():
             shutil.copy2(src, DIST / name)

@@ -60,10 +60,22 @@
   .font-sans { font-family: {% if lang == 'ja' %}'Noto Sans JP', 'Noto Sans TC'{% else %}'Noto Sans TC'{% endif %}, system-ui, sans-serif; }
   .font-num { font-family: 'Inter', system-ui, sans-serif; }
   .filter-btn.active, .sort-btn.active, .city-btn.active { background:#78350f; color:white; border-color:#78350f; }
+  .chip { position:relative; cursor:pointer; }
+  .chip-input { position:absolute; inset:0; width:100%; height:100%; margin:0; opacity:0; cursor:pointer; -webkit-appearance:none; appearance:none; }
+  .chip:has(.chip-input:focus-visible) { outline:2px solid #78350f; outline-offset:2px; }
   .stars { letter-spacing: 0.08em; }
   .star-half { display:inline-block; position:relative; color:#d6d3d1; }
   .star-half::before { content:'★'; position:absolute; top:0; left:0; color:#d97706; width:50%; overflow:hidden; }
 </style>
+
+<!-- WebMCP / AgentReady.js 0.1.2（專案自行託管）。正式站僅在 ?webmcp=1 顯示 inspector。 -->
+<script>
+  window.AgentReadyConfig = {
+    inspector: location.protocol === 'file:' || ['localhost', '127.0.0.1', '::1'].includes(location.hostname) || new URLSearchParams(location.search).has('webmcp'),
+    siteName: {{ site_name|tojson }}
+  };
+</script>
+<script src="{{ photo_prefix }}agentready.min.js" defer></script>
 </head>
 <body class="bg-[#fdfbf7]">
 
@@ -84,26 +96,32 @@
   </p>
 </header>
 
-<nav class="max-w-3xl mx-auto px-5 mb-12 font-sans space-y-3">
-  <div class="flex flex-wrap gap-2 items-center">
-    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">{{ t.sort_label }}</span>
-    <button data-sort="date" class="sort-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ t.sort_date }}</button>
-    <button data-sort="rating" class="sort-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ t.sort_rating }}</button>
+<nav class="max-w-3xl mx-auto px-5 mb-12 font-sans">
+  <form id="filters" class="space-y-3"
+        aria-label="{{ t.filter_form_label }}"
+        data-agent-name="filter_restaurants"
+        data-agent-description="Filter and sort the restaurant list by sort order, city and cuisine."
+        data-agent-submit="never">
+  <div class="flex flex-wrap gap-2 items-center" role="radiogroup" aria-labelledby="lbl-sort">
+    <span id="lbl-sort" class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">{{ t.sort_label }}</span>
+    <label class="chip sort-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="sort" value="date" class="chip-input" checked>{{ t.sort_date }}</label>
+    <label class="chip sort-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="sort" value="rating" class="chip-input">{{ t.sort_rating }}</label>
   </div>
-  <div class="flex flex-wrap gap-2 items-center">
-    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">{{ t.city_label }}</span>
-    <button data-city="all" class="city-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ t.all }}</button>
+  <div class="flex flex-wrap gap-2 items-center" role="radiogroup" aria-labelledby="lbl-city">
+    <span id="lbl-city" class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">{{ t.city_label }}</span>
+    <label class="chip city-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="all" class="chip-input" checked>{{ t.all }}</label>
     {% for c, n in cities %}
-    <button data-city="{{ c }}" class="city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ c }} <span class="text-stone-400 ml-0.5">({{ n }})</span></button>
+    <label class="chip city-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="city" value="{{ c }}" class="chip-input">{{ c }} <span class="text-stone-400 ml-0.5">({{ n }})</span></label>
     {% endfor %}
   </div>
-  <div class="flex flex-wrap gap-2 items-center">
-    <span class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">{{ t.cuisine_label }}</span>
-    <button data-filter="all" class="filter-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ t.all }}</button>
+  <div class="flex flex-wrap gap-2 items-center" role="radiogroup" aria-labelledby="lbl-cuisine">
+    <span id="lbl-cuisine" class="text-xs text-stone-400 uppercase tracking-widest mr-2 w-12">{{ t.cuisine_label }}</span>
+    <label class="chip filter-btn active px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="all" class="chip-input" checked>{{ t.all }}</label>
     {% for c in all_cuisines %}
-    <button data-filter="{{ c }}" class="filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition">{{ c }}</button>
+    <label class="chip filter-btn px-3 py-1 text-sm border border-stone-300 rounded-full hover:bg-stone-100 transition"><input type="radio" name="cuisine" value="{{ c }}" class="chip-input">{{ c }}</label>
     {% endfor %}
   </div>
+  </form>
 </nav>
 
 <main class="max-w-3xl mx-auto px-5 pb-20">
@@ -169,9 +187,7 @@
 (function() {
   const container = document.getElementById('cards');
   const cards = [...document.querySelectorAll('.card')];
-  const cuisineBtns = document.querySelectorAll('[data-filter]');
-  const cityBtns = document.querySelectorAll('[data-city]');
-  const sortBtns = document.querySelectorAll('[data-sort]');
+  const form = document.getElementById('filters');
   const empty = document.getElementById('empty');
 
   let state = { cuisine: 'all', city: 'all', sort: 'date' };
@@ -198,28 +214,21 @@
     empty.classList.toggle('hidden', visible > 0);
   }
 
-  cuisineBtns.forEach(b => {
-    b.onclick = () => {
-      cuisineBtns.forEach(x => x.classList.toggle('active', x === b));
-      state.cuisine = b.dataset.filter;
-      apply();
-    };
-  });
-  cityBtns.forEach(b => {
-    b.onclick = () => {
-      cityBtns.forEach(x => x.classList.toggle('active', x === b));
-      state.city = b.dataset.city;
-      apply();
-    };
-  });
-  sortBtns.forEach(b => {
-    b.onclick = () => {
-      sortBtns.forEach(x => x.classList.toggle('active', x === b));
-      state.sort = b.dataset.sort;
-      apply();
-    };
-  });
+  function readState() {
+    const fd = new FormData(form);
+    state.sort = fd.get('sort') || 'date';
+    state.city = fd.get('city') || 'all';
+    state.cuisine = fd.get('cuisine') || 'all';
+    form.querySelectorAll('.chip').forEach(chip => {
+      const input = chip.querySelector('.chip-input');
+      chip.classList.toggle('active', !!input && input.checked);
+    });
+  }
 
+  form.addEventListener('change', () => { readState(); apply(); });
+  form.addEventListener('submit', e => e.preventDefault());
+
+  readState();
   apply();
 })();
 </script>

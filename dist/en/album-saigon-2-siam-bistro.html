@@ -61,15 +61,24 @@
   table.info td { padding: 0.65rem 0; vertical-align: top; border-bottom: 1px solid #e7e0d6; }
   table.info td:first-child { width: 7rem; color:#988672; font-size: 0.85rem; letter-spacing: 0.1em; }
 </style>
+
+<!-- WebMCP / AgentReady.js 0.1.2（專案自行託管）。正式站僅在 ?webmcp=1 顯示 inspector。 -->
+<script>
+  window.AgentReadyConfig = {
+    inspector: location.protocol === 'file:' || ['localhost', '127.0.0.1', '::1'].includes(location.hostname) || new URLSearchParams(location.search).has('webmcp'),
+    siteName: "Kenji Shoku-Sanpo"
+  };
+</script>
+<script src="../agentready.min.js" defer></script>
 </head>
 <body class="bg-[#fdfbf7]">
 
-<div class="absolute top-5 right-5 z-10 flex gap-3 font-sans text-sm">
+<nav class="absolute top-5 right-5 z-10 flex gap-3 font-sans text-sm">
   <a href="../album-saigon-2-siam-bistro.html" class="text-white/80 hover:text-white transition px-2 py-1 bg-black/30 rounded-full backdrop-blur-sm">中文</a>
   <a href="../ja/album-saigon-2-siam-bistro.html" class="text-white/80 hover:text-white transition px-2 py-1 bg-black/30 rounded-full backdrop-blur-sm">日本語</a>
-</div>
+</nav>
 
-<div class="w-full h-[70vh] overflow-hidden bg-stone-200 relative">
+<header class="w-full h-[70vh] overflow-hidden bg-stone-200 relative">
   <img src="../photos/saigon-2-siam-bistro/20260730-iPhone 17 Pro183338.jpg"
        alt="Saigon -2- Siam Bistro"
        class="w-full h-full object-cover">
@@ -79,8 +88,9 @@
       <h1 class="text-4xl md:text-6xl font-bold leading-tight mt-2 tracking-tight">Saigon -2- Siam Bistro</h1>
     </div>
   </div>
-</div>
+</header>
 
+<main>
 <article class="max-w-2xl mx-auto px-5 py-12">
   <a href="index.html" class="text-stone-500 hover:text-stone-900 text-sm font-sans">← Back to all restaurants</a>
 
@@ -345,6 +355,7 @@ On the Vietnamese side of things, the Phở features a clean, hearty beef bone b
 <tr><td>Phone</td><td><a href="tel:+14088486000" class="hover:text-amber-800">+1 408-848-6000</a></td></tr><tr><td>Hours</td><td>Mondays, Tuesdays, Thursdays 11:00-15:00 / 17:00-21:00; Fridays, Saturdays 11:00-15:00 / 17:00-21:30; Sundays 11:30-15:00 / 17:00-21:00</td></tr><tr><td>Closed</td><td>Wednesdays</td></tr><tr><td>Reservations</td><td>Walk-in only</td></tr><tr><td>Service</td><td>À la carte, takeout available</td></tr><tr><td>Getting there</td><td>1st St roadside plaza・free parking</td></tr><tr><td>Languages spoken</td><td>English</td></tr><tr><td>Menu languages</td><td>English menu</td></tr><tr><td>Payment</td><td>Credit card・Cash</td></tr><tr><td>Dietary</td><td>Vegetarian options available</td></tr><tr><td>Price</td><td>US$ 15-25 / person</td></tr><tr><td>Cuisine</td><td>Thai・Vietnamese・Pho・Pad Thai</td></tr><tr><td>Visited</td><td class="font-num">2026</td></tr>    </tbody>
   </table>
 </article>
+</main>
 
 <footer class="text-center text-xs text-stone-400 pb-12 font-sans">
   Kenji Shoku-Sanpo · <a href="index.html" class="hover:text-stone-700">← Back to all restaurants</a>

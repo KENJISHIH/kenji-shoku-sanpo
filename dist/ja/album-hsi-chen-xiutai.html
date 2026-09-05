@@ -61,15 +61,24 @@
   table.info td { padding: 0.65rem 0; vertical-align: top; border-bottom: 1px solid #e7e0d6; }
   table.info td:first-child { width: 7rem; color:#988672; font-size: 0.85rem; letter-spacing: 0.1em; }
 </style>
+
+<!-- WebMCP / AgentReady.js 0.1.2（專案自行託管）。正式站僅在 ?webmcp=1 顯示 inspector。 -->
+<script>
+  window.AgentReadyConfig = {
+    inspector: location.protocol === 'file:' || ['localhost', '127.0.0.1', '::1'].includes(location.hostname) || new URLSearchParams(location.search).has('webmcp'),
+    siteName: "Kenji \u98df\u6563\u6b69"
+  };
+</script>
+<script src="../agentready.min.js" defer></script>
 </head>
 <body class="bg-[#fdfbf7]">
 
-<div class="absolute top-5 right-5 z-10 flex gap-3 font-sans text-sm">
+<nav class="absolute top-5 right-5 z-10 flex gap-3 font-sans text-sm">
   <a href="../album-hsi-chen-xiutai.html" class="text-white/80 hover:text-white transition px-2 py-1 bg-black/30 rounded-full backdrop-blur-sm">中文</a>
   <a href="../en/album-hsi-chen-xiutai.html" class="text-white/80 hover:text-white transition px-2 py-1 bg-black/30 rounded-full backdrop-blur-sm">English</a>
-</div>
+</nav>
 
-<div class="w-full h-[70vh] overflow-hidden bg-stone-200 relative">
+<header class="w-full h-[70vh] overflow-hidden bg-stone-200 relative">
   <img src="../photos/hsi-chen-xiutai/20260305-iPhone 17 Pro133542.jpg"
        alt="喜辰（キシン）香港点心茶餐廳 台中駅前シュータイ店"
        class="w-full h-full object-cover">
@@ -80,8 +89,9 @@
       <h1 class="text-4xl md:text-6xl font-bold leading-tight mt-2 tracking-tight">喜辰（キシン）香港点心茶餐廳 台中駅前シュータイ店</h1>
     </div>
   </div>
-</div>
+</header>
 
+<main>
 <article class="max-w-2xl mx-auto px-5 py-12">
   <a href="index.html" class="text-stone-500 hover:text-stone-900 text-sm font-sans">← 一覧へ戻る</a>
 
@@ -234,6 +244,7 @@
 <tr><td>電話</td><td><a href="tel:0422119027" class="hover:text-amber-800">04-2211-9027</a></td></tr><tr><td>営業時間</td><td>平日 11:00-14:00 / 17:00-22:00；土日祝 11:00-22:00</td></tr><tr><td>定休日</td><td>定休日なし</td></tr><tr><td>予約</td><td>予約可（線上 inline 訂位）</td></tr><tr><td>サービス</td><td>サービス料 +10%、用餐90分制</td></tr><tr><td>予算</td><td>NT$ 300-500  / 名</td></tr><tr><td>ジャンル</td><td>香港料理・香港カフェ・飲茶・点心・麺類・ご飯物</td></tr><tr><td>訪問日</td><td class="font-num">2026</td></tr>    </tbody>
   </table>
 </article>
+</main>
 
 <footer class="text-center text-xs text-stone-400 pb-12 font-sans">
   Kenji 食散歩 · <a href="index.html" class="hover:text-stone-700">← 一覧へ戻る</a>
