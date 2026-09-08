@@ -21,6 +21,7 @@
 <meta property="og:title" content="{{ site_name }}{{ t.sep }}{{ site_subtitle }}">
 <meta property="og:description" content="{{ t.site_intro }}">
 <meta property="og:locale" content="{{ og_locale }}">
+{% if albums and albums[0].cover_photo %}<meta property="og:image" content="{{ site_url }}/{{ albums[0].cover_photo.large|urlencode }}">{% endif %}
 {% for alt in hreflang_alts %}
 <link rel="alternate" hreflang="{{ alt.code }}" href="{{ alt.href.rstrip('/') or '/' }}">
 {% endfor %}

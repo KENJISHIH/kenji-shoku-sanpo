@@ -763,6 +763,7 @@ def render_site(lang: str, albums_raw: list[dict], translations: dict, env: Envi
         "photo_prefix": photo_prefix,
         "lang_links": lang_links,
         "hreflang_alts": hreflang_alts,
+        "site_url": SITE_URL,
     }
 
     index_tpl = env.get_template("index.html")
