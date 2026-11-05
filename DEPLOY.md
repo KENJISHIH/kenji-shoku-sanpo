@@ -2,10 +2,10 @@
 
 ## 線上 URL
 
-- **正式站**：https://kenji-shoku-sanpo.vercel.app
-- **日文版**：https://kenji-shoku-sanpo.vercel.app/ja/
-- **sitemap**：https://kenji-shoku-sanpo.vercel.app/sitemap.xml
-- **robots.txt**：https://kenji-shoku-sanpo.vercel.app/robots.txt
+- **正式站**：https://food.kenjishih.com.tw
+- **日文版**：https://food.kenjishih.com.tw/ja/
+- **sitemap**：https://food.kenjishih.com.tw/sitemap.xml
+- **robots.txt**：https://food.kenjishih.com.tw/robots.txt
 
 GitHub repo：https://github.com/KENJISHIH/kenji-shoku-sanpo （Public）
 Vercel project：`kenjishihs-projects/kenji-shoku-sanpo`
@@ -36,7 +36,7 @@ https://search.google.com/search-console
 
 ### 2. 新增資源
 左上「+ 新增資源」→ 選「**網址前置字串**」（不是「網域」，網域要 DNS 驗證較麻煩）
-貼上：`https://kenji-shoku-sanpo.vercel.app`
+貼上：`https://food.kenjishih.com.tw`
 
 ### 3. 驗證擁有權
 推薦選「**HTML 標記**」驗證（最簡單）：

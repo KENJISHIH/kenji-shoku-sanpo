@@ -37,4 +37,4 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-Sitemap: https://kenji-shoku-sanpo.vercel.app/sitemap.xml
+Sitemap: https://food.kenjishih.com.tw/sitemap.xml

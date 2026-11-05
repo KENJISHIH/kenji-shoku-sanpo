@@ -23,7 +23,7 @@
 <meta property="og:description" content="{{ desc_short }}">
 <meta property="og:locale" content="{{ og_locale }}">
 {% if album.cover_photo %}<meta property="og:image" content="{{ site_url }}/{{ album.cover_photo.large|urlencode }}">{% endif %}
-<link rel="canonical" href="album-{{ album.slug }}.html">
+<link rel="canonical" href="{{ site_url }}{{ lang_path }}/album-{{ album.slug }}.html">
 {% for alt in hreflang_alts %}
 <link rel="alternate" hreflang="{{ alt.code }}" href="{{ alt.href }}album-{{ album.slug }}.html">
 {% endfor %}

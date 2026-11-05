@@ -1,6 +1,14 @@
 {
   "outputDirectory": "dist",
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "kenji-shoku-sanpo.vercel.app" }],
+      "destination": "https://food.kenjishih.com.tw/$1",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/photos/(.*)",

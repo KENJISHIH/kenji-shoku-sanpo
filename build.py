@@ -26,7 +26,7 @@ CONFIG = ROOT / "restaurants.yaml"
 TRANSLATIONS_FILE = ROOT / "translations.yaml"
 
 # Production URL — change when custom domain ready. Used in sitemap.xml + robots.txt.
-SITE_URL = "https://kenji-shoku-sanpo.vercel.app"
+SITE_URL = "https://food.kenjishih.com.tw"
 
 # Languages to build. zh is default (root), others go in subdirs.
 LANGS = ["zh", "ja", "en"]
@@ -764,6 +764,7 @@ def render_site(lang: str, albums_raw: list[dict], translations: dict, env: Envi
         "lang_links": lang_links,
         "hreflang_alts": hreflang_alts,
         "site_url": SITE_URL,
+        "lang_path": "" if lang == "zh" else f"/{lang}",
     }
 
     index_tpl = env.get_template("index.html")
